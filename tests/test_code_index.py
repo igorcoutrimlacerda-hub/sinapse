@@ -165,6 +165,32 @@ class CodeIndexTest(unittest.TestCase):
             self.assertTrue(any("extra" == hit.chunk.get("symbol") for hit in updated.search("extra")))
             self.assertFalse(any(hit.chunk["path"] == "old.py" for hit in updated.search("old")))
 
+    def test_index_reads_requested_snapshot_even_with_local_changes(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            repo = make_repo(base, "repo")
+            source = repo / "main.py"
+            source.write_text("def calculate():\n    return 1\n", encoding="utf-8")
+            first_commit = commit_all(repo, "initial")
+            source.write_text("def calculate():\n    return 2\n", encoding="utf-8")
+            head = commit_all(repo, "update")
+            source.write_text("def calculate():\n    return 3\n", encoding="utf-8")
+            git(repo, "add", "main.py")
+            source.unlink()
+            (repo / "staged.py").write_text("def staged_only():\n    pass\n", encoding="utf-8")
+            git(repo, "add", "staged.py")
+            store = ProjectStore(base / "projects")
+            project_id = store.create("Code")["id"]
+
+            for requested, expected_commit, value in ((None, head, 2), (first_commit, first_commit, 1)):
+                with self.subTest(commit=requested):
+                    import_repository(store, project_id, repo_path=repo, commit=requested)
+                    index = CodeIndex.load(store.load(project_id))
+                    hit = index.search("calculate")[0]
+                    self.assertEqual(hit.chunk["commit"], expected_commit)
+                    self.assertIn(f"return {value}", hit.chunk["text"])
+                    self.assertFalse(any(chunk["path"] == "staged.py" for chunk in index.chunks))
+
     def test_missing_index_is_explicit(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             base = Path(directory)

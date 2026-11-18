@@ -80,9 +80,17 @@ def resolve_commit(repo: Path, commit: str | None = None) -> str:
     return _run_git(repo, "rev-parse", reference).decode("utf-8").strip()
 
 
-def _tracked_files(repo: Path, commit: str) -> list[str]:
-    output = _run_git(repo, "ls-tree", "-r", "-z", "--name-only", commit)
-    return [item for item in output.decode("utf-8", errors="replace").split("\0") if item]
+def _tracked_blobs(repo: Path, commit: str) -> dict[str, str]:
+    output = _run_git(repo, "ls-tree", "-r", "-z", commit)
+    blobs = {}
+    for entry in output.split(b"\0"):
+        if not entry:
+            continue
+        metadata, path = entry.split(b"\t", 1)
+        _, kind, oid = metadata.split()
+        if kind == b"blob":
+            blobs[path.decode("utf-8", errors="replace")] = oid.decode("ascii")
+    return blobs
 
 
 def _file_bytes(repo: Path, commit: str, path: str) -> bytes:
@@ -105,16 +113,7 @@ def _is_excluded(path: str, data: bytes) -> bool:
     return False
 
 
-def _worktree_files(repo: Path) -> list[str]:
-    output = _run_git(repo, "ls-files", "-z")
-    return [
-        path
-        for path in output.decode("utf-8", errors="replace").split("\0")
-        if path and (repo / path).is_file()
-    ]
-
-
-def _blob_reader(repo: Path, commit: str, paths: Sequence[str]):
+def _blob_reader(repo: Path, blobs: Mapping[str, str]):
     """Lê blobs em um único `git cat-file --batch` (escala)."""
     process = subprocess.Popen(
         ["git", "-C", str(repo), "cat-file", "--batch"],
@@ -124,15 +123,8 @@ def _blob_reader(repo: Path, commit: str, paths: Sequence[str]):
     )
     assert process.stdin is not None and process.stdout is not None
     try:
-        for path in paths:
-            local = repo / path
-            if local.is_file():
-                try:
-                    yield path, local.read_bytes()
-                except OSError:
-                    pass
-                continue
-            process.stdin.write(f"{commit}:{path}\n".encode("utf-8"))
+        for path, oid in blobs.items():
+            process.stdin.write(f"{oid}\n".encode("ascii"))
             process.stdin.flush()
             header = process.stdout.readline()
             if not header or header.rstrip().endswith(b" missing"):
@@ -457,16 +449,12 @@ def import_repository(
         raise ValueError("Associe um repositório ao projeto antes de importar")
     repo = repo_root(target)
     resolved = resolve_commit(repo, commit)
-    head_commit = resolve_commit(repo, "HEAD")
-    if resolved == head_commit:
-        files = _worktree_files(repo)
-    else:
-        files = _tracked_files(repo, resolved)
-    license_info = _detect_license(repo, resolved, files)
+    blobs = _tracked_blobs(repo, resolved)
+    license_info = _detect_license(repo, resolved, list(blobs))
     chunks = []
     indexed_files = []
     skipped = []
-    for path, data in _blob_reader(repo, resolved, files):
+    for path, data in _blob_reader(repo, blobs):
         if data is None:
             skipped.append(path)
             continue
