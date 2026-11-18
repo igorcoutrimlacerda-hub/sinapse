@@ -1,0 +1,13 @@
+BENCHMARK SINAPSE
+casos=8 | denominador hit/full=5 casos com evidência esperada
+
+condição         hit (n/den)   full (n/den)  tokens  violações  repet.  irrelev.  resposta
+history         0/5=0.00       0/5=0.00           0.0         0       0         0     0.38
+lexical         3/5=0.60       3/5=0.60          41.8         0       0         0     0.88
+sinapse         5/5=1.00       5/5=1.00          45.8         0       0         0     1.00
+manual          5/5=1.00       5/5=1.00          37.9         0       0         0     1.00
+
+delta Sinapse (pontos percentuais):
+  vs history: +62.50 pp
+  vs lexical: +12.50 pp
+  vs manual: +0.00 pp

@@ -1,0 +1,506 @@
+[
+  {
+    "review_id": "R001",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Não há preço; o contexto adicional deve ficar vazio e a ausência deve ser reconhecida.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R002",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Não há preço; o contexto adicional deve ficar vazio e a ausência deve ser reconhecida.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R003",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Não há preço; o contexto adicional deve ficar vazio e a ausência deve ser reconhecida.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R004",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Não há preço; o contexto adicional deve ficar vazio e a ausência deve ser reconhecida.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R005",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Variação de linguagem para preço; não há valor registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R006",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Variação de linguagem para preço; não há valor registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R007",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Variação de linguagem para preço; não há valor registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R008",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "Variação de linguagem para preço; não há valor registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R009",
+    "answer": "Não tenho informação sobre o preço do Piano V.",
+    "rubric": "Tema diferente de Serum 2 e sem preço registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R010",
+    "answer": "Não tenho informação sobre o preço do Piano V.",
+    "rubric": "Tema diferente de Serum 2 e sem preço registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R011",
+    "answer": "Não tenho informação sobre o preço do Piano V.",
+    "rubric": "Tema diferente de Serum 2 e sem preço registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R012",
+    "answer": "Não tenho informação sobre o preço do Piano V.",
+    "rubric": "Tema diferente de Serum 2 e sem preço registrado.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R013",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "O preço está na própria mensagem; deve ser recuperado.",
+    "required_facts": [
+      "350"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R014",
+    "answer": "O Serum 2 custou 350 reais (m20).",
+    "rubric": "O preço está na própria mensagem; deve ser recuperado.",
+    "required_facts": [
+      "350"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R015",
+    "answer": "O Serum 2 custou 350 reais (m20).",
+    "rubric": "O preço está na própria mensagem; deve ser recuperado.",
+    "required_facts": [
+      "350"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R016",
+    "answer": "O Serum 2 custou 350 reais (m20).",
+    "rubric": "O preço está na própria mensagem; deve ser recuperado.",
+    "required_facts": [
+      "350"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R017",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta curta ligada a m1 identifica o item e registra o preço.",
+    "required_facts": [
+      "280"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R018",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta curta ligada a m1 identifica o item e registra o preço.",
+    "required_facts": [
+      "280"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R019",
+    "answer": "O Serum 2 saiu por 280 reais (m20, resposta a m1).",
+    "rubric": "A resposta curta ligada a m1 identifica o item e registra o preço.",
+    "required_facts": [
+      "280"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R020",
+    "answer": "O Serum 2 saiu por 280 reais (m20, resposta a m1).",
+    "rubric": "A resposta curta ligada a m1 identifica o item e registra o preço.",
+    "required_facts": [
+      "280"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R021",
+    "answer": "Não tenho informação sobre o preço do pack.",
+    "rubric": "12 é quantidade de presets, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "12 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R022",
+    "answer": "Não tenho informação sobre o preço do pack.",
+    "rubric": "12 é quantidade de presets, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "12 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R023",
+    "answer": "Não tenho informação sobre o preço do pack.",
+    "rubric": "12 é quantidade de presets, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "12 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R024",
+    "answer": "Não tenho informação sobre o preço do pack.",
+    "rubric": "12 é quantidade de presets, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "12 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R025",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "3 horas é duração, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "3 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R026",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "3 horas é duração, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "3 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R027",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "3 horas é duração, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "3 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R028",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "3 horas é duração, não preço.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "3 reais"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R029",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Preço presente em tema diferente de Serum 2.",
+    "required_facts": [
+      "1500"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R030",
+    "answer": "Você pagou 1500 reais pela bicicleta (p3).",
+    "rubric": "Preço presente em tema diferente de Serum 2.",
+    "required_facts": [
+      "1500"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R031",
+    "answer": "Você pagou 1500 reais pela bicicleta (p3).",
+    "rubric": "Preço presente em tema diferente de Serum 2.",
+    "required_facts": [
+      "1500"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R032",
+    "answer": "Você pagou 1500 reais pela bicicleta (p3).",
+    "rubric": "Preço presente em tema diferente de Serum 2.",
+    "required_facts": [
+      "1500"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R033",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Duas evidências de motivo devem entrar juntas.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R034",
+    "answer": "Tenho apenas parte da informação.",
+    "rubric": "Duas evidências de motivo devem entrar juntas.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R035",
+    "answer": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m20).",
+    "rubric": "Duas evidências de motivo devem entrar juntas.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R036",
+    "answer": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m20).",
+    "rubric": "Duas evidências de motivo devem entrar juntas.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R037",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A decisão mais recente substitui o Serum 2.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R038",
+    "answer": "Agora você usa o Pigments (m20).",
+    "rubric": "A decisão mais recente substitui o Serum 2.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R039",
+    "answer": "Agora você usa o Pigments (m20).",
+    "rubric": "A decisão mais recente substitui o Serum 2.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R040",
+    "answer": "Agora você usa o Pigments (m20).",
+    "rubric": "A decisão mais recente substitui o Serum 2.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R041",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico e não deve ser repetida como memória.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R042",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico e não deve ser repetida como memória.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R043",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico e não deve ser repetida como memória.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R044",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico e não deve ser repetida como memória.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  }
+]

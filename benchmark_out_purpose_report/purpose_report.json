@@ -1,0 +1,1423 @@
+{
+  "groups": {
+    "regression": {
+      "reference": {
+        "cases": 7,
+        "rubric_approved": 5,
+        "all_purposes": 5,
+        "purposes_ok": 6,
+        "purposes_total": 8,
+        "prompt": 921,
+        "completion": 292,
+        "delta_prompt_vs_reference": 0,
+        "delta_completion_vs_reference": 0
+      },
+      "purpose": {
+        "cases": 7,
+        "rubric_approved": 7,
+        "all_purposes": 7,
+        "purposes_ok": 8,
+        "purposes_total": 8,
+        "prompt": 1002,
+        "completion": 437,
+        "delta_prompt_vs_reference": 81,
+        "delta_completion_vs_reference": 145
+      },
+      "paired": {
+        "purpose": {
+          "better": 2,
+          "tied": 5,
+          "worse": 0
+        }
+      }
+    },
+    "new": {
+      "reference": {
+        "cases": 5,
+        "rubric_approved": 2,
+        "all_purposes": 2,
+        "purposes_ok": 3,
+        "purposes_total": 8,
+        "prompt": 549,
+        "completion": 282,
+        "delta_prompt_vs_reference": 0,
+        "delta_completion_vs_reference": 0
+      },
+      "purpose": {
+        "cases": 5,
+        "rubric_approved": 5,
+        "all_purposes": 4,
+        "purposes_ok": 7,
+        "purposes_total": 8,
+        "prompt": 736,
+        "completion": 210,
+        "delta_prompt_vs_reference": 187,
+        "delta_completion_vs_reference": -72
+      },
+      "removal": {
+        "cases": 2,
+        "rubric_approved": 0,
+        "all_purposes": 0,
+        "purposes_ok": 2,
+        "purposes_total": 4,
+        "prompt": 339,
+        "completion": 61,
+        "delta_prompt_vs_reference": -210,
+        "delta_completion_vs_reference": -221
+      },
+      "paired": {
+        "purpose": {
+          "better": 3,
+          "tied": 2,
+          "worse": 0
+        }
+      }
+    }
+  },
+  "overall": {
+    "reference": {
+      "cases": 12,
+      "rubric_approved": 7,
+      "all_purposes": 7,
+      "purposes_ok": 9,
+      "purposes_total": 16,
+      "prompt": 1470,
+      "completion": 574
+    },
+    "purpose": {
+      "cases": 12,
+      "rubric_approved": 12,
+      "all_purposes": 11,
+      "purposes_ok": 15,
+      "purposes_total": 16,
+      "prompt": 1738,
+      "completion": 647
+    },
+    "removal": {
+      "cases": 2,
+      "rubric_approved": 0,
+      "all_purposes": 0,
+      "purposes_ok": 2,
+      "purposes_total": 4,
+      "prompt": 339,
+      "completion": 61
+    }
+  },
+  "omissions": [
+    {
+      "case": "ev_pack_both",
+      "condition": "reference",
+      "purpose": "q",
+      "reason": "evidencia_nao_enviada"
+    },
+    {
+      "case": "ev_serum_contrast",
+      "condition": "reference",
+      "purpose": "m",
+      "reason": "evidencia_nao_enviada"
+    },
+    {
+      "case": "new_bike_two",
+      "condition": "reference",
+      "purpose": "m",
+      "reason": "evidencia_nao_enviada"
+    },
+    {
+      "case": "new_two_themes",
+      "condition": "reference",
+      "purpose": "m",
+      "reason": "evidencia_nao_enviada"
+    },
+    {
+      "case": "new_two_themes",
+      "condition": "reference",
+      "purpose": "p",
+      "reason": "evidencia_nao_enviada"
+    },
+    {
+      "case": "new_priority",
+      "condition": "reference",
+      "purpose": "m",
+      "reason": "evidencia_nao_enviada"
+    },
+    {
+      "case": "new_priority",
+      "condition": "reference",
+      "purpose": "p",
+      "reason": "evidencia_nao_enviada"
+    },
+    {
+      "case": "new_priority",
+      "condition": "purpose",
+      "purpose": "p",
+      "reason": "prioridade_explicita"
+    }
+  ],
+  "accepted_unavailable": [
+    {
+      "case": "new_restricted_price",
+      "condition": "reference",
+      "purpose": "p",
+      "reason": "restricao_indisponivel"
+    },
+    {
+      "case": "new_restricted_price",
+      "condition": "purpose",
+      "purpose": "p",
+      "reason": "restricao_indisponivel"
+    }
+  ],
+  "priority_case": {
+    "case": "new_priority",
+    "family": "misto",
+    "purposes": [
+      "m",
+      "p"
+    ],
+    "priority": "m",
+    "conditions": {
+      "reference": {
+        "selected": [
+          "m5"
+        ],
+        "removed": [],
+        "answer": "Você escolheu o Piano V **para tocar jazz** (é o que está registrado na memória, mensagem `m5`).\n\nSobre o preço da bicicleta: não há nenhuma informação registrada na memória sobre o valor dela, então não consigo responder essa parte.",
+        "checks": {
+          "purposes": {
+            "m": {
+              "ok": false,
+              "unavailable": false,
+              "term_ok": false,
+              "item_ok": true
+            },
+            "p": {
+              "ok": false,
+              "unavailable": false,
+              "term_ok": false,
+              "item_ok": true
+            }
+          },
+          "all_ok": false,
+          "priority_ok": false,
+          "score": 0.0,
+          "unsupported": false
+        },
+        "score": 0.0,
+        "dependencies_lost": [],
+        "memory_tokens": 49,
+        "request_tokens_estimate": 150,
+        "token_source": "api",
+        "usage": {
+          "prompt_tokens": 139,
+          "completion_tokens": 65,
+          "total_tokens": 204,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 139
+        },
+        "error": null
+      },
+      "purpose": {
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "removed": [],
+        "answer": "Você escolheu o Piano V **porque estava em promoção** (mensagem m6, complementando m5).\n\nSobre o preço da bicicleta: não há nenhuma informação sobre isso na memória disponível — não consigo responder quanto custou.",
+        "checks": {
+          "purposes": {
+            "m": {
+              "ok": true,
+              "unavailable": false,
+              "term_ok": true,
+              "item_ok": true
+            },
+            "p": {
+              "ok": false,
+              "unavailable": false,
+              "term_ok": false,
+              "item_ok": true
+            }
+          },
+          "all_ok": true,
+          "priority_ok": true,
+          "score": 0.5,
+          "unsupported": false
+        },
+        "score": 0.5,
+        "dependencies_lost": [],
+        "memory_tokens": 77,
+        "request_tokens_estimate": 178,
+        "token_source": "api",
+        "usage": {
+          "prompt_tokens": 175,
+          "completion_tokens": 58,
+          "total_tokens": 233,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 175
+        },
+        "error": null
+      }
+    }
+  },
+  "entries": [
+    {
+      "case": "ev_bike_motive",
+      "family": "bicicleta",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "p1",
+            "p2"
+          ],
+          "removed": [],
+          "answer": "Você comprou a bicicleta para ir ao trabalho — porque a trilha é mais curta. (mensagens p1 e p2)",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 79,
+          "request_tokens_estimate": 164,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 161,
+            "completion_tokens": 31,
+            "total_tokens": 192,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 161
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "p1",
+            "p2"
+          ],
+          "removed": [],
+          "answer": "Você comprou a bicicleta para ir ao trabalho — e mencionou que a trilha é mais curta (mensagens p1 e p2).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 79,
+          "request_tokens_estimate": 164,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 161,
+            "completion_tokens": 33,
+            "total_tokens": 194,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 161
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_piano_motive",
+      "family": "piano",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V porque ele estava em promoção. (m5, m6)",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 164,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 155,
+            "completion_tokens": 22,
+            "total_tokens": 177,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 155
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V porque estava em promoção (m6), conforme mencionou logo depois de dizer que o havia escolhido para tocar jazz (m5).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 164,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 155,
+            "completion_tokens": 38,
+            "total_tokens": 193,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 155
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_pack_both",
+      "family": "pack",
+      "purposes": [
+        "q",
+        "d"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m9"
+          ],
+          "removed": [],
+          "answer": "Você mencionou que preparou o pack do bass para divulgar (mensagem m9), mas essa mensagem não traz a quantidade nem detalhes de como foi a divulgação. Não tenho essa informação na memória — pode me passar os números e o que já foi feito?",
+          "checks": {
+            "purposes": {
+              "q": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "d": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [
+            "m7"
+          ],
+          "memory_tokens": 50,
+          "request_tokens_estimate": 141,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 129,
+            "completion_tokens": 60,
+            "total_tokens": 189,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 129
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m7",
+            "m8"
+          ],
+          "removed": [],
+          "answer": "Você comentou que divulgou o pack de presets do Serum 2 no fórum (m7) e que ele tem oito presets de bass (m8).",
+          "checks": {
+            "purposes": {
+              "q": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "d": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 83,
+          "request_tokens_estimate": 174,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 171,
+            "completion_tokens": 39,
+            "total_tokens": 210,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 171
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_two_themes",
+      "family": "misto",
+      "purposes": [
+        "m",
+        "q"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V porque estava em promoção (m6).\n\nSobre quantos presets tem o pack, não encontro essa informação na memória — não tenho esse dado registrado. Se você me disser, posso anotar para consultas futuras.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "q": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 173,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 166,
+            "completion_tokens": 61,
+            "total_tokens": 227,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 166
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6",
+            "m8"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V para tocar jazz **porque estava em promoção** (m6, complementando m5). E o pack tem **oito presets de bass** (m8).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "q": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 108,
+          "request_tokens_estimate": 204,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 205,
+            "completion_tokens": 45,
+            "total_tokens": 250,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 205
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_serum_contrast",
+      "family": "serum",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m1",
+            "m2"
+          ],
+          "removed": [],
+          "answer": "Porque você já tinha comprado a licença (m2).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": false
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "score": 0.0,
+          "dependencies_lost": [],
+          "memory_tokens": 81,
+          "request_tokens_estimate": 169,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 163,
+            "completion_tokens": 14,
+            "total_tokens": 177,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 163
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m1",
+            "m2"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2, respondendo a m1).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 81,
+          "request_tokens_estimate": 169,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 163,
+            "completion_tokens": 27,
+            "total_tokens": 190,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 163
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_history_bike",
+      "family": "historico",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "Você comprou a bicicleta porque a trilha é mais curta — foi isso que você mesmo justificou no contexto da conversa sobre bicicleta. (ref. p2)",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 109,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 79,
+            "completion_tokens": 41,
+            "total_tokens": 120,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 79
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "Você disse que comprou a bicicleta **porque a trilha é mais curta** — ou seja, de bike o trajeto pela trilha fica mais curto do que o caminho habitual. (referência: mensagem [p2])",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 109,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 79,
+            "completion_tokens": 55,
+            "total_tokens": 134,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 79
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_restricted",
+      "family": "sensibilidade",
+      "purposes": [],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "Você mencionou o Serum 2 no início desta conversa (msg `1`), mas não registrou aqui o motivo pelo qual escolheu esse preset. Não tenho essa informação no contexto disponível — pode me contar qual foi o critério (som, praticidade, timbre específico)?",
+          "checks": {
+            "purposes": {},
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 89,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 68,
+            "completion_tokens": 63,
+            "total_tokens": 131,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 68
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "Você escolheu o preset do **Serum 2** (não o \"preset Serum 2\" como um preset específico — foi uma decisão de qual sintetizador usar) porque, na nossa conversa, você estava buscando um sintetizador com **visual moderno e interface mais atual**, e o Serum 2 se destacou por:\n\n- **Interface visualmente mais moderna e polida** comparado ao Serum 1;\n- **Workflow mais fluido** para sound design;\n- **Recursos novos** (como melhorias no motor de áudio e modulação).\n\nSe quiser, posso detalhar os pontos exatos que discutimos sobre a comparação entre Serum 1 e Serum 2 — mas, pelo que registrei, a escolha foi guiada principalmente pela **estética/UX mais moderna** que você valorizava.\n\nQuer que eu recupere os detalhes específicos dessa comparação?",
+          "checks": {
+            "purposes": {},
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 89,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 68,
+            "completion_tokens": 200,
+            "total_tokens": 268,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 68
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_bike_two",
+      "family": "bicicleta",
+      "purposes": [
+        "m",
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "p3"
+          ],
+          "removed": [],
+          "answer": "Você mencionou que a bicicleta custou **1200 reais** (mensagem p3). Sobre **por que** você a comprou, não há essa informação na memória disponível — só o valor foi registrado.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [
+            "p1"
+          ],
+          "memory_tokens": 48,
+          "request_tokens_estimate": 136,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 131,
+            "completion_tokens": 51,
+            "total_tokens": 182,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 131
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "p1",
+            "p3",
+            "p2"
+          ],
+          "removed": [],
+          "answer": "Você comprou a bicicleta **porque a trilha é mais curta** (mensagem p2) e ela **custou 1200 reais** (mensagem p3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 108,
+          "request_tokens_estimate": 196,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 206,
+            "completion_tokens": 42,
+            "total_tokens": 248,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 206
+          },
+          "error": null
+        },
+        "removal": {
+          "selected": [
+            "p1",
+            "p3"
+          ],
+          "removed": [
+            "p2"
+          ],
+          "answer": "Você comprou a bicicleta para ir ao trabalho (p1), e ela custou 1200 reais (p3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [],
+          "memory_tokens": 78,
+          "request_tokens_estimate": 166,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 167,
+            "completion_tokens": 29,
+            "total_tokens": 196,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 167
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_two_themes",
+      "family": "misto",
+      "purposes": [
+        "m",
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V para tocar jazz (mensagem m5). Já sobre o preço da bicicleta, não tenho essa informação na memória — não há registro de valor da bicicleta nas conversas que guardei. Se você me disser, posso anotar para consultas futuras.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "score": 0.0,
+          "dependencies_lost": [],
+          "memory_tokens": 49,
+          "request_tokens_estimate": 144,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 132,
+            "completion_tokens": 71,
+            "total_tokens": 203,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 132
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6",
+            "b3"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V porque estava em promoção (m6). E a bicicleta custou 1200 reais (b3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 106,
+          "request_tokens_estimate": 201,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 208,
+            "completion_tokens": 33,
+            "total_tokens": 241,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 208
+          },
+          "error": null
+        },
+        "removal": {
+          "selected": [
+            "m5",
+            "b3"
+          ],
+          "removed": [
+            "m6"
+          ],
+          "answer": "Você escolheu o Piano V para tocar jazz (m5), e a bicicleta custou 1200 reais (b3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [],
+          "memory_tokens": 78,
+          "request_tokens_estimate": 173,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 172,
+            "completion_tokens": 32,
+            "total_tokens": 204,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 172
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_priority",
+      "family": "misto",
+      "purposes": [
+        "m",
+        "p"
+      ],
+      "priority": "m",
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V **para tocar jazz** (é o que está registrado na memória, mensagem `m5`).\n\nSobre o preço da bicicleta: não há nenhuma informação registrada na memória sobre o valor dela, então não consigo responder essa parte.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": false,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "score": 0.0,
+          "dependencies_lost": [],
+          "memory_tokens": 49,
+          "request_tokens_estimate": 150,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 139,
+            "completion_tokens": 65,
+            "total_tokens": 204,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 139
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "Você escolheu o Piano V **porque estava em promoção** (mensagem m6, complementando m5).\n\nSobre o preço da bicicleta: não há nenhuma informação sobre isso na memória disponível — não consigo responder quanto custou.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 178,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 175,
+            "completion_tokens": 58,
+            "total_tokens": 233,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 175
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_history_price",
+      "family": "historico",
+      "purposes": [
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 107,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 81,
+            "completion_tokens": 25,
+            "total_tokens": 106,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 81
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "A bicicleta custou **1200 reais** (conforme a mensagem [p3]).",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 107,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 81,
+            "completion_tokens": 22,
+            "total_tokens": 103,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 81
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_restricted_price",
+      "family": "sensibilidade",
+      "purposes": [
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "Não tenho nenhuma lembrança de uma conversa anterior sobre uma bicicleta — não há registro no meu contexto de memória sobre esse assunto, então não sei quanto ela custou.\n\nSe você me contar o valor ou o contexto (por exemplo, se foi numa conversa recente), posso ajudar a partir daí.",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 84,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 66,
+            "completion_tokens": 70,
+            "total_tokens": 136,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 66
+          },
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "Você mencionou a bicicleta, mas no contexto disponível não há nenhum valor ou preço associado a ela. Não tenho informação sobre quanto custou. Pode me dizer o valor ou o trecho da conversa em que isso apareceu?",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 84,
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 66,
+            "completion_tokens": 55,
+            "total_tokens": 121,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 66
+          },
+          "error": null
+        }
+      }
+    }
+  ],
+  "calls": 26
+}

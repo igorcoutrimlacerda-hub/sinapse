@@ -1,0 +1,82 @@
+[
+  {
+    "review_id": "F01",
+    "case": "attr_named_entity",
+    "answers": {
+      "A": "aurora: licenca",
+      "B": "aurora: licenca",
+      "C": "aurora: licenca"
+    },
+    "rubric": "Fato, entidade, decisão, ambiguidade; atribuição categórica sem suporte é erro.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "F02",
+    "case": "attr_ambiguous_entity",
+    "answers": {
+      "A": "aurora: licenca",
+      "B": "aurora: licenca",
+      "C": "aurora: licenca"
+    },
+    "rubric": "Fato, entidade, decisão, ambiguidade; atribuição categórica sem suporte é erro.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "F03",
+    "case": "attr_named_decision",
+    "answers": {
+      "A": "bicicleta: trilha",
+      "B": "bicicleta: trilha",
+      "C": "bicicleta: trilha"
+    },
+    "rubric": "Fato, entidade, decisão, ambiguidade; atribuição categórica sem suporte é erro.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "F04",
+    "case": "attr_ambiguous_decision",
+    "answers": {
+      "A": "bicicleta: trilha",
+      "B": "bicicleta: trilha",
+      "C": "bicicleta: trilha"
+    },
+    "rubric": "Fato, entidade, decisão, ambiguidade; atribuição categórica sem suporte é erro.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "F05",
+    "case": "attr_named_trade",
+    "answers": {
+      "A": "bicicleta: trilha",
+      "B": "bicicleta: trilha",
+      "C": "bicicleta: trilha"
+    },
+    "rubric": "Fato, entidade, decisão, ambiguidade; atribuição categórica sem suporte é erro.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  }
+]

@@ -1,0 +1,63 @@
+[
+  {
+    "id": "parafrase_correta",
+    "kind": "paráfrase correta da decisão",
+    "components": ["decision", "reason"],
+    "decision_facts": ["Pigments"],
+    "old_current_terms": ["uso o Aurora", "usa o Aurora", "o preset é o Aurora"],
+    "reason_facts": ["CPU"],
+    "answer": "O preset que está valendo para o bass é o Pigments, porque a CPU do Aurora chegava a 40%.",
+    "gold": {"decision": 1, "reason": 1}
+  },
+  {
+    "id": "antiga_como_atual",
+    "kind": "decisão antiga apresentada como vigente",
+    "components": ["decision"],
+    "decision_facts": ["Pigments"],
+    "old_current_terms": ["uso o Aurora", "usa o Aurora", "o preset é o Aurora"],
+    "answer": "Você usa o Aurora no bass; o Pigments ficou de lado.",
+    "gold": {"decision": 0, "old_or_ambiguous": 1}
+  },
+  {
+    "id": "proximo_reformulado",
+    "kind": "próximo passo com sentido alterado",
+    "components": ["reason", "pending"],
+    "reason_facts": ["CPU"],
+    "pending_object": ["introducao"],
+    "pending_params": ["96 khz"],
+    "answer": "Vou introduzir a faixa em 96 kHz para confirmar que a CPU não estoura.",
+    "gold": {"reason": 1, "pending": 0}
+  },
+  {
+    "id": "proximo_correto",
+    "kind": "próximo passo fiel à fonte",
+    "components": ["reason", "pending"],
+    "reason_facts": ["CPU"],
+    "pending_object": ["introducao"],
+    "pending_params": ["96 khz"],
+    "answer": "O próximo teste é testar a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+    "gold": {"reason": 1, "pending": 1}
+  },
+  {
+    "id": "condicao_incompleta",
+    "kind": "condição com um caminho omitido",
+    "components": ["pending", "condition"],
+    "pending_object": ["ponte"],
+    "pending_params": ["96 khz"],
+    "condition_facts": ["30", "exportar", "oversampling"],
+    "condition_paths": [["exportar"], ["oversampling", "reduz"]],
+    "answer": "Se a CPU ficar abaixo de 30%, o próximo passo é exportar.",
+    "gold": {"pending": 0, "condition": 0}
+  },
+  {
+    "id": "condicao_dois_caminhos",
+    "kind": "condição com os dois caminhos",
+    "components": ["pending", "condition"],
+    "pending_object": ["ponte"],
+    "pending_params": ["96 khz"],
+    "condition_facts": ["30", "exportar", "oversampling"],
+    "condition_paths": [["exportar"], ["oversampling", "reduz"]],
+    "answer": "Ainda falta testar a ponte em 96 kHz; se a CPU ficar abaixo de 30%, exportar; senão, reduzir o oversampling.",
+    "gold": {"pending": 1, "condition": 1}
+  }
+]

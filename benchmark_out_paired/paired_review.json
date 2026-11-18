@@ -1,0 +1,86 @@
+[
+  {
+    "review_id": "P01",
+    "case": "ev_follow",
+    "answer_A": "Você comprou a bicicleta porque a trilha é mais curta (p2).",
+    "answer_B": "Você comprou a bicicleta porque a trilha é mais curta (p2).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P02",
+    "case": "ev_follow_piano",
+    "answer_A": "Você escolheu o Piano V porque estava em promoção (m6).",
+    "answer_B": "Você escolheu o Piano V porque estava em promoção (m6).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P03",
+    "case": "ev_correction",
+    "answer_A": "Agora você usa o Pigments (m10).",
+    "answer_B": "Agora você usa o Pigments (m10).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P04",
+    "case": "ev_price_link",
+    "answer_A": "O Serum 2 saiu por 280 reais (m20).",
+    "answer_B": "O Serum 2 saiu por 280 reais (m20).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P05",
+    "case": "ev_many_links",
+    "answer_A": "Agora você usa o Pigments (m10).",
+    "answer_B": "Agora você usa o Pigments (m10).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P06",
+    "case": "ev_other_theme",
+    "answer_A": "Você preparou o pack do bass (m9).",
+    "answer_B": "Você preparou o pack do bass (m9).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P07",
+    "case": "ev_history",
+    "answer_A": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "answer_B": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P08",
+    "case": "ev_restricted",
+    "answer_A": "Não tenho essa informação disponível.",
+    "answer_B": "Não tenho essa informação disponível.",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P09",
+    "case": "ev_self_sufficient",
+    "answer_A": "O Serum 2 custou 350 reais (m20).",
+    "answer_B": "O Serum 2 custou 350 reais (m20).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P10",
+    "case": "ev_two_complementary",
+    "answer_A": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m10).",
+    "answer_B": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m10).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P11",
+    "case": "pack_quantity",
+    "answer_A": "O pack tem oito presets (m8).",
+    "answer_B": "O pack tem oito presets (m8).",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  },
+  {
+    "review_id": "P12",
+    "case": "pack_ambiguous",
+    "answer_A": "Você quer dizer a quantidade de presets (oito) ou como preparei o pack do bass?",
+    "answer_B": "Você quer dizer a quantidade de presets (oito) ou como preparei o pack do bass?",
+    "rubric": "Compare fatos, atribuição ao item, suporte, sensibilidade e ambiguidade; não sabe qual condição é A ou B."
+  }
+]

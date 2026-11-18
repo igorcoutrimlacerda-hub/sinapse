@@ -1,0 +1,13 @@
+BENCHMARK SINAPSE
+casos=4
+
+condição         hit    full   tokens  violações  repet.  irrelev.  resposta
+history          0.00   0.00     0.0         0       0         0     0.00
+lexical          0.50   0.50   104.5         0       0         0     0.50
+sinapse          1.00   1.00    73.0         0       0         0     1.00
+manual           1.00   1.00   113.0         0       0         0     1.00
+
+delta Sinapse (pontos percentuais):
+  vs history: +100.00 pp
+  vs lexical: +50.00 pp
+  vs manual: +0.00 pp

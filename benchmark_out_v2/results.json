@@ -1,0 +1,1818 @@
+{
+  "summary": {
+    "conditions": {
+      "history": {
+        "cases": 11,
+        "hit_denominator": 6,
+        "hit_count": 1,
+        "full_count": 1,
+        "hit_rate": 0.1667,
+        "full_rate": 0.1667,
+        "avg_additional_tokens": 0.0,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 0.5455
+      },
+      "lexical": {
+        "cases": 11,
+        "hit_denominator": 6,
+        "hit_count": 5,
+        "full_count": 4,
+        "hit_rate": 0.8333,
+        "full_rate": 0.6667,
+        "avg_additional_tokens": 39.91,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 0.8182
+      },
+      "sinapse": {
+        "cases": 11,
+        "hit_denominator": 6,
+        "hit_count": 6,
+        "full_count": 6,
+        "hit_rate": 1.0,
+        "full_rate": 1.0,
+        "avg_additional_tokens": 35.09,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 1.0
+      },
+      "manual": {
+        "cases": 11,
+        "hit_denominator": 6,
+        "hit_count": 6,
+        "full_count": 6,
+        "hit_rate": 1.0,
+        "full_rate": 1.0,
+        "avg_additional_tokens": 35.09,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 1.0
+      }
+    },
+    "sinapse_delta_pp": {
+      "history": 45.45,
+      "lexical": 18.18,
+      "manual": 0.0
+    },
+    "per_case": [
+      {
+        "case": "v2_preco_ausente_serum",
+        "kind": "falta_de_evidencia",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 0,
+          "sinapse": 0,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_preco_variacao",
+        "kind": "falta_de_evidencia",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 0,
+          "sinapse": 0,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_preco_ausente_piano",
+        "kind": "falta_de_evidencia_tema_diferente",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 0,
+          "sinapse": 0,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_preco_mensagem",
+        "kind": "preco_presente",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m20"
+          ],
+          "sinapse": [
+            "m20"
+          ],
+          "manual": [
+            "m20"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 81,
+          "sinapse": 49,
+          "manual": 49
+        },
+        "expected_ids": [
+          "m20"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_preco_resposta",
+        "kind": "preco_resposta_curta",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [
+            "m1",
+            "m20"
+          ],
+          "manual": [
+            "m1",
+            "m20"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 0,
+          "sinapse": 78,
+          "manual": 78
+        },
+        "expected_ids": [
+          "m20"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_numero_quantidade",
+        "kind": "numero_outra_coisa",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 0,
+          "sinapse": 0,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_numero_duracao",
+        "kind": "numero_outra_coisa",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 0,
+          "sinapse": 0,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_preco_bicicleta",
+        "kind": "preco_tema_diferente",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "p3"
+          ],
+          "sinapse": [
+            "p3"
+          ],
+          "manual": [
+            "p3"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 47,
+          "sinapse": 47,
+          "manual": 47
+        },
+        "expected_ids": [
+          "p3"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_multiplas_evidencias",
+        "kind": "multiplas_evidencias",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m20",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1",
+            "m2",
+            "m20"
+          ],
+          "manual": [
+            "m1",
+            "m2",
+            "m20"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 145,
+          "sinapse": 111,
+          "manual": 111
+        },
+        "expected_ids": [
+          "m2",
+          "m20"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_correcao",
+        "kind": "correcao",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m20"
+          ],
+          "sinapse": [
+            "m20"
+          ],
+          "manual": [
+            "m20"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 51,
+          "sinapse": 51,
+          "manual": 51
+        },
+        "expected_ids": [
+          "m20"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "v2_historico",
+        "kind": "respondivel_pelo_historico",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1"
+          ],
+          "manual": [
+            "m1"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 115,
+          "sinapse": 50,
+          "manual": 50
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      }
+    ],
+    "cases": 11
+  },
+  "cases": [
+    {
+      "case": "v2_preco_ausente_serum",
+      "kind": "falta_de_evidencia",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_preco_variacao",
+      "kind": "falta_de_evidencia",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 88,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 88,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 88,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 88,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_preco_ausente_piano",
+      "kind": "falta_de_evidencia_tema_diferente",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Piano V.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Piano V.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Piano V.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Piano V.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_preco_mensagem",
+      "kind": "preco_presente",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "350"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "O Serum 2 custou 350 reais (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "350"
+            ],
+            "facts_required": [
+              "350"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 49,
+          "used_tokens": 138,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "O Serum 2 custou 350 reais (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "350"
+            ],
+            "facts_required": [
+              "350"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 49,
+          "used_tokens": 138,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "O Serum 2 custou 350 reais (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "350"
+            ],
+            "facts_required": [
+              "350"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_preco_resposta",
+      "kind": "preco_resposta_curta",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "280"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "280"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 78,
+          "used_tokens": 167,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "O Serum 2 saiu por 280 reais (m20, resposta a m1).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "280"
+            ],
+            "facts_required": [
+              "280"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 78,
+          "used_tokens": 167,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "O Serum 2 saiu por 280 reais (m20, resposta a m1).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "280"
+            ],
+            "facts_required": [
+              "280"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_numero_quantidade",
+      "kind": "numero_outra_coisa",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 84,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do pack.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 84,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do pack.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 84,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do pack.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 84,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do pack.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_numero_duracao",
+      "kind": "numero_outra_coisa",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 86,
+          "base_tokens": 86,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 86,
+          "base_tokens": 86,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 86,
+          "base_tokens": 86,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 86,
+          "base_tokens": 86,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_preco_bicicleta",
+      "kind": "preco_tema_diferente",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 84,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "1500"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "p3"
+          ],
+          "evidence_present": [
+            "p3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 47,
+          "used_tokens": 131,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você pagou 1500 reais pela bicicleta (p3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "1500"
+            ],
+            "facts_required": [
+              "1500"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "p3"
+          ],
+          "evidence_present": [
+            "p3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 47,
+          "used_tokens": 131,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você pagou 1500 reais pela bicicleta (p3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "1500"
+            ],
+            "facts_required": [
+              "1500"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "p3"
+          ],
+          "evidence_present": [
+            "p3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 47,
+          "used_tokens": 131,
+          "base_tokens": 84,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você pagou 1500 reais pela bicicleta (p3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "1500"
+            ],
+            "facts_required": [
+              "1500"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_multiplas_evidencias",
+      "kind": "multiplas_evidencias",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m20",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": false,
+          "additional_tokens": 145,
+          "used_tokens": 237,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Tenho apenas parte da informação.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2",
+            "m20"
+          ],
+          "evidence_present": [
+            "m2",
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 111,
+          "used_tokens": 203,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença",
+              "amigo"
+            ],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2",
+            "m20"
+          ],
+          "evidence_present": [
+            "m2",
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 111,
+          "used_tokens": 203,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença",
+              "amigo"
+            ],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_correcao",
+      "kind": "correcao",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 51,
+          "used_tokens": 140,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Agora você usa o Pigments (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "Pigments"
+            ],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 51,
+          "used_tokens": 140,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Agora você usa o Pigments (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "Pigments"
+            ],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m20"
+          ],
+          "evidence_present": [
+            "m20"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 51,
+          "used_tokens": 140,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Agora você usa o Pigments (m20).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "Pigments"
+            ],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "v2_historico",
+      "kind": "respondivel_pelo_historico",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 117,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 115,
+          "used_tokens": 232,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 50,
+          "used_tokens": 167,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 50,
+          "used_tokens": 167,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    }
+  ]
+}

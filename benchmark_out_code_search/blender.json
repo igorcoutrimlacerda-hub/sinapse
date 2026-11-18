@@ -1,0 +1,195 @@
+{
+  "project": "blender-scale-3",
+  "repo": "C:\\Users\\igorc\\AppData\\Local\\Temp\\blender-repo",
+  "commit": "d7f13b07716b",
+  "files": 7289,
+  "chunks": 228645,
+  "index_bytes": 167509951,
+  "import_seconds": 25.7,
+  "cases": {
+    "exact_wm_main": {
+      "query": "WM_main",
+      "ms": 198772.0,
+      "hits": [
+        {
+          "path": "source/blender/makesrna/intern/rna_workspace.cc",
+          "start": 81,
+          "end": 160,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/object/object_bake_simulation.cc",
+          "start": 71,
+          "end": 79,
+          "symbol": "SimulateToFrameJob",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/object/object_bake_simulation.cc",
+          "start": 235,
+          "end": 245,
+          "symbol": "BakeGeometryNodesJob",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/uvedit/uvedit_unwrap_ops.cc",
+          "start": 1681,
+          "end": 1760,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/physics/physics_pointcache.cc",
+          "start": 81,
+          "end": 160,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        }
+      ]
+    },
+    "behavior_window_loop": {
+      "query": "onde o Blender inicia o loop de eventos da janela",
+      "ms": 36552.1,
+      "hits": [
+        {
+          "path": "source/blender/io/common/IO_abstract_hierarchy_iterator.h",
+          "start": 198,
+          "end": 198,
+          "symbol": "serve",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/makesrna/rna_cleanup/rna_cleaner_merge.py",
+          "start": 14,
+          "end": 61,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/gpu/vulkan/vk_to_string.py",
+          "start": 401,
+          "end": 411,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/sculpt_paint/mesh/paint_image_proj.cc",
+          "start": 3001,
+          "end": 3001,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/nodes/intern/discover_nodes.py",
+          "start": 37,
+          "end": 128,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        }
+      ]
+    },
+    "behavior_python": {
+      "query": "onde o interpretador Python do Blender é inicializado",
+      "ms": 32822.2,
+      "hits": [
+        {
+          "path": "source/blender/io/common/IO_abstract_hierarchy_iterator.h",
+          "start": 198,
+          "end": 198,
+          "symbol": "serve",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/gpu/vulkan/vk_to_string.py",
+          "start": 401,
+          "end": 411,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/makesrna/rna_cleanup/rna_cleaner.py",
+          "start": 310,
+          "end": 326,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/sculpt_paint/mesh/paint_image_proj.cc",
+          "start": 3001,
+          "end": 3001,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/makesrna/rna_cleanup/rna_cleaner_merge.py",
+          "start": 14,
+          "end": 61,
+          "symbol": "main",
+          "kind": "code",
+          "relation": "match"
+        }
+      ]
+    },
+    "function_use": {
+      "query": "quem chama WM_main",
+      "ms": 14855.2,
+      "hits": [
+        {
+          "path": "source/blender/makesrna/intern/rna_workspace.cc",
+          "start": 81,
+          "end": 160,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/space_file/filesel.cc",
+          "start": 1281,
+          "end": 1360,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/space_outliner/outliner_sync.cc",
+          "start": 241,
+          "end": 320,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/space_view3d/view3d_select.cc",
+          "start": 641,
+          "end": 720,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        },
+        {
+          "path": "source/blender/editors/physics/physics_pointcache.cc",
+          "start": 81,
+          "end": 160,
+          "symbol": null,
+          "kind": "code",
+          "relation": "match"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,718 @@
+[
+  {
+    "review_id": "R001",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R002",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R003",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R004",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R005",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R006",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R007",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R008",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R009",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R010",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R011",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R012",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R013",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R014",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R015",
+    "answer": "Você escolheu o preset porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R016",
+    "answer": "Você escolheu o preset porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R017",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve refletir a decisão mais recente, não repetir o Serum 2 como escolha atual.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R018",
+    "answer": "Você trocou para o Pigments (m10).",
+    "rubric": "A resposta deve refletir a decisão mais recente, não repetir o Serum 2 como escolha atual.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R019",
+    "answer": "Você trocou para o Pigments (m10).",
+    "rubric": "A resposta deve refletir a decisão mais recente, não repetir o Serum 2 como escolha atual.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R020",
+    "answer": "Você trocou para o Pigments (m10).",
+    "rubric": "A resposta deve refletir a decisão mais recente, não repetir o Serum 2 como escolha atual.",
+    "required_facts": [
+      "Pigments"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R021",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve combinar os dois motivos: licença comprada e recomendação de um amigo.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R022",
+    "answer": "Tenho apenas parte da informação.",
+    "rubric": "A resposta deve combinar os dois motivos: licença comprada e recomendação de um amigo.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R023",
+    "answer": "Você já tinha comprado a licença (m2) e um amigo recomendou o Serum 2 (m10).",
+    "rubric": "A resposta deve combinar os dois motivos: licença comprada e recomendação de um amigo.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R024",
+    "answer": "Você já tinha comprado a licença (m2) e um amigo recomendou o Serum 2 (m10).",
+    "rubric": "A resposta deve combinar os dois motivos: licença comprada e recomendação de um amigo.",
+    "required_facts": [
+      "licença",
+      "amigo"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R025",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "A resposta deve reconhecer que o preço não está na memória, sem inventar valor.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R026",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "A resposta deve reconhecer que o preço não está na memória, sem inventar valor.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R027",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "A resposta deve reconhecer que o preço não está na memória, sem inventar valor.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R028",
+    "answer": "Não tenho informação sobre o preço do Serum 2.",
+    "rubric": "A resposta deve reconhecer que o preço não está na memória, sem inventar valor.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "custa",
+      "paguei",
+      "preço foi"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R029",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A restrição de licença deve ser respeitada; a resposta não pode revelar o motivo restrito.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R030",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A restrição de licença deve ser respeitada; a resposta não pode revelar o motivo restrito.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R031",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A restrição de licença deve ser respeitada; a resposta não pode revelar o motivo restrito.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R032",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A restrição de licença deve ser respeitada; a resposta não pode revelar o motivo restrito.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R033",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "O pedido claro e específico libera apenas o detalhe da licença naquele turno.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R034",
+    "answer": "Você já tinha comprado a licença (m2).",
+    "rubric": "O pedido claro e específico libera apenas o detalhe da licença naquele turno.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R035",
+    "answer": "Você já tinha comprado a licença (m2).",
+    "rubric": "O pedido claro e específico libera apenas o detalhe da licença naquele turno.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R036",
+    "answer": "Você já tinha comprado a licença (m2).",
+    "rubric": "O pedido claro e específico libera apenas o detalhe da licença naquele turno.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R037",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "As mensagens parecidas falam do assunto, mas não respondem ao motivo; a licença deve aparecer.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R038",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "As mensagens parecidas falam do assunto, mas não respondem ao motivo; a licença deve aparecer.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R039",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "As mensagens parecidas falam do assunto, mas não respondem ao motivo; a licença deve aparecer.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R040",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "As mensagens parecidas falam do assunto, mas não respondem ao motivo; a licença deve aparecer.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R041",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "As mensagens parecidas não descrevem procedimento; os dois envelopes devem aparecer.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R042",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "As mensagens parecidas não descrevem procedimento; os dois envelopes devem aparecer.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R043",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "As mensagens parecidas não descrevem procedimento; os dois envelopes devem aparecer.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R044",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "As mensagens parecidas não descrevem procedimento; os dois envelopes devem aparecer.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R045",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico; não deve ser anexada de novo como memória adicional.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R046",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico; não deve ser anexada de novo como memória adicional.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R047",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico; não deve ser anexada de novo como memória adicional.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R048",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A evidência já está no histórico; não deve ser anexada de novo como memória adicional.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R049",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "O resumo derivado contém o detalhe restrito; ele deve ser omitido da requisição.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R050",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "O resumo derivado contém o detalhe restrito; ele deve ser omitido da requisição.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R051",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "O resumo derivado contém o detalhe restrito; ele deve ser omitido da requisição.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R052",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "O resumo derivado contém o detalhe restrito; ele deve ser omitido da requisição.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R053",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A mensagem restrita está no histórico antigo; ela deve ser omitida, preservando o turno atual.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R054",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A mensagem restrita está no histórico antigo; ela deve ser omitida, preservando o turno atual.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R055",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A mensagem restrita está no histórico antigo; ela deve ser omitida, preservando o turno atual.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R056",
+    "answer": "Não tenho essa informação disponível.",
+    "rubric": "A mensagem restrita está no histórico antigo; ela deve ser omitida, preservando o turno atual.",
+    "required_facts": [],
+    "forbidden_claims": [
+      "licença",
+      "comprado"
+    ],
+    "sensitive_terms": [
+      "licença"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R057",
+    "answer": "Não tenho essa informação.",
+    "rubric": "Exclusão é distinta de restrição: a mensagem excluída não volta nem com pedido explícito.",
+    "required_facts": [],
+    "forbidden_claims": [],
+    "sensitive_terms": [
+      "fórum"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R058",
+    "answer": "Não tenho essa informação.",
+    "rubric": "Exclusão é distinta de restrição: a mensagem excluída não volta nem com pedido explícito.",
+    "required_facts": [],
+    "forbidden_claims": [],
+    "sensitive_terms": [
+      "fórum"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R059",
+    "answer": "Não tenho essa informação.",
+    "rubric": "Exclusão é distinta de restrição: a mensagem excluída não volta nem com pedido explícito.",
+    "required_facts": [],
+    "forbidden_claims": [],
+    "sensitive_terms": [
+      "fórum"
+    ],
+    "must_acknowledge_missing": true
+  },
+  {
+    "review_id": "R060",
+    "answer": "Não tenho essa informação.",
+    "rubric": "Exclusão é distinta de restrição: a mensagem excluída não volta nem com pedido explícito.",
+    "required_facts": [],
+    "forbidden_claims": [],
+    "sensitive_terms": [
+      "fórum"
+    ],
+    "must_acknowledge_missing": true
+  }
+]

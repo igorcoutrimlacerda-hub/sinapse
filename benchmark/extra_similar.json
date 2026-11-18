@@ -1,0 +1,56 @@
+{
+  "messages": [
+    {
+      "id": "m10",
+      "text": "O Serum 2 e o bass são populares.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 10,
+      "sent_at": "2026-11-14T09:00:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["populares"]
+      }
+    },
+    {
+      "id": "m11",
+      "text": "O bass do Serum 2 é famoso.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 11,
+      "sent_at": "2026-11-14T09:01:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["famoso"]
+      }
+    },
+    {
+      "id": "m12",
+      "text": "O Serum 2 e o bass são usados.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 12,
+      "sent_at": "2026-11-14T09:02:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["usados"]
+      }
+    },
+    {
+      "id": "m13",
+      "text": "O Serum 2 e o bass são conhecidos.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 13,
+      "sent_at": "2026-11-14T09:03:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["conhecidos"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farol — copiloto de software</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">F</div>
+        <div>
+          <h1>Farol</h1>
+          <p>copiloto de software</p>
+        </div>
+      </div>
+
+      <div class="project-switcher">
+        <label for="project-select" class="section-label">Projeto ativo</label>
+        <div class="switcher-row">
+          <select id="project-select" aria-label="Projeto ativo" disabled></select>
+          <button id="new-project-button" type="button" class="ghost">Novo projeto</button>
+          <details class="actions-menu">
+            <summary aria-label="Ações do projeto" title="Ações do projeto">⋯</summary>
+            <div class="actions-popover">
+              <button id="delete-project" type="button" class="danger-link" disabled>Excluir projeto</button>
+            </div>
+          </details>
+        </div>
+        <p id="empty-projects" class="hint" hidden>Nenhum projeto ainda. Crie o primeiro ao lado.</p>
+      </div>
+
+      <form id="create-form" class="create-form" hidden>
+        <label for="project-name">Novo projeto</label>
+        <div class="create-row">
+          <input id="project-name" name="name" placeholder="Nome do projeto" autocomplete="off" required>
+          <button type="submit" class="primary">Criar</button>
+          <button type="button" id="cancel-create" class="ghost">Cancelar</button>
+        </div>
+      </form>
+
+      <p class="hint">Projetos ficam no diretório configurado no servidor.</p>
+      <button id="settings-button" type="button" class="ghost settings-button">Configurações → DeepSeek</button>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">Projeto ativo</div>
+          <h2 id="project-title">Selecione um projeto</h2>
+          <p id="project-subtitle" class="muted">Histórico, decisões técnicas e fontes isolados por projeto.</p>
+        </div>
+        <div class="top-actions"><button id="brief-button" class="ghost" disabled>Briefing OpenCode</button><button id="resume-button" class="resume-button" disabled>Onde paramos?</button></div>
+      </header>
+
+      <div id="error-banner" class="alert error" hidden></div>
+      <div id="notice-banner" class="alert notice" hidden></div>
+
+      <section id="resume-card" class="resume-card" hidden>
+        <div class="resume-head">
+          <h3>Retomada</h3>
+          <span class="muted">decisão técnica, teste e fontes</span>
+        </div>
+        <div id="resume-content" class="resume-grid"></div>
+      </section>
+
+      <section id="conversation" class="conversation" aria-live="polite">
+        <div class="empty-state">
+          <h3>Escolha um projeto</h3>
+          <p>O Farol mostra a conversa, a retomada técnica e as fontes do projeto ativo.</p>
+        </div>
+      </section>
+
+      <form id="composer" class="composer">
+        <label class="sr-only" for="message-input">Mensagem</label>
+        <textarea id="message-input" rows="2" placeholder="Registre um bug, decisão técnica, teste ou pendência…" disabled></textarea>
+        <div class="composer-actions">
+          <label class="toggle">
+            <input id="deepseek-toggle" type="checkbox" disabled>
+            <span>Usar DeepSeek</span>
+          </label>
+          <span id="response-mode" class="mode-label"></span>
+          <button id="send-button" type="submit" class="primary" disabled>Enviar</button>
+        </div>
+        <p class="hint">A resposta local é determinística. Com DeepSeek, a chave permanece no servidor.</p>
+      </form>
+    </main>
+
+    <aside class="insights">
+      <div class="insights-head">
+        <h2>Painel do projeto</h2>
+        <p class="muted">Campos disponíveis no backend.</p>
+      </div>
+
+      <section class="card">
+        <div class="card-label">Objetivo</div>
+        <div id="goal-value" class="card-value">Ainda não definido</div>
+      </section>
+
+      <section class="card">
+        <div class="card-label">Tarefa atual</div>
+        <div id="task-value" class="card-value">Ainda não definido</div>
+      </section>
+
+      <section class="card">
+        <div class="card-label">Decisão técnica</div>
+        <div id="decision-value" class="card-value">Nenhuma decisão vigente</div>
+        <p id="decision-note" class="card-note"></p>
+        <div id="decision-sources" class="chips"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-label">Último teste observado</div>
+        <div id="test-value" class="card-value">Ainda não registrado</div>
+        <p id="test-note" class="card-note"></p>
+        <div id="test-sources" class="chips"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-label">Repositório</div>
+        <div id="repo-path" class="card-value">Ainda não associado</div>
+        <div class="create-row">
+          <input id="repo-input" placeholder="C:\caminho\do\repositório" autocomplete="off">
+          <button id="repo-save" type="button" class="ghost">Associar</button>
+        </div>
+        <p id="repo-hint" class="hint"></p>
+        <label class="toggle">
+          <input id="semantic-toggle" type="checkbox">
+          <span>Busca semântica neste projeto</span>
+        </label>
+        <p class="hint">Opcional; usa conceitos locais apenas quando faltar evidência.</p>
+      </section>
+
+      <section class="card">
+        <div class="card-label">Código indexado</div>
+        <div id="code-status" class="card-value">Nenhum código indexado</div>
+        <p id="code-meta" class="card-note"></p>
+        <button id="code-import" type="button" class="ghost">Indexar / atualizar código</button>
+      </section>
+
+      <section class="card focus-card">
+        <div class="card-label-row">
+          <div class="card-label">Foco recomendado</div>
+          <span id="focus-status" class="badge neutral">—</span>
+        </div>
+        <div id="focus-action" class="card-value">Ainda não definido</div>
+        <p id="focus-why" class="card-note"></p>
+        <p id="focus-block" class="card-note"></p>
+        <div id="focus-sources" class="chips"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-label">Checklist</div>
+        <ul id="checklist" class="checklist"></ul>
+      </section>
+
+      <section class="card">
+        <div class="card-label">Próximo passo</div>
+        <div id="next-step" class="card-value">Ainda não definido</div>
+        <div id="next-sources" class="chips"></div>
+      </section>
+
+      <section class="card muted-card">
+        <div class="card-label">Modo de resposta</div>
+        <p id="mode-detail" class="card-note">Local por padrão; DeepSeek quando configurado e selecionado.</p>
+      </section>
+    </aside>
+  </div>
+
+  <div id="code-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-code></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="code-title">
+      <div class="modal-head">
+        <div>
+          <div class="eyebrow">Código indexado</div>
+          <h2 id="code-title">Trecho</h2>
+        </div>
+        <button id="code-close" class="icon-button" aria-label="Fechar" data-close-code>×</button>
+      </div>
+      <div id="code-meta-line" class="muted"></div>
+      <pre id="code-text" class="source-text"></pre>
+    </div>
+  </div>
+
+  <div id="source-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="source-title">
+      <div class="modal-head">
+        <div>
+          <div class="eyebrow">Fonte original</div>
+          <h2 id="source-title">Mensagem</h2>
+        </div>
+        <button id="source-close" class="icon-button" aria-label="Fechar" data-close-modal>×</button>
+      </div>
+      <div id="source-meta" class="muted"></div>
+      <div id="source-text" class="source-text"></div>
+      <div id="source-error" class="alert error" hidden></div>
+    </div>
+  </div>
+
+  <div id="delete-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-delete></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="delete-title">
+      <div class="modal-head">
+        <div>
+          <div class="eyebrow">Excluir projeto</div>
+          <h2 id="delete-title">Confirmar exclusão</h2>
+        </div>
+        <button id="delete-close" class="icon-button" aria-label="Fechar" data-close-delete>×</button>
+      </div>
+      <p id="delete-warning" class="delete-warning"></p>
+      <p class="hint">O histórico, a memória Sinapse e os logs de diagnóstico deste projeto serão apagados.</p>
+      <div class="modal-actions">
+        <button id="delete-cancel" type="button" class="ghost" data-close-delete>Cancelar</button>
+        <button id="delete-confirm" type="button" class="danger">Excluir</button>
+      </div>
+      <div id="delete-error" class="alert error" hidden></div>
+    </div>
+  </div>
+
+  <div id="settings-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-settings></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <div class="modal-head">
+        <div>
+          <div class="eyebrow">Configurações</div>
+          <h2 id="settings-title">DeepSeek</h2>
+        </div>
+        <button id="settings-close" class="icon-button" aria-label="Fechar" data-close-settings>×</button>
+      </div>
+
+      <div class="settings-status">
+        <span id="settings-mode" class="badge neutral">—</span>
+        <span id="settings-source" class="muted"></span>
+      </div>
+      <p id="settings-model-version" class="hint"></p>
+
+      <form id="settings-form" class="settings-form">
+        <label for="settings-key">Chave da API</label>
+        <input id="settings-key" type="password" autocomplete="new-password" placeholder="Cole a chave para salvar ou substituir">
+        <label for="settings-model">Modelo</label>
+        <input id="settings-model" type="text" autocomplete="off" placeholder="deepseek-flash">
+        <p class="hint">A chave fica apenas no servidor; o navegador recebe somente o status.</p>
+        <div class="modal-actions">
+          <button id="settings-save" type="submit" class="primary">Salvar</button>
+          <button id="settings-test" type="button" class="ghost">Testar conexão</button>
+          <button id="settings-remove" type="button" class="danger-link">Remover chave salva</button>
+        </div>
+      </form>
+
+      <div id="settings-message" class="alert" hidden></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

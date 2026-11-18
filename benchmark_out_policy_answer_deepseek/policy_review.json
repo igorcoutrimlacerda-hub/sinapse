@@ -1,0 +1,122 @@
+[
+  {
+    "review_id": "C01",
+    "case": "ev_follow",
+    "answers": {
+      "A": "Você comprou a bicicleta para ir ao trabalho — e a razão de escolher a bicicleta é que **a trilha é mais curta** (mensagem p2, referente à p1: \"Comprei uma bicicleta para ir ao trabalho\").",
+      "B": "Você comprou a bicicleta para ir ao trabalho — e explicou que foi porque a trilha é mais curta (mensagens p1 e p2).",
+      "C": "Você comprou a bicicleta para ir ao trabalho — e o motivo foi que a trilha é mais curta (mensagens p1 e p2)."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C02",
+    "case": "ev_follow_piano",
+    "answers": {
+      "A": "Você comentou que escolheu o **Piano V** para tocar jazz (m5), e o motivo foi simples: **estava em promoção** (m6).",
+      "B": "Você comentou que escolheu o **Piano V** para tocar jazz (m5), e que a razão foi ele estar **em promoção** (m6).",
+      "C": "Você comentou que escolheu o Piano V para tocar jazz (m5), e que a razão foi ele estar em promoção (m6)."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C03",
+    "case": "ev_correction",
+    "answers": {
+      "A": "Você mencionou antes que trocou o Serum 2 pelo Pigments porque o Serum dava estalos (m10). Então, se você está mesmo usando o Serum 2 agora, vale confirmar se esse problema de estalos foi resolvido — mas sobre o preset específico de bass, não tenho essa informação na memória.\n\nPara eu te ajudar a escolher, me conta: que tipo de bass você quer (sub, growl, pluck, Reese, etc.) e em que contexto (gênero, mix)?",
+      "B": "Você mencionou antes que **trocou o Serum 2 pelo Pigments porque o Serum dava estalos** (id=m10). Então, se você está usando o Pigments agora, o preset de bass que você escolheu para o Serum 2 não vai servir — precisaria ser um preset de bass dentro do Pigments.\n\nQuer que eu te ajude a escolher um preset de bass no Pigments, ou você está voltando a usar o Serum 2 (e aí vale revisar se os estalos ainda acontecem)?",
+      "C": "Você mencionou antes que trocou o Serum 2 pelo Pigments porque o Serum dava estalos (m10). Então, se você está usando o Pigments agora, não faria sentido eu indicar um preset do Serum 2.\n\nSe quiser, me diga qual synth você está usando de fato (Pigments ou outro) e que tipo de bass procura (sub, reese, 808, etc.) que eu sugiro presets."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C04",
+    "case": "ev_price_link",
+    "answers": {
+      "A": "Você comentou que o Serum 2 saiu por **280 reais** (mensagem m20), depois de ter escolhido ele para fazer o bass (m1).",
+      "B": "Você comentou que o Serum 2 saiu por **280 reais** (mensagem m20).",
+      "C": "Você comentou que o Serum 2 saiu por **280 reais** (mensagem m20)."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C05",
+    "case": "ev_many_links",
+    "answers": {
+      "A": "Você mencionou antes que trocou o Serum 2 pelo Pigments porque o Serum dava estalos (id=m10). Então, se você está usando o Pigments agora, não dá para indicar um preset do Serum 2 — e eu não tenho informação sobre quais presets você tem disponíveis ou qual timbre de bass procura.\n\nSe quiser, me diga:\n- qual plugin você está usando de fato (Pigments ou Serum 2),\n- o estilo do bass (sub, reese, 808, pluck etc.),\n- e o contexto (gênero/faixa).\n\nCom isso eu te oriento melhor.",
+      "B": "Você mencionou que **trocou o Serum 2 pelo Pigments porque o Serum dava estalos** (mensagem m10). Então, se você está usando o Pigments agora, o preset de bass tem que ser do Pigments — não do Serum 2.\n\nMas você não me disse qual preset está carregado no Pigments no momento, então não consigo confirmar qual você está usando. Quer me dizer o nome do preset atual, ou você está voltando atrás e quer usar o Serum 2 mesmo com o problema dos estalos?",
+      "C": "Você mencionou antes que **trocou o Serum 2 pelo Pigments porque o Serum dava estalos** (id=m10). Então, se você está usando o Pigments agora, o preset de Serum 2 não se aplica — e eu não tenho informação sobre qual preset você está usando no Pigments.\n\nVocê poderia me dizer:\n- O **nome do preset** que está carregado no Pigments (ou no sintetizador que estiver usando para o bass), ou\n- Se você **voltou para o Serum 2** e quer sugestões de presets para bass?\n\nAssim consigo te ajudar de forma mais precisa."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C06",
+    "case": "ev_other_theme",
+    "answers": {
+      "A": "Você comentou que o pack tem oito presets de bass (m8) e que preparou o pack para divulgar (m9). Quer ajuda com a divulgação ou com os presets em si?",
+      "B": "Você comentou que o pack tem oito presets de bass (m8) e que preparou o pack para divulgar (m9). Quer revisar algum detalhe da divulgação ou dos presets?",
+      "C": "Você comentou que preparou o pack do bass para divulgar (m9), e que ele tem oito presets de bass (m8). Quer que eu ajude a montar o texto de divulgação?"
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C07",
+    "case": "ev_history",
+    "answers": {
+      "A": "Você mencionou que escolheu o Serum 2 porque **já tinha comprado a licença** ([m2]). Ou seja, a decisão foi prática: você já possuía o direito de uso, então optou por ele em vez de outra alternativa.",
+      "B": "Você mencionou que já tinha comprado a licença — ou seja, a escolha do Serum 2 foi em boa parte porque a licença já estava adquirida, então fazia sentido aproveitá-la em vez de investir em outro sintetizador. [m2]",
+      "C": "Você escolheu o Serum 2 porque **já tinha comprado a licença** ([m2]). Ou seja, a decisão foi prática: em vez de gastar em outra opção, você aproveitou algo que já estava adquirido."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C08",
+    "case": "ev_restricted",
+    "answers": {
+      "A": "Você escolheu o preset do Serum 2 por causa do timbre que ele entrega — provavelmente porque ele já trazia o caráter sonoro que você queria sem precisar construir o patch do zero. (Não tenho registro na memória de qual preset específico nem do motivo exato que você deu; se você me disser onde isso foi discutido, eu localizo e cito a mensagem.)",
+      "B": "Você escolheu o preset **Serum 2** porque ele usa **wavetables e FM**, que dão um timbre mais **metálico/agressivo** — exatamente o que você qu\n...",
+      "C": "Você escolheu o preset **Serum 2** porque ele oferece um som mais **moderno e agressivo**, com **wavetables ricas** e **modulação poderosa**, ideal para **basslines de drum & bass** e **sound design experimental**. Além disso, você mencionou que o **Serum 2** tem uma interface mais intuitiva para **automação de parâmetros** e **presets prontos** que se encaixam melhor no seu fluxo de trabalho. (mensagem 1)\n\nQuer que eu detalhe mais algum aspecto específico do preset ou do plugin?"
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C09",
+    "case": "ev_self_sufficient",
+    "answers": {
+      "A": "Você me disse que o Serum 2 custou **350 reais** (lembrança m20).",
+      "B": "Você me contou que o Serum 2 custou **350 reais** (mensagem m20).",
+      "C": "Você me disse que o Serum 2 custou **350 reais** (mensagem m20)."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C10",
+    "case": "ev_two_complementary",
+    "answers": {
+      "A": "Você escolheu o Serum 2 para fazer o bass (m1), e na memória aparecem dois motivos associados a essa escolha:\n\n- Porque você já tinha comprado a licença (m2).\n- Porque um amigo te recomendou o Serum 2 (m10).\n\nNão há na memória uma razão específica sobre \"preset\" — apenas esses motivos para a escolha do Serum 2 em si.",
+      "B": "Você escolheu o Serum 2 para fazer o bass por dois motivos que você mencionou: porque já tinha comprado a licença (m2) e porque um amigo te recomendou o Serum 2 (m10).",
+      "C": "Você escolheu o Serum 2 para fazer o bass (m1), e mencionou dois motivos ao longo da conversa:\n\n- Porque já tinha comprado a licença (m2)\n- Porque um amigo te recomendou o Serum 2 (m10)\n\nNão há registro de uma razão ligada especificamente a um \"preset\" — os motivos citados são a licença que você já possuía e a recomendação do amigo."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C11",
+    "case": "pack_quantity",
+    "answers": {
+      "A": "O pack tem **oito presets de bass** (memória: m8).",
+      "B": "O pack tem **oito presets de bass** (memória `m8`).\n\nSobre \"aquilo do pack\": não tenho no contexto de memória nenhum outro detalhe além dessa contagem — se você me disser o que quer saber especificamente (preço, formato, instrumentos, etc.), posso ajudar melhor.",
+      "C": "O pack tem **oito presets de bass** (mensagem m8, conversa c1)."
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  },
+  {
+    "review_id": "C12",
+    "case": "pack_ambiguous",
+    "answers": {
+      "A": "Você comentou que o pack tem oito presets de bass (m8) e que preparou o pack do bass para divulgar (m9). Quer retomar de onde — divulgação, ajustes nos presets, ou outra coisa?",
+      "B": "Sim — pelo que ficou registrado: o pack tem **oito presets de bass** (m8) e você disse que **preparou o pack do bass para divulgar** (m9).\n\nQuer que eu ajude com a divulgação (texto, descrição, posts) ou com algo específico do pack?",
+      "C": "Você comentou que o pack tem oito presets de bass (mensagem m8) e que preparou o pack do bass para divulgar (mensagem m9). Quer retomar de onde — divulgação, ajustes nos presets, ou outra coisa?"
+    },
+    "rubric": "Compare fatos, atribuição, suporte, sensibilidade e ambiguidade; não sabe qual política gerou A, B ou C."
+  }
+]

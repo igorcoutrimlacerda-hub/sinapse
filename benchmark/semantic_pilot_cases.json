@@ -1,0 +1,45 @@
+[
+  {
+    "id": "pilot_repo_root",
+    "query": "Como o Farol sabe que esta pasta pertence a este projeto?",
+    "expected": ["m3"],
+    "note": "Pergunta natural sobre a decisão de identificação por repo_path."
+  },
+  {
+    "id": "pilot_browser_key",
+    "query": "Por que a chave do DeepSeek não vai para o navegador?",
+    "expected": ["m30"],
+    "note": "Decisão de manter a chave no servidor."
+  },
+  {
+    "id": "pilot_semantic_cost",
+    "query": "Quanto custou ligar a busca semântica?",
+    "expected": ["m28"],
+    "note": "Pergunta de custo/latência que exige o teste, não a mudança."
+  },
+  {
+    "id": "pilot_missing_validation",
+    "query": "O que ainda falta validar no navegador?",
+    "expected": ["m11"],
+    "note": "Pendência preservada no projeto."
+  },
+  {
+    "id": "pilot_coverage_change",
+    "query": "O que mudou na cobertura por pedido?",
+    "expected": ["m23", "m24"],
+    "note": "Mudança e teste vinculados."
+  },
+  {
+    "id": "pilot_natural_paraphrase",
+    "query": "Como você evita repetir a mesma fala no contexto?",
+    "expected": ["m23", "m24"],
+    "note": "Falha conhecida: o vocabulário não ativa a mudança/teste esperados."
+  },
+  {
+    "id": "pilot_unavailable_source",
+    "query": "Qual é o motivo da mudança no cache?",
+    "expected": [],
+    "expected_gaps": ["decisão/motivo"],
+    "note": "Fonte inexistente: a lacuna deve permanecer explícita."
+  }
+]

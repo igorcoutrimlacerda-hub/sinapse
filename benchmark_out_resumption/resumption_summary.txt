@@ -1,0 +1,5 @@
+RETOMADA DE PROJETO
+modo=simulated | casos=3
+
+history  decisão=0/2 motivo=0/3 pendência=0/2 nota=0.00 repetições=0 sem_suporte=0 prompt=359 completion=15
+sinapse  decisão=2/2 motivo=3/3 pendência=1/2 nota=0.89 repetições=0 sem_suporte=0 prompt=648 completion=68

@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "id": "m10",
+      "text": "Um amigo me recomendou o Serum 2.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 10,
+      "sent_at": "2026-11-14T10:00:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "o_que": ["Serum 2"],
+        "quem": ["amigo"],
+        "por_que": ["indicação de um amigo"]
+      }
+    }
+  ]
+}

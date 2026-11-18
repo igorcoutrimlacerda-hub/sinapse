@@ -1,0 +1,47 @@
+{
+  "base_weights": {
+    "o_que": 0.25,
+    "quem": 0.10,
+    "onde": 0.05,
+    "quando": 0.05,
+    "como": 0.10,
+    "por_que": 0.10,
+    "para_que": 0.15
+  },
+  "focus_weight": 1.0,
+  "radius": 0.70,
+  "top_k": 3,
+  "attention_threshold": 0.05,
+  "group_threshold": 0.33,
+  "min_marginal_gain": 0.05,
+  "min_marginal_novelty": 0.55,
+  "curiosity": {
+    "enabled": false,
+    "max_extra_candidates": 6
+  },
+  "anticipation": {
+    "enabled": false,
+    "max_rounds": 1,
+    "max_candidates": 8,
+    "max_time_ms": 150,
+    "valid_turns": 1
+  },
+  "link_association_floor": 0.90,
+  "window": 2048,
+  "output_reserve": 512,
+  "semantic": {
+    "enabled": false
+  },
+  "instructions": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.",
+  "deepseek": {
+    "model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "context_window": 1000000,
+    "output_reserve": 4096,
+    "max_tokens": 4096,
+    "thinking": "disabled",
+    "reasoning_effort": "high",
+    "temperature": 0.7,
+    "timeout": 60
+  }
+}

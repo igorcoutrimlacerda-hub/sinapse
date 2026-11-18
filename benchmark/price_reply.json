@@ -1,0 +1,17 @@
+{
+  "messages": [
+    {
+      "id": "m10",
+      "text": "Custou 200 reais.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 10,
+      "sent_at": "2026-11-15T09:01:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["custou 200 reais"]
+      }
+    }
+  ]
+}

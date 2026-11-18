@@ -1,0 +1,38 @@
+[
+  {
+    "review_id": "R001",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve citar a licença; o motivo do Piano V é distrator.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "review_id": "R002",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "A resposta deve citar a licença; o motivo do Piano V é distrator.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "review_id": "R003",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve citar a licença; o motivo do Piano V é distrator.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": []
+  },
+  {
+    "review_id": "R004",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve citar a licença; o motivo do Piano V é distrator.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": []
+  }
+]

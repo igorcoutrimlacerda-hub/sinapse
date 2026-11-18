@@ -1,0 +1,186 @@
+[
+  {
+    "review_id": "R001",
+    "answer": "Você escolheu o preset Serum 2 porque ele já vinha com o timbre de baixo encorpado e definido que você queria, evitando ter que esculpir o som do zero — e porque a interface dele facilitava ajustar o filtro e o drive sem perder o corpo do bass. (baseado no que conversamos sobre Serum 2 e bass)",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R002",
+    "answer": "Você escolheu o Serum 2 para fazer o bass [m1].",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R003",
+    "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (mensagem m2, respondendo a m1).",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R004",
+    "answer": "Você escolheu o Serum 2 para fazer o bass porque já tinha comprado a licença (m1, m2).",
+    "rubric": "A resposta deve citar a licença já comprada como motivo, sem inventar outro motivo.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R005",
+    "answer": "Não tenho no contexto de memória nenhum registro de que você tenha testado o bass do Serum 2 — não aparece como você fez esse teste (nem qual método, preset, oscilador, filtro, etc.).\n\nSe quiser, me conta como foi o teste e eu registro para as próximas conversas.",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R006",
+    "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R007",
+    "answer": "Você testou o bass **alternando entre dois envelopes** (lembrança `m3`).",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R008",
+    "answer": "Você testou o bass **alternando entre dois envelopes** (m3).",
+    "rubric": "A resposta deve mencionar a alternância entre dois envelopes.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R009",
+    "answer": "Não tenho nenhuma memória ou contexto anterior sobre você ter escolhido o preset \"Serum 2\" ou sobre como o testou — não há mensagens recuperáveis sobre isso na minha memória desta conversa.\n\nSe você me contar os detalhes (onde usou, qual plugin/sintetizador, o que comparou), posso ajudar a reconstruir a justificativa e o método de teste.",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R010",
+    "answer": "Você escolheu o Serum 2 para fazer o bass (m1). E testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R011",
+    "answer": "Você escolheu o Serum 2 para fazer o bass (m1). E testou o bass alternando entre dois envelopes (m3).",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R012",
+    "answer": "Você escolheu o **Serum 2 para fazer o bass** (m1).\n\nE testou o bass **alternando entre dois envelopes** (m3).",
+    "rubric": "Sem repetir o nome do bass, a resposta deve retomar o procedimento correto.",
+    "required_facts": [
+      "envelopes"
+    ],
+    "forbidden_claims": [],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R013",
+    "answer": "Você escolheu esse preset porque a configuração equilibra exploração e consistência: temperatura moderada (0.7) para manter variação útil sem perder coerência, top_p em 0.95 para preservar diversidade lexical, e limite de tokens generoso para respostas longas sem truncar. Além disso, o system prompt foi ajustado para priorizar precisão factual e admitir incerteza, o que combina com o seu uso. (Não tenho registro da mensagem original em que você definiu isso, então essa é uma reconstrução a partir do que você descreveu.)",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R014",
+    "answer": "Você escolheu o **Serum 2** para fazer o bass (m1). Não há no contexto o motivo específico da escolha — só o registro de que foi esse o preset/synth escolhido. Se quiser, me conta o critério (timbre, modulação, facilidade) que eu guardo junto.",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R015",
+    "answer": "Você escolheu o Serum 2 para fazer o bass porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  },
+  {
+    "review_id": "R016",
+    "answer": "Você escolheu o Serum 2 para fazer o bass porque já tinha comprado a licença (m2).",
+    "rubric": "A resposta deve voltar ao motivo do preset e não continuar no assunto xadrez.",
+    "required_facts": [
+      "licença"
+    ],
+    "forbidden_claims": [
+      "xadrez"
+    ],
+    "sensitive_terms": [],
+    "must_acknowledge_missing": false
+  }
+]

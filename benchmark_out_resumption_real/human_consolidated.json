@@ -1,0 +1,338 @@
+{
+  "complete": true,
+  "revealed": true,
+  "reviewed_pairs": 10,
+  "revealed_conditions": [
+    {
+      "review_id": "RP01",
+      "case": "retomada_geral",
+      "conditions": {
+        "A": "sinapse",
+        "B": "sinapse_multipurpose"
+      },
+      "preferred": "B"
+    },
+    {
+      "review_id": "RP02",
+      "case": "proximo_teste",
+      "conditions": {
+        "A": "sinapse_multipurpose",
+        "B": "sinapse"
+      },
+      "preferred": "B"
+    },
+    {
+      "review_id": "RP03",
+      "case": "decisao_vigente",
+      "conditions": {
+        "A": "sinapse",
+        "B": "sinapse_multipurpose"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "RP04",
+      "case": "pendencia_concluida",
+      "conditions": {
+        "A": "sinapse_multipurpose",
+        "B": "sinapse"
+      },
+      "preferred": "B"
+    },
+    {
+      "review_id": "RP05",
+      "case": "pendencia_substituida",
+      "conditions": {
+        "A": "sinapse_multipurpose",
+        "B": "sinapse"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "RP06",
+      "case": "sem_pendencia",
+      "conditions": {
+        "A": "sinapse",
+        "B": "sinapse_multipurpose"
+      },
+      "preferred": "empate"
+    },
+    {
+      "review_id": "RP07",
+      "case": "pendencia_substituida_costa",
+      "conditions": {
+        "A": "sinapse_multipurpose",
+        "B": "sinapse"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "RP08",
+      "case": "proximo_condicionado",
+      "conditions": {
+        "A": "sinapse",
+        "B": "sinapse_multipurpose"
+      },
+      "preferred": "B"
+    },
+    {
+      "review_id": "RP09",
+      "case": "intercalado_norte",
+      "conditions": {
+        "A": "sinapse_multipurpose",
+        "B": "sinapse"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "RP10",
+      "case": "intercalado_sul",
+      "conditions": {
+        "A": "sinapse",
+        "B": "sinapse_multipurpose"
+      },
+      "preferred": "B"
+    }
+  ],
+  "human_summary": {
+    "sinapse": {
+      "rows": 10,
+      "elements": {
+        "decision": {
+          "hits": 9,
+          "total": 9
+        },
+        "reason": {
+          "hits": 10,
+          "total": 10
+        },
+        "completed": {
+          "hits": 6,
+          "total": 8
+        },
+        "pending": {
+          "hits": 8,
+          "total": 9
+        },
+        "condition": {
+          "hits": 1,
+          "total": 1
+        }
+      },
+      "complete": 7,
+      "automatic_complete": 1,
+      "diagnostic_complete": 7
+    },
+    "sinapse_multipurpose": {
+      "rows": 10,
+      "elements": {
+        "decision": {
+          "hits": 9,
+          "total": 9
+        },
+        "reason": {
+          "hits": 10,
+          "total": 10
+        },
+        "completed": {
+          "hits": 8,
+          "total": 8
+        },
+        "pending": {
+          "hits": 8,
+          "total": 9
+        },
+        "condition": {
+          "hits": 1,
+          "total": 1
+        }
+      },
+      "complete": 9,
+      "automatic_complete": 1,
+      "diagnostic_complete": 10
+    }
+  },
+  "preferences": {
+    "sinapse": {
+      "wins": 3,
+      "ties": 1
+    },
+    "sinapse_multipurpose": {
+      "wins": 6,
+      "ties": 1
+    }
+  },
+  "divergences": [
+    {
+      "review_id": "RP01",
+      "case": "retomada_geral",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP01",
+      "case": "retomada_geral",
+      "condition": "sinapse",
+      "element": "pending",
+      "human": 0,
+      "automatic": 1
+    },
+    {
+      "review_id": "RP01",
+      "case": "retomada_geral",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP02",
+      "case": "proximo_teste",
+      "condition": "sinapse_multipurpose",
+      "element": "pending",
+      "human": 0,
+      "automatic": 1
+    },
+    {
+      "review_id": "RP03",
+      "case": "decisao_vigente",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP03",
+      "case": "decisao_vigente",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP04",
+      "case": "pendencia_concluida",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP04",
+      "case": "pendencia_concluida",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP05",
+      "case": "pendencia_substituida",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP05",
+      "case": "pendencia_substituida",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP06",
+      "case": "sem_pendencia",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP06",
+      "case": "sem_pendencia",
+      "condition": "sinapse",
+      "element": "pending",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP06",
+      "case": "sem_pendencia",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP07",
+      "case": "pendencia_substituida_costa",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP07",
+      "case": "pendencia_substituida_costa",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP08",
+      "case": "proximo_condicionado",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP08",
+      "case": "proximo_condicionado",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP09",
+      "case": "intercalado_norte",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP09",
+      "case": "intercalado_norte",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP10",
+      "case": "intercalado_sul",
+      "condition": "sinapse",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    },
+    {
+      "review_id": "RP10",
+      "case": "intercalado_sul",
+      "condition": "sinapse_multipurpose",
+      "element": "decision",
+      "human": 1,
+      "automatic": 0
+    }
+  ],
+  "review_method": "revisão cega assistida por IA; respostas A/B sem rótulo de condição antes da consolidação",
+  "automatic_preserved": "benchmark_out_resumption_real/real_results.json",
+  "note": "Resultados humanos; rubrica automática e diagnóstico preservados separadamente."
+}

@@ -1,0 +1,984 @@
+{
+  "cases": 12,
+  "calls": 26,
+  "conditions": {
+    "reference": {
+      "cases": 12,
+      "all_ok": 7,
+      "purposes_ok": 8,
+      "purposes_total": 16,
+      "unsupported": 0,
+      "sensitive": 0,
+      "dependencies_lost": 2,
+      "priority_ok": 11,
+      "avg_score": 0.6667,
+      "avg_memory_tokens": 42.5,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "purpose": {
+      "cases": 12,
+      "all_ok": 12,
+      "purposes_ok": 15,
+      "purposes_total": 16,
+      "unsupported": 0,
+      "sensitive": 0,
+      "dependencies_lost": 0,
+      "priority_ok": 12,
+      "avg_score": 0.9583,
+      "avg_memory_tokens": 59.9,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    },
+    "removal": {
+      "cases": 2,
+      "all_ok": 0,
+      "purposes_ok": 2,
+      "purposes_total": 4,
+      "unsupported": 0,
+      "sensitive": 0,
+      "dependencies_lost": 0,
+      "priority_ok": 2,
+      "avg_score": 0.5,
+      "avg_memory_tokens": 78.0,
+      "prompt_tokens": 0,
+      "completion_tokens": 0
+    }
+  },
+  "pairs": {
+    "purpose": {
+      "better_than_reference": 5,
+      "worse_than_reference": 0,
+      "tied_with_reference": 7
+    },
+    "removal": {
+      "better_than_reference": 1,
+      "worse_than_reference": 0,
+      "tied_with_reference": 1
+    }
+  },
+  "entries": [
+    {
+      "case": "ev_bike_motive",
+      "family": "bicicleta",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "p1",
+            "p2"
+          ],
+          "removed": [],
+          "answer": "bicicleta: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 79,
+          "request_tokens_estimate": 164,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "p1",
+            "p2"
+          ],
+          "removed": [],
+          "answer": "bicicleta: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 79,
+          "request_tokens_estimate": 164,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_piano_motive",
+      "family": "piano",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "piano: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 164,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "piano: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 164,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_pack_both",
+      "family": "pack",
+      "purposes": [
+        "q",
+        "d"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m9"
+          ],
+          "removed": [],
+          "answer": "Não tenho essa informação.",
+          "checks": {
+            "purposes": {
+              "q": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              },
+              "d": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "score": 0.0,
+          "dependencies_lost": [
+            "m7"
+          ],
+          "memory_tokens": 50,
+          "request_tokens_estimate": 141,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m7",
+            "m8"
+          ],
+          "removed": [],
+          "answer": "pack: oito/8/presets; pack: forum/divulguei/divulgar",
+          "checks": {
+            "purposes": {
+              "q": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "d": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 83,
+          "request_tokens_estimate": 174,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_two_themes",
+      "family": "misto",
+      "purposes": [
+        "m",
+        "q"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "piano: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "q": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 173,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6",
+            "m8"
+          ],
+          "removed": [],
+          "answer": "piano: porque/licenca/promocao/trilha; pack: oito/8/presets",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "q": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 108,
+          "request_tokens_estimate": 204,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_serum_contrast",
+      "family": "serum",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m1",
+            "m2"
+          ],
+          "removed": [],
+          "answer": "serum: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 81,
+          "request_tokens_estimate": 169,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m1",
+            "m2"
+          ],
+          "removed": [],
+          "answer": "serum: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 81,
+          "request_tokens_estimate": 169,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_history_bike",
+      "family": "historico",
+      "purposes": [
+        "m"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "bicicleta: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 109,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "bicicleta: porque/licenca/promocao/trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 109,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "ev_restricted",
+      "family": "sensibilidade",
+      "purposes": [],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "Não tenho essa informação.",
+          "checks": {
+            "purposes": {},
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 89,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "Não tenho essa informação.",
+          "checks": {
+            "purposes": {},
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 89,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_bike_two",
+      "family": "bicicleta",
+      "purposes": [
+        "m",
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "p3"
+          ],
+          "removed": [],
+          "answer": "bicicleta: 1200",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [
+            "p1"
+          ],
+          "memory_tokens": 48,
+          "request_tokens_estimate": 136,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "p1",
+            "p3",
+            "p2"
+          ],
+          "removed": [],
+          "answer": "bicicleta: trilha; bicicleta: 1200",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 108,
+          "request_tokens_estimate": 196,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "removal": {
+          "selected": [
+            "p1",
+            "p3"
+          ],
+          "removed": [
+            "p2"
+          ],
+          "answer": "bicicleta: 1200",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [],
+          "memory_tokens": 78,
+          "request_tokens_estimate": 166,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_two_themes",
+      "family": "misto",
+      "purposes": [
+        "m",
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5"
+          ],
+          "removed": [],
+          "answer": "Não tenho essa informação.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "score": 0.0,
+          "dependencies_lost": [],
+          "memory_tokens": 49,
+          "request_tokens_estimate": 144,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6",
+            "b3"
+          ],
+          "removed": [],
+          "answer": "piano: promocao; bicicleta: 1200",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 106,
+          "request_tokens_estimate": 201,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "removal": {
+          "selected": [
+            "m5",
+            "b3"
+          ],
+          "removed": [
+            "m6"
+          ],
+          "answer": "bicicleta: 1200",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [],
+          "memory_tokens": 78,
+          "request_tokens_estimate": 173,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_priority",
+      "family": "misto",
+      "purposes": [
+        "m",
+        "p"
+      ],
+      "priority": "m",
+      "conditions": {
+        "reference": {
+          "selected": [
+            "m5"
+          ],
+          "removed": [],
+          "answer": "Não tenho essa informação.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              }
+            },
+            "all_ok": false,
+            "priority_ok": false,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "score": 0.0,
+          "dependencies_lost": [],
+          "memory_tokens": 49,
+          "request_tokens_estimate": 150,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "removed": [],
+          "answer": "piano: promocao",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "score": 0.5,
+          "dependencies_lost": [],
+          "memory_tokens": 77,
+          "request_tokens_estimate": 178,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_history_price",
+      "family": "historico",
+      "purposes": [
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "bicicleta: 1200",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 107,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "bicicleta: 1200",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 107,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "new_restricted_price",
+      "family": "sensibilidade",
+      "purposes": [
+        "p"
+      ],
+      "priority": null,
+      "conditions": {
+        "reference": {
+          "selected": [],
+          "removed": [],
+          "answer": "Não tenho essa informação.",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 84,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        },
+        "purpose": {
+          "selected": [],
+          "removed": [],
+          "answer": "Não tenho essa informação.",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "score": 1.0,
+          "dependencies_lost": [],
+          "memory_tokens": 0,
+          "request_tokens_estimate": 84,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null
+        }
+      }
+    }
+  ],
+  "removal_subset": {
+    "new_bike_two": "m",
+    "new_two_themes": "m"
+  }
+}

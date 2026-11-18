@@ -1,0 +1,581 @@
+{
+  "project": "Faixa Norte",
+  "sessions": [
+    {"id": "s1", "date": "2026-10-01", "summary": "primeira decisão e teste do Aurora na introdução"},
+    {"id": "s2", "date": "2026-10-03", "summary": "revisão para Pigments, teste do refrão e pendência"},
+    {"id": "s3", "date": "2026-10-05", "summary": "detalhe do próximo teste e confirmação do refrão"},
+    {"id": "s4", "date": "2026-10-10", "summary": "retomada: sessão recente sem os detalhes antigos"}
+  ],
+  "messages": [
+    {
+      "id": "pr1",
+      "text": "Comecei a faixa Norte com o preset Aurora no bass.",
+      "author": "user",
+      "position": 1,
+      "sent_at": "2026-10-01T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Aurora", "bass"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "pr2",
+      "text": "A CPU chegava a 40% com o Aurora.",
+      "author": "user",
+      "position": 2,
+      "sent_at": "2026-10-01T09:03:00-03:00",
+      "reply_to": "pr1",
+      "coordinates": {"o_que": ["CPU", "Aurora"], "quem": ["usuário"], "por_que": ["a CPU chegava a 40%"]}
+    },
+    {
+      "id": "pr3",
+      "text": "O primeiro teste com o Aurora ficou concluído.",
+      "author": "user",
+      "position": 3,
+      "sent_at": "2026-10-01T09:06:00-03:00",
+      "reply_to": "pr1",
+      "coordinates": {"o_que": ["Aurora", "primeiro teste"], "quem": ["usuário"], "como": ["teste concluído"]}
+    },
+    {
+      "id": "pr4",
+      "text": "Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%.",
+      "author": "user",
+      "position": 4,
+      "sent_at": "2026-10-03T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Pigments", "bass"], "quem": ["usuário"], "onde": ["projeto Faixa Norte"], "para_que": ["tocar o bass"], "por_que": ["a CPU do Aurora era alta"]}
+    },
+    {
+      "id": "pr5",
+      "text": "O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+      "author": "user",
+      "position": 5,
+      "sent_at": "2026-10-03T10:03:00-03:00",
+      "reply_to": "pr4",
+      "coordinates": {"o_que": ["Pigments", "refrão", "CPU"], "quem": ["usuário"], "como": ["teste concluído", "22%"]}
+    },
+    {
+      "id": "pr6",
+      "text": "Ainda falta testar a introdução em 96 kHz.",
+      "author": "user",
+      "position": 6,
+      "sent_at": "2026-10-03T10:06:00-03:00",
+      "reply_to": "pr4",
+      "coordinates": {"o_que": ["introdução"], "quem": ["usuário"], "onde": ["projeto Faixa Norte"], "como": ["96 kHz"], "para_que": ["confirmar o teste"]}
+    },
+    {
+      "id": "pr7",
+      "text": "O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+      "author": "user",
+      "position": 7,
+      "sent_at": "2026-10-05T09:00:00-03:00",
+      "reply_to": "pr6",
+      "coordinates": {"o_que": ["introdução", "CPU"], "quem": ["usuário"], "onde": ["projeto Faixa Norte"], "como": ["96 kHz"], "por_que": ["confirmar que a CPU não estoura"]}
+    },
+    {
+      "id": "pr8",
+      "text": "O refrão já está aprovado; não precisa repetir.",
+      "author": "user",
+      "position": 8,
+      "sent_at": "2026-10-05T09:03:00-03:00",
+      "reply_to": "pr5",
+      "coordinates": {"o_que": ["refrão"], "quem": ["usuário"], "como": ["aprovado"]}
+    },
+    {
+      "id": "pr9",
+      "text": "Passei a semana ajustando a iluminação.",
+      "author": "user",
+      "position": 9,
+      "sent_at": "2026-10-10T11:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["iluminação"], "quem": ["usuário"]}
+    },
+    {
+      "id": "pr10",
+      "text": "Depois volto ao problema do Pigments e da introdução.",
+      "author": "user",
+      "position": 10,
+      "sent_at": "2026-10-10T11:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["bass", "introdução"], "quem": ["usuário"]}
+    },
+    {
+      "id": "sr1",
+      "text": "Comecei o projeto Serra com o preset Vega no bass.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 1,
+      "sent_at": "2026-10-02T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Vega", "bass"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "sr2",
+      "text": "No Serra, troquei para o preset Nova porque a CPU do Vega ficava alta.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 2,
+      "sent_at": "2026-10-02T09:03:00-03:00",
+      "reply_to": "sr1",
+      "coordinates": {"o_que": ["Nova", "CPU", "bass"], "quem": ["usuário"], "onde": ["projeto Serra"], "para_que": ["tocar o bass"], "por_que": ["a CPU do Vega ficava alta"]}
+    },
+    {
+      "id": "sr3",
+      "text": "O teste do Nova no refrão ficou concluído.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 3,
+      "sent_at": "2026-10-02T09:06:00-03:00",
+      "reply_to": "sr2",
+      "coordinates": {"o_que": ["Nova", "refrão"], "quem": ["usuário"], "como": ["teste concluído"]}
+    },
+    {
+      "id": "sr4",
+      "text": "Falta testar a ponte em 48 kHz.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 4,
+      "sent_at": "2026-10-04T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["ponte"], "quem": ["usuário"], "como": ["48 kHz"]}
+    },
+    {
+      "id": "sr5",
+      "text": "O último teste da ponte em 48 kHz ficou concluído e aprovado.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 5,
+      "sent_at": "2026-10-06T10:00:00-03:00",
+      "reply_to": "sr4",
+      "coordinates": {"o_que": ["ponte"], "quem": ["usuário"], "onde": ["projeto Serra"], "como": ["48 kHz", "aprovado"]}
+    },
+    {
+      "id": "sr6",
+      "text": "O próximo passo é exportar a versão final.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 6,
+      "sent_at": "2026-10-06T10:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["exportar", "versão final"], "quem": ["usuário"], "onde": ["projeto Serra"], "para_que": ["fechar o projeto"]}
+    },
+    {
+      "id": "sr7",
+      "text": "Passei a semana fora do estúdio.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 7,
+      "sent_at": "2026-10-11T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["estúdio"], "quem": ["usuário"]}
+    },
+    {
+      "id": "sr8",
+      "text": "Depois retomo o Serra e o Nova.",
+      "author": "user",
+      "conversation_id": "serra",
+      "position": 8,
+      "sent_at": "2026-10-11T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Serra"], "quem": ["usuário"]}
+    },
+    {
+      "id": "lt1",
+      "text": "Comecei o Litoral com o preset Orion na guitarra.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 1,
+      "sent_at": "2026-10-03T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Orion", "guitarra"], "quem": ["usuário"], "para_que": ["gravar a guitarra"]}
+    },
+    {
+      "id": "lt2",
+      "text": "No Litoral, troquei para o preset Lyra porque a CPU do Orion ficava alta.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 2,
+      "sent_at": "2026-10-03T09:03:00-03:00",
+      "reply_to": "lt1",
+      "coordinates": {"o_que": ["Lyra", "CPU", "guitarra"], "quem": ["usuário"], "onde": ["projeto Litoral"], "para_que": ["gravar a guitarra"], "por_que": ["a CPU do Orion ficava alta"]}
+    },
+    {
+      "id": "lt3",
+      "text": "O teste do Lyra na introdução ficou concluído.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 3,
+      "sent_at": "2026-10-03T09:06:00-03:00",
+      "reply_to": "lt2",
+      "coordinates": {"o_que": ["Lyra", "introdução"], "quem": ["usuário"], "onde": ["projeto Litoral"], "como": ["teste concluído"]}
+    },
+    {
+      "id": "lt4",
+      "text": "Falta testar o solo em 96 kHz.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 4,
+      "sent_at": "2026-10-05T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["solo"], "quem": ["usuário"], "como": ["96 kHz"]}
+    },
+    {
+      "id": "lt5",
+      "text": "O solo saiu do escopo; o próximo passo agora é testar a ponte em 48 kHz.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 5,
+      "sent_at": "2026-10-07T10:00:00-03:00",
+      "reply_to": "lt4",
+      "coordinates": {"o_que": ["ponte"], "quem": ["usuário"], "onde": ["projeto Litoral"], "como": ["48 kHz"], "para_que": ["substituir o solo"]}
+    },
+    {
+      "id": "lt6",
+      "text": "O teste da ponte em 48 kHz ainda não começou.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 6,
+      "sent_at": "2026-10-07T10:03:00-03:00",
+      "reply_to": "lt5",
+      "coordinates": {"o_que": ["ponte"], "quem": ["usuário"], "onde": ["projeto Litoral"], "como": ["48 kHz", "pendente"]}
+    },
+    {
+      "id": "lt7",
+      "text": "Voltei ao Litoral depois do intervalo.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 7,
+      "sent_at": "2026-10-12T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Litoral"], "quem": ["usuário"]}
+    },
+    {
+      "id": "lt8",
+      "text": "Depois continuo o Litoral e o Lyra.",
+      "author": "user",
+      "conversation_id": "litoral",
+      "position": 8,
+      "sent_at": "2026-10-12T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Litoral"], "quem": ["usuário"]}
+    },
+    {
+      "id": "vl1",
+      "text": "Comecei o projeto Vale com o preset Atlas.",
+      "author": "user",
+      "conversation_id": "vale",
+      "position": 1,
+      "sent_at": "2026-10-04T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Atlas"], "quem": ["usuário"]}
+    },
+    {
+      "id": "vl2",
+      "text": "No Vale, troquei para o preset Comet porque a CPU do Atlas ficava alta.",
+      "author": "user",
+      "conversation_id": "vale",
+      "position": 2,
+      "sent_at": "2026-10-04T09:03:00-03:00",
+      "reply_to": "vl1",
+      "coordinates": {"o_que": ["Comet", "CPU"], "quem": ["usuário"], "onde": ["projeto Vale"], "por_que": ["a CPU do Atlas ficava alta"]}
+    },
+    {
+      "id": "vl3",
+      "text": "O teste do Comet no refrão ficou concluído.",
+      "author": "user",
+      "conversation_id": "vale",
+      "position": 3,
+      "sent_at": "2026-10-04T09:06:00-03:00",
+      "reply_to": "vl2",
+      "coordinates": {"o_que": ["Comet", "refrão"], "quem": ["usuário"], "onde": ["projeto Vale"], "como": ["teste concluído"]}
+    },
+    {
+      "id": "vl4",
+      "text": "Ainda não defini o próximo passo do Vale.",
+      "author": "user",
+      "conversation_id": "vale",
+      "position": 4,
+      "sent_at": "2026-10-04T09:09:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["próximo passo"], "quem": ["usuário"], "onde": ["projeto Vale"], "como": ["não definido"]}
+    },
+    {
+      "id": "vl5",
+      "text": "Passei a semana organizando samples.",
+      "author": "user",
+      "conversation_id": "vale",
+      "position": 5,
+      "sent_at": "2026-10-13T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["samples"], "quem": ["usuário"]}
+    },
+    {
+      "id": "vl6",
+      "text": "Depois volto ao Vale e ao Comet.",
+      "author": "user",
+      "conversation_id": "vale",
+      "position": 6,
+      "sent_at": "2026-10-13T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Vale"], "quem": ["usuário"]}
+    },
+    {
+      "id": "cs1",
+      "text": "Comecei o Costa com o preset Íris no synth.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 1,
+      "sent_at": "2026-10-05T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Íris", "synth"], "quem": ["usuário"], "para_que": ["gravar o synth"]}
+    },
+    {
+      "id": "cs2",
+      "text": "No Costa, troquei para o preset Vela porque a CPU do Íris ficava alta.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 2,
+      "sent_at": "2026-10-05T09:03:00-03:00",
+      "reply_to": "cs1",
+      "coordinates": {"o_que": ["Vela", "CPU", "synth"], "quem": ["usuário"], "onde": ["projeto Costa"], "para_que": ["gravar o synth"], "por_que": ["a CPU do Íris ficava alta"]}
+    },
+    {
+      "id": "cs3",
+      "text": "O teste do Vela no verso ficou concluído.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 3,
+      "sent_at": "2026-10-05T09:06:00-03:00",
+      "reply_to": "cs2",
+      "coordinates": {"o_que": ["Vela", "verso"], "quem": ["usuário"], "onde": ["projeto Costa"], "como": ["teste concluído"]}
+    },
+    {
+      "id": "cs4",
+      "text": "Falta testar o arpejo em 96 kHz.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 4,
+      "sent_at": "2026-10-07T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["arpejo"], "quem": ["usuário"], "como": ["96 kHz"]}
+    },
+    {
+      "id": "cs5",
+      "text": "O arpejo saiu do escopo; o próximo passo agora é testar a ponte em 48 kHz.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 5,
+      "sent_at": "2026-10-09T10:00:00-03:00",
+      "reply_to": "cs4",
+      "coordinates": {"o_que": ["ponte"], "quem": ["usuário"], "onde": ["projeto Costa"], "como": ["48 kHz"], "para_que": ["substituir o arpejo"]}
+    },
+    {
+      "id": "cs6",
+      "text": "O teste da ponte em 48 kHz ainda não começou.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 6,
+      "sent_at": "2026-10-09T10:03:00-03:00",
+      "reply_to": "cs5",
+      "coordinates": {"o_que": ["ponte"], "quem": ["usuário"], "onde": ["projeto Costa"], "como": ["48 kHz", "pendente"]}
+    },
+    {
+      "id": "cs7",
+      "text": "Voltei ao Costa depois do intervalo.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 7,
+      "sent_at": "2026-10-14T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Costa"], "quem": ["usuário"]}
+    },
+    {
+      "id": "cs8",
+      "text": "Depois continuo o Costa e o Vela.",
+      "author": "user",
+      "conversation_id": "costa",
+      "position": 8,
+      "sent_at": "2026-10-14T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Costa", "Vela"], "quem": ["usuário"]}
+    },
+    {
+      "id": "dn1",
+      "text": "Comecei o Dunas com o preset Halo na guitarra.",
+      "author": "user",
+      "conversation_id": "dunas",
+      "position": 1,
+      "sent_at": "2026-10-06T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Halo", "guitarra"], "quem": ["usuário"], "para_que": ["gravar a guitarra"]}
+    },
+    {
+      "id": "dn2",
+      "text": "No Dunas, troquei para o preset Aster porque a CPU do Halo ficava alta.",
+      "author": "user",
+      "conversation_id": "dunas",
+      "position": 2,
+      "sent_at": "2026-10-06T09:03:00-03:00",
+      "reply_to": "dn1",
+      "coordinates": {"o_que": ["Aster", "CPU", "guitarra"], "quem": ["usuário"], "onde": ["projeto Dunas"], "para_que": ["gravar a guitarra"], "por_que": ["a CPU do Halo ficava alta"]}
+    },
+    {
+      "id": "dn3",
+      "text": "O teste do Aster no refrão ficou concluído.",
+      "author": "user",
+      "conversation_id": "dunas",
+      "position": 3,
+      "sent_at": "2026-10-06T09:06:00-03:00",
+      "reply_to": "dn2",
+      "coordinates": {"o_que": ["Aster", "refrão"], "quem": ["usuário"], "onde": ["projeto Dunas"], "como": ["teste concluído"]}
+    },
+    {
+      "id": "dn4",
+      "text": "Ainda falta testar o Aster na ponte em 96 kHz; se a CPU ficar abaixo de 30%, o próximo passo é exportar, senão reduzo o oversampling.",
+      "author": "user",
+      "conversation_id": "dunas",
+      "position": 4,
+      "sent_at": "2026-10-08T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Aster", "ponte", "CPU", "exportar", "oversampling"], "quem": ["usuário"], "onde": ["projeto Dunas"], "como": ["96 kHz", "condição: CPU abaixo de 30%"]}
+    },
+    {
+      "id": "dn7",
+      "text": "Voltei ao Dunas depois do intervalo.",
+      "author": "user",
+      "conversation_id": "dunas",
+      "position": 7,
+      "sent_at": "2026-10-15T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Dunas"], "quem": ["usuário"]}
+    },
+    {
+      "id": "dn8",
+      "text": "Depois continuo o Dunas e o Aster.",
+      "author": "user",
+      "conversation_id": "dunas",
+      "position": 8,
+      "sent_at": "2026-10-15T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Dunas", "Aster"], "quem": ["usuário"]}
+    },
+    {
+      "id": "n1",
+      "text": "Comecei o Norte com o preset Lume no baixo.",
+      "author": "user",
+      "conversation_id": "norte2",
+      "position": 1,
+      "sent_at": "2026-10-07T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Lume", "baixo"], "quem": ["usuário"], "para_que": ["tocar o baixo"]}
+    },
+    {
+      "id": "n2",
+      "text": "No Norte, troquei para o preset Safira porque a CPU do Lume ficava alta.",
+      "author": "user",
+      "conversation_id": "norte2",
+      "position": 2,
+      "sent_at": "2026-10-07T09:03:00-03:00",
+      "reply_to": "n1",
+      "coordinates": {"o_que": ["Safira", "CPU", "baixo"], "quem": ["usuário"], "onde": ["projeto Norte"], "para_que": ["tocar o baixo"], "por_que": ["a CPU do Lume ficava alta"]}
+    },
+    {
+      "id": "n3",
+      "text": "O teste do Safira no refrão ficou concluído.",
+      "author": "user",
+      "conversation_id": "norte2",
+      "position": 3,
+      "sent_at": "2026-10-07T09:06:00-03:00",
+      "reply_to": "n2",
+      "coordinates": {"o_que": ["Safira", "refrão"], "quem": ["usuário"], "onde": ["projeto Norte"], "como": ["teste concluído"]}
+    },
+    {
+      "id": "n4",
+      "text": "Falta testar a ponte do Norte em 48 kHz.",
+      "author": "user",
+      "conversation_id": "norte2",
+      "position": 4,
+      "sent_at": "2026-10-09T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["ponte"], "quem": ["usuário"], "onde": ["projeto Norte"], "como": ["48 kHz"]}
+    },
+    {
+      "id": "n5",
+      "text": "Voltei ao Norte depois do intervalo.",
+      "author": "user",
+      "conversation_id": "norte2",
+      "position": 5,
+      "sent_at": "2026-10-16T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Norte"], "quem": ["usuário"]}
+    },
+    {
+      "id": "n6",
+      "text": "Depois continuo o Norte e o Safira.",
+      "author": "user",
+      "conversation_id": "norte2",
+      "position": 6,
+      "sent_at": "2026-10-16T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Norte", "Safira"], "quem": ["usuário"]}
+    },
+    {
+      "id": "s1",
+      "text": "Comecei o Sul com o preset Lume no baixo.",
+      "author": "user",
+      "conversation_id": "sul",
+      "position": 1,
+      "sent_at": "2026-10-08T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Lume", "baixo"], "quem": ["usuário"], "para_que": ["tocar o baixo"]}
+    },
+    {
+      "id": "s2",
+      "text": "No Sul, troquei para o preset Safira porque a CPU do Lume ficava alta.",
+      "author": "user",
+      "conversation_id": "sul",
+      "position": 2,
+      "sent_at": "2026-10-08T09:03:00-03:00",
+      "reply_to": "s1",
+      "coordinates": {"o_que": ["Safira", "CPU", "baixo"], "quem": ["usuário"], "onde": ["projeto Sul"], "para_que": ["tocar o baixo"], "por_que": ["a CPU do Lume ficava alta"]}
+    },
+    {
+      "id": "s3",
+      "text": "O teste do Safira na ponte do Sul em 48 kHz ficou concluído.",
+      "author": "user",
+      "conversation_id": "sul",
+      "position": 3,
+      "sent_at": "2026-10-09T10:00:00-03:00",
+      "reply_to": "s2",
+      "coordinates": {"o_que": ["Safira", "ponte"], "quem": ["usuário"], "onde": ["projeto Sul"], "como": ["48 kHz", "teste concluído"]}
+    },
+    {
+      "id": "s4",
+      "text": "Falta testar o refrão do Sul.",
+      "author": "user",
+      "conversation_id": "sul",
+      "position": 4,
+      "sent_at": "2026-10-11T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["refrão"], "quem": ["usuário"], "onde": ["projeto Sul"]}
+    },
+    {
+      "id": "s5",
+      "text": "Voltei ao Sul depois do intervalo.",
+      "author": "user",
+      "conversation_id": "sul",
+      "position": 5,
+      "sent_at": "2026-10-16T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Sul"], "quem": ["usuário"]}
+    },
+    {
+      "id": "s6",
+      "text": "Depois continuo o Sul e o Safira.",
+      "author": "user",
+      "conversation_id": "sul",
+      "position": 6,
+      "sent_at": "2026-10-16T10:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Sul", "Safira"], "quem": ["usuário"]}
+    }
+  ]
+}

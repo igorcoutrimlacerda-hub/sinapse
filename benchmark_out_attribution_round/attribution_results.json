@@ -1,0 +1,803 @@
+{
+  "cases": 5,
+  "calls": 10,
+  "entries": [
+    {
+      "case": "attr_named_entity",
+      "kind": "entidade_nomeada",
+      "parent": "z1",
+      "reference_ids": [
+        "z1",
+        "z2"
+      ],
+      "conservative_ids": [
+        "z2"
+      ],
+      "forced_ids": [
+        "z2"
+      ],
+      "can_omit": true,
+      "local_only_parent_change": true,
+      "no_equivalent_clue": true,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "z1",
+            "z2"
+          ],
+          "removed": [],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=z1 | autor=user | conversa=c3 | pos=1 | resposta_a=-\nEscolhi a Aurora para o bass.\n\n[evidência 1] id=z2 | autor=user | conversa=c3 | pos=2 | resposta_a=z1\nPorque a licença já estava comprada.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da Aurora e da Nebula."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi a Aurora?"
+            }
+          ],
+          "answer": "aurora: licenca",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 78,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "conservative": {
+          "selected": [
+            "z2"
+          ],
+          "removed": [
+            "z1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=z2 | autor=user | conversa=c3 | pos=2 | resposta_a=z1\nPorque a licença já estava comprada.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da Aurora e da Nebula."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi a Aurora?"
+            }
+          ],
+          "answer": "aurora: licenca",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "forced": {
+          "selected": [
+            "z2"
+          ],
+          "removed": [
+            "z1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=z2 | autor=user | conversa=c3 | pos=2 | resposta_a=z1\nPorque a licença já estava comprada.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da Aurora e da Nebula."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi a Aurora?"
+            }
+          ],
+          "answer": "aurora: licenca",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": true
+        }
+      },
+      "conservative_verdict": "preservou",
+      "forced_verdict": "preservou"
+    },
+    {
+      "case": "attr_ambiguous_entity",
+      "kind": "duas_entidades",
+      "parent": "z1",
+      "reference_ids": [
+        "z1",
+        "z2"
+      ],
+      "conservative_ids": [
+        "z2"
+      ],
+      "forced_ids": [
+        "z2"
+      ],
+      "can_omit": true,
+      "local_only_parent_change": true,
+      "no_equivalent_clue": true,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "z1",
+            "z2"
+          ],
+          "removed": [],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=z1 | autor=user | conversa=c3 | pos=1 | resposta_a=-\nEscolhi a Aurora para o bass.\n\n[evidência 1] id=z2 | autor=user | conversa=c3 | pos=2 | resposta_a=z1\nPorque a licença já estava comprada.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da Aurora e da Nebula."
+            },
+            {
+              "role": "user",
+              "content": "E por que escolhi?"
+            }
+          ],
+          "answer": "aurora: licenca",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 78,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "conservative": {
+          "selected": [
+            "z2"
+          ],
+          "removed": [
+            "z1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=z2 | autor=user | conversa=c3 | pos=2 | resposta_a=z1\nPorque a licença já estava comprada.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da Aurora e da Nebula."
+            },
+            {
+              "role": "user",
+              "content": "E por que escolhi?"
+            }
+          ],
+          "answer": "aurora: licenca",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": false
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "forced": {
+          "selected": [
+            "z2"
+          ],
+          "removed": [
+            "z1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=z2 | autor=user | conversa=c3 | pos=2 | resposta_a=z1\nPorque a licença já estava comprada.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da Aurora e da Nebula."
+            },
+            {
+              "role": "user",
+              "content": "E por que escolhi?"
+            }
+          ],
+          "answer": "aurora: licenca",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": false
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": true
+        }
+      },
+      "conservative_verdict": "prejudicou",
+      "forced_verdict": "ambiguidade_exposta"
+    },
+    {
+      "case": "attr_named_decision",
+      "kind": "decisao_nomeada",
+      "parent": "x1",
+      "reference_ids": [
+        "x1",
+        "x2"
+      ],
+      "conservative_ids": [
+        "x2"
+      ],
+      "forced_ids": [
+        "x2"
+      ],
+      "can_omit": true,
+      "local_only_parent_change": true,
+      "no_equivalent_clue": true,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "x1",
+            "x2"
+          ],
+          "removed": [],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=x1 | autor=user | conversa=c3 | pos=5 | resposta_a=-\nComprei a bicicleta para ir ao trabalho.\n\n[evidência 1] id=x2 | autor=user | conversa=c3 | pos=6 | resposta_a=x1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 79,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "conservative": {
+          "selected": [
+            "x2"
+          ],
+          "removed": [
+            "x1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=x2 | autor=user | conversa=c3 | pos=6 | resposta_a=x1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "forced": {
+          "selected": [
+            "x2"
+          ],
+          "removed": [
+            "x1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=x2 | autor=user | conversa=c3 | pos=6 | resposta_a=x1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": true
+        }
+      },
+      "conservative_verdict": "preservou",
+      "forced_verdict": "preservou"
+    },
+    {
+      "case": "attr_ambiguous_decision",
+      "kind": "duas_decisoes",
+      "parent": "x1",
+      "reference_ids": [
+        "x1",
+        "x2"
+      ],
+      "conservative_ids": [
+        "x1",
+        "x2"
+      ],
+      "forced_ids": [
+        "x2"
+      ],
+      "can_omit": false,
+      "local_only_parent_change": true,
+      "no_equivalent_clue": true,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "x1",
+            "x2"
+          ],
+          "removed": [],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=x1 | autor=user | conversa=c3 | pos=5 | resposta_a=-\nComprei a bicicleta para ir ao trabalho.\n\n[evidência 1] id=x2 | autor=user | conversa=c3 | pos=6 | resposta_a=x1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "E por quê?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 79,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "conservative": {
+          "selected": [
+            "x1",
+            "x2"
+          ],
+          "removed": [],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=x1 | autor=user | conversa=c3 | pos=5 | resposta_a=-\nComprei a bicicleta para ir ao trabalho.\n\n[evidência 1] id=x2 | autor=user | conversa=c3 | pos=6 | resposta_a=x1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "E por quê?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 79,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": true
+        },
+        "forced": {
+          "selected": [
+            "x2"
+          ],
+          "removed": [
+            "x1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=x2 | autor=user | conversa=c3 | pos=6 | resposta_a=x1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "E por quê?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": false
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        }
+      },
+      "conservative_verdict": "sem_efeito_na_requisicao",
+      "forced_verdict": "ambiguidade_exposta"
+    },
+    {
+      "case": "attr_named_trade",
+      "kind": "decisao_nomeada",
+      "parent": "w1",
+      "reference_ids": [
+        "w1",
+        "w2"
+      ],
+      "conservative_ids": [
+        "w2"
+      ],
+      "forced_ids": [
+        "w2"
+      ],
+      "can_omit": true,
+      "local_only_parent_change": true,
+      "no_equivalent_clue": true,
+      "conditions": {
+        "reference": {
+          "selected": [
+            "w1",
+            "w2"
+          ],
+          "removed": [],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=w1 | autor=user | conversa=c3 | pos=7 | resposta_a=-\nTroquei a bicicleta por uma mountain bike.\n\n[evidência 1] id=w2 | autor=user | conversa=c3 | pos=8 | resposta_a=w1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que troquei a bicicleta?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 79,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "conservative": {
+          "selected": [
+            "w2"
+          ],
+          "removed": [
+            "w1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=w2 | autor=user | conversa=c3 | pos=8 | resposta_a=w1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que troquei a bicicleta?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": false
+        },
+        "forced": {
+          "selected": [
+            "w2"
+          ],
+          "removed": [
+            "w1"
+          ],
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=w2 | autor=user | conversa=c3 | pos=8 | resposta_a=w1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos da compra e da troca da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que troquei a bicicleta?"
+            }
+          ],
+          "answer": "bicicleta: trilha",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.75,
+            "unsupported": false,
+            "fact_ok": true,
+            "entity_ok": true,
+            "decision_ok": false,
+            "ambiguity_ok": true
+          },
+          "memory_tokens": 49,
+          "token_source": "estimativa_local",
+          "usage": {},
+          "error": null,
+          "reused": true
+        }
+      },
+      "conservative_verdict": "preservou",
+      "forced_verdict": "preservou"
+    }
+  ],
+  "human_review_pending": true,
+  "previous_23_pending_preserved": true
+}

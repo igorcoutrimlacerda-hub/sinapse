@@ -1,0 +1,833 @@
+[
+  {
+    "review_id": "T01",
+    "case": "retomada_geral",
+    "condition": "history",
+    "question": "Onde paramos nesse problema?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Decisão atual, motivo, último teste concluído e pendência real; repetir passo concluído ou afirmar sem suporte desconta.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Pigments"
+        ],
+        "reason": [
+          "CPU",
+          "40"
+        ],
+        "completed": [
+          "refrao"
+        ],
+        "pending": [
+          "introducao",
+          "96 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T02",
+    "case": "retomada_geral",
+    "condition": "sinapse",
+    "question": "Onde paramos nesse problema?",
+    "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+    "rubric": "Decisão atual, motivo, último teste concluído e pendência real; repetir passo concluído ou afirmar sem suporte desconta.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Pigments"
+        ],
+        "reason": [
+          "CPU",
+          "40"
+        ],
+        "completed": [
+          "refrao"
+        ],
+        "pending": [
+          "introducao",
+          "96 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": false
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T03",
+    "case": "retomada_geral",
+    "condition": "sinapse_multipurpose",
+    "question": "Onde paramos nesse problema?",
+    "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%. Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+    "rubric": "Decisão atual, motivo, último teste concluído e pendência real; repetir passo concluído ou afirmar sem suporte desconta.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Pigments"
+        ],
+        "reason": [
+          "CPU",
+          "40"
+        ],
+        "completed": [
+          "refrao"
+        ],
+        "pending": [
+          "introducao",
+          "96 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T04",
+    "case": "proximo_teste",
+    "condition": "history",
+    "question": "Qual era o próximo teste e por quê?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Pendência correta e motivo; repetir o refrão, já concluído, desconta.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false,
+      "components": [
+        "reason",
+        "pending"
+      ],
+      "facts_required": {
+        "reason": [
+          "CPU",
+          "estoura"
+        ],
+        "pending": [
+          "introducao",
+          "96 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "reason": false,
+      "completed": false,
+      "pending": false
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T05",
+    "case": "proximo_teste",
+    "condition": "sinapse",
+    "question": "Qual era o próximo teste e por quê?",
+    "answer": "Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+    "rubric": "Pendência correta e motivo; repetir o refrão, já concluído, desconta.",
+    "checks": {
+      "decision": false,
+      "reason": true,
+      "completed": false,
+      "pending": true,
+      "components": [
+        "reason",
+        "pending"
+      ],
+      "facts_required": {
+        "reason": [
+          "CPU",
+          "estoura"
+        ],
+        "pending": [
+          "introducao",
+          "96 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "reason": true,
+      "completed": false,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T06",
+    "case": "proximo_teste",
+    "condition": "sinapse_multipurpose",
+    "question": "Qual era o próximo teste e por quê?",
+    "answer": "Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+    "rubric": "Pendência correta e motivo; repetir o refrão, já concluído, desconta.",
+    "checks": {
+      "decision": false,
+      "reason": true,
+      "completed": false,
+      "pending": true,
+      "components": [
+        "reason",
+        "pending"
+      ],
+      "facts_required": {
+        "reason": [
+          "CPU",
+          "estoura"
+        ],
+        "pending": [
+          "introducao",
+          "96 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "reason": true,
+      "completed": false,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T07",
+    "case": "decisao_vigente",
+    "condition": "history",
+    "question": "Qual preset está valendo para o bass agora?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Decisão vigente e motivo; citar o Aurora como atual desconta.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason"
+      ],
+      "facts_required": {
+        "decision": [
+          "Pigments"
+        ],
+        "reason": [
+          "CPU",
+          "40"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": false,
+      "reason": false,
+      "completed": false
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T08",
+    "case": "decisao_vigente",
+    "condition": "sinapse",
+    "question": "Qual preset está valendo para o bass agora?",
+    "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+    "rubric": "Decisão vigente e motivo; citar o Aurora como atual desconta.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason"
+      ],
+      "facts_required": {
+        "decision": [
+          "Pigments"
+        ],
+        "reason": [
+          "CPU",
+          "40"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T09",
+    "case": "decisao_vigente",
+    "condition": "sinapse_multipurpose",
+    "question": "Qual preset está valendo para o bass agora?",
+    "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+    "rubric": "Decisão vigente e motivo; citar o Aurora como atual desconta.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason"
+      ],
+      "facts_required": {
+        "decision": [
+          "Pigments"
+        ],
+        "reason": [
+          "CPU",
+          "40"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T10",
+    "case": "pendencia_concluida",
+    "condition": "history",
+    "question": "Onde paramos no projeto Serra?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Decisão, motivo, teste concluído e pendência atual; a ponte já concluída não deve voltar como pendente.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Nova"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "ponte",
+          "48 khz"
+        ],
+        "pending": [
+          "exportar"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T11",
+    "case": "pendencia_concluida",
+    "condition": "sinapse",
+    "question": "Onde paramos no projeto Serra?",
+    "answer": "Decisão vigente: No Serra, troquei para o preset Nova porque a CPU do Vega ficava alta. Último teste concluído: O último teste da ponte em 48 kHz ficou concluído e aprovado. Próximo passo pendente: O próximo passo é exportar a versão final.",
+    "rubric": "Decisão, motivo, teste concluído e pendência atual; a ponte já concluída não deve voltar como pendente.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Nova"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "ponte",
+          "48 khz"
+        ],
+        "pending": [
+          "exportar"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T12",
+    "case": "pendencia_concluida",
+    "condition": "sinapse_multipurpose",
+    "question": "Onde paramos no projeto Serra?",
+    "answer": "Decisão vigente: No Serra, troquei para o preset Nova porque a CPU do Vega ficava alta. Último teste concluído: O último teste da ponte em 48 kHz ficou concluído e aprovado. Próximo passo pendente: O próximo passo é exportar a versão final.",
+    "rubric": "Decisão, motivo, teste concluído e pendência atual; a ponte já concluída não deve voltar como pendente.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Nova"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "ponte",
+          "48 khz"
+        ],
+        "pending": [
+          "exportar"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T13",
+    "case": "pendencia_substituida",
+    "condition": "history",
+    "question": "Onde paramos no projeto Litoral?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Pendência substituída pela ponte; o solo antigo não deve voltar como próximo passo.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Lyra"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "introducao"
+        ],
+        "pending": [
+          "ponte",
+          "48 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T14",
+    "case": "pendencia_substituida",
+    "condition": "sinapse",
+    "question": "Onde paramos no projeto Litoral?",
+    "answer": "Decisão vigente: No Litoral, troquei para o preset Lyra porque a CPU do Orion ficava alta. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+    "rubric": "Pendência substituída pela ponte; o solo antigo não deve voltar como próximo passo.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": false,
+      "pending": true,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Lyra"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "introducao"
+        ],
+        "pending": [
+          "ponte",
+          "48 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": false,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T15",
+    "case": "pendencia_substituida",
+    "condition": "sinapse_multipurpose",
+    "question": "Onde paramos no projeto Litoral?",
+    "answer": "Decisão vigente: No Litoral, troquei para o preset Lyra porque a CPU do Orion ficava alta. Último teste concluído: O teste do Lyra na introdução ficou concluído. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+    "rubric": "Pendência substituída pela ponte; o solo antigo não deve voltar como próximo passo.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Lyra"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "introducao"
+        ],
+        "pending": [
+          "ponte",
+          "48 khz"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T16",
+    "case": "sem_pendencia",
+    "condition": "history",
+    "question": "Onde paramos no projeto Vale?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Decisão, motivo e teste concluído; a ausência de próximo passo deve ser reconhecida, sem inventar pendência.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Comet"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "refrao"
+        ],
+        "pending": [
+          "nao defini",
+          "sem proximo passo",
+          "nao ha proximo",
+          "nenhum proximo"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": false,
+      "reason": false,
+      "completed": false,
+      "pending": false
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T17",
+    "case": "sem_pendencia",
+    "condition": "sinapse",
+    "question": "Onde paramos no projeto Vale?",
+    "answer": "Decisão vigente: No Vale, troquei para o preset Comet porque a CPU do Atlas ficava alta. Último teste concluído: O teste do Comet no refrão ficou concluído. Não há próximo passo definido para este projeto.",
+    "rubric": "Decisão, motivo e teste concluído; a ausência de próximo passo deve ser reconhecida, sem inventar pendência.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Comet"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "refrao"
+        ],
+        "pending": [
+          "nao defini",
+          "sem proximo passo",
+          "nao ha proximo",
+          "nenhum proximo"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T18",
+    "case": "sem_pendencia",
+    "condition": "sinapse_multipurpose",
+    "question": "Onde paramos no projeto Vale?",
+    "answer": "Decisão vigente: No Vale, troquei para o preset Comet porque a CPU do Atlas ficava alta. Último teste concluído: O teste do Comet no refrão ficou concluído. Não há próximo passo definido para este projeto.",
+    "rubric": "Decisão, motivo e teste concluído; a ausência de próximo passo deve ser reconhecida, sem inventar pendência.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true,
+      "components": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "facts_required": {
+        "decision": [
+          "Comet"
+        ],
+        "reason": [
+          "CPU",
+          "alta"
+        ],
+        "completed": [
+          "refrao"
+        ],
+        "pending": [
+          "nao defini",
+          "sem proximo passo",
+          "nao ha proximo",
+          "nenhum proximo"
+        ]
+      },
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "references": {
+      "decision": true,
+      "reason": true,
+      "completed": true,
+      "pending": true
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  }
+]

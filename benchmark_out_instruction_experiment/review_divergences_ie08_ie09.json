@@ -1,0 +1,167 @@
+{
+  "review_method": "revisão cega assistida por IA",
+  "instruction_mapping_revealed": false,
+  "rubric_v2_preserved": true,
+  "automatic_results_preserved": "benchmark_out_instruction_experiment/instruction_results.json",
+  "pairs": [
+    {
+      "review_id": "IE08",
+      "case": "proximo_condicionado",
+      "criteria": [
+        "decision",
+        "reason",
+        "completed",
+        "pending",
+        "condition"
+      ],
+      "responses": {
+        "A": {
+          "human": {
+            "decision": {
+              "score": 1,
+              "notes": "A troca em dn2 e o próximo teste com o Aster em dn4 deixam clara a escolha vigente."
+            },
+            "reason": {
+              "score": 1,
+              "notes": "dn2 sustenta que a CPU do Halo ficava alta."
+            },
+            "completed": {
+              "score": 1,
+              "notes": "dn3 confirma a conclusão do teste do Aster no refrão."
+            },
+            "pending": {
+              "score": 1,
+              "notes": "dn4 confirma o teste do Aster na ponte em 96 kHz."
+            },
+            "condition": {
+              "score": 1,
+              "notes": "A medição segue pendente. Preserva os dois caminhos de dn4: exportar abaixo de 30% ou reduzir o oversampling caso contrário."
+            }
+          },
+          "v2": {
+            "decision": true,
+            "reason": true,
+            "completed": true,
+            "pending": true,
+            "condition": true
+          },
+          "v2_complete": true,
+          "divergences": []
+        },
+        "B": {
+          "human": {
+            "decision": {
+              "score": 1,
+              "notes": "A frase sobre a troca, lida junto do teste pendente com o Aster, deixa clara a escolha vigente. dn2 e dn4 sustentam essa leitura."
+            },
+            "reason": {
+              "score": 1,
+              "notes": "dn2 sustenta que a CPU do Halo ficava alta."
+            },
+            "completed": {
+              "score": 1,
+              "notes": "dn3 confirma a conclusão do teste do Aster no refrão."
+            },
+            "pending": {
+              "score": 1,
+              "notes": "dn4 confirma o teste do Aster na ponte em 96 kHz."
+            },
+            "condition": {
+              "score": 1,
+              "notes": "A medição segue pendente e os dois caminhos de dn4 foram preservados. “Reduzo” muda a perspectiva de quem fala, mas mantém a ação prevista."
+            }
+          },
+          "v2": {
+            "decision": false,
+            "reason": true,
+            "completed": true,
+            "pending": true,
+            "condition": true
+          },
+          "v2_complete": false,
+          "divergences": [
+            {
+              "criterion": "decision",
+              "human": 1,
+              "v2": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "review_id": "IE09",
+      "case": "intercalado_norte",
+      "criteria": [
+        "decision",
+        "reason",
+        "completed",
+        "pending"
+      ],
+      "responses": {
+        "A": {
+          "human": {
+            "decision": {
+              "score": 1,
+              "notes": "A troca registrada em n2 e a intenção de continuar com o Safira em n6 identificam a escolha vigente."
+            },
+            "reason": {
+              "score": 1,
+              "notes": "n2 sustenta que a CPU do Lume ficava alta."
+            },
+            "completed": {
+              "score": 1,
+              "notes": "n3 confirma a conclusão do teste do Safira no refrão."
+            },
+            "pending": {
+              "score": 1,
+              "notes": "n4 confirma que falta testar a ponte do Norte em 48 kHz."
+            }
+          },
+          "v2": {
+            "decision": false,
+            "reason": true,
+            "completed": true,
+            "pending": true
+          },
+          "v2_complete": false,
+          "divergences": [
+            {
+              "criterion": "decision",
+              "human": 1,
+              "v2": 0
+            }
+          ]
+        },
+        "B": {
+          "human": {
+            "decision": {
+              "score": 1,
+              "notes": "A troca para o Safira é apresentada como parte do estado atual da retomada, com suporte em n2 e n3."
+            },
+            "reason": {
+              "score": 1,
+              "notes": "n2 sustenta que a CPU do Lume ficava alta."
+            },
+            "completed": {
+              "score": 1,
+              "notes": "A resposta identifica corretamente o teste do Safira no refrão como concluído, conforme n3. No resumo, “validado” sugere aprovação, algo que n3 não informa."
+            },
+            "pending": {
+              "score": 1,
+              "notes": "n4 confirma que falta testar a ponte do Norte em 48 kHz."
+            }
+          },
+          "v2": {
+            "decision": true,
+            "reason": true,
+            "completed": true,
+            "pending": true
+          },
+          "v2_complete": true,
+          "divergences": []
+        }
+      }
+    }
+  ]
+}

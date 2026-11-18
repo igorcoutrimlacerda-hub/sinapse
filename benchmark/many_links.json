@@ -1,0 +1,8 @@
+{
+  "messages": [
+    {"id":"m30","text":"Porque o Serum 2 é famoso.","author":"user","conversation_id":"c1","position":30,"sent_at":"2026-11-17T09:00:00-03:00","reply_to":"m1","coordinates":{"o_que":["Serum 2"],"quem":["usuário"],"por_que":["é famoso"]}},
+    {"id":"m31","text":"Já usei o Serum 2 antes.","author":"user","conversation_id":"c1","position":31,"sent_at":"2026-11-17T09:01:00-03:00","reply_to":"m1","coordinates":{"o_que":["Serum 2"],"quem":["usuário"],"por_que":["já usei antes"]}},
+    {"id":"m32","text":"O Serum 2 tem outro modo.","author":"user","conversation_id":"c1","position":32,"sent_at":"2026-11-17T09:02:00-03:00","reply_to":"m1","coordinates":{"o_que":["Serum 2"],"quem":["usuário"],"como":["outro modo"]}},
+    {"id":"m33","text":"Todo mundo fala do Serum 2.","author":"user","conversation_id":"c1","position":33,"sent_at":"2026-11-17T09:03:00-03:00","reply_to":"m1","coordinates":{"o_que":["Serum 2"],"quem":["usuário"],"por_que":["todo mundo fala"]}}
+  ]
+}

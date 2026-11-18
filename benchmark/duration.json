@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "id": "m10",
+      "text": "O Serum 2 tem duração de 2 horas.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 10,
+      "sent_at": "2026-11-15T09:04:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["Serum 2"],
+        "quem": ["usuário"],
+        "como": ["duração de 2 horas"]
+      }
+    }
+  ]
+}

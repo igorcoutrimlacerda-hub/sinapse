@@ -1,0 +1,268 @@
+{
+  "complete": true,
+  "revealed": true,
+  "reviewed_pairs": 10,
+  "review_method": "revisão cega assistida por IA; rótulos A/B ocultos até a consolidação",
+  "revealed_conditions": [
+    {
+      "review_id": "IE01",
+      "case": "retomada_geral",
+      "conditions": {
+        "A": "experimental",
+        "B": "current"
+      },
+      "preferred": "B"
+    },
+    {
+      "review_id": "IE02",
+      "case": "proximo_teste",
+      "conditions": {
+        "A": "current",
+        "B": "experimental"
+      },
+      "preferred": "B"
+    },
+    {
+      "review_id": "IE03",
+      "case": "decisao_vigente",
+      "conditions": {
+        "A": "current",
+        "B": "experimental"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "IE04",
+      "case": "pendencia_concluida",
+      "conditions": {
+        "A": "experimental",
+        "B": "current"
+      },
+      "preferred": "empate"
+    },
+    {
+      "review_id": "IE05",
+      "case": "pendencia_substituida",
+      "conditions": {
+        "A": "current",
+        "B": "experimental"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "IE06",
+      "case": "sem_pendencia",
+      "conditions": {
+        "A": "experimental",
+        "B": "current"
+      },
+      "preferred": "B"
+    },
+    {
+      "review_id": "IE07",
+      "case": "pendencia_substituida_costa",
+      "conditions": {
+        "A": "current",
+        "B": "experimental"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "IE08",
+      "case": "proximo_condicionado",
+      "conditions": {
+        "A": "current",
+        "B": "experimental"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "IE09",
+      "case": "intercalado_norte",
+      "conditions": {
+        "A": "experimental",
+        "B": "current"
+      },
+      "preferred": "A"
+    },
+    {
+      "review_id": "IE10",
+      "case": "intercalado_sul",
+      "conditions": {
+        "A": "experimental",
+        "B": "current"
+      },
+      "preferred": "B"
+    }
+  ],
+  "preferences": {
+    "current": {
+      "wins": 7,
+      "ties": 1
+    },
+    "experimental": {
+      "wins": 2,
+      "ties": 1
+    }
+  },
+  "human_summary": {
+    "current": {
+      "rows": 10,
+      "human_criteria": {
+        "decision": {
+          "hits": 9,
+          "total": 9
+        },
+        "reason": {
+          "hits": 10,
+          "total": 10
+        },
+        "completed": {
+          "hits": 8,
+          "total": 8
+        },
+        "pending": {
+          "hits": 9,
+          "total": 9
+        },
+        "condition": {
+          "hits": 1,
+          "total": 1
+        }
+      },
+      "v2_criteria": {
+        "decision": {
+          "hits": 9,
+          "total": 9
+        },
+        "reason": {
+          "hits": 10,
+          "total": 10
+        },
+        "completed": {
+          "hits": 8,
+          "total": 8
+        },
+        "pending": {
+          "hits": 9,
+          "total": 9
+        },
+        "condition": {
+          "hits": 1,
+          "total": 1
+        }
+      },
+      "human_complete": 10,
+      "v2_complete": 10,
+      "prompt_tokens": 2553,
+      "completion_tokens": 1065,
+      "memory_tokens_avg": 130.1
+    },
+    "experimental": {
+      "rows": 10,
+      "human_criteria": {
+        "decision": {
+          "hits": 8,
+          "total": 9
+        },
+        "reason": {
+          "hits": 10,
+          "total": 10
+        },
+        "completed": {
+          "hits": 8,
+          "total": 8
+        },
+        "pending": {
+          "hits": 9,
+          "total": 9
+        },
+        "condition": {
+          "hits": 1,
+          "total": 1
+        }
+      },
+      "v2_criteria": {
+        "decision": {
+          "hits": 7,
+          "total": 9
+        },
+        "reason": {
+          "hits": 10,
+          "total": 10
+        },
+        "completed": {
+          "hits": 8,
+          "total": 8
+        },
+        "pending": {
+          "hits": 9,
+          "total": 9
+        },
+        "condition": {
+          "hits": 1,
+          "total": 1
+        }
+      },
+      "human_complete": 9,
+      "v2_complete": 8,
+      "prompt_tokens": 3133,
+      "completion_tokens": 1068,
+      "memory_tokens_avg": 130.1
+    }
+  },
+  "divergences": [
+    {
+      "review_id": "IE03",
+      "case": "decisao_vigente",
+      "condition": "experimental",
+      "criterion": "decision",
+      "human": 0,
+      "v2": 1
+    },
+    {
+      "review_id": "IE08",
+      "case": "proximo_condicionado",
+      "condition": "experimental",
+      "criterion": "decision",
+      "human": 1,
+      "v2": 0
+    },
+    {
+      "review_id": "IE09",
+      "case": "intercalado_norte",
+      "condition": "experimental",
+      "criterion": "decision",
+      "human": 1,
+      "v2": 0
+    }
+  ],
+  "divergences_by_criterion": {
+    "decision": 3,
+    "reason": 0,
+    "completed": 0,
+    "pending": 0,
+    "condition": 0
+  },
+  "automatic_preserved": "benchmark_out_instruction_experiment\\instruction_results.json",
+  "instruction_cost": {
+    "current_instruction_tokens": 33,
+    "experimental_instruction_tokens": 73,
+    "estimated_delta": 40,
+    "real_prompt_delta_total": 580
+  },
+  "cost": {
+    "current": {
+      "prompt_tokens": 2553,
+      "completion_tokens": 1065,
+      "memory_tokens_avg": 130.1
+    },
+    "experimental": {
+      "prompt_tokens": 3133,
+      "completion_tokens": 1068,
+      "memory_tokens_avg": 130.1
+    }
+  },
+  "cost_delta_prompt": 580,
+  "cost_delta_completion": 3
+}

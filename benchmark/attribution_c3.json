@@ -1,0 +1,12 @@
+{
+  "messages": [
+    {"id":"z1","text":"Escolhi a Aurora para o bass.","author":"user","conversation_id":"c3","position":1,"sent_at":"2026-11-20T09:00:00-03:00","reply_to":null,"coordinates":{"o_que":["Aurora","bass"],"quem":["usuário"],"para_que":["fazer o bass"]}},
+    {"id":"z2","text":"Porque a licença já estava comprada.","author":"user","conversation_id":"c3","position":2,"sent_at":"2026-11-20T09:01:00-03:00","reply_to":"z1","coordinates":{"quem":["usuário"],"por_que":["a licença já estava comprada"]}},
+    {"id":"y1","text":"Escolhi a Nebula para o bass.","author":"user","conversation_id":"c3","position":3,"sent_at":"2026-11-20T09:02:00-03:00","reply_to":null,"coordinates":{"o_que":["Nebula","bass"],"quem":["usuário"],"para_que":["fazer o bass"]}},
+    {"id":"y2","text":"Porque a licença já estava comprada.","author":"user","conversation_id":"c3","position":4,"sent_at":"2026-11-20T09:03:00-03:00","reply_to":"y1","coordinates":{"quem":["usuário"],"por_que":["a licença já estava comprada"]}},
+    {"id":"x1","text":"Comprei a bicicleta para ir ao trabalho.","author":"user","conversation_id":"c3","position":5,"sent_at":"2026-11-20T09:04:00-03:00","reply_to":null,"coordinates":{"o_que":["bicicleta"],"quem":["usuário"],"para_que":["ir ao trabalho"]}},
+    {"id":"x2","text":"Porque a trilha é mais curta.","author":"user","conversation_id":"c3","position":6,"sent_at":"2026-11-20T09:05:00-03:00","reply_to":"x1","coordinates":{"quem":["usuário"],"por_que":["a trilha é mais curta"]}},
+    {"id":"w1","text":"Troquei a bicicleta por uma mountain bike.","author":"user","conversation_id":"c3","position":7,"sent_at":"2026-11-20T09:06:00-03:00","reply_to":null,"coordinates":{"o_que":["bicicleta","mountain bike"],"quem":["usuário"],"por_que":["troquei a bicicleta"]}},
+    {"id":"w2","text":"Porque a trilha é mais curta.","author":"user","conversation_id":"c3","position":8,"sent_at":"2026-11-20T09:07:00-03:00","reply_to":"w1","coordinates":{"quem":["usuário"],"por_que":["a trilha é mais curta"]}}
+  ]
+}

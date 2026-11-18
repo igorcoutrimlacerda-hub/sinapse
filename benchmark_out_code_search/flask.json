@@ -1,0 +1,140 @@
+{
+  "repo": "pallets/flask",
+  "commit": "49943b5a9441",
+  "files": 219,
+  "chunks": 2146,
+  "index_bytes": 2158384,
+  "cases": [
+    {
+      "id": "exact_flask_run",
+      "query": "Flask.run",
+      "expected_path": "src/flask/app.py",
+      "expected_symbol": "run",
+      "ok": true,
+      "ms": 0.9,
+      "hits": [
+        {
+          "path": "src/flask/app.py",
+          "start": 641,
+          "end": 764,
+          "symbol": "run",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/app.py",
+          "start": 108,
+          "end": 1686,
+          "symbol": "Flask",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        }
+      ]
+    },
+    {
+      "id": "behavior_start_server",
+      "query": "onde a aplicação inicia o servidor de desenvolvimento",
+      "expected_path": "src/flask/app.py",
+      "expected_symbol": "run",
+      "ok": true,
+      "ms": 2881.5,
+      "hits": [
+        {
+          "path": "src/flask/app.py",
+          "start": 641,
+          "end": 764,
+          "symbol": "run",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/cli.py",
+          "start": 1121,
+          "end": 1122,
+          "symbol": "main",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/app.py",
+          "start": 1679,
+          "end": 1686,
+          "symbol": "__call__",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/sansio/app.py",
+          "start": 551,
+          "end": 561,
+          "symbol": "debug",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "examples/celery/src/task_app/__init__.py",
+          "start": 31,
+          "end": 33,
+          "symbol": "__call__",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        }
+      ]
+    },
+    {
+      "id": "behavior_session_invalidation",
+      "query": "onde a sessão é invalidada quando a senha muda",
+      "expected_path": "src/flask/sessions.py",
+      "expected_symbol": null,
+      "ok": true,
+      "ms": 399.5,
+      "hits": [
+        {
+          "path": "src/flask/sessions.py",
+          "start": 323,
+          "end": 335,
+          "symbol": "open_session",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/sessions.py",
+          "start": 57,
+          "end": 80,
+          "symbol": "SecureCookieSession",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/sessions.py",
+          "start": 337,
+          "end": 385,
+          "symbol": "save_session",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/sessions.py",
+          "start": 202,
+          "end": 206,
+          "symbol": "get_cookie_secure",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        },
+        {
+          "path": "src/flask/ctx.py",
+          "start": 396,
+          "end": 403,
+          "symbol": "session",
+          "kind": "code",
+          "commit": "49943b5a94413a530761350f04e896f76e8d620e"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total": 3,
+    "passed": 3,
+    "failed": []
+  }
+}

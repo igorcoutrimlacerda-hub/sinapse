@@ -1,0 +1,770 @@
+{
+  "summary": {
+    "conditions": {
+      "history": {
+        "cases": 4,
+        "hit_rate": 0.0,
+        "full_rate": 0.0,
+        "avg_additional_tokens": 0.0,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 0.0
+      },
+      "lexical": {
+        "cases": 4,
+        "hit_rate": 0.5,
+        "full_rate": 0.5,
+        "avg_additional_tokens": 104.5,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 0.5
+      },
+      "sinapse": {
+        "cases": 4,
+        "hit_rate": 1.0,
+        "full_rate": 1.0,
+        "avg_additional_tokens": 73.0,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 1.0
+      },
+      "manual": {
+        "cases": 4,
+        "hit_rate": 1.0,
+        "full_rate": 1.0,
+        "avg_additional_tokens": 113.0,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 1.0
+      }
+    },
+    "sinapse_delta_pp": {
+      "history": 100.0,
+      "lexical": 50.0,
+      "manual": 0.0
+    },
+    "per_case": [
+      {
+        "case": "motivo_serum",
+        "kind": "motivo",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1",
+            "m2"
+          ],
+          "manual": [
+            "m1",
+            "m2"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 115,
+          "sinapse": 81,
+          "manual": 113
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "procedimento_bass",
+        "kind": "procedimento",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m3",
+            "m9",
+            "m8"
+          ],
+          "sinapse": [
+            "m3"
+          ],
+          "manual": [
+            "m1",
+            "m3"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 112,
+          "sinapse": 49,
+          "manual": 113
+        },
+        "expected_ids": [
+          "m3"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "referencia_curta",
+        "kind": "referencia_curta",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m3"
+          ],
+          "sinapse": [
+            "m1",
+            "m3"
+          ],
+          "manual": [
+            "m1",
+            "m3"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 81,
+          "sinapse": 81,
+          "manual": 113
+        },
+        "expected_ids": [
+          "m3"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "retomada_preset",
+        "kind": "retomada",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m4",
+            "m1",
+            "m5"
+          ],
+          "sinapse": [
+            "m1",
+            "m2"
+          ],
+          "manual": [
+            "m1",
+            "m2"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 110,
+          "sinapse": 81,
+          "manual": 113
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      }
+    ],
+    "cases": 4
+  },
+  "cases": [
+    {
+      "case": "motivo_serum",
+      "kind": "motivo",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o preset Serum 2 porque ele já vinha com o timbre de baixo encorpado e definido que você queria, evitando ter que esculpir o som do zero — e porque a interface dele facilitava ajustar o filtro e o drive sem perder o corpo do bass. (baseado no que conversamos sobre Serum 2 e bass)",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 115,
+          "used_tokens": 207,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 para fazer o bass [m1].",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 173,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (mensagem m2, respondendo a m1).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 113,
+          "used_tokens": 205,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 para fazer o bass porque já tinha comprado a licença (m1, m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "procedimento_bass",
+      "kind": "procedimento",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho no contexto de memória nenhum registro de que você tenha testado o bass do Serum 2 — não aparece como você fez esse teste (nem qual método, preset, oscilador, filtro, etc.).\n\nSe quiser, me conta como foi o teste e eu registro para as próximas conversas.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m3",
+            "m9",
+            "m8"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 112,
+          "used_tokens": 201,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 49,
+          "used_tokens": 138,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass **alternando entre dois envelopes** (lembrança `m3`).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 113,
+          "used_tokens": 202,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass **alternando entre dois envelopes** (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "referencia_curta",
+      "kind": "referencia_curta",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho nenhuma memória ou contexto anterior sobre você ter escolhido o preset \"Serum 2\" ou sobre como o testou — não há mensagens recuperáveis sobre isso na minha memória desta conversa.\n\nSe você me contar os detalhes (onde usou, qual plugin/sintetizador, o que comparou), posso ajudar a reconstruir a justificativa e o método de teste.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 para fazer o bass (m1). E testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 para fazer o bass (m1). E testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 113,
+          "used_tokens": 202,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o **Serum 2 para fazer o bass** (m1).\n\nE testou o bass **alternando entre dois envelopes** (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "retomada_preset",
+      "kind": "retomada",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 91,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu esse preset porque a configuração equilibra exploração e consistência: temperatura moderada (0.7) para manter variação útil sem perder coerência, top_p em 0.95 para preservar diversidade lexical, e limite de tokens generoso para respostas longas sem truncar. Além disso, o system prompt foi ajustado para priorizar precisão factual e admitir incerteza, o que combina com o seu uso. (Não tenho registro da mensagem original em que você definiu isso, então essa é uma reconstrução a partir do que você descreveu.)",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m4",
+            "m1",
+            "m5"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 110,
+          "used_tokens": 201,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o **Serum 2** para fazer o bass (m1). Não há no contexto o motivo específico da escolha — só o registro de que foi esse o preset/synth escolhido. Se quiser, me conta o critério (timbre, modulação, facilidade) que eu guardo junto.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 172,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 para fazer o bass porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 113,
+          "used_tokens": 204,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 para fazer o bass porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    }
+  ]
+}

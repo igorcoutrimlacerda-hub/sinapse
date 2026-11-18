@@ -1,0 +1,67 @@
+{
+  "description": "Plano congelado da próxima rodada de remoções dirigidas. Não executar antes da revisão.",
+  "cases": [
+    {
+      "case": "plan_bike_two",
+      "messages": ["data/agent_conversation.json", "benchmark/price_bicycle.json"],
+      "conversation_id": "c2",
+      "question": "Por que comprei a bicicleta e quanto custou?",
+      "purposes": ["motivo:p2", "preco:p3"],
+      "removals": [
+        {"id": "p2", "role": "evidencia_necessaria", "expected_change": ["motivo"], "expected_keep": ["preco"]},
+        {"id": "p1", "role": "dependencia_resposta_curta", "expected_change": ["motivo"], "expected_keep": ["preco"]}
+      ]
+    },
+    {
+      "case": "plan_two_themes",
+      "messages": ["data/agent_conversation.json", "benchmark/new_bike_price.json"],
+      "conversation_id": "c1",
+      "question": "Por que escolhi o Piano V e quanto custou a bicicleta?",
+      "purposes": ["motivo:m6", "preco:b3"],
+      "removals": [
+        {"id": "m6", "role": "evidencia_necessaria", "expected_change": ["motivo"], "expected_keep": ["preco"]},
+        {"id": "b3", "role": "evidencia_necessaria", "expected_change": ["preco"], "expected_keep": ["motivo"]}
+      ]
+    },
+    {
+      "case": "plan_priority",
+      "messages": ["data/agent_conversation.json", "benchmark/new_bike_price.json"],
+      "conversation_id": "c1",
+      "question": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano.",
+      "purposes": ["motivo:m6", "preco:b3"],
+      "priority": "motivo",
+      "removals": [
+        {"id": "m6", "role": "evidencia_prioritaria", "expected_change": ["motivo"], "expected_keep": ["preco_pendente_reconhecido"]},
+        {"id": "m7", "role": "redundante", "expected_change": [], "expected_keep": ["motivo", "preco_pendente_reconhecido"]}
+      ]
+    },
+    {
+      "case": "plan_history",
+      "messages": ["data/agent_conversation.json", "benchmark/price_bicycle.json"],
+      "conversation_id": "c2",
+      "question": "Quanto custou a bicicleta?",
+      "purposes": ["preco:p3"],
+      "recent_ids": ["p3"],
+      "removals": [
+        {"id": "b3", "role": "redundante_fora_do_historico", "expected_change": [], "expected_keep": ["preco"]},
+        {"id": "p1", "role": "dependencia_nao_necessaria", "expected_change": [], "expected_keep": ["preco"]}
+      ]
+    },
+    {
+      "case": "plan_restricted",
+      "messages": ["data/agent_conversation.json", "benchmark/new_bike_price.json"],
+      "conversation_id": "c1",
+      "question": "Quanto custou a bicicleta?",
+      "purposes": ["preco:restrito"],
+      "preferences": ["Não quero falar sobre o preço da bicicleta."],
+      "removals": [
+        {"id": "b3", "role": "evidencia_restrita", "expected_change": [], "expected_keep": ["restricao_respeitada"]},
+        {"id": "m5", "role": "redundante", "expected_change": [], "expected_keep": ["restricao_respeitada"]}
+      ]
+    }
+  ],
+  "conditions": ["reference", "purpose", "removal_item_1", "removal_item_2"],
+  "planned_cases": 5,
+  "planned_conditions_per_case": 4,
+  "planned_calls": 20
+}

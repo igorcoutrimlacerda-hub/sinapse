@@ -1,0 +1,6 @@
+RETOMADA DE PROJETO
+modo=simulated | casos=6
+
+history              decisão=0/5 motivo=0/6 concluído=0/4 pendência=0/5 nota=0.00 refs=0 repetições=0 sem_suporte=0 prompt=706 completion=30
+sinapse              decisão=5/5 motivo=6/6 concluído=3/4 pendência=4/5 nota=0.92 refs=3 repetições=0 sem_suporte=0 prompt=1374 completion=228
+sinapse_multipurpose decisão=5/5 motivo=6/6 concluído=4/4 pendência=5/5 nota=1.00 refs=5 repetições=0 sem_suporte=0 prompt=1409 completion=263

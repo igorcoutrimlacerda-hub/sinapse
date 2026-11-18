@@ -1,0 +1,1770 @@
+{
+  "dataset": "benchmark/resumption_sessions.json",
+  "mode": "simulated",
+  "model": "deepseek-flash",
+  "cases": 6,
+  "rows": [
+    {
+      "case": "retomada_geral",
+      "condition": "history",
+      "question": "Onde paramos nesse problema?",
+      "open_resumption": true,
+      "selected_ids": [],
+      "multipurpose_passes": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "element_checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references_all": false,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Pigments"
+          ],
+          "reason": [
+            "CPU",
+            "40"
+          ],
+          "completed": [
+            "refrao"
+          ],
+          "pending": [
+            "introducao",
+            "96 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 117,
+      "completion_tokens": 5,
+      "total_tokens": 122,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "retomada_geral",
+      "condition": "sinapse",
+      "question": "Onde paramos nesse problema?",
+      "open_resumption": true,
+      "selected_ids": [
+        "pr5",
+        "pr4"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "pr4",
+        "pr5"
+      ],
+      "evidence_coverage": 0.5,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false
+      },
+      "references_all": false,
+      "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+      "score": 0.75,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Pigments"
+          ],
+          "reason": [
+            "CPU",
+            "40"
+          ],
+          "completed": [
+            "refrao"
+          ],
+          "pending": [
+            "introducao",
+            "96 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 98,
+      "select_ms": 5.33,
+      "prompt_tokens": 215,
+      "completion_tokens": 41,
+      "total_tokens": 256,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "retomada_geral",
+      "condition": "sinapse_multipurpose",
+      "question": "Onde paramos nesse problema?",
+      "open_resumption": true,
+      "selected_ids": [
+        "pr5",
+        "pr4",
+        "pr7"
+      ],
+      "multipurpose_passes": [
+        {
+          "purpose": "decision",
+          "query": "Onde paramos nesse problema? Qual é a decisão vigente?",
+          "seed": "pr5",
+          "ids": [
+            "pr5",
+            "pr4"
+          ]
+        },
+        {
+          "purpose": "completed",
+          "query": "Onde paramos nesse problema? Qual foi o último teste concluído?",
+          "seed": "pr5",
+          "ids": [
+            "pr5",
+            "pr4"
+          ]
+        },
+        {
+          "purpose": "pending",
+          "query": "Onde paramos nesse problema? Qual é o próximo passo pendente?",
+          "seed": "pr7",
+          "ids": [
+            "pr7",
+            "pr6"
+          ]
+        }
+      ],
+      "evidence_present": [
+        "pr4",
+        "pr5",
+        "pr7"
+      ],
+      "evidence_coverage": 0.75,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%. Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Pigments"
+          ],
+          "reason": [
+            "CPU",
+            "40"
+          ],
+          "completed": [
+            "refrao"
+          ],
+          "pending": [
+            "introducao",
+            "96 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 140,
+      "select_ms": 9.62,
+      "prompt_tokens": 257,
+      "completion_tokens": 63,
+      "total_tokens": 320,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "proximo_teste",
+      "condition": "history",
+      "question": "Qual era o próximo teste e por quê?",
+      "open_resumption": false,
+      "selected_ids": [],
+      "multipurpose_passes": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "element_checks": {
+        "reason": false,
+        "pending": false
+      },
+      "references": {
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references_all": false,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false,
+        "components": [
+          "reason",
+          "pending"
+        ],
+        "facts_required": {
+          "reason": [
+            "CPU",
+            "estoura"
+          ],
+          "pending": [
+            "introducao",
+            "96 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 121,
+      "completion_tokens": 5,
+      "total_tokens": 126,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "proximo_teste",
+      "condition": "sinapse",
+      "question": "Qual era o próximo teste e por quê?",
+      "open_resumption": false,
+      "selected_ids": [
+        "pr7"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "pr7"
+      ],
+      "evidence_coverage": 0.5,
+      "element_checks": {
+        "reason": true,
+        "pending": true
+      },
+      "references": {
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "references_all": false,
+      "answer": "Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+      "score": 1.0,
+      "checks": {
+        "decision": false,
+        "reason": true,
+        "completed": false,
+        "pending": true,
+        "components": [
+          "reason",
+          "pending"
+        ],
+        "facts_required": {
+          "reason": [
+            "CPU",
+            "estoura"
+          ],
+          "pending": [
+            "introducao",
+            "96 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 59,
+      "select_ms": 2.49,
+      "prompt_tokens": 180,
+      "completion_tokens": 22,
+      "total_tokens": 202,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "proximo_teste",
+      "condition": "sinapse_multipurpose",
+      "question": "Qual era o próximo teste e por quê?",
+      "open_resumption": false,
+      "selected_ids": [
+        "pr7"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "pr7"
+      ],
+      "evidence_coverage": 0.5,
+      "element_checks": {
+        "reason": true,
+        "pending": true
+      },
+      "references": {
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "references_all": false,
+      "answer": "Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+      "score": 1.0,
+      "checks": {
+        "decision": false,
+        "reason": true,
+        "completed": false,
+        "pending": true,
+        "components": [
+          "reason",
+          "pending"
+        ],
+        "facts_required": {
+          "reason": [
+            "CPU",
+            "estoura"
+          ],
+          "pending": [
+            "introducao",
+            "96 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 59,
+      "select_ms": 2.42,
+      "prompt_tokens": 180,
+      "completion_tokens": 22,
+      "total_tokens": 202,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "decisao_vigente",
+      "condition": "history",
+      "question": "Qual preset está valendo para o bass agora?",
+      "open_resumption": false,
+      "selected_ids": [],
+      "multipurpose_passes": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "element_checks": {
+        "decision": false,
+        "reason": false
+      },
+      "references": {
+        "decision": false,
+        "reason": false,
+        "completed": false
+      },
+      "references_all": false,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason"
+        ],
+        "facts_required": {
+          "decision": [
+            "Pigments"
+          ],
+          "reason": [
+            "CPU",
+            "40"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 121,
+      "completion_tokens": 5,
+      "total_tokens": 126,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "decisao_vigente",
+      "condition": "sinapse",
+      "question": "Qual preset está valendo para o bass agora?",
+      "open_resumption": false,
+      "selected_ids": [
+        "pr4",
+        "pr5",
+        "pr1"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "pr4"
+      ],
+      "evidence_coverage": 1.0,
+      "element_checks": {
+        "decision": true,
+        "reason": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason"
+        ],
+        "facts_required": {
+          "decision": [
+            "Pigments"
+          ],
+          "reason": [
+            "CPU",
+            "40"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 132,
+      "select_ms": 4.26,
+      "prompt_tokens": 253,
+      "completion_tokens": 41,
+      "total_tokens": 294,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "decisao_vigente",
+      "condition": "sinapse_multipurpose",
+      "question": "Qual preset está valendo para o bass agora?",
+      "open_resumption": false,
+      "selected_ids": [
+        "pr4",
+        "pr5",
+        "pr1"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "pr4"
+      ],
+      "evidence_coverage": 1.0,
+      "element_checks": {
+        "decision": true,
+        "reason": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason"
+        ],
+        "facts_required": {
+          "decision": [
+            "Pigments"
+          ],
+          "reason": [
+            "CPU",
+            "40"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 132,
+      "select_ms": 4.82,
+      "prompt_tokens": 253,
+      "completion_tokens": 41,
+      "total_tokens": 294,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "pendencia_concluida",
+      "condition": "history",
+      "question": "Onde paramos no projeto Serra?",
+      "open_resumption": true,
+      "selected_ids": [],
+      "multipurpose_passes": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "element_checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references_all": false,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Nova"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "ponte",
+            "48 khz"
+          ],
+          "pending": [
+            "exportar"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 116,
+      "completion_tokens": 5,
+      "total_tokens": 121,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "pendencia_concluida",
+      "condition": "sinapse",
+      "question": "Onde paramos no projeto Serra?",
+      "open_resumption": true,
+      "selected_ids": [
+        "sr2",
+        "sr6",
+        "sr5"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "sr2",
+        "sr5",
+        "sr6"
+      ],
+      "evidence_coverage": 1.0,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: No Serra, troquei para o preset Nova porque a CPU do Vega ficava alta. Último teste concluído: O último teste da ponte em 48 kHz ficou concluído e aprovado. Próximo passo pendente: O próximo passo é exportar a versão final.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Nova"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "ponte",
+            "48 khz"
+          ],
+          "pending": [
+            "exportar"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 125,
+      "select_ms": 2.24,
+      "prompt_tokens": 241,
+      "completion_tokens": 49,
+      "total_tokens": 290,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "pendencia_concluida",
+      "condition": "sinapse_multipurpose",
+      "question": "Onde paramos no projeto Serra?",
+      "open_resumption": true,
+      "selected_ids": [
+        "sr2",
+        "sr6",
+        "sr5"
+      ],
+      "multipurpose_passes": [
+        {
+          "purpose": "decision",
+          "query": "Onde paramos no projeto Serra? Qual é a decisão vigente?",
+          "seed": "sr2",
+          "ids": [
+            "sr2",
+            "sr6",
+            "sr5"
+          ]
+        },
+        {
+          "purpose": "completed",
+          "query": "Onde paramos no projeto Serra? Qual foi o último teste concluído?",
+          "seed": "sr5",
+          "ids": [
+            "sr5",
+            "sr2",
+            "sr6"
+          ]
+        },
+        {
+          "purpose": "pending",
+          "query": "Onde paramos no projeto Serra? Qual é o próximo passo pendente?",
+          "seed": "sr6",
+          "ids": [
+            "sr6",
+            "sr2",
+            "sr5"
+          ]
+        }
+      ],
+      "evidence_present": [
+        "sr2",
+        "sr5",
+        "sr6"
+      ],
+      "evidence_coverage": 1.0,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: No Serra, troquei para o preset Nova porque a CPU do Vega ficava alta. Último teste concluído: O último teste da ponte em 48 kHz ficou concluído e aprovado. Próximo passo pendente: O próximo passo é exportar a versão final.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Nova"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "ponte",
+            "48 khz"
+          ],
+          "pending": [
+            "exportar"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 126,
+      "select_ms": 7.87,
+      "prompt_tokens": 242,
+      "completion_tokens": 49,
+      "total_tokens": 291,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "pendencia_substituida",
+      "condition": "history",
+      "question": "Onde paramos no projeto Litoral?",
+      "open_resumption": true,
+      "selected_ids": [],
+      "multipurpose_passes": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "element_checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references_all": false,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Lyra"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "introducao"
+          ],
+          "pending": [
+            "ponte",
+            "48 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 116,
+      "completion_tokens": 5,
+      "total_tokens": 121,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "pendencia_substituida",
+      "condition": "sinapse",
+      "question": "Onde paramos no projeto Litoral?",
+      "open_resumption": true,
+      "selected_ids": [
+        "lt2",
+        "lt6",
+        "lt5"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "lt2",
+        "lt5",
+        "lt6"
+      ],
+      "evidence_coverage": 0.75,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "references_all": false,
+      "answer": "Decisão vigente: No Litoral, troquei para o preset Lyra porque a CPU do Orion ficava alta. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+      "score": 0.75,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": false,
+        "pending": true,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Lyra"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "introducao"
+          ],
+          "pending": [
+            "ponte",
+            "48 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 133,
+      "select_ms": 2.93,
+      "prompt_tokens": 249,
+      "completion_tokens": 34,
+      "total_tokens": 283,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "pendencia_substituida",
+      "condition": "sinapse_multipurpose",
+      "question": "Onde paramos no projeto Litoral?",
+      "open_resumption": true,
+      "selected_ids": [
+        "lt3",
+        "lt2",
+        "lt6"
+      ],
+      "multipurpose_passes": [
+        {
+          "purpose": "decision",
+          "query": "Onde paramos no projeto Litoral? Qual é a decisão vigente?",
+          "seed": "lt3",
+          "ids": [
+            "lt3",
+            "lt2",
+            "lt6",
+            "lt5"
+          ]
+        },
+        {
+          "purpose": "completed",
+          "query": "Onde paramos no projeto Litoral? Qual foi o último teste concluído?",
+          "seed": "lt3",
+          "ids": [
+            "lt3",
+            "lt2",
+            "lt6",
+            "lt5"
+          ]
+        },
+        {
+          "purpose": "pending",
+          "query": "Onde paramos no projeto Litoral? Qual é o próximo passo pendente?",
+          "seed": "lt5",
+          "ids": [
+            "lt5",
+            "lt6",
+            "lt3",
+            "lt2"
+          ]
+        }
+      ],
+      "evidence_present": [
+        "lt2",
+        "lt3",
+        "lt6"
+      ],
+      "evidence_coverage": 0.75,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: No Litoral, troquei para o preset Lyra porque a CPU do Orion ficava alta. Último teste concluído: O teste do Lyra na introdução ficou concluído. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Lyra"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "introducao"
+          ],
+          "pending": [
+            "ponte",
+            "48 khz"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 124,
+      "select_ms": 9.4,
+      "prompt_tokens": 240,
+      "completion_tokens": 47,
+      "total_tokens": 287,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "sem_pendencia",
+      "condition": "history",
+      "question": "Onde paramos no projeto Vale?",
+      "open_resumption": true,
+      "selected_ids": [],
+      "multipurpose_passes": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "element_checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false
+      },
+      "references_all": false,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "completed": false,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Comet"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "refrao"
+          ],
+          "pending": [
+            "nao defini",
+            "sem proximo passo",
+            "nao ha proximo",
+            "nenhum proximo"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 115,
+      "completion_tokens": 5,
+      "total_tokens": 120,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "sem_pendencia",
+      "condition": "sinapse",
+      "question": "Onde paramos no projeto Vale?",
+      "open_resumption": true,
+      "selected_ids": [
+        "vl3",
+        "vl2",
+        "vl4"
+      ],
+      "multipurpose_passes": [],
+      "evidence_present": [
+        "vl2",
+        "vl3",
+        "vl4"
+      ],
+      "evidence_coverage": 1.0,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: No Vale, troquei para o preset Comet porque a CPU do Atlas ficava alta. Último teste concluído: O teste do Comet no refrão ficou concluído. Não há próximo passo definido para este projeto.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Comet"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "refrao"
+          ],
+          "pending": [
+            "nao defini",
+            "sem proximo passo",
+            "nao ha proximo",
+            "nenhum proximo"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 121,
+      "select_ms": 2.63,
+      "prompt_tokens": 236,
+      "completion_tokens": 41,
+      "total_tokens": 277,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "sem_pendencia",
+      "condition": "sinapse_multipurpose",
+      "question": "Onde paramos no projeto Vale?",
+      "open_resumption": true,
+      "selected_ids": [
+        "vl3",
+        "vl2",
+        "vl4"
+      ],
+      "multipurpose_passes": [
+        {
+          "purpose": "decision",
+          "query": "Onde paramos no projeto Vale? Qual é a decisão vigente?",
+          "seed": "vl3",
+          "ids": [
+            "vl3",
+            "vl2",
+            "vl4"
+          ]
+        },
+        {
+          "purpose": "completed",
+          "query": "Onde paramos no projeto Vale? Qual foi o último teste concluído?",
+          "seed": "vl3",
+          "ids": [
+            "vl3",
+            "vl2",
+            "vl4"
+          ]
+        },
+        {
+          "purpose": "pending",
+          "query": "Onde paramos no projeto Vale? Qual é o próximo passo pendente?",
+          "seed": "vl4",
+          "ids": [
+            "vl4",
+            "vl3",
+            "vl2"
+          ]
+        }
+      ],
+      "evidence_present": [
+        "vl2",
+        "vl3",
+        "vl4"
+      ],
+      "evidence_coverage": 1.0,
+      "element_checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_all": true,
+      "answer": "Decisão vigente: No Vale, troquei para o preset Comet porque a CPU do Atlas ficava alta. Último teste concluído: O teste do Comet no refrão ficou concluído. Não há próximo passo definido para este projeto.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "components": [
+          "decision",
+          "reason",
+          "completed",
+          "pending"
+        ],
+        "facts_required": {
+          "decision": [
+            "Comet"
+          ],
+          "reason": [
+            "CPU",
+            "alta"
+          ],
+          "completed": [
+            "refrao"
+          ],
+          "pending": [
+            "nao defini",
+            "sem proximo passo",
+            "nao ha proximo",
+            "nenhum proximo"
+          ]
+        },
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 122,
+      "select_ms": 5.75,
+      "prompt_tokens": 237,
+      "completion_tokens": 41,
+      "total_tokens": 278,
+      "token_source": "estimativa_local",
+      "error": null
+    }
+  ],
+  "traces": [
+    {
+      "case": "retomada_geral",
+      "condition": "sinapse",
+      "question": "Onde paramos nesse problema?",
+      "focus": "onde",
+      "focus_rule": "onde",
+      "open_resumption": true,
+      "purpose_inferred": "foco_unico",
+      "seed": "pr5",
+      "candidates": [
+        {
+          "id": "pr4",
+          "within_radius": true,
+          "attention": 0.9,
+          "distance": 0.1357,
+          "evidence_focus": 1.0,
+          "reason": "selected",
+          "detail": "ganho 0.866; novo detalhe para o pedido; posição 1; requisição com 177 tokens estimados"
+        },
+        {
+          "id": "pr6",
+          "within_radius": false,
+          "attention": 0.0,
+          "distance": 0.9429,
+          "evidence_focus": 0.0,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr7",
+          "within_radius": false,
+          "attention": 0.0,
+          "distance": 0.9071,
+          "evidence_focus": 0.0,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr8",
+          "within_radius": false,
+          "attention": 0.0,
+          "distance": 0.8952,
+          "evidence_focus": null,
+          "reason": null,
+          "detail": null
+        }
+      ],
+      "selected": [
+        "pr5",
+        "pr4"
+      ],
+      "final_ids": [
+        "pr4",
+        "pr5"
+      ],
+      "memory_tokens": 98,
+      "decisions": {
+        "pr4": {
+          "reason": "selected",
+          "detail": "ganho 0.866; novo detalhe para o pedido; posição 1; requisição com 177 tokens estimados"
+        }
+      }
+    },
+    {
+      "case": "retomada_geral",
+      "condition": "sinapse_multipurpose",
+      "question": "Onde paramos nesse problema?",
+      "focus": "onde",
+      "focus_rule": "onde",
+      "open_resumption": true,
+      "purpose_inferred": "multiplos_propositos",
+      "passes": [
+        {
+          "purpose": "decision",
+          "query": "Onde paramos nesse problema? Qual é a decisão vigente?",
+          "seed": "pr5",
+          "ids": [
+            "pr5",
+            "pr4"
+          ]
+        },
+        {
+          "purpose": "completed",
+          "query": "Onde paramos nesse problema? Qual foi o último teste concluído?",
+          "seed": "pr5",
+          "ids": [
+            "pr5",
+            "pr4"
+          ]
+        },
+        {
+          "purpose": "pending",
+          "query": "Onde paramos nesse problema? Qual é o próximo passo pendente?",
+          "seed": "pr7",
+          "ids": [
+            "pr7",
+            "pr6"
+          ]
+        }
+      ],
+      "selected": [
+        "pr5",
+        "pr4",
+        "pr7"
+      ],
+      "memory_tokens": 140
+    },
+    {
+      "case": "proximo_teste",
+      "condition": "sinapse",
+      "question": "Qual era o próximo teste e por quê?",
+      "focus": "por_que",
+      "focus_rule": "por que",
+      "open_resumption": false,
+      "purpose_inferred": "foco_unico",
+      "seed": "pr7",
+      "candidates": [
+        {
+          "id": "pr4",
+          "within_radius": false,
+          "attention": 0.0206,
+          "distance": 0.8277,
+          "evidence_focus": 0.14285714285714285,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr5",
+          "within_radius": false,
+          "attention": 0.0,
+          "distance": 0.9044,
+          "evidence_focus": null,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr6",
+          "within_radius": true,
+          "attention": 0.0,
+          "distance": 0.1029,
+          "evidence_focus": null,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr8",
+          "within_radius": false,
+          "attention": 0.0,
+          "distance": 0.9412,
+          "evidence_focus": null,
+          "reason": null,
+          "detail": null
+        }
+      ],
+      "selected": [
+        "pr7"
+      ],
+      "final_ids": [
+        "pr7"
+      ],
+      "memory_tokens": 59,
+      "decisions": {}
+    },
+    {
+      "case": "proximo_teste",
+      "condition": "sinapse_multipurpose",
+      "question": "Qual era o próximo teste e por quê?",
+      "focus": "por_que",
+      "focus_rule": "por que",
+      "open_resumption": false,
+      "purpose_inferred": "foco_unico",
+      "seed": "pr7",
+      "candidates": [
+        {
+          "id": "pr4",
+          "within_radius": false,
+          "attention": 0.0206,
+          "distance": 0.8277,
+          "evidence_focus": 0.14285714285714285,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr5",
+          "within_radius": false,
+          "attention": 0.0,
+          "distance": 0.9044,
+          "evidence_focus": null,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr6",
+          "within_radius": true,
+          "attention": 0.0,
+          "distance": 0.1029,
+          "evidence_focus": null,
+          "reason": null,
+          "detail": null
+        },
+        {
+          "id": "pr8",
+          "within_radius": false,
+          "attention": 0.0,
+          "distance": 0.9412,
+          "evidence_focus": null,
+          "reason": null,
+          "detail": null
+        }
+      ],
+      "selected": [
+        "pr7"
+      ],
+      "final_ids": [
+        "pr7"
+      ],
+      "memory_tokens": 59,
+      "decisions": {}
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "retomada_geral",
+      "score_history": 0.0,
+      "score_sinapse": 0.75,
+      "score_multipurpose": 1.0,
+      "elements_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false
+      },
+      "elements_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false
+      },
+      "references_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "sinapse_better_history": true,
+      "sinapse_worse_history": false,
+      "multipurpose_better": true,
+      "multipurpose_worse": false
+    },
+    {
+      "case": "proximo_teste",
+      "score_history": 0.0,
+      "score_sinapse": 1.0,
+      "score_multipurpose": 1.0,
+      "elements_sinapse": {
+        "reason": true,
+        "pending": true
+      },
+      "elements_multipurpose": {
+        "reason": true,
+        "pending": true
+      },
+      "references_sinapse": {
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "references_multipurpose": {
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "sinapse_better_history": true,
+      "sinapse_worse_history": false,
+      "multipurpose_better": false,
+      "multipurpose_worse": false
+    },
+    {
+      "case": "decisao_vigente",
+      "score_history": 0.0,
+      "score_sinapse": 1.0,
+      "score_multipurpose": 1.0,
+      "elements_sinapse": {
+        "decision": true,
+        "reason": true
+      },
+      "elements_multipurpose": {
+        "decision": true,
+        "reason": true
+      },
+      "references_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": true
+      },
+      "references_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true
+      },
+      "sinapse_better_history": true,
+      "sinapse_worse_history": false,
+      "multipurpose_better": false,
+      "multipurpose_worse": false
+    },
+    {
+      "case": "pendencia_concluida",
+      "score_history": 0.0,
+      "score_sinapse": 1.0,
+      "score_multipurpose": 1.0,
+      "elements_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "elements_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "sinapse_better_history": true,
+      "sinapse_worse_history": false,
+      "multipurpose_better": false,
+      "multipurpose_worse": false
+    },
+    {
+      "case": "pendencia_substituida",
+      "score_history": 0.0,
+      "score_sinapse": 0.75,
+      "score_multipurpose": 1.0,
+      "elements_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "elements_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": false,
+        "pending": true
+      },
+      "references_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "sinapse_better_history": true,
+      "sinapse_worse_history": false,
+      "multipurpose_better": true,
+      "multipurpose_worse": false
+    },
+    {
+      "case": "sem_pendencia",
+      "score_history": 0.0,
+      "score_sinapse": 1.0,
+      "score_multipurpose": 1.0,
+      "elements_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "elements_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_sinapse": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "references_multipurpose": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      },
+      "sinapse_better_history": true,
+      "sinapse_worse_history": false,
+      "multipurpose_better": false,
+      "multipurpose_worse": false
+    }
+  ],
+  "aggregates": {
+    "history": {
+      "queries": 6,
+      "decision_ok": 0,
+      "reason_ok": 0,
+      "completed_ok": 0,
+      "pending_ok": 0,
+      "decision_total": 5,
+      "reason_total": 6,
+      "completed_total": 4,
+      "pending_total": 5,
+      "ref_decision": 0,
+      "ref_reason": 0,
+      "ref_completed": 0,
+      "ref_pending": 0,
+      "references_all": 0,
+      "coverage": 0.0,
+      "evidence_coverage": 0.0,
+      "avg_score": 0.0,
+      "completed_repetitions": 0,
+      "unsupported_claims": 0,
+      "prompt_tokens_total": 706,
+      "completion_tokens_total": 30,
+      "memory_tokens_avg": 0.0,
+      "select_ms_median": 0.0
+    },
+    "sinapse": {
+      "queries": 6,
+      "decision_ok": 5,
+      "reason_ok": 6,
+      "completed_ok": 3,
+      "pending_ok": 4,
+      "decision_total": 5,
+      "reason_total": 6,
+      "completed_total": 4,
+      "pending_total": 5,
+      "ref_decision": 5,
+      "ref_reason": 6,
+      "ref_completed": 4,
+      "ref_pending": 4,
+      "references_all": 3,
+      "coverage": 0.9167,
+      "evidence_coverage": 0.7917,
+      "avg_score": 0.9167,
+      "completed_repetitions": 0,
+      "unsupported_claims": 0,
+      "prompt_tokens_total": 1374,
+      "completion_tokens_total": 228,
+      "memory_tokens_avg": 111.3,
+      "select_ms_median": 2.93
+    },
+    "sinapse_multipurpose": {
+      "queries": 6,
+      "decision_ok": 5,
+      "reason_ok": 6,
+      "completed_ok": 4,
+      "pending_ok": 5,
+      "decision_total": 5,
+      "reason_total": 6,
+      "completed_total": 4,
+      "pending_total": 5,
+      "ref_decision": 5,
+      "ref_reason": 6,
+      "ref_completed": 5,
+      "ref_pending": 5,
+      "references_all": 5,
+      "coverage": 1.0,
+      "evidence_coverage": 0.8333,
+      "avg_score": 1.0,
+      "completed_repetitions": 0,
+      "unsupported_claims": 0,
+      "prompt_tokens_total": 1409,
+      "completion_tokens_total": 263,
+      "memory_tokens_avg": 117.2,
+      "select_ms_median": 7.87
+    }
+  },
+  "sinapse_better_history": 6,
+  "sinapse_worse_history": 0,
+  "multipurpose_better": 2,
+  "multipurpose_worse": 0,
+  "real_evaluation": {
+    "available": false,
+    "model": null,
+    "note": "Não executada nesta rodada: apenas cliente simulado."
+  },
+  "human_review_pending": true,
+  "previous_review_preserved": "benchmark_out_resumption/resumption_review.json"
+}

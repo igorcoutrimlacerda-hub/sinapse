@@ -1,0 +1,40 @@
+{
+  "case": "proximo_teste",
+  "review_id": "RP02",
+  "source": {
+    "id": "pr7",
+    "text": "O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura."
+  },
+  "request": {
+    "A": ["pr7"],
+    "B": ["pr7"],
+    "pr7_in_both_requests": true
+  },
+  "A": {
+    "condition": "sinapse_multipurpose",
+    "phrase": "introduzir a faixa em 96 kHz",
+    "action": "introduzir",
+    "object": "faixa",
+    "parameter": "96 kHz",
+    "goal_cpu_preserved": true,
+    "human_reason": 1,
+    "human_pending": 0,
+    "v1_pending": 1,
+    "human_pending_note": "A ação e o objeto mudam: introduzir a faixa não é testar a introdução."
+  },
+  "B": {
+    "condition": "sinapse",
+    "phrase": "introdução em 96 kHz",
+    "action": "testar (implícito em 'próximo teste')",
+    "object": "introdução",
+    "parameter": "96 kHz",
+    "goal_cpu_preserved": true,
+    "human_reason": 1,
+    "human_pending": 1,
+    "v1_pending": 1,
+    "extrapolation": ["clipping", "dropouts"],
+    "human_pending_note": "Objeto, ação e parâmetro preservados; clipping/dropouts não constam em pr7."
+  },
+  "difference": "“Testar a introdução” mantém a ação de teste e o objeto (a introdução). “Introduzir a faixa” troca a ação para importar/converter e o objeto para a faixa inteira. O parâmetro 96 kHz e o objetivo de medir a CPU permanecem nos dois casos.",
+  "human_preference": "B"
+}

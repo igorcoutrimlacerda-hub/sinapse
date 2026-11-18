@@ -1,0 +1,317 @@
+{
+  "train_cases": 7,
+  "eval_cases": 7,
+  "reference": {
+    "cases": 7,
+    "purpose_coverage": 0.625,
+    "all_purposes_cases": 5,
+    "deps_lost": 1,
+    "distractions": 1,
+    "memory_tokens": 364
+  },
+  "purpose": {
+    "cases": 7,
+    "purpose_coverage": 1.0,
+    "all_purposes_cases": 7,
+    "deps_lost": 0,
+    "distractions": 0,
+    "memory_tokens": 428
+  },
+  "entries": [
+    {
+      "case": "ev_bike_motive",
+      "family": "bicicleta",
+      "purposes": [
+        "m"
+      ],
+      "reference": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "p1",
+          "p2"
+        ],
+        "memory_tokens": 79
+      },
+      "purpose": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "p1",
+          "p2"
+        ],
+        "memory_tokens": 79
+      },
+      "reasons": {
+        "p2": {
+          "m": 0.962
+        }
+      }
+    },
+    {
+      "case": "ev_piano_motive",
+      "family": "piano",
+      "purposes": [
+        "m"
+      ],
+      "reference": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "memory_tokens": 77
+      },
+      "purpose": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "memory_tokens": 77
+      },
+      "reasons": {
+        "m6": {
+          "m": 0.9635
+        }
+      }
+    },
+    {
+      "case": "ev_pack_both",
+      "family": "pack",
+      "purposes": [
+        "q",
+        "d"
+      ],
+      "reference": {
+        "purposes": {
+          "q": false,
+          "d": false
+        },
+        "all_purposes": false,
+        "coverage_count": 0,
+        "purpose_count": 2,
+        "deps_lost": [
+          "m7"
+        ],
+        "distractions": [
+          "m9"
+        ],
+        "selected": [
+          "m9"
+        ],
+        "memory_tokens": 50
+      },
+      "purpose": {
+        "purposes": {
+          "q": true,
+          "d": true
+        },
+        "all_purposes": true,
+        "coverage_count": 2,
+        "purpose_count": 2,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "m7",
+          "m8"
+        ],
+        "memory_tokens": 83
+      },
+      "reasons": {
+        "m8": {
+          "q": 0.8605,
+          "d": 0.0423
+        },
+        "m9": {
+          "q": 0.02,
+          "d": 0.5093
+        },
+        "m7": {
+          "q": 0.2272,
+          "d": 0.9254
+        }
+      }
+    },
+    {
+      "case": "ev_two_themes",
+      "family": "misto",
+      "purposes": [
+        "m",
+        "q"
+      ],
+      "reference": {
+        "purposes": {
+          "m": true,
+          "q": false
+        },
+        "all_purposes": false,
+        "coverage_count": 1,
+        "purpose_count": 2,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "memory_tokens": 77
+      },
+      "purpose": {
+        "purposes": {
+          "m": true,
+          "q": true
+        },
+        "all_purposes": true,
+        "coverage_count": 2,
+        "purpose_count": 2,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "m5",
+          "m6",
+          "m8"
+        ],
+        "memory_tokens": 108
+      },
+      "reasons": {
+        "m6": {
+          "m": 0.9635
+        },
+        "m8": {
+          "q": 0.4749
+        }
+      }
+    },
+    {
+      "case": "ev_serum_contrast",
+      "family": "serum",
+      "purposes": [
+        "m"
+      ],
+      "reference": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "m1",
+          "m2"
+        ],
+        "memory_tokens": 81
+      },
+      "purpose": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [
+          "m1",
+          "m2"
+        ],
+        "memory_tokens": 81
+      },
+      "reasons": {
+        "m2": {
+          "m": 0.9635
+        }
+      }
+    },
+    {
+      "case": "ev_history_bike",
+      "family": "historico",
+      "purposes": [
+        "m"
+      ],
+      "reference": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [],
+        "memory_tokens": 0
+      },
+      "purpose": {
+        "purposes": {
+          "m": true
+        },
+        "all_purposes": true,
+        "coverage_count": 1,
+        "purpose_count": 1,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [],
+        "memory_tokens": 0
+      },
+      "reasons": {}
+    },
+    {
+      "case": "ev_restricted",
+      "family": "sensibilidade",
+      "purposes": [],
+      "reference": {
+        "purposes": {},
+        "all_purposes": true,
+        "coverage_count": 0,
+        "purpose_count": 0,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [],
+        "memory_tokens": 0
+      },
+      "purpose": {
+        "purposes": {},
+        "all_purposes": true,
+        "coverage_count": 0,
+        "purpose_count": 0,
+        "deps_lost": [],
+        "distractions": [],
+        "selected": [],
+        "memory_tokens": 0
+      },
+      "reasons": {}
+    }
+  ],
+  "improvements": [
+    "ev_pack_both",
+    "ev_two_themes"
+  ],
+  "regressions": []
+}

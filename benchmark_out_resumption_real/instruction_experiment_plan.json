@@ -1,0 +1,35 @@
+{
+  "status": "planned",
+  "memory_condition": "sinapse_multipurpose",
+  "memory_budget_tokens": 160,
+  "history": "same recent turns already used in the ten real pairs",
+  "cases": [
+    "retomada_geral",
+    "proximo_teste",
+    "decisao_vigente",
+    "pendencia_concluida",
+    "pendencia_substituida",
+    "sem_pendencia",
+    "pendencia_substituida_costa",
+    "proximo_condicionado",
+    "intercalado_norte",
+    "intercalado_sul"
+  ],
+  "instructions": {
+    "current": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.",
+    "experimental": "Responda com base apenas na memória fornecida. Preserve a ação, o objeto do teste, os parâmetros e as condições exatamente como registrados nas fontes. Não troque “testar a introdução em 96 kHz” por “introduzir a faixa em 96 kHz”. Mantenha os dois caminhos de uma condição. Não apresente decisão antiga como vigente. Cite os IDs das mensagens que sustentam cada afirmação."
+  },
+  "criteria": {
+    "decision": "identifica o que vale agora, aceita paráfrase e rejeita decisão antiga como atual",
+    "reason": "preserva o motivo registrado",
+    "completed": "preserva o último teste concluído",
+    "pending": "preserva ação, objeto e parâmetros do próximo passo",
+    "condition": "preserva a condição e os dois caminhos",
+    "reference_support": "cada referência citada sustenta a afirmação correspondente"
+  },
+  "new_rubric_cases": "benchmark/resumption_rubric_v2_cases.json",
+  "new_rubric_cases_count": 6,
+  "predicted_real_calls": 20,
+  "predicted_call_breakdown": "10 casos × 2 instruções = 20 chamadas; os 6 casos sintéticos são validação local da rubrica e não geram chamadas.",
+  "execution_note": "Nenhuma chamada executada nesta etapa; usa as respostas já salvas para calibrar a rubrica v2."
+}

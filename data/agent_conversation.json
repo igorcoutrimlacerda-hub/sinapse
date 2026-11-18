@@ -1,0 +1,161 @@
+{
+  "conversation_id": "c1",
+  "messages": [
+    {
+      "id": "m1",
+      "text": "Escolhi o Serum 2 para fazer o bass.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 1,
+      "sent_at": "2026-11-10T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["Serum 2", "bass"],
+        "quem": ["usuário"],
+        "para_que": ["fazer o bass"]
+      }
+    },
+    {
+      "id": "m2",
+      "text": "Porque eu já tinha comprado a licença.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 2,
+      "sent_at": "2026-11-10T09:01:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["já tinha comprado a licença"]
+      }
+    },
+    {
+      "id": "m3",
+      "text": "Testei o bass alternando entre dois envelopes.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 3,
+      "sent_at": "2026-11-10T09:05:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "o_que": ["bass"],
+        "quem": ["usuário"],
+        "como": ["alternar entre dois envelopes"],
+        "para_que": ["testar o bass"]
+      }
+    },
+    {
+      "id": "m4",
+      "text": "Passei a tarde jogando xadrez.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 4,
+      "sent_at": "2026-11-10T14:30:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["xadrez"],
+        "quem": ["usuário"],
+        "quando": ["tarde"],
+        "para_que": ["jogar xadrez"]
+      }
+    },
+    {
+      "id": "m5",
+      "text": "Escolhi o Piano V para tocar jazz.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 5,
+      "sent_at": "2026-11-11T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["Piano V"],
+        "quem": ["usuário"],
+        "para_que": ["tocar jazz"]
+      }
+    },
+    {
+      "id": "m6",
+      "text": "Porque estava em promoção.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 6,
+      "sent_at": "2026-11-11T10:02:00-03:00",
+      "reply_to": "m5",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["estava em promoção"]
+      }
+    },
+    {
+      "id": "m7",
+      "text": "Divulguei o pack de presets do Serum 2 no fórum.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 7,
+      "sent_at": "2026-11-12T11:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["pack de presets", "Serum 2"],
+        "quem": ["usuário"],
+        "onde": ["fórum"],
+        "como": ["divulgar o pack"],
+        "para_que": ["divulgar o pack"]
+      }
+    },
+    {
+      "id": "m8",
+      "text": "O pack tem oito presets de bass.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 8,
+      "sent_at": "2026-11-12T11:05:00-03:00",
+      "reply_to": "m7",
+      "coordinates": {
+        "o_que": ["pack de presets", "bass"],
+        "quem": ["usuário"],
+        "para_que": ["usar no bass"]
+      }
+    },
+    {
+      "id": "m9",
+      "text": "Preparei o pack do bass para divulgar.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 9,
+      "sent_at": "2026-11-12T11:10:00-03:00",
+      "reply_to": "m8",
+      "coordinates": {
+        "o_que": ["pack", "bass"],
+        "quem": ["usuário"],
+        "como": ["divulgar o pack"],
+        "para_que": ["divulgar o pack"]
+      }
+    },
+    {
+      "id": "p1",
+      "text": "Comprei uma bicicleta para ir ao trabalho.",
+      "author": "user",
+      "conversation_id": "c2",
+      "position": 1,
+      "sent_at": "2026-11-13T08:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["bicicleta"],
+        "quem": ["usuário"],
+        "para_que": ["ir ao trabalho"]
+      }
+    },
+    {
+      "id": "p2",
+      "text": "Porque a trilha é mais curta.",
+      "author": "user",
+      "conversation_id": "c2",
+      "position": 2,
+      "sent_at": "2026-11-13T08:02:00-03:00",
+      "reply_to": "p1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["a trilha é mais curta"]
+      }
+    }
+  ]
+}

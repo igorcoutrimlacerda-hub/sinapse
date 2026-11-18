@@ -1,0 +1,274 @@
+{
+  "project": "mem",
+  "semantic_enabled": true,
+  "cases": [
+    {
+      "id": "pilot_repo_root",
+      "query": "Como o Farol sabe que esta pasta pertence a este projeto?",
+      "expected": [
+        "m3"
+      ],
+      "expected_gaps": [],
+      "lexical": {
+        "sent": [
+          "m25",
+          "m3"
+        ],
+        "missing": [],
+        "gaps": [],
+        "coverage": 1.0
+      },
+      "semantic": {
+        "sent": [
+          "m25",
+          "m3"
+        ],
+        "missing": [],
+        "gaps": [],
+        "coverage": 1.0
+      },
+      "ok": true
+    },
+    {
+      "id": "pilot_browser_key",
+      "query": "Por que a chave do DeepSeek não vai para o navegador?",
+      "expected": [
+        "m30"
+      ],
+      "expected_gaps": [],
+      "lexical": {
+        "sent": [
+          "m25",
+          "m30"
+        ],
+        "missing": [],
+        "gaps": [],
+        "coverage": 1.0
+      },
+      "semantic": {
+        "sent": [
+          "m25",
+          "m30"
+        ],
+        "missing": [],
+        "gaps": [],
+        "coverage": 1.0
+      },
+      "ok": true
+    },
+    {
+      "id": "pilot_semantic_cost",
+      "query": "Quanto custou ligar a busca semântica?",
+      "expected": [
+        "m28"
+      ],
+      "expected_gaps": [],
+      "lexical": {
+        "sent": [
+          "m11",
+          "m25",
+          "m27",
+          "m29"
+        ],
+        "missing": [
+          "m28"
+        ],
+        "gaps": [
+          "teste"
+        ],
+        "coverage": 0.0
+      },
+      "semantic": {
+        "sent": [
+          "m11",
+          "m25",
+          "m27",
+          "m28",
+          "m29"
+        ],
+        "missing": [],
+        "gaps": [],
+        "coverage": 1.0
+      },
+      "ok": true
+    },
+    {
+      "id": "pilot_missing_validation",
+      "query": "O que ainda falta validar no navegador?",
+      "expected": [
+        "m11"
+      ],
+      "expected_gaps": [],
+      "lexical": {
+        "sent": [
+          "m10",
+          "m11",
+          "m25"
+        ],
+        "missing": [],
+        "gaps": [],
+        "coverage": 1.0
+      },
+      "semantic": {
+        "sent": [
+          "m10",
+          "m11",
+          "m25"
+        ],
+        "missing": [],
+        "gaps": [],
+        "coverage": 1.0
+      },
+      "ok": true
+    },
+    {
+      "id": "pilot_coverage_change",
+      "query": "O que mudou na cobertura por pedido?",
+      "expected": [
+        "m23",
+        "m24"
+      ],
+      "expected_gaps": [],
+      "lexical": {
+        "sent": [
+          "m11",
+          "m23",
+          "m24",
+          "m25",
+          "m28"
+        ],
+        "missing": [],
+        "gaps": [
+          "histórico de correção"
+        ],
+        "coverage": 1.0
+      },
+      "semantic": {
+        "sent": [
+          "m11",
+          "m23",
+          "m24",
+          "m25",
+          "m28"
+        ],
+        "missing": [],
+        "gaps": [
+          "histórico de correção"
+        ],
+        "coverage": 1.0
+      },
+      "ok": true
+    },
+    {
+      "id": "pilot_natural_paraphrase",
+      "query": "Como você evita repetir a mesma fala no contexto?",
+      "expected": [
+        "m23",
+        "m24"
+      ],
+      "expected_gaps": [],
+      "lexical": {
+        "sent": [
+          "m25"
+        ],
+        "missing": [
+          "m23",
+          "m24"
+        ],
+        "gaps": [
+          "decisão/motivo"
+        ],
+        "coverage": 0.0
+      },
+      "semantic": {
+        "sent": [
+          "m25"
+        ],
+        "missing": [
+          "m23",
+          "m24"
+        ],
+        "gaps": [
+          "decisão/motivo"
+        ],
+        "coverage": 0.0
+      },
+      "ok": false
+    },
+    {
+      "id": "pilot_unavailable_source",
+      "query": "Qual é o motivo da mudança no cache?",
+      "expected": [],
+      "expected_gaps": [
+        "decisão/motivo"
+      ],
+      "lexical": {
+        "sent": [
+          "m25"
+        ],
+        "missing": [],
+        "gaps": [
+          "decisão/motivo"
+        ],
+        "coverage": 1.0
+      },
+      "semantic": {
+        "sent": [
+          "m25"
+        ],
+        "missing": [],
+        "gaps": [
+          "decisão/motivo"
+        ],
+        "coverage": 1.0
+      },
+      "ok": true
+    }
+  ],
+  "failures": [
+    {
+      "id": "pilot_natural_paraphrase",
+      "query": "Como você evita repetir a mesma fala no contexto?",
+      "expected": [
+        "m23",
+        "m24"
+      ],
+      "expected_gaps": [],
+      "lexical": {
+        "sent": [
+          "m25"
+        ],
+        "missing": [
+          "m23",
+          "m24"
+        ],
+        "gaps": [
+          "decisão/motivo"
+        ],
+        "coverage": 0.0
+      },
+      "semantic": {
+        "sent": [
+          "m25"
+        ],
+        "missing": [
+          "m23",
+          "m24"
+        ],
+        "gaps": [
+          "decisão/motivo"
+        ],
+        "coverage": 0.0
+      },
+      "ok": false
+    }
+  ],
+  "summary": {
+    "total": 7,
+    "passed_lexical": 5,
+    "passed_semantic": 6,
+    "failures": [
+      "pilot_natural_paraphrase"
+    ]
+  }
+}

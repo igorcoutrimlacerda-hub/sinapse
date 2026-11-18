@@ -1,0 +1,330 @@
+{
+  "dataset": "benchmark/resumption_sessions.json",
+  "mode": "simulated",
+  "model": "deepseek-flash",
+  "cases": 3,
+  "rows": [
+    {
+      "case": "retomada_geral",
+      "condition": "history",
+      "question": "Onde paramos nesse problema?",
+      "selected_ids": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason",
+          "pending"
+        ],
+        "facts_present": [],
+        "facts_required": [
+          "Pigments",
+          "CPU",
+          "introdução",
+          "96 kHz"
+        ],
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 117,
+      "completion_tokens": 5,
+      "total_tokens": 122,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "retomada_geral",
+      "condition": "sinapse",
+      "question": "Onde paramos nesse problema?",
+      "selected_ids": [
+        "pr5",
+        "pr4"
+      ],
+      "evidence_present": [
+        "pr4"
+      ],
+      "evidence_coverage": 0.3333,
+      "answer": "A decisão vigente é o Pigments para o bass, porque a CPU do Aurora chegava a 40%.",
+      "score": 0.6667,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason",
+          "pending"
+        ],
+        "facts_present": [
+          "Pigments",
+          "CPU"
+        ],
+        "facts_required": [
+          "Pigments",
+          "CPU",
+          "introdução",
+          "96 kHz"
+        ],
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 98,
+      "select_ms": 5.23,
+      "prompt_tokens": 215,
+      "completion_tokens": 20,
+      "total_tokens": 235,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "proximo_teste",
+      "condition": "history",
+      "question": "Qual era o próximo teste e por quê?",
+      "selected_ids": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "pending": false,
+        "components": [
+          "reason",
+          "pending"
+        ],
+        "facts_present": [],
+        "facts_required": [
+          "introdução",
+          "96 kHz",
+          "CPU"
+        ],
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 121,
+      "completion_tokens": 5,
+      "total_tokens": 126,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "proximo_teste",
+      "condition": "sinapse",
+      "question": "Qual era o próximo teste e por quê?",
+      "selected_ids": [
+        "pr7"
+      ],
+      "evidence_present": [
+        "pr7"
+      ],
+      "evidence_coverage": 0.5,
+      "answer": "A pendência é testar a introdução em 96 kHz. O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+      "score": 1.0,
+      "checks": {
+        "decision": false,
+        "reason": true,
+        "pending": true,
+        "components": [
+          "reason",
+          "pending"
+        ],
+        "facts_present": [
+          "introdução",
+          "96 kHz",
+          "CPU"
+        ],
+        "facts_required": [
+          "introdução",
+          "96 kHz",
+          "CPU"
+        ],
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 59,
+      "select_ms": 2.39,
+      "prompt_tokens": 180,
+      "completion_tokens": 28,
+      "total_tokens": 208,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "decisao_vigente",
+      "condition": "history",
+      "question": "Qual preset está valendo para o bass agora?",
+      "selected_ids": [],
+      "evidence_present": [],
+      "evidence_coverage": 0.0,
+      "answer": "Não tenho informação suficiente.",
+      "score": 0.0,
+      "checks": {
+        "decision": false,
+        "reason": false,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason"
+        ],
+        "facts_present": [],
+        "facts_required": [
+          "Pigments",
+          "CPU"
+        ],
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 0,
+      "select_ms": 0.0,
+      "prompt_tokens": 121,
+      "completion_tokens": 5,
+      "total_tokens": 126,
+      "token_source": "estimativa_local",
+      "error": null
+    },
+    {
+      "case": "decisao_vigente",
+      "condition": "sinapse",
+      "question": "Qual preset está valendo para o bass agora?",
+      "selected_ids": [
+        "pr4",
+        "pr5",
+        "pr1"
+      ],
+      "evidence_present": [
+        "pr4"
+      ],
+      "evidence_coverage": 1.0,
+      "answer": "A decisão vigente é o Pigments para o bass, porque a CPU do Aurora chegava a 40%.",
+      "score": 1.0,
+      "checks": {
+        "decision": true,
+        "reason": true,
+        "pending": false,
+        "components": [
+          "decision",
+          "reason"
+        ],
+        "facts_present": [
+          "Pigments",
+          "CPU"
+        ],
+        "facts_required": [
+          "Pigments",
+          "CPU"
+        ],
+        "completed_repetition": [],
+        "unsupported_claims": []
+      },
+      "memory_tokens": 132,
+      "select_ms": 4.56,
+      "prompt_tokens": 253,
+      "completion_tokens": 20,
+      "total_tokens": 273,
+      "token_source": "estimativa_local",
+      "error": null
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "retomada_geral",
+      "score_history": 0.0,
+      "score_sinapse": 0.6667,
+      "decision_history": false,
+      "decision_sinapse": true,
+      "reason_history": false,
+      "reason_sinapse": true,
+      "pending_history": false,
+      "pending_sinapse": false,
+      "repetition_history": [],
+      "repetition_sinapse": [],
+      "better": true,
+      "worse": false
+    },
+    {
+      "case": "proximo_teste",
+      "score_history": 0.0,
+      "score_sinapse": 1.0,
+      "decision_history": false,
+      "decision_sinapse": false,
+      "reason_history": false,
+      "reason_sinapse": true,
+      "pending_history": false,
+      "pending_sinapse": true,
+      "repetition_history": [],
+      "repetition_sinapse": [],
+      "better": true,
+      "worse": false
+    },
+    {
+      "case": "decisao_vigente",
+      "score_history": 0.0,
+      "score_sinapse": 1.0,
+      "decision_history": false,
+      "decision_sinapse": true,
+      "reason_history": false,
+      "reason_sinapse": true,
+      "pending_history": false,
+      "pending_sinapse": false,
+      "repetition_history": [],
+      "repetition_sinapse": [],
+      "better": true,
+      "worse": false
+    }
+  ],
+  "aggregates": {
+    "history": {
+      "queries": 3,
+      "decision_ok": 0,
+      "decision_total": 2,
+      "reason_ok": 0,
+      "reason_total": 3,
+      "pending_ok": 0,
+      "pending_total": 2,
+      "evidence_coverage": 0.0,
+      "avg_score": 0.0,
+      "completed_repetitions": 0,
+      "unsupported_claims": 0,
+      "prompt_tokens_total": 359,
+      "completion_tokens_total": 15,
+      "memory_tokens_avg": 0.0,
+      "select_ms_median": 0.0
+    },
+    "sinapse": {
+      "queries": 3,
+      "decision_ok": 2,
+      "decision_total": 2,
+      "reason_ok": 3,
+      "reason_total": 3,
+      "pending_ok": 1,
+      "pending_total": 2,
+      "evidence_coverage": 0.6111,
+      "avg_score": 0.8889,
+      "completed_repetitions": 0,
+      "unsupported_claims": 0,
+      "prompt_tokens_total": 648,
+      "completion_tokens_total": 68,
+      "memory_tokens_avg": 96.3,
+      "select_ms_median": 4.56
+    }
+  },
+  "better": 3,
+  "worse": 0,
+  "real_evaluation": {
+    "available": false,
+    "model": null,
+    "note": "Não executada nesta rodada: apenas cliente simulado."
+  },
+  "human_review_pending": true
+}

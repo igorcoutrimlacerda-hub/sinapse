@@ -1,0 +1,394 @@
+{
+  "cases": 10,
+  "current": {
+    "expected": 10,
+    "context": 6,
+    "functionless": 8,
+    "memory_tokens": 874,
+    "tokens": 1780,
+    "cases": 10
+  },
+  "reduced": {
+    "expected": 10,
+    "context": 5,
+    "functionless": 1,
+    "memory_tokens": 584,
+    "tokens": 1490,
+    "cases": 10
+  },
+  "entries": [
+    {
+      "case": "ev_follow",
+      "family": "bicicleta",
+      "action": "follow_links",
+      "current": {
+        "selected": [
+          "p1",
+          "p2"
+        ],
+        "expected": [
+          "p2"
+        ],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "memory_tokens": 79,
+        "tokens": 164
+      },
+      "reduced": {
+        "selected": [
+          "p1",
+          "p2"
+        ],
+        "expected": [
+          "p2"
+        ],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "memory_tokens": 79,
+        "tokens": 164,
+        "removed": [],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_follow_piano",
+      "family": "piano",
+      "action": "follow_links",
+      "current": {
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "expected": [
+          "m6"
+        ],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "memory_tokens": 77,
+        "tokens": 166
+      },
+      "reduced": {
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "expected": [
+          "m6"
+        ],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "memory_tokens": 77,
+        "tokens": 166,
+        "removed": [],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_correction",
+      "family": "correcao",
+      "action": "correction",
+      "current": {
+        "selected": [
+          "m10",
+          "m3",
+          "m7"
+        ],
+        "expected": [
+          "m10"
+        ],
+        "context": [],
+        "functionless": [
+          "m3",
+          "m7"
+        ],
+        "memory_tokens": 119,
+        "tokens": 208
+      },
+      "reduced": {
+        "selected": [
+          "m10"
+        ],
+        "expected": [
+          "m10"
+        ],
+        "context": [],
+        "functionless": [],
+        "memory_tokens": 54,
+        "tokens": 143,
+        "removed": [
+          "m7",
+          "m3"
+        ],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_price_link",
+      "family": "preco",
+      "action": "follow_links",
+      "current": {
+        "selected": [
+          "m1",
+          "m20"
+        ],
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "memory_tokens": 78,
+        "tokens": 164
+      },
+      "reduced": {
+        "selected": [
+          "m1",
+          "m20"
+        ],
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "memory_tokens": 78,
+        "tokens": 164,
+        "removed": [],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_many_links",
+      "family": "muitos_vinculos",
+      "action": "correction",
+      "current": {
+        "selected": [
+          "m10",
+          "m30",
+          "m31"
+        ],
+        "expected": [
+          "m10"
+        ],
+        "context": [],
+        "functionless": [
+          "m30",
+          "m31"
+        ],
+        "memory_tokens": 114,
+        "tokens": 203
+      },
+      "reduced": {
+        "selected": [
+          "m10"
+        ],
+        "expected": [
+          "m10"
+        ],
+        "context": [],
+        "functionless": [],
+        "memory_tokens": 54,
+        "tokens": 143,
+        "removed": [
+          "m30",
+          "m31"
+        ],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_other_theme",
+      "family": "pack",
+      "action": "other_theme",
+      "current": {
+        "selected": [
+          "m7",
+          "m9",
+          "m8",
+          "m1"
+        ],
+        "expected": [
+          "m9"
+        ],
+        "context": [
+          "m7"
+        ],
+        "functionless": [
+          "m8",
+          "m1"
+        ],
+        "memory_tokens": 146,
+        "tokens": 234
+      },
+      "reduced": {
+        "selected": [
+          "m9",
+          "m8"
+        ],
+        "expected": [
+          "m9"
+        ],
+        "context": [],
+        "functionless": [
+          "m8"
+        ],
+        "memory_tokens": 81,
+        "tokens": 169,
+        "removed": [
+          "m1",
+          "m7"
+        ],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_history",
+      "family": "historico",
+      "action": "stop",
+      "current": {
+        "selected": [
+          "m1"
+        ],
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "memory_tokens": 50,
+        "tokens": 163
+      },
+      "reduced": {
+        "selected": [],
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [],
+        "memory_tokens": 0,
+        "tokens": 113,
+        "removed": [
+          "m1"
+        ],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_restricted",
+      "family": "sensibilidade",
+      "action": "stop",
+      "current": {
+        "selected": [
+          "m1"
+        ],
+        "expected": [],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "memory_tokens": 50,
+        "tokens": 139
+      },
+      "reduced": {
+        "selected": [],
+        "expected": [],
+        "context": [],
+        "functionless": [],
+        "memory_tokens": 0,
+        "tokens": 89,
+        "removed": [
+          "m1"
+        ],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_self_sufficient",
+      "family": "autossuficiente",
+      "action": "stop",
+      "current": {
+        "selected": [
+          "m20"
+        ],
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m20"
+        ],
+        "functionless": [],
+        "memory_tokens": 49,
+        "tokens": 135
+      },
+      "reduced": {
+        "selected": [
+          "m20"
+        ],
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m20"
+        ],
+        "functionless": [],
+        "memory_tokens": 49,
+        "tokens": 135,
+        "removed": [],
+        "necessary_context_loss": false
+      }
+    },
+    {
+      "case": "ev_two_complementary",
+      "family": "duas_evidencias",
+      "action": "other_theme",
+      "current": {
+        "selected": [
+          "m1",
+          "m2",
+          "m10"
+        ],
+        "expected": [
+          "m2",
+          "m10"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "memory_tokens": 112,
+        "tokens": 204
+      },
+      "reduced": {
+        "selected": [
+          "m1",
+          "m2",
+          "m10"
+        ],
+        "expected": [
+          "m2",
+          "m10"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "memory_tokens": 112,
+        "tokens": 204,
+        "removed": [],
+        "necessary_context_loss": false
+      }
+    }
+  ],
+  "tradeoffs": []
+}

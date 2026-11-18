@@ -1,0 +1,104 @@
+[
+  {
+    "review_id": "E01",
+    "case": "dep_bike_named",
+    "group": "regression",
+    "answers": {
+      "A": "Você comprou a bicicleta para ir ao trabalho — e explicou que foi porque a trilha é mais curta (mensagens p1 e p2).",
+      "B": "Você disse que comprou a bicicleta porque a trilha é mais curta (mensagem p2).",
+      "C": "Você disse que comprou a bicicleta porque a trilha é mais curta (mensagem p2)."
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E02",
+    "case": "dep_short_history",
+    "group": "new",
+    "answers": {
+      "A": "Você comprou a bicicleta porque a trilha é mais curta — ou seja, para ir ao trabalho por um caminho mais curto. (Lembranças: p1, p2)",
+      "B": "Você comprou a bicicleta porque a trilha é mais curta — ou seja, para ir ao trabalho por um caminho mais curto. (Lembranças: p1, p2)",
+      "C": "Você comprou a bicicleta porque a trilha é mais curta — ou seja, para ir ao trabalho por um caminho mais curto. (Lembranças: p1, p2)"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E03",
+    "case": "dep_two_entities",
+    "group": "new",
+    "answers": {
+      "A": "Você escolheu o Serum 2 para o bass porque **já tinha comprado a licença** — ou seja, foi uma decisão prática, aproveitando algo que você já possuía (m1, m2).",
+      "B": "Você escolheu o Serum 2 para o bass porque **já tinha comprado a licença** — ou seja, foi uma decisão prática, aproveitando algo que você já possuía (m1, m2).",
+      "C": "Você escolheu o Serum 2 porque **já tinha comprado a licença** dele — foi o motivo que você deu na nossa conversa (mensagem m2)."
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E04",
+    "case": "dep_two_decisions",
+    "group": "new",
+    "answers": {
+      "A": "Você comprou a bicicleta para ir ao trabalho — e o motivo foi que a trilha é mais curta (p1, p2).",
+      "B": "Você comprou a bicicleta para ir ao trabalho — e o motivo foi que a trilha é mais curta (p1, p2).",
+      "C": "Você comprou a bicicleta porque a trilha é mais curta. (lembrança p2)"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E05",
+    "case": "dep_two_purposes",
+    "group": "new",
+    "answers": {
+      "A": "Você comprou a bicicleta **porque a trilha é mais curta** (mensagem p2) e ela **custou 1200 reais** (mensagem p3). 🚲",
+      "B": "Você comprou a bicicleta porque a trilha é mais curta (p2) e ela custou 1200 reais (p3).",
+      "C": "Você comprou a bicicleta porque a trilha é mais curta (p2) e ela custou 1200 reais (p3)."
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E06",
+    "case": "dep_redundant",
+    "group": "new",
+    "answers": {
+      "A": "A bicicleta custou 1200 reais. (lembrança: p3)",
+      "B": "A bicicleta custou 1200 reais. (lembrança: p3)",
+      "C": "A bicicleta custou 1200 reais. (lembrança: p3)"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  }
+]

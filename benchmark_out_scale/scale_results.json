@@ -1,0 +1,2157 @@
+[
+  {
+    "scale": 1000,
+    "messages": 1000,
+    "build_ms": 5.5,
+    "index_ms": 0.46,
+    "candidate_k": 200,
+    "outcomes": [
+      {
+        "query": "motivo",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 107.1,
+        "points": 341,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "motivo",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 109.79,
+        "points": 341,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "motivo",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [],
+        "missing_stage": "selection",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 68.7,
+        "points": 341,
+        "tokens": 229,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.13,
+        "select_ms": 27.66,
+        "points": 151,
+        "tokens": 168,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.13,
+        "select_ms": 31.07,
+        "points": 151,
+        "tokens": 168,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.13,
+        "select_ms": 33.27,
+        "points": 151,
+        "tokens": 226,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t2",
+          "t4"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 89.02,
+        "points": 341,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t2",
+          "t4"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 103.16,
+        "points": 341,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t4"
+        ],
+        "missing_stage": "selection",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 65.42,
+        "points": 341,
+        "tokens": 229,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "correcao",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t5"
+        ],
+        "scored_ids": [
+          "t5"
+        ],
+        "final_ids": [
+          "t5"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.07,
+        "select_ms": 17.17,
+        "points": 74,
+        "tokens": 134,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "correcao",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t5"
+        ],
+        "scored_ids": [
+          "t5"
+        ],
+        "final_ids": [
+          "t5"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.07,
+        "select_ms": 16.9,
+        "points": 74,
+        "tokens": 134,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "correcao",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t5"
+        ],
+        "scored_ids": [
+          "t5"
+        ],
+        "final_ids": [
+          "t5"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.07,
+        "select_ms": 15.35,
+        "points": 74,
+        "tokens": 236,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.08,
+        "select_ms": 16.55,
+        "points": 81,
+        "tokens": 160,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.08,
+        "select_ms": 18.15,
+        "points": 81,
+        "tokens": 160,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.08,
+        "select_ms": 14.23,
+        "points": 81,
+        "tokens": 160,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.43,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.5,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.17,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.79,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 1.58,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.46,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.08,
+        "select_ms": 5.63,
+        "points": 72,
+        "tokens": 167,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.08,
+        "select_ms": 8.2,
+        "points": 72,
+        "tokens": 167,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.08,
+        "select_ms": 13.32,
+        "points": 72,
+        "tokens": 196,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t5"
+        ],
+        "scored_ids": [
+          "t5"
+        ],
+        "final_ids": [
+          "t5"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.07,
+        "select_ms": 13.41,
+        "points": 74,
+        "tokens": 135,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t5"
+        ],
+        "scored_ids": [
+          "t5"
+        ],
+        "final_ids": [
+          "t5"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.07,
+        "select_ms": 13.75,
+        "points": 74,
+        "tokens": 164,
+        "extra_candidates": 1,
+        "new_ids": [
+          "t5"
+        ]
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t5"
+        ],
+        "scored_ids": [
+          "t5"
+        ],
+        "final_ids": [
+          "t5"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.07,
+        "select_ms": 35.29,
+        "points": 74,
+        "tokens": 237,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 1.01,
+        "select_ms": 64.22,
+        "points": 341,
+        "tokens": 113,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 1.01,
+        "select_ms": 73.22,
+        "points": 341,
+        "tokens": 113,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 1.01,
+        "select_ms": 64.34,
+        "points": 341,
+        "tokens": 223,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 0.89,
+        "select_ms": 49.28,
+        "points": 341,
+        "tokens": 164,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 0.89,
+        "select_ms": 53.77,
+        "points": 341,
+        "tokens": 164,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 0.89,
+        "select_ms": 41.98,
+        "points": 341,
+        "tokens": 226,
+        "extra_candidates": 0,
+        "new_ids": []
+      }
+    ],
+    "summary": {
+      "sinapse": {
+        "denominator": 8,
+        "candidate_all": 8,
+        "candidate_all_rate": 1.0,
+        "final_all": 8,
+        "final_all_rate": 1.0,
+        "search_median_ms": 0.08,
+        "search_p95_ms": 1.01,
+        "select_median_ms": 17.17,
+        "select_p95_ms": 107.1,
+        "avg_points": 165.5,
+        "avg_tokens": 146.6,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "sinapse_curioso": {
+        "denominator": 8,
+        "candidate_all": 8,
+        "candidate_all_rate": 1.0,
+        "final_all": 8,
+        "final_all_rate": 1.0,
+        "search_median_ms": 0.08,
+        "search_p95_ms": 1.01,
+        "select_median_ms": 18.15,
+        "select_p95_ms": 109.79,
+        "avg_points": 165.5,
+        "avg_tokens": 149.3,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "lexical": {
+        "denominator": 8,
+        "candidate_all": 8,
+        "candidate_all_rate": 1.0,
+        "final_all": 6,
+        "final_all_rate": 0.75,
+        "search_median_ms": 0.08,
+        "search_p95_ms": 1.01,
+        "select_median_ms": 33.27,
+        "select_p95_ms": 68.7,
+        "avg_points": 165.5,
+        "avg_tokens": 194.0,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "curiosity_comparison": {
+        "additional_correct_evidence": 0,
+        "worsened_cases": [],
+        "extra_candidates_evaluated": 1,
+        "select_ms_delta_median": 0.98,
+        "tokens_delta_avg": 2.7
+      }
+    }
+  },
+  {
+    "scale": 10000,
+    "messages": 10000,
+    "build_ms": 47.41,
+    "index_ms": 5.77,
+    "candidate_k": 200,
+    "outcomes": [
+      {
+        "query": "motivo",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.31,
+        "select_ms": 95.39,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "motivo",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.31,
+        "select_ms": 102.83,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "motivo",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [],
+        "missing_stage": "selection",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.31,
+        "select_ms": 64.3,
+        "points": 346,
+        "tokens": 229,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 1.14,
+        "select_ms": 36.62,
+        "points": 201,
+        "tokens": 168,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 1.14,
+        "select_ms": 43.73,
+        "points": 201,
+        "tokens": 168,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 1.14,
+        "select_ms": 42.66,
+        "points": 201,
+        "tokens": 230,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t2",
+          "t4"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.69,
+        "select_ms": 92.36,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t2",
+          "t4"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.69,
+        "select_ms": 109.66,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t4"
+        ],
+        "missing_stage": "selection",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.69,
+        "select_ms": 65.49,
+        "points": 346,
+        "tokens": 229,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "correcao",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.8,
+        "select_ms": 43.42,
+        "points": 200,
+        "tokens": 173,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "correcao",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.8,
+        "select_ms": 46.73,
+        "points": 200,
+        "tokens": 173,
+        "extra_candidates": 1,
+        "new_ids": [
+          "n008691"
+        ]
+      },
+      {
+        "query": "correcao",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.8,
+        "select_ms": 40.78,
+        "points": 200,
+        "tokens": 241,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.96,
+        "select_ms": 39.31,
+        "points": 201,
+        "tokens": 160,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.96,
+        "select_ms": 44.07,
+        "points": 201,
+        "tokens": 160,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.96,
+        "select_ms": 36.05,
+        "points": 201,
+        "tokens": 160,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.45,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.52,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.18,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.8,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.98,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.03,
+        "select_ms": 0.41,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.72,
+        "select_ms": 15.66,
+        "points": 201,
+        "tokens": 167,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.72,
+        "select_ms": 23.01,
+        "points": 201,
+        "tokens": 167,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.72,
+        "select_ms": 37.37,
+        "points": 201,
+        "tokens": 196,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 35.14,
+        "points": 200,
+        "tokens": 174,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 37.32,
+        "points": 200,
+        "tokens": 174,
+        "extra_candidates": 1,
+        "new_ids": [
+          "n008691"
+        ]
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 0.92,
+        "select_ms": 40.99,
+        "points": 200,
+        "tokens": 242,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.42,
+        "select_ms": 65.98,
+        "points": 346,
+        "tokens": 113,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.42,
+        "select_ms": 94.71,
+        "points": 346,
+        "tokens": 113,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 2.42,
+        "select_ms": 76.21,
+        "points": 346,
+        "tokens": 223,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 2.39,
+        "select_ms": 57.8,
+        "points": 346,
+        "tokens": 164,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 2.39,
+        "select_ms": 70.96,
+        "points": 346,
+        "tokens": 164,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 2.39,
+        "select_ms": 49.48,
+        "points": 346,
+        "tokens": 226,
+        "extra_candidates": 0,
+        "new_ids": []
+      }
+    ],
+    "summary": {
+      "sinapse": {
+        "denominator": 8,
+        "candidate_all": 6,
+        "candidate_all_rate": 0.75,
+        "final_all": 6,
+        "final_all_rate": 0.75,
+        "search_median_ms": 0.96,
+        "search_p95_ms": 2.69,
+        "select_median_ms": 39.31,
+        "select_p95_ms": 95.39,
+        "avg_points": 217.4,
+        "avg_tokens": 153.7,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "sinapse_curioso": {
+        "denominator": 8,
+        "candidate_all": 6,
+        "candidate_all_rate": 0.75,
+        "final_all": 6,
+        "final_all_rate": 0.75,
+        "search_median_ms": 0.96,
+        "search_p95_ms": 2.69,
+        "select_median_ms": 44.07,
+        "select_p95_ms": 109.66,
+        "avg_points": 217.4,
+        "avg_tokens": 153.7,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "lexical": {
+        "denominator": 8,
+        "candidate_all": 6,
+        "candidate_all_rate": 0.75,
+        "final_all": 4,
+        "final_all_rate": 0.5,
+        "search_median_ms": 0.96,
+        "search_p95_ms": 2.69,
+        "select_median_ms": 40.99,
+        "select_p95_ms": 76.21,
+        "avg_points": 217.4,
+        "avg_tokens": 195.3,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "curiosity_comparison": {
+        "additional_correct_evidence": 0,
+        "worsened_cases": [],
+        "extra_candidates_evaluated": 2,
+        "select_ms_delta_median": 4.76,
+        "tokens_delta_avg": 0.0
+      }
+    }
+  },
+  {
+    "scale": 100000,
+    "messages": 100000,
+    "build_ms": 709.59,
+    "index_ms": 72.85,
+    "candidate_k": 200,
+    "outcomes": [
+      {
+        "query": "motivo",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 17.77,
+        "select_ms": 101.59,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "motivo",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 17.77,
+        "select_ms": 115.17,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "motivo",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 17.77,
+        "select_ms": 85.15,
+        "points": 346,
+        "tokens": 231,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 12.93,
+        "select_ms": 40.12,
+        "points": 201,
+        "tokens": 168,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 12.93,
+        "select_ms": 43.58,
+        "points": 201,
+        "tokens": 168,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "procedimento",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t3"
+        ],
+        "scored_ids": [
+          "t3"
+        ],
+        "final_ids": [
+          "t3"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 12.93,
+        "select_ms": 45.42,
+        "points": 201,
+        "tokens": 231,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t2",
+          "t4"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 17.12,
+        "select_ms": 93.31,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t2",
+          "t4"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 17.12,
+        "select_ms": 106.42,
+        "points": 346,
+        "tokens": 200,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "duas_evidencias",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2",
+          "t4"
+        ],
+        "scored_ids": [
+          "t2",
+          "t4"
+        ],
+        "final_ids": [
+          "t2",
+          "t4"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 17.12,
+        "select_ms": 76.72,
+        "points": 346,
+        "tokens": 231,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "correcao",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 8.75,
+        "select_ms": 45.2,
+        "points": 200,
+        "tokens": 173,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "correcao",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 8.75,
+        "select_ms": 51.66,
+        "points": 200,
+        "tokens": 173,
+        "extra_candidates": 1,
+        "new_ids": [
+          "n034762"
+        ]
+      },
+      {
+        "query": "correcao",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 8.75,
+        "select_ms": 41.73,
+        "points": 200,
+        "tokens": 241,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 8.28,
+        "select_ms": 41.64,
+        "points": 200,
+        "tokens": 131,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 8.28,
+        "select_ms": 46.75,
+        "points": 200,
+        "tokens": 131,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_presente",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t6"
+        ],
+        "scored_ids": [
+          "t6"
+        ],
+        "final_ids": [
+          "t6"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 8.28,
+        "select_ms": 37.3,
+        "points": 200,
+        "tokens": 131,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.04,
+        "select_ms": 0.8,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.04,
+        "select_ms": 1.16,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "preco_ausente",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.04,
+        "select_ms": 0.28,
+        "points": 1,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.05,
+        "select_ms": 1.24,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.05,
+        "select_ms": 1.15,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "quantidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": true,
+        "search_ms": 0.05,
+        "select_ms": 0.5,
+        "points": 3,
+        "tokens": 86,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 5.72,
+        "select_ms": 14.93,
+        "points": 200,
+        "tokens": 134,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 5.72,
+        "select_ms": 19.42,
+        "points": 200,
+        "tokens": 134,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "referencia_curta",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 5.72,
+        "select_ms": 32.85,
+        "points": 200,
+        "tokens": 163,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 7.89,
+        "select_ms": 38.24,
+        "points": 200,
+        "tokens": 174,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 7.89,
+        "select_ms": 39.35,
+        "points": 200,
+        "tokens": 174,
+        "extra_candidates": 1,
+        "new_ids": [
+          "n034762"
+        ]
+      },
+      {
+        "query": "ambiguidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": "candidates",
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 7.89,
+        "select_ms": 44.88,
+        "points": 200,
+        "tokens": 242,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "sinapse",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 16.14,
+        "select_ms": 65.53,
+        "points": 346,
+        "tokens": 113,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 16.14,
+        "select_ms": 78.79,
+        "points": 346,
+        "tokens": 113,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "resolvida",
+        "condition": "lexical",
+        "candidate_ids": [
+          "t2"
+        ],
+        "scored_ids": [
+          "t2"
+        ],
+        "final_ids": [
+          "t2"
+        ],
+        "missing_stage": null,
+        "sensitivity_excluded": false,
+        "no_answer_empty": null,
+        "search_ms": 16.14,
+        "select_ms": 66.07,
+        "points": 346,
+        "tokens": 223,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "sinapse",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 16.89,
+        "select_ms": 51.72,
+        "points": 346,
+        "tokens": 164,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "sinapse_curioso",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 16.89,
+        "select_ms": 58.1,
+        "points": 346,
+        "tokens": 164,
+        "extra_candidates": 0,
+        "new_ids": []
+      },
+      {
+        "query": "sensibilidade",
+        "condition": "lexical",
+        "candidate_ids": [],
+        "scored_ids": [],
+        "final_ids": [],
+        "missing_stage": null,
+        "sensitivity_excluded": true,
+        "no_answer_empty": null,
+        "search_ms": 16.89,
+        "select_ms": 45.68,
+        "points": 346,
+        "tokens": 226,
+        "extra_candidates": 0,
+        "new_ids": []
+      }
+    ],
+    "summary": {
+      "sinapse": {
+        "denominator": 8,
+        "candidate_all": 5,
+        "candidate_all_rate": 0.625,
+        "final_all": 5,
+        "final_all_rate": 0.625,
+        "search_median_ms": 8.75,
+        "search_p95_ms": 17.77,
+        "select_median_ms": 41.64,
+        "select_p95_ms": 101.59,
+        "avg_points": 217.2,
+        "avg_tokens": 148.1,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "sinapse_curioso": {
+        "denominator": 8,
+        "candidate_all": 5,
+        "candidate_all_rate": 0.625,
+        "final_all": 5,
+        "final_all_rate": 0.625,
+        "search_median_ms": 8.75,
+        "search_p95_ms": 17.77,
+        "select_median_ms": 46.75,
+        "select_p95_ms": 115.17,
+        "avg_points": 217.2,
+        "avg_tokens": 148.1,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "lexical": {
+        "denominator": 8,
+        "candidate_all": 5,
+        "candidate_all_rate": 0.625,
+        "final_all": 5,
+        "final_all_rate": 0.625,
+        "search_median_ms": 8.75,
+        "search_p95_ms": 17.77,
+        "select_median_ms": 44.88,
+        "select_p95_ms": 85.15,
+        "avg_points": 217.2,
+        "avg_tokens": 190.1,
+        "no_answer_empty": 2,
+        "no_answer_total": 2,
+        "sensitivity_excluded": 1
+      },
+      "curiosity_comparison": {
+        "additional_correct_evidence": 0,
+        "worsened_cases": [],
+        "extra_candidates_evaluated": 2,
+        "select_ms_delta_median": 5.11,
+        "tokens_delta_avg": 0.0
+      }
+    }
+  }
+]

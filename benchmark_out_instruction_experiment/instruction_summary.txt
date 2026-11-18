@@ -1,0 +1,10 @@
+EXPERIMENTO DE INSTRUÇÃO
+modelo=deepseek-flash | pares=10 | chamadas=20
+tokens reais: prompt=5686 completion=2133
+custo da instrução: {'current_instruction_tokens': 33, 'experimental_instruction_tokens': 73, 'estimated_delta': 40, 'real_prompt_delta_total': 580}
+current        completos=10/10 decision=9/9 reason=10/10 completed=8/8 pending=9/9 condition=1/1 prompt=2553 completion=1065 memória_média=130.1 erros=0
+experimental   completos=8/10 decision=7/9 reason=10/10 completed=8/8 pending=9/9 condition=1/1 prompt=3133 completion=1068 memória_média=130.1 erros=0
+pares: melhoraram=0 empataram=8 pioraram=2
+RP02: {'current': {'test_intro_96': True, 'cpu_goal': True, 'unsupported_additions': []}, 'experimental': {'test_intro_96': True, 'cpu_goal': True, 'unsupported_additions': []}}
+Dunas: {'current': {'threshold_30': True, 'export_path': True, 'fallback_path': True, 'condition': True}, 'experimental': {'threshold_30': True, 'export_path': True, 'fallback_path': True, 'condition': True}}
+erros: {'new_experimental': [{'case': 'proximo_condicionado', 'failed': ['decision']}, {'case': 'intercalado_norte', 'failed': ['decision']}], 'new_current': [], 'persistent': []}

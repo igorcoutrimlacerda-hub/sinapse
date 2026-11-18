@@ -1,0 +1,2602 @@
+{
+  "summary": {
+    "conditions": {
+      "history": {
+        "cases": 15,
+        "hit_denominator": 10,
+        "hit_count": 1,
+        "full_count": 1,
+        "hit_rate": 0.1,
+        "full_rate": 0.1,
+        "avg_additional_tokens": 0.0,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 0.4
+      },
+      "lexical": {
+        "cases": 15,
+        "hit_denominator": 10,
+        "hit_count": 7,
+        "full_count": 6,
+        "hit_rate": 0.7,
+        "full_rate": 0.6,
+        "avg_additional_tokens": 97.73,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 0.7333
+      },
+      "sinapse": {
+        "cases": 15,
+        "hit_denominator": 10,
+        "hit_count": 10,
+        "full_count": 10,
+        "hit_rate": 1.0,
+        "full_rate": 1.0,
+        "avg_additional_tokens": 63.2,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 1.0
+      },
+      "manual": {
+        "cases": 15,
+        "hit_denominator": 10,
+        "hit_count": 10,
+        "full_count": 10,
+        "hit_rate": 1.0,
+        "full_rate": 1.0,
+        "avg_additional_tokens": 52.13,
+        "restricted_violations": 0,
+        "repetitions": 0,
+        "irrelevant_attachments": 0,
+        "avg_answer_score": 1.0
+      }
+    },
+    "sinapse_delta_pp": {
+      "history": 60.0,
+      "lexical": 26.67,
+      "manual": 0.0
+    },
+    "per_case": [
+      {
+        "case": "motivo_serum",
+        "kind": "motivo",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1",
+            "m2"
+          ],
+          "manual": [
+            "m1",
+            "m2"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 115,
+          "sinapse": 81,
+          "manual": 81
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "procedimento_bass",
+        "kind": "procedimento",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m3",
+            "m9",
+            "m8"
+          ],
+          "sinapse": [
+            "m3"
+          ],
+          "manual": [
+            "m1",
+            "m3"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 112,
+          "sinapse": 49,
+          "manual": 81
+        },
+        "expected_ids": [
+          "m3"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "referencia_curta",
+        "kind": "referencia_curta",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m3"
+          ],
+          "sinapse": [
+            "m1",
+            "m3"
+          ],
+          "manual": [
+            "m1",
+            "m3"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 81,
+          "sinapse": 81,
+          "manual": 81
+        },
+        "expected_ids": [
+          "m3"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "retomada_preset",
+        "kind": "retomada",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m4",
+            "m1",
+            "m5"
+          ],
+          "sinapse": [
+            "m1",
+            "m2"
+          ],
+          "manual": [
+            "m1",
+            "m2"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 110,
+          "sinapse": 81,
+          "manual": 81
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "correcao_decisao",
+        "kind": "correcao",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m10"
+          ],
+          "sinapse": [
+            "m10"
+          ],
+          "manual": [
+            "m10"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 54,
+          "sinapse": 53,
+          "manual": 53
+        },
+        "expected_ids": [
+          "m10"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "duas_evidencias",
+        "kind": "duas_evidencias",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m10",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1",
+            "m2",
+            "m10"
+          ],
+          "manual": [
+            "m1",
+            "m2",
+            "m10"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 146,
+          "sinapse": 112,
+          "manual": 112
+        },
+        "expected_ids": [
+          "m2",
+          "m10"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "sem_informacao",
+        "kind": "falta_de_informacao",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 0,
+          "sinapse": 0,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "restrito_sem_pedido",
+        "kind": "restricao_sem_pedido",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1"
+          ],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 115,
+          "sinapse": 50,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "restrito_com_pedido",
+        "kind": "restricao_com_pedido",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m2"
+          ],
+          "sinapse": [
+            "m1",
+            "m2"
+          ],
+          "manual": [
+            "m1",
+            "m2"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 81,
+          "sinapse": 81,
+          "manual": 81
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "similar_motivo",
+        "kind": "motivo_com_parecidas",
+        "scores": {
+          "history": 0.0,
+          "lexical": 0.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history",
+          "lexical"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m11",
+            "m10",
+            "m12"
+          ],
+          "sinapse": [
+            "m1",
+            "m2"
+          ],
+          "manual": [
+            "m1",
+            "m2"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 114,
+          "sinapse": 81,
+          "manual": 81
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "similar_procedimento",
+        "kind": "procedimento_com_parecidas",
+        "scores": {
+          "history": 0.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [
+          "history"
+        ],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m3",
+            "m9",
+            "m1"
+          ],
+          "sinapse": [
+            "m3"
+          ],
+          "manual": [
+            "m1",
+            "m3"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 113,
+          "sinapse": 49,
+          "manual": 81
+        },
+        "expected_ids": [
+          "m3"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "historico_repeticao",
+        "kind": "evidencia_no_historico",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1"
+          ],
+          "manual": [
+            "m1"
+          ]
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 115,
+          "sinapse": 50,
+          "manual": 50
+        },
+        "expected_ids": [
+          "m2"
+        ],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "restrito_resumo",
+        "kind": "restricao_em_resumo",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1"
+          ],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 115,
+          "sinapse": 50,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "restrito_historico",
+        "kind": "restricao_em_historico",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "sinapse": [
+            "m1"
+          ],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 115,
+          "sinapse": 50,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      },
+      {
+        "case": "delecao_pack",
+        "kind": "exclusao",
+        "scores": {
+          "history": 1.0,
+          "lexical": 1.0,
+          "sinapse": 1.0,
+          "manual": 1.0
+        },
+        "better_than": [],
+        "worse_than": [],
+        "selected": {
+          "history": [],
+          "lexical": [
+            "m8",
+            "m9"
+          ],
+          "sinapse": [
+            "m9",
+            "m8"
+          ],
+          "manual": []
+        },
+        "additional_tokens": {
+          "history": 0,
+          "lexical": 80,
+          "sinapse": 80,
+          "manual": 0
+        },
+        "expected_ids": [],
+        "restricted_violations": {
+          "history": [],
+          "lexical": [],
+          "sinapse": [],
+          "manual": []
+        }
+      }
+    ],
+    "cases": 15
+  },
+  "cases": [
+    {
+      "case": "motivo_serum",
+      "kind": "motivo",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 115,
+          "used_tokens": 207,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 173,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 173,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "procedimento_bass",
+      "kind": "procedimento",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m3",
+            "m9",
+            "m8"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 112,
+          "used_tokens": 201,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 49,
+          "used_tokens": 138,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "referencia_curta",
+      "kind": "referencia_curta",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "retomada_preset",
+      "kind": "retomada",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 91,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m4",
+            "m1",
+            "m5"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 110,
+          "used_tokens": 201,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 172,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o preset porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 172,
+          "base_tokens": 91,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o preset porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "correcao_decisao",
+      "kind": "correcao",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 88,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m10"
+          ],
+          "evidence_present": [
+            "m10"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 54,
+          "used_tokens": 142,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você trocou para o Pigments (m10).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "Pigments"
+            ],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m10"
+          ],
+          "evidence_present": [
+            "m10"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 53,
+          "used_tokens": 141,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você trocou para o Pigments (m10).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "Pigments"
+            ],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m10"
+          ],
+          "evidence_present": [
+            "m10"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 53,
+          "used_tokens": 141,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você trocou para o Pigments (m10).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "Pigments"
+            ],
+            "facts_required": [
+              "Pigments"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "duas_evidencias",
+      "kind": "duas_evidencias",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m10",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [
+            "m10"
+          ],
+          "hit_any": true,
+          "full_coverage": false,
+          "additional_tokens": 146,
+          "used_tokens": 238,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Tenho apenas parte da informação.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2",
+            "m10"
+          ],
+          "evidence_present": [
+            "m2",
+            "m10"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 112,
+          "used_tokens": 204,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você já tinha comprado a licença (m2) e um amigo recomendou o Serum 2 (m10).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença",
+              "amigo"
+            ],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2",
+            "m10"
+          ],
+          "evidence_present": [
+            "m2",
+            "m10"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 112,
+          "used_tokens": 204,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você já tinha comprado a licença (m2) e um amigo recomendou o Serum 2 (m10).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença",
+              "amigo"
+            ],
+            "facts_required": [
+              "licença",
+              "amigo"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "sem_informacao",
+      "kind": "falta_de_informacao",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação sobre o preço do Serum 2.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "restrito_sem_pedido",
+      "kind": "restricao_sem_pedido",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 115,
+          "used_tokens": 207,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 50,
+          "used_tokens": 142,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "restrito_com_pedido",
+      "kind": "restricao_com_pedido",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 93,
+          "base_tokens": 93,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 174,
+          "base_tokens": 93,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 174,
+          "base_tokens": 93,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 174,
+          "base_tokens": 93,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "similar_motivo",
+      "kind": "motivo_com_parecidas",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m11",
+            "m10",
+            "m12"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 114,
+          "used_tokens": 206,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [
+            "m10",
+            "m11",
+            "m12"
+          ],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 173,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 173,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "similar_procedimento",
+      "kind": "procedimento_com_parecidas",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": false,
+          "additional_tokens": 0,
+          "used_tokens": 89,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho informação suficiente.",
+          "answer_score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m3",
+            "m9",
+            "m1"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 113,
+          "used_tokens": 202,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 49,
+          "used_tokens": 138,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m3"
+          ],
+          "evidence_present": [
+            "m3"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 81,
+          "used_tokens": 170,
+          "base_tokens": 89,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você testou o bass alternando entre dois envelopes (m3).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "envelopes"
+            ],
+            "facts_required": [
+              "envelopes"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "historico_repeticao",
+      "kind": "evidencia_no_historico",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 117,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 115,
+          "used_tokens": 232,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 50,
+          "used_tokens": 167,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1"
+          ],
+          "evidence_present": [
+            "m2"
+          ],
+          "hit_any": true,
+          "full_coverage": true,
+          "additional_tokens": 50,
+          "used_tokens": 167,
+          "base_tokens": 117,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "restrito_resumo",
+      "kind": "restricao_em_resumo",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 115,
+          "used_tokens": 207,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 50,
+          "used_tokens": 142,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "restrito_historico",
+      "kind": "restricao_em_historico",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m1",
+            "m7",
+            "m5"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 115,
+          "used_tokens": 207,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 50,
+          "used_tokens": 142,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "base_tokens": 92,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação disponível.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    },
+    {
+      "case": "delecao_pack",
+      "kind": "exclusao",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 88,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "lexical": {
+          "condition": "lexical",
+          "selected_ids": [
+            "m8",
+            "m9"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 80,
+          "used_tokens": 168,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m9",
+            "m8"
+          ],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 80,
+          "used_tokens": 168,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [],
+          "evidence_present": [],
+          "hit_any": false,
+          "full_coverage": true,
+          "additional_tokens": 0,
+          "used_tokens": 88,
+          "base_tokens": 88,
+          "restricted_violations": [],
+          "repetition": false,
+          "irrelevant_attached": false,
+          "noise_selected": [],
+          "answer": "Não tenho essa informação.",
+          "answer_score": 1.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": true
+          },
+          "error": null
+        }
+      }
+    }
+  ]
+}

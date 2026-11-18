@@ -1,0 +1,619 @@
+[
+  {
+    "review_id": "IE01",
+    "case": "retomada_geral",
+    "question": "Onde paramos nesse problema?",
+    "rubric": "Decisão atual, motivo, último teste concluído e pendência real; repetir passo concluído ou afirmar sem suporte desconta.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending"
+    ],
+    "answers": {
+      "A": "Paramos no ponto em que o próximo teste registrado é **testar a introdução em 96 kHz**, para confirmar que a CPU não estoura — conforme [pr7]. Antes disso, o teste do Pigments no refrão foi concluído com a CPU caindo para 22% [pr5], e o preset Pigments passou a ser usado no bass porque a CPU do Aurora chegava a 40% [pr4].\n\nA mensagem [pr10] apenas indica que você voltará ao problema depois; não registra retomada nem conclusão do teste da introdução em 96 kHz.",
+      "B": "Paramos aqui: você tinha trocado o preset do **Aurora** pelo **Pigments no bass** porque a CPU do Aurora chegava a 40% ([pr4]). Depois, o teste do Pigments no refrão foi concluído e a CPU caiu para **22%** ([pr5]).\n\nO próximo passo combinado era testar a **introdução em 96 kHz**, para confirmar que a CPU não estoura ([pr7])."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "B",
+      "notes": "As duas respostas cumprem os quatro critérios. B é mais direta. A observação de A sobre pr10 é compatível com a fonte e dispensável para identificar o próximo passo."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "Identifica o Pigments como o preset adotado no bass, conforme pr4.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "pr4 confirma que a CPU do Aurora chegava a 40%."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "pr5 confirma a conclusão do teste do Pigments no refrão e a queda da CPU para 22%."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "pr7 sustenta o teste da introdução em 96 kHz para verificar se a CPU aguenta."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "Apresenta a troca para o Pigments como parte do estado atual do projeto, conforme pr4.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "pr4 confirma que a CPU do Aurora chegava a 40%."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "pr5 confirma a conclusão do teste do Pigments no refrão e a queda da CPU para 22%."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "pr7 sustenta o teste da introdução em 96 kHz para verificar se a CPU aguenta."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE02",
+    "case": "proximo_teste",
+    "question": "Qual era o próximo teste e por quê?",
+    "rubric": "Pendência correta e motivo; repetir o refrão, já concluído, desconta.",
+    "criteria": [
+      "reason",
+      "pending"
+    ],
+    "answers": {
+      "A": "O próximo teste era a **introdução em 96 kHz**, para confirmar que a CPU não estoura [pr7].\n\nO motivo: você vinha monitorando a carga de CPU nos testes com o Pigments — no teste do refrão ela caiu para 22% [pr5], depois de trocar o preset do bass do Aurora (que chegava a 40%) para o Pigments [pr4]. A introdução em 96 kHz seria o próximo cenário a validar, justamente para checar se a CPU aguenta.",
+      "B": "O próximo teste era **a introdução em 96 kHz**, para **confirmar que a CPU não estoura** [pr7]."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "B",
+      "notes": "As duas respostas cumprem os critérios. B responde às duas partes diretamente, com a referência suficiente. O histórico adicional de A é pertinente e dispensável para esta pergunta."
+    },
+    "human": {
+      "A": {
+        "reason": {
+          "score": 1,
+          "notes": "pr7 confirma que o objetivo era verificar se a CPU aguenta. Os dados de 40% e 22% têm suporte em pr4 e pr5."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Identifica corretamente o teste da introdução em 96 kHz, conforme pr7."
+        }
+      },
+      "B": {
+        "reason": {
+          "score": 1,
+          "notes": "Explica que o objetivo era verificar se a CPU aguenta, conforme pr7."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Identifica corretamente o teste da introdução em 96 kHz, conforme pr7."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE03",
+    "case": "decisao_vigente",
+    "question": "Qual preset está valendo para o bass agora?",
+    "rubric": "Decisão vigente e motivo; citar o Aurora como atual desconta.",
+    "criteria": [
+      "decision",
+      "reason"
+    ],
+    "answers": {
+      "A": "O preset que está valendo para o bass agora é o **Pigments** — você trocou o Aurora por ele porque a CPU do Aurora chegava a 40% [pr4], e no teste do refrão o Pigments baixou a CPU para 22% [pr5].\n\nSó fica um ponto em aberto: você mencionou \"o problema do Pigments e da introdução\" [pr10], então talvez ainda haja algo a resolver nessa parte — mas a escolha do preset em si é o Pigments.",
+      "B": "Não há na memória fornecida nenhuma mensagem que registre qual preset está valendo para o bass agora.\n\nO que as fontes sustentam:\n- [pr1] Você começou a faixa Norte com o preset Aurora no bass.\n- [pr4] Você passou a usar o preset Pigments no bass, porque a CPU do Aurora chegava a 40%.\n- [pr5] O teste do Pigments no refrão foi concluído, com a CPU caindo para 22%.\n\nAs mensagens [pr9] e [pr10] não tratam do preset do bass: [pr9] fala de ajustes de iluminação e [pr10] menciona voltar depois ao problema do Pigments e da introdução — o que indica pendência, não confirmação de vigência. Portanto, com base apenas na memória, não é possível afirmar qual preset está valendo agora para o bass."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "A",
+      "notes": "A responde à pergunta com suporte direto em pr4. B recupera a troca e seu motivo, mas trata como indeterminada uma decisão que a fonte registra explicitamente."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "Identifica o Pigments como o preset vigente no bass, conforme pr4. A observação sobre a introdução não põe essa decisão em dúvida.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "pr4 sustenta que a CPU do Aurora chegava a 40%. pr5 confirma os 22% no teste do refrão."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 0,
+          "notes": "Cita pr4, mas conclui que o preset vigente é indeterminado. A fonte sustenta o Pigments como escolha atual registrada e não sustenta essa conclusão. A resposta não apresenta uma escolha antiga como vigente.",
+          "current_identified": false,
+          "reference_supports": false,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "Explica corretamente que a CPU do Aurora chegava a 40%, conforme pr4, mesmo errando a conclusão sobre a vigência do Pigments."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE04",
+    "case": "pendencia_concluida",
+    "question": "Onde paramos no projeto Serra?",
+    "rubric": "Decisão, motivo, teste concluído e pendência atual; a ponte já concluída não deve voltar como pendente.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending"
+    ],
+    "answers": {
+      "A": "O que a memória registra sobre o Serra é:\n\n- Você trocou para o preset Nova porque a CPU do Vega ficava alta [sr2].\n- O último teste da ponte em 48 kHz ficou concluído e aprovado [sr5].\n- O próximo passo é exportar a versão final [sr6].\n\nNão há registro de outras etapas além dessas.",
+      "B": "Retomando o Serra: você tinha trocado para o preset **Nova** porque a CPU do Vega ficava alta (sr2). O último teste da ponte em **48 kHz** ficou concluído e aprovado (sr5), e o próximo passo é **exportar a versão final** (sr6).\n\nQuer que eu ajude a preparar a exportação quando você voltar ao estúdio?"
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "empate",
+      "notes": "As duas respostas cumprem os quatro critérios. A afirmação de A sobre a ausência de outros registros e a menção de B a um retorno ao estúdio vão além do que as fontes fornecidas estabelecem."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "Apresenta o Nova como a escolha registrada para o Serra, conforme sr2.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "sr2 sustenta que a CPU do Vega ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "sr5 confirma que o teste da ponte em 48 kHz foi concluído e aprovado."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "sr6 confirma que exportar a versão final é o próximo passo."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "Apresenta a troca para o Nova como parte do estado atual do Serra, conforme sr2.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "sr2 sustenta que a CPU do Vega ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "sr5 confirma que o teste da ponte em 48 kHz foi concluído e aprovado."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "sr6 confirma que exportar a versão final é o próximo passo."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE05",
+    "case": "pendencia_substituida",
+    "question": "Onde paramos no projeto Litoral?",
+    "rubric": "Pendência substituída pela ponte; o solo antigo não deve voltar como próximo passo.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending"
+    ],
+    "answers": {
+      "A": "Paramos assim, no projeto Litoral:\n\n- Você trocou para o preset **Lyra** porque a CPU do **Orion** ficava alta (lt2).\n- O teste do **Lyra na introdução** ficou concluído (lt3).\n- O **teste da ponte em 48 kHz** ainda não tinha começado (lt6).\n\nOu seja, o próximo passo pendente é justamente o teste da ponte em 48 kHz, e você indicou que continua o Litoral e o Lyra depois do intervalo.",
+      "B": "No projeto Litoral, o que está registrado é:\n\n- Você trocou para o preset Lyra porque a CPU do Orion ficava alta (lt2).\n- O teste do Lyra na introdução ficou concluído (lt3).\n- O teste da ponte em 48 kHz ainda não começou (lt6).\n\nAs mensagens lt7 e lt8 não têm conteúdo de memória associado além do que você acabou de dizer, então não acrescentam estado registrado."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "A",
+      "notes": "As duas respostas cumprem os quatro critérios. A explica melhor como retomar o projeto. O comentário final de B desconsidera que lt8 reforça a continuidade do Lyra."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "lt2 registra a troca para o Lyra e lt8 confirma a intenção de continuar com ele.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "lt2 sustenta que a CPU do Orion ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "lt3 confirma a conclusão do teste do Lyra na introdução."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Identifica o teste da ponte em 48 kHz como próximo passo e informa que ele ainda não começou, conforme lt6."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "Apresenta a troca para o Lyra como parte do estado do Litoral, com suporte em lt2.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "lt2 sustenta que a CPU do Orion ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "lt3 confirma a conclusão do teste do Lyra na introdução."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Identifica o teste da ponte em 48 kHz como ainda não iniciado, conforme lt6."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE06",
+    "case": "sem_pendencia",
+    "question": "Onde paramos no projeto Vale?",
+    "rubric": "Decisão, motivo e teste concluído; a ausência de próximo passo deve ser reconhecida, sem inventar pendência.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending"
+    ],
+    "answers": {
+      "A": "Paramos no seguinte, conforme a memória:\n\n- Você trocou para o preset **Comet** no Vale porque a CPU do Atlas ficava alta (vl2).\n- O **teste do Comet no refrão ficou concluído** (vl3).\n- **Ainda não defini o próximo passo do Vale** (vl4).\n\nAs mensagens vl5 e vl6 são novas e não alteram esse estado registrado.",
+      "B": "No projeto Vale, você tinha trocado para o preset **Comet** porque a CPU do Atlas ficava alta [vl2]. Depois disso, o teste do Comet no refrão foi concluído [vl3].\n\nE o próximo passo ainda não estava definido [vl4] — então é exatamente aí que paramos: falta decidir o que fazer a seguir no Vale."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "B",
+      "notes": "As duas respostas cumprem os quatro critérios. B comunica com mais clareza que o próximo passo ainda está em aberto. Em A, “Ainda não defini” pode soar como uma fala do chatbot."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "Identifica o Comet como a escolha registrada para o Vale, conforme vl2.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "vl2 confirma que a CPU do Atlas ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "vl3 confirma a conclusão do teste do Comet no refrão."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Reconhece que o próximo passo segue indefinido, conforme vl4. A primeira pessoa reproduz a fala do usuário sem marcar a citação, mas o estado do projeto permanece claro."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "Apresenta a troca para o Comet como parte do estado do Vale, conforme vl2.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "vl2 confirma que a CPU do Atlas ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "vl3 confirma a conclusão do teste do Comet no refrão."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Explica que ainda falta definir o próximo passo, conforme vl4."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE07",
+    "case": "pendencia_substituida_costa",
+    "question": "Onde paramos no projeto Costa?",
+    "rubric": "Pendência substituída pela ponte; o arpejo antigo não deve voltar como próximo passo.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending"
+    ],
+    "answers": {
+      "A": "Você parou no ponto em que tinha trocado o preset do Costa para o Vela, porque a CPU do Íris estava alta (cs2), e o teste do Vela no verso já ficou concluído (cs3). O que ainda não começou é o teste da ponte em 48 kHz (cs6) — esse é o próximo da fila quando retomar o Costa e o Vela.",
+      "B": "No projeto Costa, o que está registrado na memória é:\n\n- Você trocou para o preset Vela porque a CPU do Íris ficava alta [cs2].\n- O teste do Vela no verso ficou concluído [cs3].\n- O teste da ponte em 48 kHz ainda não começou [cs6].\n\nSobre o retorno ao Costa depois do intervalo [cs7] e a intenção de continuar o Costa e o Vela [cs8], não há registro de conclusão ou andamento na memória fornecida."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "A",
+      "notes": "As duas respostas cumprem os quatro critérios. A torna o próximo passo explícito. O comentário final de B sobre o retorno acrescenta pouco à retomada."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "Identifica o Vela como o preset adotado em cs2 e mantido na retomada, conforme cs8.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "cs2 sustenta que a CPU do Íris ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "cs3 confirma a conclusão do teste do Vela no verso."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Identifica o teste da ponte em 48 kHz como próximo passo e informa que ainda não começou, conforme cs6."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "Identifica a troca para o Vela em cs2 e menciona a intenção de continuar com ele em cs8.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "cs2 sustenta que a CPU do Íris ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "cs3 confirma a conclusão do teste do Vela no verso."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "Identifica o teste da ponte em 48 kHz como ainda não iniciado, conforme cs6."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE08",
+    "case": "proximo_condicionado",
+    "question": "Onde paramos no projeto Dunas?",
+    "rubric": "Pendência condicionada a um resultado desconhecido; a condição precisa aparecer junto do próximo passo.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending",
+      "condition"
+    ],
+    "answers": {
+      "A": "Paramos aqui no Dunas:\n\n- Você trocou para o preset **Aster** porque a CPU do **Halo** estava alta [dn2].\n- O teste do Aster no refrão ficou concluído [dn3].\n- Ficou pendente testar o **Aster na ponte em 96 kHz**: se a CPU ficar **abaixo de 30%**, o próximo passo é **exportar**; senão, **reduzir o oversampling** [dn4].\n\nOu seja, o próximo ponto é rodar esse teste da ponte em 96 kHz e decidir entre exportar ou baixar o oversampling.",
+      "B": "No projeto Dunas, o teste do Aster no refrão ficou concluído [dn3]. A troca para o preset Aster foi feita porque a CPU do Halo ficava alta [dn2].\n\nAinda falta testar o Aster na ponte em 96 kHz; nessa condição, se a CPU ficar abaixo de 30%, o próximo passo é exportar, senão reduzo o oversampling [dn4]."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "A",
+      "notes": "As duas respostas cumprem os cinco critérios. A mantém a perspectiva do usuário de forma mais clara ao dizer “reduzir o oversampling”."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "A troca em dn2 e o próximo teste com o Aster em dn4 deixam clara a escolha vigente.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "dn2 sustenta que a CPU do Halo ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "dn3 confirma a conclusão do teste do Aster no refrão."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "dn4 confirma o teste do Aster na ponte em 96 kHz."
+        },
+        "condition": {
+          "score": 1,
+          "notes": "A medição segue pendente. Preserva os dois caminhos de dn4: exportar abaixo de 30% ou reduzir o oversampling caso contrário."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "A frase sobre a troca, lida junto do teste pendente com o Aster, deixa clara a escolha vigente. dn2 e dn4 sustentam essa leitura.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "dn2 sustenta que a CPU do Halo ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "dn3 confirma a conclusão do teste do Aster no refrão."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "dn4 confirma o teste do Aster na ponte em 96 kHz."
+        },
+        "condition": {
+          "score": 1,
+          "notes": "A medição segue pendente e os dois caminhos de dn4 foram preservados. “Reduzo” muda a perspectiva de quem fala, mas mantém a ação prevista."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE09",
+    "case": "intercalado_norte",
+    "question": "Onde paramos no projeto Norte?",
+    "rubric": "Projeto Norte; tarefas do Sul não podem ser atribuídas ao Norte.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending"
+    ],
+    "answers": {
+      "A": "Paramos com o teste do preset Safira no refrão concluído [n3]. O motivo da troca para o Safira foi a CPU do Lume ficar alta [n2]. Ainda falta testar a ponte do Norte em 48 kHz [n4].\n\nDepois do intervalo, você voltou ao Norte [n5] e pretende continuar o Norte e o Safira [n6].",
+      "B": "Paramos aqui no projeto Norte:\n\n- Você trocou para o preset **Safira** porque a CPU do Lume ficava alta (n2).\n- O teste do Safira **no refrão** ficou concluído (n3).\n- Ainda **falta testar a ponte do Norte em 48 kHz** (n4).\n\nOu seja: refrão com Safira já validado; próximo passo pendente é o teste da ponte em 48 kHz."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "A",
+      "notes": "As duas respostas cumprem os quatro critérios e mantêm a atribuição ao Norte. A é mais precisa sobre o estado do teste concluído."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "A troca registrada em n2 e a intenção de continuar com o Safira em n6 identificam a escolha vigente.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "n2 sustenta que a CPU do Lume ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "n3 confirma a conclusão do teste do Safira no refrão."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "n4 confirma que falta testar a ponte do Norte em 48 kHz."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "A troca para o Safira é apresentada como parte do estado atual da retomada, com suporte em n2 e n3.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "n2 sustenta que a CPU do Lume ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "A resposta identifica corretamente o teste do Safira no refrão como concluído, conforme n3. No resumo, “validado” sugere aprovação, algo que n3 não informa."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "n4 confirma que falta testar a ponte do Norte em 48 kHz."
+        }
+      }
+    }
+  },
+  {
+    "review_id": "IE10",
+    "case": "intercalado_sul",
+    "question": "Onde paramos no projeto Sul?",
+    "rubric": "Projeto Sul; tarefas do Norte não podem ser atribuídas ao Sul.",
+    "criteria": [
+      "decision",
+      "reason",
+      "completed",
+      "pending"
+    ],
+    "answers": {
+      "A": "Paramos assim, conforme as mensagens registradas:\n\n- **s2**: no Sul você trocou para o preset **Safira** porque a CPU do **Lume** ficava alta.\n- **s3**: o teste do **Safira na ponte do Sul em 48 kHz** ficou **concluído**.\n- **s4**: falta testar o **refrão do Sul**.\n\nAs mensagens s5 e s6 apenas indicam que você voltou ao Sul depois do intervalo e que continuará o Sul e o Safira; não alteram o estado registrado acima.",
+      "B": "Paramos aqui no projeto Sul:\n\n- Você trocou para o preset **Safira** porque a CPU do **Lume** ficava alta (s2).\n- O teste do **Safira na ponte do Sul em 48 kHz** ficou concluído (s3).\n- Falta testar o **refrão do Sul** (s4).\n\nOu seja: ponte testada em 48 kHz com o Safira; próximo passo é o refrão."
+    },
+    "human_review": {
+      "reviewed": true,
+      "preferred": "B",
+      "notes": "As duas respostas cumprem os quatro critérios e mantêm as informações no Sul. B resume o estado e o próximo passo de forma mais direta."
+    },
+    "human": {
+      "A": {
+        "decision": {
+          "score": 1,
+          "notes": "s2 registra a troca para o Safira e s6 reforça a intenção de continuar com ele.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "s2 sustenta que a CPU do Lume ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "s3 confirma a conclusão do teste do Safira na ponte do Sul em 48 kHz."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "s4 confirma que falta testar o refrão do Sul."
+        }
+      },
+      "B": {
+        "decision": {
+          "score": 1,
+          "notes": "Apresenta o Safira como a escolha adotada no Sul, conforme s2.",
+          "current_identified": true,
+          "reference_supports": true,
+          "old_or_ambiguous": false
+        },
+        "reason": {
+          "score": 1,
+          "notes": "s2 sustenta que a CPU do Lume ficava alta."
+        },
+        "completed": {
+          "score": 1,
+          "notes": "s3 confirma a conclusão do teste do Safira na ponte do Sul em 48 kHz."
+        },
+        "pending": {
+          "score": 1,
+          "notes": "s4 confirma que falta testar o refrão do Sul, apresentado como próximo passo."
+        }
+      }
+    }
+  }
+]

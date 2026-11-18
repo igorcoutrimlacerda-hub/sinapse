@@ -1,0 +1,1324 @@
+{
+  "pairs_file": "benchmark_out_resumption_round3\\real_comparison.json",
+  "dataset": "benchmark/resumption_sessions.json",
+  "review_files_preserved": true,
+  "rubric_preserved": true,
+  "summary": {
+    "pairs": 10,
+    "pair_valid": 10,
+    "selection_matches_frozen": 10,
+    "single_complete": 7,
+    "multipurpose_complete": 10,
+    "single_integrity": 10,
+    "multipurpose_integrity": 10,
+    "dunas_condition_ok": 1,
+    "dunas_paths_ok": 1,
+    "dunas_single_condition_ok": 1,
+    "dunas_single_paths_ok": 1,
+    "project_ok": 2,
+    "project_single_ok": 2,
+    "project_pairs": 2,
+    "project_total_ok": 4,
+    "project_total": 4,
+    "human_review_pending": true,
+    "real_evaluation_available": false,
+    "note": "Validação local apenas; as respostas reais dependem de acesso ao deepseek-flash."
+  },
+  "pairs": [
+    {
+      "case": "retomada_geral",
+      "question": "Onde paramos nesse problema?",
+      "expected_ids": [
+        "pr4",
+        "pr5",
+        "pr6",
+        "pr7"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "pr5",
+          "pr4"
+        ],
+        "missing_elements": [
+          "pending"
+        ],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": false
+        },
+        "complete": false,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": false,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Pigments"
+            ],
+            "reason": [
+              "CPU",
+              "40"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "introducao",
+              "96 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "pr5",
+          "pr4",
+          "pr7"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%. Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Pigments"
+            ],
+            "reason": [
+              "CPU",
+              "40"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "introducao",
+              "96 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "proximo_teste",
+      "question": "Qual era o próximo teste e por quê?",
+      "expected_ids": [
+        "pr6",
+        "pr7"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "pr7"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "reason": true,
+          "completed": false,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+        "checks": {
+          "decision": false,
+          "reason": true,
+          "completed": false,
+          "pending": true,
+          "components": [
+            "reason",
+            "pending"
+          ],
+          "facts_required": {
+            "reason": [
+              "CPU",
+              "estoura"
+            ],
+            "pending": [
+              "introducao",
+              "96 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "pr7"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "reason": true,
+          "completed": false,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Próximo passo pendente: O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+        "checks": {
+          "decision": false,
+          "reason": true,
+          "completed": false,
+          "pending": true,
+          "components": [
+            "reason",
+            "pending"
+          ],
+          "facts_required": {
+            "reason": [
+              "CPU",
+              "estoura"
+            ],
+            "pending": [
+              "introducao",
+              "96 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "decisao_vigente",
+      "question": "Qual preset está valendo para o bass agora?",
+      "expected_ids": [
+        "pr4"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "pr4",
+          "pr5",
+          "pr1"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": false,
+          "components": [
+            "decision",
+            "reason"
+          ],
+          "facts_required": {
+            "decision": [
+              "Pigments"
+            ],
+            "reason": [
+              "CPU",
+              "40"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "pr4",
+          "pr5",
+          "pr1"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: Agora uso o preset Pigments no bass, porque a CPU do Aurora chegava a 40%. Último teste concluído: O teste do Pigments no refrão foi concluído: a CPU caiu para 22%.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": false,
+          "components": [
+            "decision",
+            "reason"
+          ],
+          "facts_required": {
+            "decision": [
+              "Pigments"
+            ],
+            "reason": [
+              "CPU",
+              "40"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "pendencia_concluida",
+      "question": "Onde paramos no projeto Serra?",
+      "expected_ids": [
+        "sr2",
+        "sr5",
+        "sr6"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "sr2",
+          "sr6",
+          "sr5"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Serra, troquei para o preset Nova porque a CPU do Vega ficava alta. Último teste concluído: O último teste da ponte em 48 kHz ficou concluído e aprovado. Próximo passo pendente: O próximo passo é exportar a versão final.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Nova"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "ponte",
+              "48 khz"
+            ],
+            "pending": [
+              "exportar"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "sr2",
+          "sr6",
+          "sr5"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Serra, troquei para o preset Nova porque a CPU do Vega ficava alta. Último teste concluído: O último teste da ponte em 48 kHz ficou concluído e aprovado. Próximo passo pendente: O próximo passo é exportar a versão final.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Nova"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "ponte",
+              "48 khz"
+            ],
+            "pending": [
+              "exportar"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "pendencia_substituida",
+      "question": "Onde paramos no projeto Litoral?",
+      "expected_ids": [
+        "lt2",
+        "lt3",
+        "lt5",
+        "lt6"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "lt2",
+          "lt6",
+          "lt5"
+        ],
+        "missing_elements": [
+          "completed"
+        ],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": false,
+          "pending": true
+        },
+        "complete": false,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Litoral, troquei para o preset Lyra porque a CPU do Orion ficava alta. Próximo passo pendente: O solo saiu do escopo; o próximo passo agora é testar a ponte em 48 kHz. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": false,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Lyra"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "introducao"
+            ],
+            "pending": [
+              "ponte",
+              "48 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "lt3",
+          "lt2",
+          "lt6"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Litoral, troquei para o preset Lyra porque a CPU do Orion ficava alta. Último teste concluído: O teste do Lyra na introdução ficou concluído. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Lyra"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "introducao"
+            ],
+            "pending": [
+              "ponte",
+              "48 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "sem_pendencia",
+      "question": "Onde paramos no projeto Vale?",
+      "expected_ids": [
+        "vl2",
+        "vl3",
+        "vl4"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "vl3",
+          "vl2",
+          "vl4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Vale, troquei para o preset Comet porque a CPU do Atlas ficava alta. Último teste concluído: O teste do Comet no refrão ficou concluído. Não há próximo passo definido para este projeto.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Comet"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "nao defini",
+              "sem proximo passo",
+              "nao ha proximo",
+              "nenhum proximo"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "vl3",
+          "vl2",
+          "vl4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Vale, troquei para o preset Comet porque a CPU do Atlas ficava alta. Último teste concluído: O teste do Comet no refrão ficou concluído. Não há próximo passo definido para este projeto.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Comet"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "nao defini",
+              "sem proximo passo",
+              "nao ha proximo",
+              "nenhum proximo"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "pendencia_substituida_costa",
+      "question": "Onde paramos no projeto Costa?",
+      "expected_ids": [
+        "cs2",
+        "cs3",
+        "cs5",
+        "cs6"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "cs2",
+          "cs6",
+          "cs5"
+        ],
+        "missing_elements": [
+          "completed"
+        ],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": false,
+          "pending": true
+        },
+        "complete": false,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Costa, troquei para o preset Vela porque a CPU do Íris ficava alta. Próximo passo pendente: O arpejo saiu do escopo; o próximo passo agora é testar a ponte em 48 kHz. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": false,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Vela"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "verso"
+            ],
+            "pending": [
+              "ponte",
+              "48 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "cs3",
+          "cs2",
+          "cs6"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Costa, troquei para o preset Vela porque a CPU do Íris ficava alta. Último teste concluído: O teste do Vela no verso ficou concluído. Próximo passo pendente: O teste da ponte em 48 kHz ainda não começou.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Vela"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "verso"
+            ],
+            "pending": [
+              "ponte",
+              "48 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "proximo_condicionado",
+      "question": "Onde paramos no projeto Dunas?",
+      "expected_ids": [
+        "dn2",
+        "dn3",
+        "dn4"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "dn3",
+          "dn2",
+          "dn4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "condition": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": {
+          "condition": true,
+          "export_path": true,
+          "fallback_path": true
+        },
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Dunas, troquei para o preset Aster porque a CPU do Halo ficava alta. Último teste concluído: O teste do Aster no refrão ficou concluído. Condição: Ainda falta testar o Aster na ponte em 96 kHz; se a CPU ficar abaixo de 30%, o próximo passo é exportar, senão reduzo o oversampling.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Aster"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "ponte",
+              "96 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [
+            "30",
+            "exportar",
+            "oversampling"
+          ],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "dn3",
+          "dn2",
+          "dn4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "condition": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": {
+          "condition": true,
+          "export_path": true,
+          "fallback_path": true
+        },
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Dunas, troquei para o preset Aster porque a CPU do Halo ficava alta. Último teste concluído: O teste do Aster no refrão ficou concluído. Condição: Ainda falta testar o Aster na ponte em 96 kHz; se a CPU ficar abaixo de 30%, o próximo passo é exportar, senão reduzo o oversampling.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Aster"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "ponte",
+              "96 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [
+            "30",
+            "exportar",
+            "oversampling"
+          ],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "intercalado_norte",
+      "question": "Onde paramos no projeto Norte?",
+      "expected_ids": [
+        "n2",
+        "n3",
+        "n4"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "n3",
+          "n2",
+          "n4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Norte, troquei para o preset Safira porque a CPU do Lume ficava alta. Último teste concluído: O teste do Safira no refrão ficou concluído. Próximo passo pendente: Falta testar a ponte do Norte em 48 kHz.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Safira"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "ponte",
+              "48 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "n3",
+          "n2",
+          "n4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Norte, troquei para o preset Safira porque a CPU do Lume ficava alta. Último teste concluído: O teste do Safira no refrão ficou concluído. Próximo passo pendente: Falta testar a ponte do Norte em 48 kHz.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Safira"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "refrao"
+            ],
+            "pending": [
+              "ponte",
+              "48 khz"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    },
+    {
+      "case": "intercalado_sul",
+      "question": "Onde paramos no projeto Sul?",
+      "expected_ids": [
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "pair_selection_matches_frozen": true,
+      "pair_valid": true,
+      "single": {
+        "condition": "sinapse",
+        "selected": [
+          "s3",
+          "s2",
+          "s4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Sul, troquei para o preset Safira porque a CPU do Lume ficava alta. Último teste concluído: O teste do Safira na ponte do Sul em 48 kHz ficou concluído. Próximo passo pendente: Falta testar o refrão do Sul.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Safira"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "ponte",
+              "48 khz"
+            ],
+            "pending": [
+              "refrao"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      },
+      "multipurpose": {
+        "condition": "sinapse_multipurpose",
+        "selected": [
+          "s3",
+          "s2",
+          "s4"
+        ],
+        "missing_elements": [],
+        "references_sent": true,
+        "reference_failures": [],
+        "reference_support": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true
+        },
+        "complete": true,
+        "integrity": true,
+        "conditions_ok": true,
+        "conditions_omitted": [],
+        "condition_paths": null,
+        "project_ok": true,
+        "wrong_project_selected": [],
+        "wrong_project_terms": [],
+        "answer": "Decisão vigente: No Sul, troquei para o preset Safira porque a CPU do Lume ficava alta. Último teste concluído: O teste do Safira na ponte do Sul em 48 kHz ficou concluído. Próximo passo pendente: Falta testar o refrão do Sul.",
+        "checks": {
+          "decision": true,
+          "reason": true,
+          "completed": true,
+          "pending": true,
+          "components": [
+            "decision",
+            "reason",
+            "completed",
+            "pending"
+          ],
+          "facts_required": {
+            "decision": [
+              "Safira"
+            ],
+            "reason": [
+              "CPU",
+              "alta"
+            ],
+            "completed": [
+              "ponte",
+              "48 khz"
+            ],
+            "pending": [
+              "refrao"
+            ]
+          },
+          "completed_repetition": [],
+          "unsupported_claims": [],
+          "conditions_present": [],
+          "conditions_omitted": [],
+          "old_task_terms_present": [],
+          "wrong_project_terms_present": []
+        }
+      }
+    }
+  ]
+}

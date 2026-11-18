@@ -1,0 +1,4780 @@
+{
+  "seeds": [
+    11,
+    22,
+    33
+  ],
+  "evaluations_per_seed": 24,
+  "calibration_cases": 8,
+  "known_cases": 12,
+  "unseen_cases": 5,
+  "bounds": {
+    "trigger": [
+      0.0,
+      0.5
+    ],
+    "min_gain": [
+      0.0,
+      0.15
+    ],
+    "redundancy": [
+      0.2,
+      1.0
+    ]
+  },
+  "reference": {
+    "policy": {
+      "trigger": 0.0,
+      "min_gain": 0.0,
+      "redundancy": 0.6
+    },
+    "key": [
+      0,
+      -8,
+      1,
+      423,
+      6
+    ],
+    "full_cases": 8,
+    "cases": 8,
+    "dependencies_lost": 0,
+    "violations": 0,
+    "functionless": 1,
+    "tokens": 423,
+    "candidates": 6,
+    "extra_searches": 6,
+    "details": [
+      {
+        "case": "ev_follow",
+        "family": "bicicleta",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "p2"
+        ],
+        "dependencies": [
+          "p1"
+        ],
+        "functionless": [],
+        "tokens": 79,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "p1",
+          "p2"
+        ]
+      },
+      {
+        "case": "ev_follow_piano",
+        "family": "piano",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "m6"
+        ],
+        "dependencies": [
+          "m5"
+        ],
+        "functionless": [],
+        "tokens": 77,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m5",
+          "m6"
+        ]
+      },
+      {
+        "case": "ev_correction",
+        "family": "correcao",
+        "action": "correction",
+        "full": true,
+        "expected": [
+          "m10"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 54,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m10"
+        ]
+      },
+      {
+        "case": "ev_price_link",
+        "family": "preco",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "m20"
+        ],
+        "dependencies": [
+          "m1"
+        ],
+        "functionless": [],
+        "tokens": 78,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m1",
+          "m20"
+        ]
+      },
+      {
+        "case": "ev_many_links",
+        "family": "muitos_vinculos",
+        "action": "correction",
+        "full": true,
+        "expected": [
+          "m10"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 54,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m10"
+        ]
+      },
+      {
+        "case": "ev_other_theme",
+        "family": "pack",
+        "action": "other_theme",
+        "full": true,
+        "expected": [
+          "m9"
+        ],
+        "dependencies": [],
+        "functionless": [
+          "m8"
+        ],
+        "tokens": 81,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m9",
+          "m8"
+        ]
+      },
+      {
+        "case": "ev_history",
+        "family": "historico",
+        "action": "stop",
+        "full": true,
+        "expected": [
+          "m2"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 0,
+        "candidates": 0,
+        "violations": [],
+        "selected": []
+      },
+      {
+        "case": "ev_restricted",
+        "family": "sensibilidade",
+        "action": "stop",
+        "full": true,
+        "expected": [],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 0,
+        "candidates": 0,
+        "violations": [],
+        "selected": []
+      }
+    ]
+  },
+  "random_runs": [
+    {
+      "seed": 11,
+      "best": {
+        "policy": {
+          "trigger": 0.2261897767549093,
+          "min_gain": 0.0839658579120744,
+          "redundancy": 0.9393684672189835
+        },
+        "key": [
+          0,
+          -8,
+          1,
+          423,
+          6
+        ],
+        "full_cases": 8,
+        "cases": 8,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 423,
+        "candidates": 6,
+        "extra_searches": 6,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ],
+        "evaluation": 1
+      },
+      "history": [
+        {
+          "evaluation": 1,
+          "policy": {
+            "trigger": 0.2261897767549093,
+            "min_gain": 0.0839658579120744,
+            "redundancy": 0.9393684672189835
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 2,
+          "policy": {
+            "trigger": 0.23282503504988666,
+            "min_gain": 0.07617619095934067,
+            "redundancy": 0.6699078630799176
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 3,
+          "policy": {
+            "trigger": 0.09233017192743831,
+            "min_gain": 0.07678629585627082,
+            "redundancy": 0.7039061761734415
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 4,
+          "policy": {
+            "trigger": 0.3964884362599763,
+            "min_gain": 0.01411851843438277,
+            "redundancy": 0.4427210100996204
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 5,
+          "policy": {
+            "trigger": 0.0453352687459197,
+            "min_gain": 0.12144668015507662,
+            "redundancy": 0.7547507860329914
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 6,
+          "policy": {
+            "trigger": 0.020940168184923003,
+            "min_gain": 0.14732901311981672,
+            "redundancy": 0.9718062249004535
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 7,
+          "policy": {
+            "trigger": 0.3269612667669202,
+            "min_gain": 0.09233440568678561,
+            "redundancy": 0.32599527611213
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 8,
+          "policy": {
+            "trigger": 0.007500368474802455,
+            "min_gain": 0.0792571899255718,
+            "redundancy": 0.247640884135084
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 9,
+          "policy": {
+            "trigger": 0.09510413139896456,
+            "min_gain": 0.036291452049782215,
+            "redundancy": 0.22406607137983087
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 10,
+          "policy": {
+            "trigger": 0.23196723061164226,
+            "min_gain": 0.06607966749849851,
+            "redundancy": 0.8739417028148255
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 11,
+          "policy": {
+            "trigger": 0.25956205738203836,
+            "min_gain": 0.09604375618787657,
+            "redundancy": 0.5998185217654333
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 12,
+          "policy": {
+            "trigger": 0.3312247659451841,
+            "min_gain": 0.06859948223993365,
+            "redundancy": 0.4225303197311087
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 13,
+          "policy": {
+            "trigger": 0.49882810023154217,
+            "min_gain": 0.14935374624842987,
+            "redundancy": 0.8721724395942896
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 14,
+          "policy": {
+            "trigger": 0.35390481074897473,
+            "min_gain": 0.047291582552332484,
+            "redundancy": 0.38373272128632446
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 15,
+          "policy": {
+            "trigger": 0.14451997365710106,
+            "min_gain": 0.010533524933988885,
+            "redundancy": 0.8130303091283257
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 16,
+          "policy": {
+            "trigger": 0.20019990245924552,
+            "min_gain": 0.1269875432821768,
+            "redundancy": 0.5092108253647476
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 17,
+          "policy": {
+            "trigger": 0.47902119165990675,
+            "min_gain": 0.12709646599542065,
+            "redundancy": 0.20043594964445638
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 18,
+          "policy": {
+            "trigger": 0.10485870736480557,
+            "min_gain": 0.1365407892156272,
+            "redundancy": 0.5759898208109331
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 19,
+          "policy": {
+            "trigger": 0.49017947058714606,
+            "min_gain": 0.05961365821189217,
+            "redundancy": 0.2584306750669583
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 20,
+          "policy": {
+            "trigger": 0.3147274561170121,
+            "min_gain": 0.11677662880149761,
+            "redundancy": 0.4158204694801142
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 21,
+          "policy": {
+            "trigger": 0.043572099176085066,
+            "min_gain": 0.04988784381950218,
+            "redundancy": 0.9712609732750113
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 22,
+          "policy": {
+            "trigger": 0.3790202584968794,
+            "min_gain": 0.01769875191293262,
+            "redundancy": 0.397110359114504
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 23,
+          "policy": {
+            "trigger": 0.05052315447835254,
+            "min_gain": 0.008984010441161506,
+            "redundancy": 0.8376172094751793
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 24,
+          "policy": {
+            "trigger": 0.08883906409918307,
+            "min_gain": 0.08389427124155922,
+            "redundancy": 0.5579399020008173
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "best": {
+        "policy": {
+          "trigger": 0.4791046899086364,
+          "min_gain": 0.021055288511459217,
+          "redundancy": 0.21889291771106045
+        },
+        "key": [
+          0,
+          -8,
+          1,
+          423,
+          6
+        ],
+        "full_cases": 8,
+        "cases": 8,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 423,
+        "candidates": 6,
+        "extra_searches": 6,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ],
+        "evaluation": 1
+      },
+      "history": [
+        {
+          "evaluation": 1,
+          "policy": {
+            "trigger": 0.4791046899086364,
+            "min_gain": 0.021055288511459217,
+            "redundancy": 0.21889291771106045
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 2,
+          "policy": {
+            "trigger": 0.49931532683645724,
+            "min_gain": 0.02763804685542796,
+            "redundancy": 0.29647365057226005
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 3,
+          "policy": {
+            "trigger": 0.3257106202789597,
+            "min_gain": 0.051846725634385006,
+            "redundancy": 0.9116407518366423
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 4,
+          "policy": {
+            "trigger": 0.11587074499303801,
+            "min_gain": 0.1439227592755049,
+            "redundancy": 0.4555614708429895
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 5,
+          "policy": {
+            "trigger": 0.30057114429449827,
+            "min_gain": 0.1398131406515817,
+            "redundancy": 0.748208294708302
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 6,
+          "policy": {
+            "trigger": 0.4619245843217186,
+            "min_gain": 0.10621724711759224,
+            "redundancy": 0.238752267224457
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 7,
+          "policy": {
+            "trigger": 0.44068369277312813,
+            "min_gain": 0.08843337252434993,
+            "redundancy": 0.44854496372651226
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 8,
+          "policy": {
+            "trigger": 0.0950664065052983,
+            "min_gain": 0.12747127165448038,
+            "redundancy": 0.6662591131379754
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 9,
+          "policy": {
+            "trigger": 0.4689944525394021,
+            "min_gain": 0.11609282119167101,
+            "redundancy": 0.9689536389722424
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 10,
+          "policy": {
+            "trigger": 0.28315645851631427,
+            "min_gain": 0.1047577962202211,
+            "redundancy": 0.6898596962381194
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 11,
+          "policy": {
+            "trigger": 0.12920545482803675,
+            "min_gain": 0.14350755370390955,
+            "redundancy": 0.44997789800603444
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 12,
+          "policy": {
+            "trigger": 0.3905547964226864,
+            "min_gain": 0.14319515074349917,
+            "redundancy": 0.7207008332925522
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 13,
+          "policy": {
+            "trigger": 0.07111169501962467,
+            "min_gain": 0.12378389381312253,
+            "redundancy": 0.7340006094687421
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 14,
+          "policy": {
+            "trigger": 0.0925141849812482,
+            "min_gain": 0.007368766154071193,
+            "redundancy": 0.6254532569719841
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 15,
+          "policy": {
+            "trigger": 0.016132166308858942,
+            "min_gain": 0.13876213459475112,
+            "redundancy": 0.6050237493769821
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 16,
+          "policy": {
+            "trigger": 0.25865582332848897,
+            "min_gain": 0.06141631833903902,
+            "redundancy": 0.7287998671797846
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 17,
+          "policy": {
+            "trigger": 0.45823177764139306,
+            "min_gain": 0.04609594519802019,
+            "redundancy": 0.49902277825602026
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 18,
+          "policy": {
+            "trigger": 0.29129693294019676,
+            "min_gain": 0.04459777724988688,
+            "redundancy": 0.6765075895863957
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 19,
+          "policy": {
+            "trigger": 0.27156025740182016,
+            "min_gain": 0.06502077626907786,
+            "redundancy": 0.7385901743126437
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 20,
+          "policy": {
+            "trigger": 0.2641203568404255,
+            "min_gain": 0.013216418501624971,
+            "redundancy": 0.9971873190625666
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 21,
+          "policy": {
+            "trigger": 0.17784984074000676,
+            "min_gain": 0.06476390113818743,
+            "redundancy": 0.5222425285462078
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 22,
+          "policy": {
+            "trigger": 0.4647520960911439,
+            "min_gain": 0.14282351754264538,
+            "redundancy": 0.609594775669241
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 23,
+          "policy": {
+            "trigger": 0.2003295310093381,
+            "min_gain": 0.014484876907221715,
+            "redundancy": 0.9164003204908584
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 24,
+          "policy": {
+            "trigger": 0.08569794904497552,
+            "min_gain": 0.0819939040127272,
+            "redundancy": 0.4793110202482729
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 33,
+      "best": {
+        "policy": {
+          "trigger": 0.2851642115684366,
+          "min_gain": 0.09483494933681678,
+          "redundancy": 0.8536030879066188
+        },
+        "key": [
+          0,
+          -8,
+          1,
+          423,
+          6
+        ],
+        "full_cases": 8,
+        "cases": 8,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 423,
+        "candidates": 6,
+        "extra_searches": 6,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ],
+        "evaluation": 1
+      },
+      "history": [
+        {
+          "evaluation": 1,
+          "policy": {
+            "trigger": 0.2851642115684366,
+            "min_gain": 0.09483494933681678,
+            "redundancy": 0.8536030879066188
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 2,
+          "policy": {
+            "trigger": 0.1386454272231724,
+            "min_gain": 0.09777899520128668,
+            "redundancy": 0.912648764447425
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 3,
+          "policy": {
+            "trigger": 0.45441426160693404,
+            "min_gain": 0.027976883924637673,
+            "redundancy": 0.7213816875529302
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 4,
+          "policy": {
+            "trigger": 0.3085586389284836,
+            "min_gain": 0.0755090758066571,
+            "redundancy": 0.9729583721579678
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 5,
+          "policy": {
+            "trigger": 0.2641331124341677,
+            "min_gain": 0.06678811455019328,
+            "redundancy": 0.9548489253098855
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 6,
+          "policy": {
+            "trigger": 0.3178099135710764,
+            "min_gain": 0.04519416847873762,
+            "redundancy": 0.44740753482724244
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 7,
+          "policy": {
+            "trigger": 0.24805028326383172,
+            "min_gain": 0.007889706354310166,
+            "redundancy": 0.6860653570880999
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 8,
+          "policy": {
+            "trigger": 0.36792730419794234,
+            "min_gain": 0.06392127180312489,
+            "redundancy": 0.8772702949075826
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 9,
+          "policy": {
+            "trigger": 0.46399227276243876,
+            "min_gain": 0.0833411959164897,
+            "redundancy": 0.74508208182823
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 10,
+          "policy": {
+            "trigger": 0.058628655465578494,
+            "min_gain": 0.008402933164662762,
+            "redundancy": 0.9840179377058365
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 11,
+          "policy": {
+            "trigger": 0.14222005380395747,
+            "min_gain": 0.03200440629256214,
+            "redundancy": 0.917329067386556
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 12,
+          "policy": {
+            "trigger": 0.3749095699408942,
+            "min_gain": 0.018477430179914166,
+            "redundancy": 0.45733691316585373
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 13,
+          "policy": {
+            "trigger": 0.1213391144305227,
+            "min_gain": 0.0409058894814261,
+            "redundancy": 0.2050983092419629
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 14,
+          "policy": {
+            "trigger": 0.2623418184314038,
+            "min_gain": 0.04565139027876456,
+            "redundancy": 0.5153675340953014
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 15,
+          "policy": {
+            "trigger": 0.0927180785216804,
+            "min_gain": 0.01651273356287224,
+            "redundancy": 0.22633170702802197
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 16,
+          "policy": {
+            "trigger": 0.43637771765667716,
+            "min_gain": 0.11210544781714903,
+            "redundancy": 0.6477215519670373
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 17,
+          "policy": {
+            "trigger": 0.06192094111190494,
+            "min_gain": 0.02234244245283144,
+            "redundancy": 0.2957222092638042
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 18,
+          "policy": {
+            "trigger": 0.15827639774620111,
+            "min_gain": 0.00863956333323262,
+            "redundancy": 0.4203234276066303
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 19,
+          "policy": {
+            "trigger": 0.10144738058403213,
+            "min_gain": 0.028925756376370765,
+            "redundancy": 0.7229830884250905
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 20,
+          "policy": {
+            "trigger": 0.22889974190913437,
+            "min_gain": 0.07102204016190405,
+            "redundancy": 0.4864489411689606
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 21,
+          "policy": {
+            "trigger": 0.2695069814260098,
+            "min_gain": 0.1177741816575943,
+            "redundancy": 0.4464052586919464
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 22,
+          "policy": {
+            "trigger": 0.0351133421424632,
+            "min_gain": 0.07217566450659488,
+            "redundancy": 0.5033351645343263
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 23,
+          "policy": {
+            "trigger": 0.3902530013082285,
+            "min_gain": 0.016648770497309007,
+            "redundancy": 0.8981823816525325
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 24,
+          "policy": {
+            "trigger": 0.007413465294709154,
+            "min_gain": 0.08133549463156067,
+            "redundancy": 0.5548779232682446
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "genetic_runs": [
+    {
+      "seed": 11,
+      "best": {
+        "policy": {
+          "trigger": 0.2261897767549093,
+          "min_gain": 0.0839658579120744,
+          "redundancy": 0.9393684672189835
+        },
+        "key": [
+          0,
+          -8,
+          1,
+          423,
+          6
+        ],
+        "full_cases": 8,
+        "cases": 8,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 423,
+        "candidates": 6,
+        "extra_searches": 6,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ]
+      },
+      "history": [
+        {
+          "evaluation": 1,
+          "policy": {
+            "trigger": 0.2261897767549093,
+            "min_gain": 0.0839658579120744,
+            "redundancy": 0.9393684672189835
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 2,
+          "policy": {
+            "trigger": 0.23282503504988666,
+            "min_gain": 0.07617619095934067,
+            "redundancy": 0.6699078630799176
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 3,
+          "policy": {
+            "trigger": 0.09233017192743831,
+            "min_gain": 0.07678629585627082,
+            "redundancy": 0.7039061761734415
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 4,
+          "policy": {
+            "trigger": 0.3964884362599763,
+            "min_gain": 0.01411851843438277,
+            "redundancy": 0.4427210100996204
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 5,
+          "policy": {
+            "trigger": 0.0453352687459197,
+            "min_gain": 0.12144668015507662,
+            "redundancy": 0.7547507860329914
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 6,
+          "policy": {
+            "trigger": 0.020940168184923003,
+            "min_gain": 0.14732901311981672,
+            "redundancy": 0.9718062249004535
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 7,
+          "policy": {
+            "trigger": 0.1633949464827842,
+            "min_gain": 0.049815556916979115,
+            "redundancy": 0.9536875907060279
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 8,
+          "policy": {
+            "trigger": 0.24445011227183577,
+            "min_gain": 0.06583022305018381,
+            "redundancy": 0.6605841110861125
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 9,
+          "policy": {
+            "trigger": 0.2480371371897584,
+            "min_gain": 0.1047377805543919,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 10,
+          "policy": {
+            "trigger": 0.249610324724583,
+            "min_gain": 0.022482752845145754,
+            "redundancy": 0.7751665630099581
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 11,
+          "policy": {
+            "trigger": 0.1126140067867873,
+            "min_gain": 0.07882334458118609,
+            "redundancy": 0.7182989945952265
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 12,
+          "policy": {
+            "trigger": 0.23299308648453343,
+            "min_gain": 0.05281922507142925,
+            "redundancy": 0.7019907882658235
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 13,
+          "policy": {
+            "trigger": 0.4902144323406201,
+            "min_gain": 0.0825076901856196,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 14,
+          "policy": {
+            "trigger": 0.1269590133139852,
+            "min_gain": 0.06753456976833971,
+            "redundancy": 0.7692806610169691
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 15,
+          "policy": {
+            "trigger": 0.2187761843591265,
+            "min_gain": 0.09507130426641049,
+            "redundancy": 0.9548677642797211
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 16,
+          "policy": {
+            "trigger": 0.15233423794129392,
+            "min_gain": 0.0930885290097132,
+            "redundancy": 0.5481039683730383
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 17,
+          "policy": {
+            "trigger": 0.3759299740532045,
+            "min_gain": 0.06880974480786362,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 18,
+          "policy": {
+            "trigger": 0.2330129671662025,
+            "min_gain": 0.10474909886553009,
+            "redundancy": 0.5795853006786287
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 19,
+          "policy": {
+            "trigger": 0.30609906577292384,
+            "min_gain": 0.08024891506694337,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 20,
+          "policy": {
+            "trigger": 0.2827606033441251,
+            "min_gain": 0.08041500848261572,
+            "redundancy": 0.5528652955820894
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 21,
+          "policy": {
+            "trigger": 0.28761402365302813,
+            "min_gain": 0.09801043313931884,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 22,
+          "policy": {
+            "trigger": 0.2026629174377571,
+            "min_gain": 0.09281897750544542,
+            "redundancy": 0.7460979661143641
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 23,
+          "policy": {
+            "trigger": 0.24882759594137524,
+            "min_gain": 0.09021928912215131,
+            "redundancy": 0.9666869468064238
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 24,
+          "policy": {
+            "trigger": 0.18495334527187574,
+            "min_gain": 0.04574215880777133,
+            "redundancy": 0.6104376430715601
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 22,
+      "best": {
+        "policy": {
+          "trigger": 0.4791046899086364,
+          "min_gain": 0.021055288511459217,
+          "redundancy": 0.21889291771106045
+        },
+        "key": [
+          0,
+          -8,
+          1,
+          423,
+          6
+        ],
+        "full_cases": 8,
+        "cases": 8,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 423,
+        "candidates": 6,
+        "extra_searches": 6,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ]
+      },
+      "history": [
+        {
+          "evaluation": 1,
+          "policy": {
+            "trigger": 0.4791046899086364,
+            "min_gain": 0.021055288511459217,
+            "redundancy": 0.21889291771106045
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 2,
+          "policy": {
+            "trigger": 0.49931532683645724,
+            "min_gain": 0.02763804685542796,
+            "redundancy": 0.29647365057226005
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 3,
+          "policy": {
+            "trigger": 0.3257106202789597,
+            "min_gain": 0.051846725634385006,
+            "redundancy": 0.9116407518366423
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 4,
+          "policy": {
+            "trigger": 0.11587074499303801,
+            "min_gain": 0.1439227592755049,
+            "redundancy": 0.4555614708429895
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 5,
+          "policy": {
+            "trigger": 0.30057114429449827,
+            "min_gain": 0.1398131406515817,
+            "redundancy": 0.748208294708302
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 6,
+          "policy": {
+            "trigger": 0.4619245843217186,
+            "min_gain": 0.10621724711759224,
+            "redundancy": 0.238752267224457
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 7,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.0,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 8,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.050916372409205504,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 9,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.001403694759330481,
+            "redundancy": 0.4070501595671385
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 10,
+          "policy": {
+            "trigger": 0.47434932827801196,
+            "min_gain": 0.014477940121394256,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 11,
+          "policy": {
+            "trigger": 0.46851483058994986,
+            "min_gain": 0.09613006599839558,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 12,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.06940423174110068,
+            "redundancy": 0.2352820194245889
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 13,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.0647240047086353,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 14,
+          "policy": {
+            "trigger": 0.4548627783516215,
+            "min_gain": 0.06285095659231928,
+            "redundancy": 0.35261236276604924
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 15,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.03480592463538492,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 16,
+          "policy": {
+            "trigger": 0.4955065076343221,
+            "min_gain": 0.0,
+            "redundancy": 0.41534702601762274
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 17,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.008172886217891017,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 18,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.015811471390508872,
+            "redundancy": 0.48947086865547534
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 19,
+          "policy": {
+            "trigger": 0.3969319423839399,
+            "min_gain": 0.012496047701546067,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 20,
+          "policy": {
+            "trigger": 0.41243833989622164,
+            "min_gain": 0.11342494325029384,
+            "redundancy": 0.5615897071847908
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 21,
+          "policy": {
+            "trigger": 0.42667770392620186,
+            "min_gain": 0.04617217824038122,
+            "redundancy": 0.2
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 22,
+          "policy": {
+            "trigger": 0.5,
+            "min_gain": 0.06196218034010684,
+            "redundancy": 0.24327084408408997
+          },
+          "key": [
+            0,
+            -7,
+            1,
+            392,
+            5
+          ]
+        },
+        {
+          "evaluation": 23,
+          "policy": {
+            "trigger": 0.44984916285253695,
+            "min_gain": 0.028956854261590226,
+            "redundancy": 0.291749366343319
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 24,
+          "policy": {
+            "trigger": 0.46937012606484796,
+            "min_gain": 0.001019313112868677,
+            "redundancy": 0.2563273831322018
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "seed": 33,
+      "best": {
+        "policy": {
+          "trigger": 0.2851642115684366,
+          "min_gain": 0.09483494933681678,
+          "redundancy": 0.8536030879066188
+        },
+        "key": [
+          0,
+          -8,
+          1,
+          423,
+          6
+        ],
+        "full_cases": 8,
+        "cases": 8,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 423,
+        "candidates": 6,
+        "extra_searches": 6,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ]
+      },
+      "history": [
+        {
+          "evaluation": 1,
+          "policy": {
+            "trigger": 0.2851642115684366,
+            "min_gain": 0.09483494933681678,
+            "redundancy": 0.8536030879066188
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 2,
+          "policy": {
+            "trigger": 0.1386454272231724,
+            "min_gain": 0.09777899520128668,
+            "redundancy": 0.912648764447425
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 3,
+          "policy": {
+            "trigger": 0.45441426160693404,
+            "min_gain": 0.027976883924637673,
+            "redundancy": 0.7213816875529302
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 4,
+          "policy": {
+            "trigger": 0.3085586389284836,
+            "min_gain": 0.0755090758066571,
+            "redundancy": 0.9729583721579678
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 5,
+          "policy": {
+            "trigger": 0.2641331124341677,
+            "min_gain": 0.06678811455019328,
+            "redundancy": 0.9548489253098855
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 6,
+          "policy": {
+            "trigger": 0.3178099135710764,
+            "min_gain": 0.04519416847873762,
+            "redundancy": 0.44740753482724244
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 7,
+          "policy": {
+            "trigger": 0.2588736763842625,
+            "min_gain": 0.09507655048378247,
+            "redundancy": 0.6626650439200188
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 8,
+          "policy": {
+            "trigger": 0.05697545211415736,
+            "min_gain": 0.045833474679222136,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 9,
+          "policy": {
+            "trigger": 0.37679960060818257,
+            "min_gain": 0.07813009060645884,
+            "redundancy": 0.8222824692930698
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 10,
+          "policy": {
+            "trigger": 0.10234940957548827,
+            "min_gain": 0.15,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 11,
+          "policy": {
+            "trigger": 0.27326414396388954,
+            "min_gain": 0.11513431604387772,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 12,
+          "policy": {
+            "trigger": 0.05812499780512029,
+            "min_gain": 0.11668101870762489,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 13,
+          "policy": {
+            "trigger": 0.28810017717307174,
+            "min_gain": 0.11875046147086432,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 14,
+          "policy": {
+            "trigger": 0.14255136814956032,
+            "min_gain": 0.08772127743875621,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 15,
+          "policy": {
+            "trigger": 0.3004117665432955,
+            "min_gain": 0.10814806130960149,
+            "redundancy": 1.0
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 16,
+          "policy": {
+            "trigger": 0.17200193239323527,
+            "min_gain": 0.09714400543126543,
+            "redundancy": 0.7205590417517631
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 17,
+          "policy": {
+            "trigger": 0.31752528287254606,
+            "min_gain": 0.10679501326284488,
+            "redundancy": 0.9491992991960023
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 18,
+          "policy": {
+            "trigger": 0.18631429535463928,
+            "min_gain": 0.12029944907162093,
+            "redundancy": 0.9552761329199623
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 19,
+          "policy": {
+            "trigger": 0.3004376334513184,
+            "min_gain": 0.11361823442677937,
+            "redundancy": 0.7592218885514125
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 20,
+          "policy": {
+            "trigger": 0.06583505090970607,
+            "min_gain": 0.06992359322445986,
+            "redundancy": 0.9360734667915757
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 21,
+          "policy": {
+            "trigger": 0.14905632054106716,
+            "min_gain": 0.08206652096953777,
+            "redundancy": 0.8331991360803765
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 22,
+          "policy": {
+            "trigger": 0.1671691881539029,
+            "min_gain": 0.06869120058032203,
+            "redundancy": 0.9299357190533771
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 23,
+          "policy": {
+            "trigger": 0.29255688309998895,
+            "min_gain": 0.08054920462644159,
+            "redundancy": 0.8716726482569499
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        },
+        {
+          "evaluation": 24,
+          "policy": {
+            "trigger": 0.1287291747353187,
+            "min_gain": 0.06643122859514763,
+            "redundancy": 0.8700485282664187
+          },
+          "key": [
+            0,
+            -8,
+            1,
+            423,
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "best_random": {
+    "policy": {
+      "trigger": 0.2261897767549093,
+      "min_gain": 0.0839658579120744,
+      "redundancy": 0.9393684672189835
+    },
+    "key": [
+      0,
+      -8,
+      1,
+      423,
+      6
+    ],
+    "full_cases": 8,
+    "cases": 8,
+    "dependencies_lost": 0,
+    "violations": 0,
+    "functionless": 1,
+    "tokens": 423,
+    "candidates": 6,
+    "extra_searches": 6,
+    "details": [
+      {
+        "case": "ev_follow",
+        "family": "bicicleta",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "p2"
+        ],
+        "dependencies": [
+          "p1"
+        ],
+        "functionless": [],
+        "tokens": 79,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "p1",
+          "p2"
+        ]
+      },
+      {
+        "case": "ev_follow_piano",
+        "family": "piano",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "m6"
+        ],
+        "dependencies": [
+          "m5"
+        ],
+        "functionless": [],
+        "tokens": 77,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m5",
+          "m6"
+        ]
+      },
+      {
+        "case": "ev_correction",
+        "family": "correcao",
+        "action": "correction",
+        "full": true,
+        "expected": [
+          "m10"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 54,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m10"
+        ]
+      },
+      {
+        "case": "ev_price_link",
+        "family": "preco",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "m20"
+        ],
+        "dependencies": [
+          "m1"
+        ],
+        "functionless": [],
+        "tokens": 78,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m1",
+          "m20"
+        ]
+      },
+      {
+        "case": "ev_many_links",
+        "family": "muitos_vinculos",
+        "action": "correction",
+        "full": true,
+        "expected": [
+          "m10"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 54,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m10"
+        ]
+      },
+      {
+        "case": "ev_other_theme",
+        "family": "pack",
+        "action": "other_theme",
+        "full": true,
+        "expected": [
+          "m9"
+        ],
+        "dependencies": [],
+        "functionless": [
+          "m8"
+        ],
+        "tokens": 81,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m9",
+          "m8"
+        ]
+      },
+      {
+        "case": "ev_history",
+        "family": "historico",
+        "action": "stop",
+        "full": true,
+        "expected": [
+          "m2"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 0,
+        "candidates": 0,
+        "violations": [],
+        "selected": []
+      },
+      {
+        "case": "ev_restricted",
+        "family": "sensibilidade",
+        "action": "stop",
+        "full": true,
+        "expected": [],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 0,
+        "candidates": 0,
+        "violations": [],
+        "selected": []
+      }
+    ],
+    "evaluation": 1
+  },
+  "best_genetic": {
+    "policy": {
+      "trigger": 0.2261897767549093,
+      "min_gain": 0.0839658579120744,
+      "redundancy": 0.9393684672189835
+    },
+    "key": [
+      0,
+      -8,
+      1,
+      423,
+      6
+    ],
+    "full_cases": 8,
+    "cases": 8,
+    "dependencies_lost": 0,
+    "violations": 0,
+    "functionless": 1,
+    "tokens": 423,
+    "candidates": 6,
+    "extra_searches": 6,
+    "details": [
+      {
+        "case": "ev_follow",
+        "family": "bicicleta",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "p2"
+        ],
+        "dependencies": [
+          "p1"
+        ],
+        "functionless": [],
+        "tokens": 79,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "p1",
+          "p2"
+        ]
+      },
+      {
+        "case": "ev_follow_piano",
+        "family": "piano",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "m6"
+        ],
+        "dependencies": [
+          "m5"
+        ],
+        "functionless": [],
+        "tokens": 77,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m5",
+          "m6"
+        ]
+      },
+      {
+        "case": "ev_correction",
+        "family": "correcao",
+        "action": "correction",
+        "full": true,
+        "expected": [
+          "m10"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 54,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m10"
+        ]
+      },
+      {
+        "case": "ev_price_link",
+        "family": "preco",
+        "action": "follow_links",
+        "full": true,
+        "expected": [
+          "m20"
+        ],
+        "dependencies": [
+          "m1"
+        ],
+        "functionless": [],
+        "tokens": 78,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m1",
+          "m20"
+        ]
+      },
+      {
+        "case": "ev_many_links",
+        "family": "muitos_vinculos",
+        "action": "correction",
+        "full": true,
+        "expected": [
+          "m10"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 54,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m10"
+        ]
+      },
+      {
+        "case": "ev_other_theme",
+        "family": "pack",
+        "action": "other_theme",
+        "full": true,
+        "expected": [
+          "m9"
+        ],
+        "dependencies": [],
+        "functionless": [
+          "m8"
+        ],
+        "tokens": 81,
+        "candidates": 1,
+        "violations": [],
+        "selected": [
+          "m9",
+          "m8"
+        ]
+      },
+      {
+        "case": "ev_history",
+        "family": "historico",
+        "action": "stop",
+        "full": true,
+        "expected": [
+          "m2"
+        ],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 0,
+        "candidates": 0,
+        "violations": [],
+        "selected": []
+      },
+      {
+        "case": "ev_restricted",
+        "family": "sensibilidade",
+        "action": "stop",
+        "full": true,
+        "expected": [],
+        "dependencies": [],
+        "functionless": [],
+        "tokens": 0,
+        "candidates": 0,
+        "violations": [],
+        "selected": []
+      }
+    ]
+  },
+  "frozen_policies": {
+    "reference": {
+      "trigger": 0.0,
+      "min_gain": 0.0,
+      "redundancy": 0.6
+    },
+    "random": {
+      "trigger": 0.2261897767549093,
+      "min_gain": 0.0839658579120744,
+      "redundancy": 0.9393684672189835
+    },
+    "genetic": {
+      "trigger": 0.2261897767549093,
+      "min_gain": 0.0839658579120744,
+      "redundancy": 0.9393684672189835
+    }
+  },
+  "evaluations": {
+    "reference": {
+      "known": {
+        "policy": {
+          "trigger": 0.0,
+          "min_gain": 0.0,
+          "redundancy": 0.6
+        },
+        "key": [
+          0,
+          -12,
+          1,
+          715,
+          7
+        ],
+        "full_cases": 12,
+        "cases": 12,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 715,
+        "candidates": 7,
+        "extra_searches": 9,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_self_sufficient",
+            "family": "autossuficiente",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 49,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_two_complementary",
+            "family": "duas_evidencias",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m2",
+              "m10"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 112,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m2",
+              "m10"
+            ]
+          },
+          {
+            "case": "pack_quantity",
+            "family": "pack_quantidade",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m8"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 50,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8"
+            ]
+          },
+          {
+            "case": "pack_ambiguous",
+            "family": "pack_ambiguo",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m8",
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 81,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m8",
+              "m9"
+            ]
+          }
+        ]
+      },
+      "unseen": {
+        "policy": {
+          "trigger": 0.0,
+          "min_gain": 0.0,
+          "redundancy": 0.6
+        },
+        "key": [
+          0,
+          -5,
+          0,
+          180,
+          2
+        ],
+        "full_cases": 5,
+        "cases": 5,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 0,
+        "tokens": 180,
+        "candidates": 2,
+        "extra_searches": 2,
+        "details": [
+          {
+            "case": "new_pack_quantity",
+            "family": "pack_quantidade",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m8"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 50,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8"
+            ]
+          },
+          {
+            "case": "new_pack_ambiguous",
+            "family": "pack_ambiguo",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m8",
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8",
+              "m9"
+            ]
+          },
+          {
+            "case": "new_self_price",
+            "family": "autossuficiente",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 49,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m20"
+            ]
+          },
+          {
+            "case": "new_history_bike",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "new_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ]
+      }
+    },
+    "random": {
+      "known": {
+        "policy": {
+          "trigger": 0.2261897767549093,
+          "min_gain": 0.0839658579120744,
+          "redundancy": 0.9393684672189835
+        },
+        "key": [
+          0,
+          -12,
+          1,
+          715,
+          7
+        ],
+        "full_cases": 12,
+        "cases": 12,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 715,
+        "candidates": 7,
+        "extra_searches": 9,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_self_sufficient",
+            "family": "autossuficiente",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 49,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_two_complementary",
+            "family": "duas_evidencias",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m2",
+              "m10"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 112,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m2",
+              "m10"
+            ]
+          },
+          {
+            "case": "pack_quantity",
+            "family": "pack_quantidade",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m8"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 50,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8"
+            ]
+          },
+          {
+            "case": "pack_ambiguous",
+            "family": "pack_ambiguo",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m8",
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 81,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m8",
+              "m9"
+            ]
+          }
+        ]
+      },
+      "unseen": {
+        "policy": {
+          "trigger": 0.2261897767549093,
+          "min_gain": 0.0839658579120744,
+          "redundancy": 0.9393684672189835
+        },
+        "key": [
+          0,
+          -5,
+          0,
+          180,
+          2
+        ],
+        "full_cases": 5,
+        "cases": 5,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 0,
+        "tokens": 180,
+        "candidates": 2,
+        "extra_searches": 2,
+        "details": [
+          {
+            "case": "new_pack_quantity",
+            "family": "pack_quantidade",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m8"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 50,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8"
+            ]
+          },
+          {
+            "case": "new_pack_ambiguous",
+            "family": "pack_ambiguo",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m8",
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8",
+              "m9"
+            ]
+          },
+          {
+            "case": "new_self_price",
+            "family": "autossuficiente",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 49,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m20"
+            ]
+          },
+          {
+            "case": "new_history_bike",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "new_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ]
+      }
+    },
+    "genetic": {
+      "known": {
+        "policy": {
+          "trigger": 0.2261897767549093,
+          "min_gain": 0.0839658579120744,
+          "redundancy": 0.9393684672189835
+        },
+        "key": [
+          0,
+          -12,
+          1,
+          715,
+          7
+        ],
+        "full_cases": 12,
+        "cases": 12,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 1,
+        "tokens": 715,
+        "candidates": 7,
+        "extra_searches": 9,
+        "details": [
+          {
+            "case": "ev_follow",
+            "family": "bicicleta",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [
+              "p1"
+            ],
+            "functionless": [],
+            "tokens": 79,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "p1",
+              "p2"
+            ]
+          },
+          {
+            "case": "ev_follow_piano",
+            "family": "piano",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m6"
+            ],
+            "dependencies": [
+              "m5"
+            ],
+            "functionless": [],
+            "tokens": 77,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m5",
+              "m6"
+            ]
+          },
+          {
+            "case": "ev_correction",
+            "family": "correcao",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_price_link",
+            "family": "preco",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 78,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_many_links",
+            "family": "muitos_vinculos",
+            "action": "correction",
+            "full": true,
+            "expected": [
+              "m10"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 54,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m10"
+            ]
+          },
+          {
+            "case": "ev_other_theme",
+            "family": "pack",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [
+              "m8"
+            ],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m9",
+              "m8"
+            ]
+          },
+          {
+            "case": "ev_history",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "ev_self_sufficient",
+            "family": "autossuficiente",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 49,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m20"
+            ]
+          },
+          {
+            "case": "ev_two_complementary",
+            "family": "duas_evidencias",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m2",
+              "m10"
+            ],
+            "dependencies": [
+              "m1"
+            ],
+            "functionless": [],
+            "tokens": 112,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m1",
+              "m2",
+              "m10"
+            ]
+          },
+          {
+            "case": "pack_quantity",
+            "family": "pack_quantidade",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m8"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 50,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8"
+            ]
+          },
+          {
+            "case": "pack_ambiguous",
+            "family": "pack_ambiguo",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m8",
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 81,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m8",
+              "m9"
+            ]
+          }
+        ]
+      },
+      "unseen": {
+        "policy": {
+          "trigger": 0.2261897767549093,
+          "min_gain": 0.0839658579120744,
+          "redundancy": 0.9393684672189835
+        },
+        "key": [
+          0,
+          -5,
+          0,
+          180,
+          2
+        ],
+        "full_cases": 5,
+        "cases": 5,
+        "dependencies_lost": 0,
+        "violations": 0,
+        "functionless": 0,
+        "tokens": 180,
+        "candidates": 2,
+        "extra_searches": 2,
+        "details": [
+          {
+            "case": "new_pack_quantity",
+            "family": "pack_quantidade",
+            "action": "follow_links",
+            "full": true,
+            "expected": [
+              "m8"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 50,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8"
+            ]
+          },
+          {
+            "case": "new_pack_ambiguous",
+            "family": "pack_ambiguo",
+            "action": "other_theme",
+            "full": true,
+            "expected": [
+              "m8",
+              "m9"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 81,
+            "candidates": 1,
+            "violations": [],
+            "selected": [
+              "m8",
+              "m9"
+            ]
+          },
+          {
+            "case": "new_self_price",
+            "family": "autossuficiente",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "m20"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 49,
+            "candidates": 0,
+            "violations": [],
+            "selected": [
+              "m20"
+            ]
+          },
+          {
+            "case": "new_history_bike",
+            "family": "historico",
+            "action": "stop",
+            "full": true,
+            "expected": [
+              "p2"
+            ],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          },
+          {
+            "case": "new_restricted",
+            "family": "sensibilidade",
+            "action": "stop",
+            "full": true,
+            "expected": [],
+            "dependencies": [],
+            "functionless": [],
+            "tokens": 0,
+            "candidates": 0,
+            "violations": [],
+            "selected": []
+          }
+        ]
+      }
+    }
+  }
+}

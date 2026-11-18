@@ -1,0 +1,104 @@
+[
+  {
+    "review_id": "E01",
+    "case": "dep_bike_named",
+    "group": "regression",
+    "answers": {
+      "A": "bicicleta: trilha",
+      "B": "bicicleta: trilha",
+      "C": "bicicleta: trilha"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E02",
+    "case": "dep_short_history",
+    "group": "new",
+    "answers": {
+      "A": "bicicleta: trilha",
+      "B": "bicicleta: trilha",
+      "C": "bicicleta: trilha"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E03",
+    "case": "dep_two_entities",
+    "group": "new",
+    "answers": {
+      "A": "serum: licenca",
+      "B": "serum: licenca",
+      "C": "serum: licenca"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E04",
+    "case": "dep_two_decisions",
+    "group": "new",
+    "answers": {
+      "A": "bicicleta: trilha",
+      "B": "bicicleta: trilha",
+      "C": "bicicleta: trilha"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E05",
+    "case": "dep_two_purposes",
+    "group": "new",
+    "answers": {
+      "A": "bicicleta: trilha; bicicleta: 1200",
+      "B": "bicicleta: trilha; bicicleta: 1200",
+      "C": "bicicleta: trilha; bicicleta: 1200"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "E06",
+    "case": "dep_redundant",
+    "group": "new",
+    "answers": {
+      "A": "bicicleta: 1200",
+      "B": "bicicleta: 1200",
+      "C": "bicicleta: 1200"
+    },
+    "rubric": "Fato, atribuição à entidade, decisão correta, ambiguidade e preservação das demais partes.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  }
+]

@@ -1,0 +1,1622 @@
+{
+  "train_base": 7,
+  "train_extended": 11,
+  "eval_cases": 7,
+  "signal_avg_cost_ms": 0.003,
+  "summary": {
+    "off": {
+      "expected": 1,
+      "context": 4,
+      "functionless": 4,
+      "extra_searches": 0,
+      "no_gain_searches": 0,
+      "queries_triggered": 0,
+      "cases": 7,
+      "candidates": 0,
+      "memory_tokens": 363,
+      "tokens": 1003,
+      "latency_median_ms": 0.31,
+      "latency_p95_ms": 0.92
+    },
+    "fixed": {
+      "expected": 4,
+      "context": 5,
+      "functionless": 4,
+      "extra_searches": 6,
+      "no_gain_searches": 3,
+      "queries_triggered": 6,
+      "cases": 7,
+      "candidates": 4,
+      "memory_tokens": 534,
+      "tokens": 1174,
+      "latency_median_ms": 0.68,
+      "latency_p95_ms": 1.25
+    },
+    "old": {
+      "expected": 5,
+      "context": 5,
+      "functionless": 4,
+      "extra_searches": 5,
+      "no_gain_searches": 1,
+      "queries_triggered": 5,
+      "cases": 7,
+      "candidates": 5,
+      "memory_tokens": 536,
+      "tokens": 1176,
+      "latency_median_ms": 0.65,
+      "latency_p95_ms": 1.88
+    },
+    "more": {
+      "expected": 6,
+      "context": 5,
+      "functionless": 4,
+      "extra_searches": 5,
+      "no_gain_searches": 0,
+      "queries_triggered": 5,
+      "cases": 7,
+      "candidates": 6,
+      "memory_tokens": 566,
+      "tokens": 1206,
+      "latency_median_ms": 0.46,
+      "latency_p95_ms": 2.88
+    },
+    "link": {
+      "expected": 5,
+      "context": 5,
+      "functionless": 4,
+      "extra_searches": 5,
+      "no_gain_searches": 1,
+      "queries_triggered": 5,
+      "cases": 7,
+      "candidates": 5,
+      "memory_tokens": 538,
+      "tokens": 1178,
+      "latency_median_ms": 0.48,
+      "latency_p95_ms": 1.97
+    }
+  },
+  "families": {
+    "bicicleta": {
+      "off": 0,
+      "fixed": 1,
+      "old": 0,
+      "more": 1,
+      "link": 1
+    },
+    "correcao": {
+      "off": 0,
+      "fixed": 0,
+      "old": 1,
+      "more": 1,
+      "link": 1
+    },
+    "historico": {
+      "off": 1,
+      "fixed": 1,
+      "old": 1,
+      "more": 1,
+      "link": 1
+    },
+    "piano": {
+      "off": 0,
+      "fixed": 0,
+      "old": 1,
+      "more": 1,
+      "link": 0
+    },
+    "preco": {
+      "off": 0,
+      "fixed": 1,
+      "old": 1,
+      "more": 1,
+      "link": 1
+    },
+    "procedimento": {
+      "off": 0,
+      "fixed": 1,
+      "old": 1,
+      "more": 1,
+      "link": 1
+    },
+    "sensibilidade": {
+      "off": 0,
+      "fixed": 0,
+      "old": 0,
+      "more": 0,
+      "link": 0
+    }
+  },
+  "entries": [
+    {
+      "case": "ev_follow",
+      "family": "bicicleta",
+      "features_old": {
+        "ambiguidade": 0.0,
+        "faltante": 1.0,
+        "conflito": 0.0,
+        "vinculos": 1.0,
+        "candidatos": 0.0,
+        "atributo_disponivel": 0.0,
+        "atributo_pedido": 0.0,
+        "restricao": 0.0
+      },
+      "features_link": {
+        "respostas_diretas": 0.3333333333333333,
+        "custo_sinal_ms": 0.003
+      },
+      "scores_old": {
+        "stop": 0.7632,
+        "follow_links": 0.2235,
+        "other_theme": 0.0096,
+        "correction": 0.0037
+      },
+      "scores_link": {
+        "stop": 0.3672,
+        "follow_links": 0.4797,
+        "other_theme": 0.1492,
+        "correction": 0.004
+      },
+      "eligible_actions": [
+        "stop",
+        "follow_links",
+        "other_theme"
+      ],
+      "all_actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "p1"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 49,
+          "tokens": 134,
+          "elapsed_ms": 0.23
+        },
+        "follow_links": {
+          "expected": [
+            "p2"
+          ],
+          "context": [
+            "p1"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 79,
+          "tokens": 164,
+          "elapsed_ms": 0.41
+        },
+        "other_theme": {
+          "expected": [],
+          "context": [
+            "p1"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 49,
+          "tokens": 134,
+          "elapsed_ms": 0.4
+        }
+      },
+      "actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "p1"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 49,
+          "tokens": 134,
+          "elapsed_ms": 0.23
+        },
+        "follow_links": {
+          "expected": [
+            "p2"
+          ],
+          "context": [
+            "p1"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 79,
+          "tokens": 164,
+          "elapsed_ms": 0.41
+        }
+      },
+      "stop": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 134,
+        "elapsed_ms": 0.25
+      },
+      "off": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 134,
+        "elapsed_ms": 0.25
+      },
+      "fixed": {
+        "action": "follow_links",
+        "expected": [
+          "p2"
+        ],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 79,
+        "tokens": 164,
+        "elapsed_ms": 0.44
+      },
+      "old": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 134,
+        "elapsed_ms": 0.23
+      },
+      "more": {
+        "action": "follow_links",
+        "expected": [
+          "p2"
+        ],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 79,
+        "tokens": 164,
+        "elapsed_ms": 0.42
+      },
+      "link": {
+        "action": "follow_links",
+        "expected": [
+          "p2"
+        ],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 79,
+        "tokens": 164,
+        "elapsed_ms": 0.41
+      }
+    },
+    {
+      "case": "ev_follow_piano",
+      "family": "piano",
+      "features_old": {
+        "ambiguidade": 1.0,
+        "faltante": 1.0,
+        "conflito": 0.0,
+        "vinculos": 1.0,
+        "candidatos": 0.14,
+        "atributo_disponivel": 0.0,
+        "atributo_pedido": 0.0,
+        "restricao": 0.0
+      },
+      "features_link": {
+        "respostas_diretas": 0.3333333333333333,
+        "custo_sinal_ms": 0.003
+      },
+      "scores_old": {
+        "stop": 0.0124,
+        "follow_links": 0.9694,
+        "other_theme": 0.0162,
+        "correction": 0.002
+      },
+      "scores_link": {
+        "stop": 0.0011,
+        "follow_links": 0.0945,
+        "other_theme": 0.9029,
+        "correction": 0.0015
+      },
+      "eligible_actions": [
+        "stop",
+        "follow_links",
+        "other_theme"
+      ],
+      "all_actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "m5"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 49,
+          "tokens": 138,
+          "elapsed_ms": 0.27
+        },
+        "follow_links": {
+          "expected": [
+            "m6"
+          ],
+          "context": [
+            "m5"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 77,
+          "tokens": 166,
+          "elapsed_ms": 0.45
+        },
+        "other_theme": {
+          "expected": [],
+          "context": [
+            "m5"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 49,
+          "tokens": 138,
+          "elapsed_ms": 0.48
+        }
+      },
+      "actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "m5"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 49,
+          "tokens": 138,
+          "elapsed_ms": 0.3
+        },
+        "other_theme": {
+          "expected": [],
+          "context": [
+            "m5"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 49,
+          "tokens": 138,
+          "elapsed_ms": 0.48
+        },
+        "follow_links": {
+          "expected": [
+            "m6"
+          ],
+          "context": [
+            "m5"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 77,
+          "tokens": 166,
+          "elapsed_ms": 0.46
+        }
+      },
+      "stop": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 138,
+        "elapsed_ms": 0.3
+      },
+      "off": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 138,
+        "elapsed_ms": 0.3
+      },
+      "fixed": {
+        "action": "other_theme",
+        "expected": [],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 138,
+        "elapsed_ms": 0.48
+      },
+      "old": {
+        "action": "follow_links",
+        "expected": [
+          "m6"
+        ],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 77,
+        "tokens": 166,
+        "elapsed_ms": 0.48
+      },
+      "more": {
+        "action": "follow_links",
+        "expected": [
+          "m6"
+        ],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 77,
+        "tokens": 166,
+        "elapsed_ms": 0.46
+      },
+      "link": {
+        "action": "other_theme",
+        "expected": [],
+        "context": [
+          "m5"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 138,
+        "elapsed_ms": 0.48
+      }
+    },
+    {
+      "case": "ev_link_distractor",
+      "family": "procedimento",
+      "features_old": {
+        "ambiguidade": 1.0,
+        "faltante": 1.0,
+        "conflito": 0.0,
+        "vinculos": 1.0,
+        "candidatos": 0.14,
+        "atributo_disponivel": 0.0,
+        "atributo_pedido": 0.0,
+        "restricao": 0.0
+      },
+      "features_link": {
+        "respostas_diretas": 0.6666666666666666,
+        "custo_sinal_ms": 0.002
+      },
+      "scores_old": {
+        "stop": 0.0124,
+        "follow_links": 0.9694,
+        "other_theme": 0.0162,
+        "correction": 0.002
+      },
+      "scores_link": {
+        "stop": 0.0013,
+        "follow_links": 0.5345,
+        "other_theme": 0.4623,
+        "correction": 0.0019
+      },
+      "eligible_actions": [
+        "stop",
+        "follow_links",
+        "other_theme"
+      ],
+      "all_actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 139,
+          "elapsed_ms": 0.32
+        },
+        "follow_links": {
+          "expected": [
+            "m3"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 2,
+          "memory_tokens": 113,
+          "tokens": 202,
+          "elapsed_ms": 0.98
+        },
+        "other_theme": {
+          "expected": [
+            "m3"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 81,
+          "tokens": 170,
+          "elapsed_ms": 1.11
+        }
+      },
+      "actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 139,
+          "elapsed_ms": 0.33
+        },
+        "other_theme": {
+          "expected": [
+            "m3"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 81,
+          "tokens": 170,
+          "elapsed_ms": 0.88
+        },
+        "follow_links": {
+          "expected": [
+            "m3"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 2,
+          "memory_tokens": 113,
+          "tokens": 202,
+          "elapsed_ms": 0.99
+        }
+      },
+      "stop": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 139,
+        "elapsed_ms": 0.33
+      },
+      "off": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 139,
+        "elapsed_ms": 0.33
+      },
+      "fixed": {
+        "action": "other_theme",
+        "expected": [
+          "m3"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 81,
+        "tokens": 170,
+        "elapsed_ms": 0.88
+      },
+      "old": {
+        "action": "follow_links",
+        "expected": [
+          "m3"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 2,
+        "memory_tokens": 113,
+        "tokens": 202,
+        "elapsed_ms": 1.0
+      },
+      "more": {
+        "action": "follow_links",
+        "expected": [
+          "m3"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 2,
+        "memory_tokens": 113,
+        "tokens": 202,
+        "elapsed_ms": 0.98
+      },
+      "link": {
+        "action": "follow_links",
+        "expected": [
+          "m3"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 2,
+        "memory_tokens": 113,
+        "tokens": 202,
+        "elapsed_ms": 0.99
+      }
+    },
+    {
+      "case": "ev_history",
+      "family": "historico",
+      "features_old": {
+        "ambiguidade": 0.0,
+        "faltante": 0.0,
+        "conflito": 0.0,
+        "vinculos": 1.0,
+        "candidatos": 0.16,
+        "atributo_disponivel": 0.0,
+        "atributo_pedido": 0.0,
+        "restricao": 0.0
+      },
+      "features_link": {
+        "respostas_diretas": 0.6666666666666666,
+        "custo_sinal_ms": 0.003
+      },
+      "scores_old": {
+        "stop": 0.3583,
+        "follow_links": 0.2082,
+        "other_theme": 0.3792,
+        "correction": 0.0543
+      },
+      "scores_link": {
+        "stop": 0.8663,
+        "follow_links": 0.1219,
+        "other_theme": 0.0052,
+        "correction": 0.0066
+      },
+      "eligible_actions": [
+        "stop",
+        "follow_links",
+        "other_theme"
+      ],
+      "all_actions": {
+        "stop": {
+          "expected": [
+            "m2"
+          ],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 163,
+          "elapsed_ms": 0.37
+        },
+        "follow_links": {
+          "expected": [
+            "m2"
+          ],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 1,
+          "memory_tokens": 82,
+          "tokens": 195,
+          "elapsed_ms": 0.65
+        },
+        "other_theme": {
+          "expected": [
+            "m2"
+          ],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 163,
+          "elapsed_ms": 0.63
+        }
+      },
+      "actions": {
+        "stop": {
+          "expected": [
+            "m2"
+          ],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 163,
+          "elapsed_ms": 0.38
+        },
+        "other_theme": {
+          "expected": [
+            "m2"
+          ],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 163,
+          "elapsed_ms": 0.65
+        }
+      },
+      "stop": {
+        "action": "stop",
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 163,
+        "elapsed_ms": 0.41
+      },
+      "off": {
+        "action": "stop",
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 163,
+        "elapsed_ms": 0.41
+      },
+      "fixed": {
+        "action": "stop",
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 163,
+        "elapsed_ms": 0.42
+      },
+      "old": {
+        "action": "other_theme",
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 163,
+        "elapsed_ms": 0.65
+      },
+      "more": {
+        "action": "stop",
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 163,
+        "elapsed_ms": 0.37
+      },
+      "link": {
+        "action": "stop",
+        "expected": [
+          "m2"
+        ],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 163,
+        "elapsed_ms": 0.38
+      }
+    },
+    {
+      "case": "ev_correction",
+      "family": "correcao",
+      "features_old": {
+        "ambiguidade": 1.0,
+        "faltante": 0.0,
+        "conflito": 1.0,
+        "vinculos": 1.0,
+        "candidatos": 0.16,
+        "atributo_disponivel": 0.0,
+        "atributo_pedido": 0.0,
+        "restricao": 0.0
+      },
+      "features_link": {
+        "respostas_diretas": 1.0,
+        "custo_sinal_ms": 0.002
+      },
+      "scores_old": {
+        "stop": 0.0009,
+        "follow_links": 0.0173,
+        "other_theme": 0.0201,
+        "correction": 0.9617
+      },
+      "scores_link": {
+        "stop": 0.0059,
+        "follow_links": 0.0888,
+        "other_theme": 0.0095,
+        "correction": 0.8957
+      },
+      "eligible_actions": [
+        "stop",
+        "follow_links",
+        "other_theme",
+        "correction"
+      ],
+      "all_actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "m1"
+          ],
+          "functionless": [
+            "m3",
+            "m7"
+          ],
+          "extras": 0,
+          "memory_tokens": 115,
+          "tokens": 204,
+          "elapsed_ms": 0.92
+        },
+        "follow_links": {
+          "expected": [
+            "m10"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [
+            "m3"
+          ],
+          "extras": 2,
+          "memory_tokens": 117,
+          "tokens": 206,
+          "elapsed_ms": 1.45
+        },
+        "other_theme": {
+          "expected": [],
+          "context": [
+            "m1"
+          ],
+          "functionless": [
+            "m3",
+            "m7"
+          ],
+          "extras": 0,
+          "memory_tokens": 115,
+          "tokens": 204,
+          "elapsed_ms": 1.25
+        },
+        "correction": {
+          "expected": [
+            "m10"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [
+            "m3",
+            "m7"
+          ],
+          "extras": 1,
+          "memory_tokens": 119,
+          "tokens": 208,
+          "elapsed_ms": 1.82
+        }
+      },
+      "actions": {
+        "stop": {
+          "expected": [],
+          "context": [
+            "m1"
+          ],
+          "functionless": [
+            "m3",
+            "m7"
+          ],
+          "extras": 0,
+          "memory_tokens": 115,
+          "tokens": 204,
+          "elapsed_ms": 0.92
+        },
+        "other_theme": {
+          "expected": [],
+          "context": [
+            "m1"
+          ],
+          "functionless": [
+            "m3",
+            "m7"
+          ],
+          "extras": 0,
+          "memory_tokens": 115,
+          "tokens": 204,
+          "elapsed_ms": 1.25
+        },
+        "correction": {
+          "expected": [
+            "m10"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [
+            "m3",
+            "m7"
+          ],
+          "extras": 1,
+          "memory_tokens": 119,
+          "tokens": 208,
+          "elapsed_ms": 1.97
+        }
+      },
+      "stop": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "m1"
+        ],
+        "functionless": [
+          "m3",
+          "m7"
+        ],
+        "extras": 0,
+        "memory_tokens": 115,
+        "tokens": 204,
+        "elapsed_ms": 0.92
+      },
+      "off": {
+        "action": "stop",
+        "expected": [],
+        "context": [
+          "m1"
+        ],
+        "functionless": [
+          "m3",
+          "m7"
+        ],
+        "extras": 0,
+        "memory_tokens": 115,
+        "tokens": 204,
+        "elapsed_ms": 0.92
+      },
+      "fixed": {
+        "action": "other_theme",
+        "expected": [],
+        "context": [
+          "m1"
+        ],
+        "functionless": [
+          "m3",
+          "m7"
+        ],
+        "extras": 0,
+        "memory_tokens": 115,
+        "tokens": 204,
+        "elapsed_ms": 1.25
+      },
+      "old": {
+        "action": "correction",
+        "expected": [
+          "m10"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [
+          "m3",
+          "m7"
+        ],
+        "extras": 1,
+        "memory_tokens": 119,
+        "tokens": 208,
+        "elapsed_ms": 1.88
+      },
+      "more": {
+        "action": "correction",
+        "expected": [
+          "m10"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [
+          "m3",
+          "m7"
+        ],
+        "extras": 1,
+        "memory_tokens": 119,
+        "tokens": 208,
+        "elapsed_ms": 2.88
+      },
+      "link": {
+        "action": "correction",
+        "expected": [
+          "m10"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [
+          "m3",
+          "m7"
+        ],
+        "extras": 1,
+        "memory_tokens": 119,
+        "tokens": 208,
+        "elapsed_ms": 1.97
+      }
+    },
+    {
+      "case": "ev_restricted",
+      "family": "sensibilidade",
+      "features_old": {
+        "ambiguidade": 0.0,
+        "faltante": 1.0,
+        "conflito": 0.0,
+        "vinculos": 1.0,
+        "candidatos": 0.14,
+        "atributo_disponivel": 0.0,
+        "atributo_pedido": 0.0,
+        "restricao": 1.0
+      },
+      "features_link": {
+        "respostas_diretas": 0.3333333333333333,
+        "custo_sinal_ms": 0.003
+      },
+      "scores_old": {
+        "stop": 0.989,
+        "follow_links": 0.0096,
+        "other_theme": 0.0009,
+        "correction": 0.0004
+      },
+      "scores_link": {
+        "stop": 0.9804,
+        "follow_links": 0.0116,
+        "other_theme": 0.0076,
+        "correction": 0.0004
+      },
+      "eligible_actions": [
+        "stop",
+        "follow_links",
+        "other_theme"
+      ],
+      "all_actions": {
+        "stop": {
+          "expected": [],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 139,
+          "elapsed_ms": 0.26
+        },
+        "follow_links": {
+          "expected": [],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 1,
+          "memory_tokens": 82,
+          "tokens": 171,
+          "elapsed_ms": 0.51
+        },
+        "other_theme": {
+          "expected": [],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 139,
+          "elapsed_ms": 0.48
+        }
+      },
+      "actions": {
+        "stop": {
+          "expected": [],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 0,
+          "memory_tokens": 50,
+          "tokens": 139,
+          "elapsed_ms": 0.26
+        },
+        "follow_links": {
+          "expected": [],
+          "context": [],
+          "functionless": [
+            "m1"
+          ],
+          "extras": 1,
+          "memory_tokens": 82,
+          "tokens": 171,
+          "elapsed_ms": 0.68
+        }
+      },
+      "stop": {
+        "action": "stop",
+        "expected": [],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 139,
+        "elapsed_ms": 0.28
+      },
+      "off": {
+        "action": "stop",
+        "expected": [],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 139,
+        "elapsed_ms": 0.28
+      },
+      "fixed": {
+        "action": "follow_links",
+        "expected": [],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 1,
+        "memory_tokens": 82,
+        "tokens": 171,
+        "elapsed_ms": 0.68
+      },
+      "old": {
+        "action": "stop",
+        "expected": [],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 139,
+        "elapsed_ms": 0.27
+      },
+      "more": {
+        "action": "stop",
+        "expected": [],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 139,
+        "elapsed_ms": 0.27
+      },
+      "link": {
+        "action": "stop",
+        "expected": [],
+        "context": [],
+        "functionless": [
+          "m1"
+        ],
+        "extras": 0,
+        "memory_tokens": 50,
+        "tokens": 139,
+        "elapsed_ms": 0.26
+      }
+    },
+    {
+      "case": "ev_price",
+      "family": "preco",
+      "features_old": {
+        "ambiguidade": 0.0,
+        "faltante": 1.0,
+        "conflito": 0.0,
+        "vinculos": 1.0,
+        "candidatos": 0.16,
+        "atributo_disponivel": 1.0,
+        "atributo_pedido": 1.0,
+        "restricao": 0.0
+      },
+      "features_link": {
+        "respostas_diretas": 1.0,
+        "custo_sinal_ms": 0.003
+      },
+      "scores_old": {
+        "stop": 0.0284,
+        "follow_links": 0.9708,
+        "other_theme": 0.0006,
+        "correction": 0.0003
+      },
+      "scores_link": {
+        "stop": 0.0318,
+        "follow_links": 0.9676,
+        "other_theme": 0.0005,
+        "correction": 0.0001
+      },
+      "eligible_actions": [
+        "stop",
+        "follow_links",
+        "other_theme"
+      ],
+      "all_actions": {
+        "stop": {
+          "expected": [],
+          "context": [],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 0,
+          "tokens": 86,
+          "elapsed_ms": 0.33
+        },
+        "follow_links": {
+          "expected": [
+            "m20"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 78,
+          "tokens": 164,
+          "elapsed_ms": 0.82
+        },
+        "other_theme": {
+          "expected": [],
+          "context": [],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 0,
+          "tokens": 86,
+          "elapsed_ms": 0.48
+        }
+      },
+      "actions": {
+        "stop": {
+          "expected": [],
+          "context": [],
+          "functionless": [],
+          "extras": 0,
+          "memory_tokens": 0,
+          "tokens": 86,
+          "elapsed_ms": 0.31
+        },
+        "follow_links": {
+          "expected": [
+            "m20"
+          ],
+          "context": [
+            "m1"
+          ],
+          "functionless": [],
+          "extras": 1,
+          "memory_tokens": 78,
+          "tokens": 164,
+          "elapsed_ms": 0.88
+        }
+      },
+      "stop": {
+        "action": "stop",
+        "expected": [],
+        "context": [],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 0,
+        "tokens": 86,
+        "elapsed_ms": 0.31
+      },
+      "off": {
+        "action": "stop",
+        "expected": [],
+        "context": [],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 0,
+        "tokens": 86,
+        "elapsed_ms": 0.31
+      },
+      "fixed": {
+        "action": "follow_links",
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 78,
+        "tokens": 164,
+        "elapsed_ms": 0.83
+      },
+      "old": {
+        "action": "follow_links",
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 78,
+        "tokens": 164,
+        "elapsed_ms": 0.91
+      },
+      "more": {
+        "action": "follow_links",
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 78,
+        "tokens": 164,
+        "elapsed_ms": 0.91
+      },
+      "link": {
+        "action": "follow_links",
+        "expected": [
+          "m20"
+        ],
+        "context": [
+          "m1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 78,
+        "tokens": 164,
+        "elapsed_ms": 0.88
+      }
+    }
+  ],
+  "diag_follow": {
+    "case": "ev_follow",
+    "family": "bicicleta",
+    "features_old": {
+      "ambiguidade": 0.0,
+      "faltante": 1.0,
+      "conflito": 0.0,
+      "vinculos": 1.0,
+      "candidatos": 0.0,
+      "atributo_disponivel": 0.0,
+      "atributo_pedido": 0.0,
+      "restricao": 0.0
+    },
+    "features_link": {
+      "respostas_diretas": 0.3333333333333333,
+      "custo_sinal_ms": 0.003
+    },
+    "scores_old": {
+      "stop": 0.7632,
+      "follow_links": 0.2235,
+      "other_theme": 0.0096,
+      "correction": 0.0037
+    },
+    "scores_link": {
+      "stop": 0.3672,
+      "follow_links": 0.4797,
+      "other_theme": 0.1492,
+      "correction": 0.004
+    },
+    "eligible_actions": [
+      "stop",
+      "follow_links",
+      "other_theme"
+    ],
+    "all_actions": {
+      "stop": {
+        "expected": [],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 134,
+        "elapsed_ms": 0.23
+      },
+      "follow_links": {
+        "expected": [
+          "p2"
+        ],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 79,
+        "tokens": 164,
+        "elapsed_ms": 0.41
+      },
+      "other_theme": {
+        "expected": [],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 134,
+        "elapsed_ms": 0.4
+      }
+    },
+    "actions": {
+      "stop": {
+        "expected": [],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 0,
+        "memory_tokens": 49,
+        "tokens": 134,
+        "elapsed_ms": 0.23
+      },
+      "follow_links": {
+        "expected": [
+          "p2"
+        ],
+        "context": [
+          "p1"
+        ],
+        "functionless": [],
+        "extras": 1,
+        "memory_tokens": 79,
+        "tokens": 164,
+        "elapsed_ms": 0.41
+      }
+    },
+    "stop": {
+      "action": "stop",
+      "expected": [],
+      "context": [
+        "p1"
+      ],
+      "functionless": [],
+      "extras": 0,
+      "memory_tokens": 49,
+      "tokens": 134,
+      "elapsed_ms": 0.25
+    },
+    "off": {
+      "action": "stop",
+      "expected": [],
+      "context": [
+        "p1"
+      ],
+      "functionless": [],
+      "extras": 0,
+      "memory_tokens": 49,
+      "tokens": 134,
+      "elapsed_ms": 0.25
+    },
+    "fixed": {
+      "action": "follow_links",
+      "expected": [
+        "p2"
+      ],
+      "context": [
+        "p1"
+      ],
+      "functionless": [],
+      "extras": 1,
+      "memory_tokens": 79,
+      "tokens": 164,
+      "elapsed_ms": 0.44
+    },
+    "old": {
+      "action": "stop",
+      "expected": [],
+      "context": [
+        "p1"
+      ],
+      "functionless": [],
+      "extras": 0,
+      "memory_tokens": 49,
+      "tokens": 134,
+      "elapsed_ms": 0.23
+    },
+    "more": {
+      "action": "follow_links",
+      "expected": [
+        "p2"
+      ],
+      "context": [
+        "p1"
+      ],
+      "functionless": [],
+      "extras": 1,
+      "memory_tokens": 79,
+      "tokens": 164,
+      "elapsed_ms": 0.42
+    },
+    "link": {
+      "action": "follow_links",
+      "expected": [
+        "p2"
+      ],
+      "context": [
+        "p1"
+      ],
+      "functionless": [],
+      "extras": 1,
+      "memory_tokens": 79,
+      "tokens": 164,
+      "elapsed_ms": 0.41
+    }
+  }
+}

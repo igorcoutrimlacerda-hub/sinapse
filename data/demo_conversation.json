@@ -1,0 +1,111 @@
+{
+  "conversation_id": "c1",
+  "messages": [
+    {
+      "id": "m1",
+      "text": "Escolhi o Serum 2 para fazer o bass.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 1,
+      "sent_at": "2026-11-10T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["Serum 2", "bass"],
+        "quem": ["usuário"],
+        "para_que": ["fazer o bass"]
+      }
+    },
+    {
+      "id": "m2",
+      "text": "Porque eu já tinha comprado a licença.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 2,
+      "sent_at": "2026-11-10T09:01:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["já tinha comprado a licença"]
+      }
+    },
+    {
+      "id": "m3",
+      "text": "Testei o bass alternando entre dois envelopes.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 3,
+      "sent_at": "2026-11-10T09:05:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "o_que": ["bass"],
+        "quem": ["usuário"],
+        "como": ["alternar entre dois envelopes"],
+        "para_que": ["testar o bass"]
+      }
+    },
+    {
+      "id": "m4",
+      "text": "Passei a tarde jogando xadrez.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 4,
+      "sent_at": "2026-11-10T14:30:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["xadrez"],
+        "quem": ["usuário"],
+        "quando": ["tarde"],
+        "para_que": ["jogar xadrez"]
+      }
+    },
+    {
+      "id": "m5",
+      "text": "Escolhi o Piano V para tocar jazz.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 5,
+      "sent_at": "2026-11-11T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["Piano V"],
+        "quem": ["usuário"],
+        "para_que": ["tocar jazz"]
+      }
+    },
+    {
+      "id": "m6",
+      "text": "Porque estava em promoção.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 6,
+      "sent_at": "2026-11-11T10:02:00-03:00",
+      "reply_to": "m5",
+      "coordinates": {
+        "quem": ["usuário"],
+        "por_que": ["estava em promoção"]
+      }
+    }
+  ],
+  "queries": [
+    {
+      "id": "porque",
+      "text": "Por que eu escolhi o Serum 2?",
+      "recent_turns": ["Estávamos falando do Serum 2 e do bass."]
+    },
+    {
+      "id": "como",
+      "text": "Como eu testei o bass?",
+      "recent_turns": ["Estávamos falando do Serum 2 e do bass."]
+    },
+    {
+      "id": "quando",
+      "text": "Quando escolhi o Serum 2?",
+      "recent_turns": ["Estávamos falando do Serum 2 e do bass."]
+    },
+    {
+      "id": "piano",
+      "text": "Por que eu escolhi o Piano V?",
+      "recent_turns": ["Estávamos falando do Piano V e do jazz."]
+    }
+  ]
+}

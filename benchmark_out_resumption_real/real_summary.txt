@@ -1,0 +1,5 @@
+RETOMADA REAL — PARES PAREADOS
+modelo=deepseek-flash | pares=10 | chamadas=20
+sinapse              completos=1/10 (diagnóstico=7/10) decisão=0/9 (fato=9) motivo=10/10 concluído=6/8 pendência=8/9 refs_sem_falha=10/10 condições=1/1 projeto=2/2 prompt=2384 completion=1101
+sinapse_multipurpose completos=1/10 (diagnóstico=10/10) decisão=0/9 (fato=9) motivo=10/10 concluído=8/8 pendência=9/9 refs_sem_falha=10/10 condições=1/1 projeto=2/2 prompt=2440 completion=1061
+tokens reais: prompt=4824 completion=2162

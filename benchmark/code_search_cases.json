@@ -1,0 +1,23 @@
+[
+  {
+    "id": "exact_flask_run",
+    "query": "Flask.run",
+    "expected_path": "src/flask/app.py",
+    "expected_symbol": "run",
+    "kind": "exact"
+  },
+  {
+    "id": "behavior_start_server",
+    "query": "onde a aplicação inicia o servidor de desenvolvimento",
+    "expected_path": "src/flask/app.py",
+    "expected_symbol": "run",
+    "kind": "behavior"
+  },
+  {
+    "id": "behavior_session_invalidation",
+    "query": "onde a sessão é invalidada quando a senha muda",
+    "expected_path": "src/flask/sessions.py",
+    "expected_symbol": null,
+    "kind": "behavior"
+  }
+]

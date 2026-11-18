@@ -1,0 +1,194 @@
+[
+  {
+    "review_id": "T01",
+    "case": "retomada_geral",
+    "condition": "history",
+    "question": "Onde paramos nesse problema?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Decisão atual, motivo da revisão e pendência real; repetir passo concluído ou afirmar sem suporte desconta.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason",
+        "pending"
+      ],
+      "facts_present": [],
+      "facts_required": [
+        "Pigments",
+        "CPU",
+        "introdução",
+        "96 kHz"
+      ],
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T02",
+    "case": "retomada_geral",
+    "condition": "sinapse",
+    "question": "Onde paramos nesse problema?",
+    "answer": "A decisão vigente é o Pigments para o bass, porque a CPU do Aurora chegava a 40%.",
+    "rubric": "Decisão atual, motivo da revisão e pendência real; repetir passo concluído ou afirmar sem suporte desconta.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason",
+        "pending"
+      ],
+      "facts_present": [
+        "Pigments",
+        "CPU"
+      ],
+      "facts_required": [
+        "Pigments",
+        "CPU",
+        "introdução",
+        "96 kHz"
+      ],
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T03",
+    "case": "proximo_teste",
+    "condition": "history",
+    "question": "Qual era o próximo teste e por quê?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Pendência correta e motivo; repetir o refrão, já concluído, desconta.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "pending": false,
+      "components": [
+        "reason",
+        "pending"
+      ],
+      "facts_present": [],
+      "facts_required": [
+        "introdução",
+        "96 kHz",
+        "CPU"
+      ],
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T04",
+    "case": "proximo_teste",
+    "condition": "sinapse",
+    "question": "Qual era o próximo teste e por quê?",
+    "answer": "A pendência é testar a introdução em 96 kHz. O próximo teste é a introdução em 96 kHz, para confirmar que a CPU não estoura.",
+    "rubric": "Pendência correta e motivo; repetir o refrão, já concluído, desconta.",
+    "checks": {
+      "decision": false,
+      "reason": true,
+      "pending": true,
+      "components": [
+        "reason",
+        "pending"
+      ],
+      "facts_present": [
+        "introdução",
+        "96 kHz",
+        "CPU"
+      ],
+      "facts_required": [
+        "introdução",
+        "96 kHz",
+        "CPU"
+      ],
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T05",
+    "case": "decisao_vigente",
+    "condition": "history",
+    "question": "Qual preset está valendo para o bass agora?",
+    "answer": "Não tenho informação suficiente.",
+    "rubric": "Decisão vigente e motivo; citar o Aurora como atual desconta.",
+    "checks": {
+      "decision": false,
+      "reason": false,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason"
+      ],
+      "facts_present": [],
+      "facts_required": [
+        "Pigments",
+        "CPU"
+      ],
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "T06",
+    "case": "decisao_vigente",
+    "condition": "sinapse",
+    "question": "Qual preset está valendo para o bass agora?",
+    "answer": "A decisão vigente é o Pigments para o bass, porque a CPU do Aurora chegava a 40%.",
+    "rubric": "Decisão vigente e motivo; citar o Aurora como atual desconta.",
+    "checks": {
+      "decision": true,
+      "reason": true,
+      "pending": false,
+      "components": [
+        "decision",
+        "reason"
+      ],
+      "facts_present": [
+        "Pigments",
+        "CPU"
+      ],
+      "facts_required": [
+        "Pigments",
+        "CPU"
+      ],
+      "completed_repetition": [],
+      "unsupported_claims": []
+    },
+    "human_review": {
+      "reviewed": false,
+      "approved": null,
+      "notes": ""
+    }
+  }
+]

@@ -1,0 +1,1021 @@
+{
+  "cases": 12,
+  "calls": 24,
+  "conditions": {
+    "current": {
+      "facts": 12,
+      "item": 11,
+      "unsupported": 0,
+      "sensitive": 0,
+      "ambiguity": 12,
+      "avg_score": 0.9833,
+      "avg_memory_tokens": 89.2,
+      "avg_request_tokens": 179.1,
+      "api_prompt_tokens": 0,
+      "cases": 12
+    },
+    "reduced": {
+      "facts": 12,
+      "item": 11,
+      "unsupported": 0,
+      "sensitive": 0,
+      "ambiguity": 12,
+      "avg_score": 0.9833,
+      "avg_memory_tokens": 59.6,
+      "avg_request_tokens": 149.4,
+      "api_prompt_tokens": 0,
+      "cases": 12
+    }
+  },
+  "counts": {
+    "melhorou": 0,
+    "empatou": 12,
+    "piorou": 0
+  },
+  "entries": [
+    {
+      "case": "ev_follow",
+      "family": "bicicleta",
+      "action": "follow_links",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=p1 | autor=user | conversa=c2 | pos=1 | resposta_a=-\nComprei uma bicicleta para ir ao trabalho.\n\n[evidência 1] id=p2 | autor=user | conversa=c2 | pos=2 | resposta_a=p1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos de bicicleta."
+          },
+          {
+            "role": "user",
+            "content": "Por que comprei a bicicleta?"
+          }
+        ],
+        "selected": [
+          "p1",
+          "p2"
+        ],
+        "removed": [],
+        "answer": "Você comprou a bicicleta porque a trilha é mais curta (p2).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 164,
+        "memory_tokens": 79,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=p1 | autor=user | conversa=c2 | pos=1 | resposta_a=-\nComprei uma bicicleta para ir ao trabalho.\n\n[evidência 1] id=p2 | autor=user | conversa=c2 | pos=2 | resposta_a=p1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos de bicicleta."
+          },
+          {
+            "role": "user",
+            "content": "Por que comprei a bicicleta?"
+          }
+        ],
+        "selected": [
+          "p1",
+          "p2"
+        ],
+        "removed": [],
+        "answer": "Você comprou a bicicleta porque a trilha é mais curta (p2).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 164,
+        "memory_tokens": 79,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": []
+    },
+    {
+      "case": "ev_follow_piano",
+      "family": "piano",
+      "action": "follow_links",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2 e do Piano V."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do piano?"
+          }
+        ],
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "removed": [],
+        "answer": "Você escolheu o Piano V porque estava em promoção (m6).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 166,
+        "memory_tokens": 77,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2 e do Piano V."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do piano?"
+          }
+        ],
+        "selected": [
+          "m5",
+          "m6"
+        ],
+        "removed": [],
+        "answer": "Você escolheu o Piano V porque estava em promoção (m6).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 166,
+        "memory_tokens": 77,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": []
+    },
+    {
+      "case": "ev_correction",
+      "family": "correcao",
+      "action": "correction",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=m10 | autor=user | conversa=c1 | pos=10 | resposta_a=m1\nTroquei o Serum 2 pelo Pigments porque o Serum dava estalos.\n\n[evidência 2] id=m3 | autor=user | conversa=c1 | pos=3 | resposta_a=m1\nTestei o bass alternando entre dois envelopes.\n\n[evidência 3] id=m7 | autor=user | conversa=c1 | pos=7 | resposta_a=-\nDivulguei o pack de presets do Serum 2 no fórum.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Escolhi o Serum 2 para o bass."
+          },
+          {
+            "role": "user",
+            "content": "Qual preset eu uso agora?"
+          }
+        ],
+        "selected": [
+          "m10",
+          "m3",
+          "m7"
+        ],
+        "removed": [],
+        "answer": "Agora você usa o Pigments (m10).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 208,
+        "memory_tokens": 119,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=m10 | autor=user | conversa=c1 | pos=10 | resposta_a=m1\nTroquei o Serum 2 pelo Pigments porque o Serum dava estalos.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Escolhi o Serum 2 para o bass."
+          },
+          {
+            "role": "user",
+            "content": "Qual preset eu uso agora?"
+          }
+        ],
+        "selected": [
+          "m10"
+        ],
+        "removed": [
+          "m7",
+          "m3"
+        ],
+        "answer": "Agora você usa o Pigments (m10).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 143,
+        "memory_tokens": 54,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": [
+        "m7",
+        "m3"
+      ]
+    },
+    {
+      "case": "ev_price_link",
+      "family": "preco",
+      "action": "follow_links",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m1 | autor=user | conversa=c1 | pos=1 | resposta_a=-\nEscolhi o Serum 2 para fazer o bass.\n\n[evidência 1] id=m20 | autor=user | conversa=c1 | pos=20 | resposta_a=m1\nSaiu por 280 reais.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Quanto custou o Serum 2?"
+          }
+        ],
+        "selected": [
+          "m1",
+          "m20"
+        ],
+        "removed": [],
+        "answer": "O Serum 2 saiu por 280 reais (m20).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 164,
+        "memory_tokens": 78,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m1 | autor=user | conversa=c1 | pos=1 | resposta_a=-\nEscolhi o Serum 2 para fazer o bass.\n\n[evidência 1] id=m20 | autor=user | conversa=c1 | pos=20 | resposta_a=m1\nSaiu por 280 reais.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Quanto custou o Serum 2?"
+          }
+        ],
+        "selected": [
+          "m1",
+          "m20"
+        ],
+        "removed": [],
+        "answer": "O Serum 2 saiu por 280 reais (m20).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 164,
+        "memory_tokens": 78,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": []
+    },
+    {
+      "case": "ev_many_links",
+      "family": "muitos_vinculos",
+      "action": "correction",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=m10 | autor=user | conversa=c1 | pos=10 | resposta_a=m1\nTroquei o Serum 2 pelo Pigments porque o Serum dava estalos.\n\n[evidência 2] id=m30 | autor=user | conversa=c1 | pos=30 | resposta_a=m1\nPorque o Serum 2 é famoso.\n\n[evidência 3] id=m31 | autor=user | conversa=c1 | pos=31 | resposta_a=m1\nJá usei o Serum 2 antes.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Escolhi o Serum 2 para o bass."
+          },
+          {
+            "role": "user",
+            "content": "Qual preset eu uso agora?"
+          }
+        ],
+        "selected": [
+          "m10",
+          "m30",
+          "m31"
+        ],
+        "removed": [],
+        "answer": "Agora você usa o Pigments (m10).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 203,
+        "memory_tokens": 114,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=m10 | autor=user | conversa=c1 | pos=10 | resposta_a=m1\nTroquei o Serum 2 pelo Pigments porque o Serum dava estalos.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Escolhi o Serum 2 para o bass."
+          },
+          {
+            "role": "user",
+            "content": "Qual preset eu uso agora?"
+          }
+        ],
+        "selected": [
+          "m10"
+        ],
+        "removed": [
+          "m30",
+          "m31"
+        ],
+        "answer": "Agora você usa o Pigments (m10).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 143,
+        "memory_tokens": 54,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": [
+        "m30",
+        "m31"
+      ]
+    },
+    {
+      "case": "ev_other_theme",
+      "family": "pack",
+      "action": "other_theme",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m7 | autor=user | conversa=c1 | pos=7 | resposta_a=-\nDivulguei o pack de presets do Serum 2 no fórum.\n\n[evidência 1] id=m9 | autor=user | conversa=c1 | pos=9 | resposta_a=m8\nPreparei o pack do bass para divulgar.\n\n[evidência 2] id=m8 | autor=user | conversa=c1 | pos=8 | resposta_a=m7\nO pack tem oito presets de bass.\n\n[evidência 3] id=m1 | autor=user | conversa=c1 | pos=1 | resposta_a=-\nEscolhi o Serum 2 para fazer o bass.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2 e do pack."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do pack?"
+          }
+        ],
+        "selected": [
+          "m7",
+          "m9",
+          "m8",
+          "m1"
+        ],
+        "removed": [],
+        "answer": "Você preparou o pack do bass (m9).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 234,
+        "memory_tokens": 146,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=m9 | autor=user | conversa=c1 | pos=9 | resposta_a=m8\nPreparei o pack do bass para divulgar.\n\n[evidência 2] id=m8 | autor=user | conversa=c1 | pos=8 | resposta_a=m7\nO pack tem oito presets de bass.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2 e do pack."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do pack?"
+          }
+        ],
+        "selected": [
+          "m9",
+          "m8"
+        ],
+        "removed": [
+          "m1",
+          "m7"
+        ],
+        "answer": "Você preparou o pack do bass (m9).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 169,
+        "memory_tokens": 81,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": [
+        "m1",
+        "m7"
+      ]
+    },
+    {
+      "case": "ev_history",
+      "family": "historico",
+      "action": "stop",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m1 | autor=user | conversa=c1 | pos=1 | resposta_a=-\nEscolhi o Serum 2 para fazer o bass.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "[m2] Porque eu já tinha comprado a licença."
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Por que eu escolhi o Serum 2?"
+          }
+        ],
+        "selected": [
+          "m1"
+        ],
+        "removed": [],
+        "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 163,
+        "memory_tokens": 50,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+          },
+          {
+            "role": "user",
+            "content": "[m2] Porque eu já tinha comprado a licença."
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Por que eu escolhi o Serum 2?"
+          }
+        ],
+        "selected": [],
+        "removed": [
+          "m1"
+        ],
+        "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 113,
+        "memory_tokens": 0,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": [
+        "m1"
+      ]
+    },
+    {
+      "case": "ev_restricted",
+      "family": "sensibilidade",
+      "action": "stop",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m1 | autor=user | conversa=c1 | pos=1 | resposta_a=-\nEscolhi o Serum 2 para fazer o bass.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Por que eu escolhi o preset Serum 2?"
+          }
+        ],
+        "selected": [
+          "m1"
+        ],
+        "removed": [],
+        "answer": "Não tenho essa informação disponível.",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": false,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 0.8
+        },
+        "score": 0.8,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 139,
+        "memory_tokens": 50,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Por que eu escolhi o preset Serum 2?"
+          }
+        ],
+        "selected": [],
+        "removed": [
+          "m1"
+        ],
+        "answer": "Não tenho essa informação disponível.",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": false,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 0.8
+        },
+        "score": 0.8,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 89,
+        "memory_tokens": 0,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": [
+        "m1"
+      ]
+    },
+    {
+      "case": "ev_self_sufficient",
+      "family": "autossuficiente",
+      "action": "stop",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m20 | autor=user | conversa=c1 | pos=20 | resposta_a=-\nO Serum 2 me custou 350 reais.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Quanto custou o Serum 2?"
+          }
+        ],
+        "selected": [
+          "m20"
+        ],
+        "removed": [],
+        "answer": "O Serum 2 custou 350 reais (m20).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 135,
+        "memory_tokens": 49,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m20 | autor=user | conversa=c1 | pos=20 | resposta_a=-\nO Serum 2 me custou 350 reais.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2."
+          },
+          {
+            "role": "user",
+            "content": "Quanto custou o Serum 2?"
+          }
+        ],
+        "selected": [
+          "m20"
+        ],
+        "removed": [],
+        "answer": "O Serum 2 custou 350 reais (m20).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 135,
+        "memory_tokens": 49,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": []
+    },
+    {
+      "case": "ev_two_complementary",
+      "family": "duas_evidencias",
+      "action": "other_theme",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m1 | autor=user | conversa=c1 | pos=1 | resposta_a=-\nEscolhi o Serum 2 para fazer o bass.\n\n[evidência 1] id=m2 | autor=user | conversa=c1 | pos=2 | resposta_a=m1\nPorque eu já tinha comprado a licença.\n\n[evidência 2] id=m10 | autor=user | conversa=c1 | pos=10 | resposta_a=m1\nUm amigo me recomendou o Serum 2.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2 e do bass."
+          },
+          {
+            "role": "user",
+            "content": "Por que eu escolhi o preset Serum 2?"
+          }
+        ],
+        "selected": [
+          "m1",
+          "m2",
+          "m10"
+        ],
+        "removed": [],
+        "answer": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m10).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 204,
+        "memory_tokens": 112,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m1 | autor=user | conversa=c1 | pos=1 | resposta_a=-\nEscolhi o Serum 2 para fazer o bass.\n\n[evidência 1] id=m2 | autor=user | conversa=c1 | pos=2 | resposta_a=m1\nPorque eu já tinha comprado a licença.\n\n[evidência 2] id=m10 | autor=user | conversa=c1 | pos=10 | resposta_a=m1\nUm amigo me recomendou o Serum 2.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do Serum 2 e do bass."
+          },
+          {
+            "role": "user",
+            "content": "Por que eu escolhi o preset Serum 2?"
+          }
+        ],
+        "selected": [
+          "m1",
+          "m2",
+          "m10"
+        ],
+        "removed": [],
+        "answer": "Você comprou a licença (m2) e um amigo indicou o Serum 2 (m10).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 204,
+        "memory_tokens": 112,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": []
+    },
+    {
+      "case": "pack_quantity",
+      "family": "pack_quantidade",
+      "action": "follow_links",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m7 | autor=user | conversa=c1 | pos=7 | resposta_a=-\nDivulguei o pack de presets do Serum 2 no fórum.\n\n[evidência 1] id=m8 | autor=user | conversa=c1 | pos=8 | resposta_a=m7\nO pack tem oito presets de bass.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Quero saber quantos presets tem o pack."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do pack?"
+          }
+        ],
+        "selected": [
+          "m7",
+          "m8"
+        ],
+        "removed": [],
+        "answer": "O pack tem oito presets (m8).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 171,
+        "memory_tokens": 83,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=m8 | autor=user | conversa=c1 | pos=8 | resposta_a=m7\nO pack tem oito presets de bass.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Quero saber quantos presets tem o pack."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do pack?"
+          }
+        ],
+        "selected": [
+          "m8"
+        ],
+        "removed": [
+          "m7"
+        ],
+        "answer": "O pack tem oito presets (m8).",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 138,
+        "memory_tokens": 50,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": [
+        "m7"
+      ]
+    },
+    {
+      "case": "pack_ambiguous",
+      "family": "pack_ambiguo",
+      "action": "other_theme",
+      "current": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m7 | autor=user | conversa=c1 | pos=7 | resposta_a=-\nDivulguei o pack de presets do Serum 2 no fórum.\n\n[evidência 1] id=m8 | autor=user | conversa=c1 | pos=8 | resposta_a=m7\nO pack tem oito presets de bass.\n\n[evidência 2] id=m9 | autor=user | conversa=c1 | pos=9 | resposta_a=m8\nPreparei o pack do bass para divulgar.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do pack."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do pack?"
+          }
+        ],
+        "selected": [
+          "m7",
+          "m8",
+          "m9"
+        ],
+        "removed": [],
+        "answer": "Você quer dizer a quantidade de presets (oito) ou como preparei o pack do bass?",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 198,
+        "memory_tokens": 114,
+        "usage": {},
+        "error": null
+      },
+      "reduced": {
+        "messages": [
+          {
+            "role": "system",
+            "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=m8 | autor=user | conversa=c1 | pos=8 | resposta_a=m7\nO pack tem oito presets de bass.\n\n[evidência 2] id=m9 | autor=user | conversa=c1 | pos=9 | resposta_a=m8\nPreparei o pack do bass para divulgar.\n=== FIM DA MEMÓRIA ==="
+          },
+          {
+            "role": "user",
+            "content": "Falamos do pack."
+          },
+          {
+            "role": "user",
+            "content": "E aquilo do pack?"
+          }
+        ],
+        "selected": [
+          "m8",
+          "m9"
+        ],
+        "removed": [
+          "m7"
+        ],
+        "answer": "Você quer dizer a quantidade de presets (oito) ou como preparei o pack do bass?",
+        "checks": {
+          "facts_ok": true,
+          "item_ok": true,
+          "unsupported": false,
+          "sensitive": false,
+          "ambiguity_ok": true,
+          "score": 1.0
+        },
+        "score": 1.0,
+        "token_source": "estimativa_local",
+        "request_tokens_estimate": 165,
+        "memory_tokens": 81,
+        "usage": {},
+        "error": null
+      },
+      "verdict": "empatou",
+      "removed": [
+        "m7"
+      ]
+    }
+  ]
+}

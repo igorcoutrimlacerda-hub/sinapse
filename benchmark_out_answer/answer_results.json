@@ -1,0 +1,152 @@
+{
+  "summary": {
+    "history": {
+      "cases": 1,
+      "evidence_sent": 0,
+      "evidence_used": 0,
+      "avg_score": 0.0,
+      "avg_additional_tokens": 0.0,
+      "total_tokens": 92
+    },
+    "distractors": {
+      "cases": 1,
+      "evidence_sent": 0,
+      "evidence_used": 0,
+      "avg_score": 0.0,
+      "avg_additional_tokens": 77.0,
+      "total_tokens": 169
+    },
+    "sinapse": {
+      "cases": 1,
+      "evidence_sent": 1,
+      "evidence_used": 1,
+      "avg_score": 1.0,
+      "avg_additional_tokens": 81.0,
+      "total_tokens": 173
+    },
+    "manual": {
+      "cases": 1,
+      "evidence_sent": 1,
+      "evidence_used": 1,
+      "avg_score": 1.0,
+      "avg_additional_tokens": 81.0,
+      "total_tokens": 173
+    },
+    "comparisons": {
+      "changed_cases": 1,
+      "sinapse_better_than_history": 1,
+      "sinapse_worse_than_history": 0,
+      "distractors_worse_than_history": 0,
+      "improved": [
+        "ans_motivo"
+      ],
+      "worsened_by_distractors": [],
+      "correct_evidence_but_error": []
+    }
+  },
+  "cases": [
+    {
+      "case": "ans_motivo",
+      "kind": "uma_lembranca",
+      "outcomes": {
+        "history": {
+          "condition": "history",
+          "selected_ids": [],
+          "evidence_sent": false,
+          "evidence_used": false,
+          "answer": "Não tenho informação suficiente.",
+          "score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "additional_tokens": 0,
+          "used_tokens": 92,
+          "error": null
+        },
+        "distractors": {
+          "condition": "distractors",
+          "selected_ids": [
+            "m5",
+            "m6"
+          ],
+          "evidence_sent": false,
+          "evidence_used": false,
+          "answer": "Não tenho informação suficiente.",
+          "score": 0.0,
+          "checks": {
+            "facts_present": [],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": true,
+            "missing_required": false
+          },
+          "additional_tokens": 77,
+          "used_tokens": 169,
+          "error": null
+        },
+        "sinapse": {
+          "condition": "sinapse",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_sent": true,
+          "evidence_used": true,
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "additional_tokens": 81,
+          "used_tokens": 173,
+          "error": null
+        },
+        "manual": {
+          "condition": "manual",
+          "selected_ids": [
+            "m1",
+            "m2"
+          ],
+          "evidence_sent": true,
+          "evidence_used": true,
+          "answer": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2).",
+          "score": 1.0,
+          "checks": {
+            "facts_present": [
+              "licença"
+            ],
+            "facts_required": [
+              "licença"
+            ],
+            "forbidden_claims_present": [],
+            "sensitive_terms_present": [],
+            "acknowledged_missing": false,
+            "missing_required": false
+          },
+          "additional_tokens": 81,
+          "used_tokens": 173,
+          "error": null
+        }
+      }
+    }
+  ]
+}

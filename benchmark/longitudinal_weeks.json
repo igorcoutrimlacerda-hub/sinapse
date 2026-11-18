@@ -1,0 +1,330 @@
+{
+  "conversation_id": "c1",
+  "weeks": 7,
+  "messages": [
+    {
+      "id": "w1a1",
+      "text": "Escolhi o preset Aurora para o bass.",
+      "author": "user",
+      "position": 1,
+      "sent_at": "2026-09-07T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Aurora", "bass"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "w1a2",
+      "text": "Prefiro presets suaves para o bass.",
+      "author": "user",
+      "position": 2,
+      "sent_at": "2026-09-07T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["presets suaves"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "w1a3",
+      "text": "A mixagem do bass ficou em 90 BPM.",
+      "author": "user",
+      "position": 3,
+      "sent_at": "2026-09-07T09:06:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["mixagem", "bass"], "quem": ["usuário"], "como": ["90 BPM"]}
+    },
+    {
+      "id": "w1a4",
+      "text": "Meu controlador tem 8 knobs.",
+      "author": "user",
+      "position": 4,
+      "sent_at": "2026-09-07T09:09:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["controlador", "8 knobs"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w1a5",
+      "text": "Testei o preset Aurora com dois envelopes.",
+      "author": "user",
+      "position": 5,
+      "sent_at": "2026-09-07T09:12:00-03:00",
+      "reply_to": "w1a1",
+      "coordinates": {"o_que": ["Aurora"], "quem": ["usuário"], "como": ["dois envelopes"]}
+    },
+    {
+      "id": "w1a6",
+      "text": "Organizei os cabos do estúdio.",
+      "author": "user",
+      "position": 6,
+      "sent_at": "2026-09-07T09:15:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["cabos"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w2a1",
+      "text": "Continuo preferindo presets suaves para o bass.",
+      "author": "user",
+      "position": 7,
+      "sent_at": "2026-09-14T10:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["presets suaves"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "w2a2",
+      "text": "A licença da Aurora já estava comprada.",
+      "author": "user",
+      "position": 8,
+      "sent_at": "2026-09-14T10:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["licença", "Aurora"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w2a3",
+      "text": "Usei o preset Aurora na faixa nova.",
+      "author": "user",
+      "position": 9,
+      "sent_at": "2026-09-14T10:06:00-03:00",
+      "reply_to": "w1a1",
+      "coordinates": {"o_que": ["Aurora"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w2a4",
+      "text": "Ouvi uma referência com o bass bem suave.",
+      "author": "user",
+      "position": 10,
+      "sent_at": "2026-09-14T10:09:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["bass"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w2a5",
+      "text": "Anotei ideias para a próxima música.",
+      "author": "user",
+      "position": 11,
+      "sent_at": "2026-09-14T10:12:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["ideias"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w3a1",
+      "text": "Troquei o preset Aurora pelo Pigments para o bass.",
+      "author": "user",
+      "position": 12,
+      "sent_at": "2026-09-21T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Pigments", "bass"], "quem": ["usuário"], "para_que": ["tocar o bass"], "por_que": ["o Aurora gastava muita CPU"]}
+    },
+    {
+      "id": "w3a2",
+      "text": "O Pigments gasta menos CPU no bass.",
+      "author": "user",
+      "position": 13,
+      "sent_at": "2026-09-21T09:03:00-03:00",
+      "reply_to": "w3a1",
+      "coordinates": {"o_que": ["Pigments"], "quem": ["usuário"], "por_que": ["gasta menos CPU"]}
+    },
+    {
+      "id": "w3a3",
+      "text": "A mixagem do bass continua em 90 BPM.",
+      "author": "user",
+      "position": 14,
+      "sent_at": "2026-09-21T09:06:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["mixagem", "bass"], "quem": ["usuário"], "como": ["90 BPM"]}
+    },
+    {
+      "id": "w3a4",
+      "text": "Comparei dois fones de ouvido.",
+      "author": "user",
+      "position": 15,
+      "sent_at": "2026-09-21T09:09:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["fones"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w3a5",
+      "text": "Testei um plugin de reverberação.",
+      "author": "user",
+      "position": 16,
+      "sent_at": "2026-09-21T09:12:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["plugin", "reverberação"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w4a1",
+      "text": "O assunto do bass voltou: a mixagem segue em 90 BPM.",
+      "author": "user",
+      "position": 17,
+      "sent_at": "2026-09-28T08:30:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["bass", "mixagem"], "quem": ["usuário"], "como": ["90 BPM"]}
+    },
+    {
+      "id": "w4a2",
+      "text": "Prefiro presets suaves para o bass, como antes.",
+      "author": "user",
+      "position": 18,
+      "sent_at": "2026-09-28T08:33:00-03:00",
+      "reply_to": "w1a2",
+      "coordinates": {"o_que": ["presets suaves"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "w4a3",
+      "text": "Exportei a faixa em 48 kHz.",
+      "author": "user",
+      "position": 19,
+      "sent_at": "2026-09-28T08:36:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["faixa"], "quem": ["usuário"], "como": ["48 kHz"]}
+    },
+    {
+      "id": "w4a4",
+      "text": "O Pigments ficou bom no refrão.",
+      "author": "user",
+      "position": 20,
+      "sent_at": "2026-09-28T08:39:00-03:00",
+      "reply_to": "w3a1",
+      "coordinates": {"o_que": ["Pigments"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w4a5",
+      "text": "Reorganizei a biblioteca de samples.",
+      "author": "user",
+      "position": 21,
+      "sent_at": "2026-09-28T08:42:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["samples"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w5a1",
+      "text": "Agora prefiro presets brilhantes para o bass.",
+      "author": "user",
+      "position": 22,
+      "sent_at": "2026-10-05T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["presets brilhantes"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "w5a2",
+      "text": "Os presets brilhantes dão mais presença no bass.",
+      "author": "user",
+      "position": 23,
+      "sent_at": "2026-10-05T09:03:00-03:00",
+      "reply_to": "w5a1",
+      "coordinates": {"o_que": ["presets brilhantes", "bass"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w5a3",
+      "text": "Testei o Pigments com presets brilhantes.",
+      "author": "user",
+      "position": 24,
+      "sent_at": "2026-10-05T09:06:00-03:00",
+      "reply_to": "w3a1",
+      "coordinates": {"o_que": ["Pigments", "presets brilhantes"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w5a4",
+      "text": "Assisti a uma aula de mixagem.",
+      "author": "user",
+      "position": 25,
+      "sent_at": "2026-10-05T09:09:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["aula"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w5a5",
+      "text": "Limpei a mesa e ajustei a iluminação.",
+      "author": "user",
+      "position": 26,
+      "sent_at": "2026-10-05T09:12:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["mesa"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w6a1",
+      "text": "Voltei para o preset Aurora no bass.",
+      "author": "user",
+      "position": 27,
+      "sent_at": "2026-10-12T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["Aurora", "bass"], "quem": ["usuário"], "para_que": ["tocar o bass"], "por_que": ["o Pigments não combinou"]}
+    },
+    {
+      "id": "w6a2",
+      "text": "Não quero falar sobre a licença da Aurora.",
+      "author": "user",
+      "position": 28,
+      "sent_at": "2026-10-12T09:03:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["licença", "Aurora"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w6a3",
+      "text": "A mixagem do bass fechou em 90 BPM.",
+      "author": "user",
+      "position": 29,
+      "sent_at": "2026-10-12T09:06:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["mixagem", "bass"], "quem": ["usuário"], "como": ["90 BPM"]}
+    },
+    {
+      "id": "w6a4",
+      "text": "O controlador de 8 knobs continua na mesa.",
+      "author": "user",
+      "position": 30,
+      "sent_at": "2026-10-12T09:09:00-03:00",
+      "reply_to": "w1a4",
+      "coordinates": {"o_que": ["controlador", "8 knobs"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w6a5",
+      "text": "Passei a manhã ajustando a iluminação.",
+      "author": "user",
+      "position": 31,
+      "sent_at": "2026-10-12T09:12:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["iluminação"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w7a1",
+      "text": "Prefiro presets brilhantes para o bass, sem mudança.",
+      "author": "user",
+      "position": 32,
+      "sent_at": "2026-10-19T09:00:00-03:00",
+      "reply_to": "w5a1",
+      "coordinates": {"o_que": ["presets brilhantes"], "quem": ["usuário"], "para_que": ["tocar o bass"]}
+    },
+    {
+      "id": "w7a2",
+      "text": "O preset Aurora está no bass da faixa final.",
+      "author": "user",
+      "position": 33,
+      "sent_at": "2026-10-19T09:03:00-03:00",
+      "reply_to": "w6a1",
+      "coordinates": {"o_que": ["Aurora", "bass"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w7a3",
+      "text": "Fechamos a música em 90 BPM.",
+      "author": "user",
+      "position": 34,
+      "sent_at": "2026-10-19T09:06:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["música"], "quem": ["usuário"], "como": ["90 BPM"]}
+    },
+    {
+      "id": "w7a4",
+      "text": "Testei outro plugin de reverberação.",
+      "author": "user",
+      "position": 35,
+      "sent_at": "2026-10-19T09:09:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["plugin", "reverberação"], "quem": ["usuário"]}
+    },
+    {
+      "id": "w7a5",
+      "text": "Guardei os cabos depois da sessão.",
+      "author": "user",
+      "position": 36,
+      "sent_at": "2026-10-19T09:12:00-03:00",
+      "reply_to": null,
+      "coordinates": {"o_que": ["cabos"], "quem": ["usuário"]}
+    }
+  ]
+}

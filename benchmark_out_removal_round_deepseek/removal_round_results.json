@@ -1,0 +1,1888 @@
+{
+  "planned_calls": 20,
+  "executed_calls": 12,
+  "cases": 5,
+  "entries": [
+    {
+      "case": "plan_bike_two",
+      "family": "bicicleta",
+      "conditions": {
+        "reference": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta e quanto custou?"
+            }
+          ],
+          "selected": [
+            "p3"
+          ],
+          "answer": "Você comentou que a bicicleta custou **1200 reais** (mensagem p3). Sobre o motivo da compra, não há essa informação registrada na memória — só o valor foi mencionado.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 131,
+            "completion_tokens": 48,
+            "total_tokens": 179,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 131
+          },
+          "error": null,
+          "reused": false
+        },
+        "purpose": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=p1 | autor=user | conversa=c2 | pos=1 | resposta_a=-\nComprei uma bicicleta para ir ao trabalho.\n\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n\n[evidência 2] id=p2 | autor=user | conversa=c2 | pos=2 | resposta_a=p1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta e quanto custou?"
+            }
+          ],
+          "selected": [
+            "p1",
+            "p3",
+            "p2"
+          ],
+          "answer": "Você comprou a bicicleta **porque a trilha é mais curta** (evidência p2, referente à compra em p1) e ela **custou 1200 reais** (evidência p3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 206,
+            "completion_tokens": 53,
+            "total_tokens": 259,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 206
+          },
+          "error": null,
+          "reused": false
+        },
+        "removal_1": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=p1 | autor=user | conversa=c2 | pos=1 | resposta_a=-\nComprei uma bicicleta para ir ao trabalho.\n\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta e quanto custou?"
+            }
+          ],
+          "selected": [
+            "p1",
+            "p3"
+          ],
+          "answer": "Você comprou a bicicleta para ir ao trabalho (mensagem p1) e ela custou 1200 reais (mensagem p3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 167,
+            "completion_tokens": 33,
+            "total_tokens": 200,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 167
+          },
+          "error": null,
+          "reused": false
+        },
+        "removal_2": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n\n[evidência 2] id=p2 | autor=user | conversa=c2 | pos=2 | resposta_a=p1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta e quanto custou?"
+            }
+          ],
+          "selected": [
+            "p3",
+            "p2"
+          ],
+          "answer": "Você comprou a bicicleta porque a trilha é mais curta (p2) — e ela custou 1200 reais (p3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 170,
+            "completion_tokens": 34,
+            "total_tokens": 204,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 170
+          },
+          "error": null,
+          "reused": false
+        }
+      },
+      "comparisons": [
+        {
+          "item": "p2",
+          "role": "evidencia_necessaria",
+          "expected_change": [
+            "motivo"
+          ],
+          "expected_keep": [
+            "preco"
+          ],
+          "present_in_purpose": true,
+          "same_request": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=p1 | autor=user | conversa=c2 | pos=1 | resposta_a=-\nComprei uma bicicleta para ir ao trabalho.\n\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta e quanto custou?"
+            }
+          ],
+          "selected": [
+            "p1",
+            "p3"
+          ],
+          "memory_tokens": 78,
+          "verdict": "confirmada",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=p1 | autor=user | conversa=c2 | pos=1 | resposta_a=-\nComprei uma bicicleta para ir ao trabalho.\n\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+              },
+              {
+                "role": "user",
+                "content": "Falamos de bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Por que comprei a bicicleta e quanto custou?"
+              }
+            ],
+            "selected": [
+              "p1",
+              "p3"
+            ],
+            "answer": "Você comprou a bicicleta para ir ao trabalho (mensagem p1) e ela custou 1200 reais (mensagem p3).",
+            "checks": {
+              "purposes": {
+                "m": {
+                  "ok": false,
+                  "unavailable": false,
+                  "term_ok": false,
+                  "item_ok": true
+                },
+                "p": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                }
+              },
+              "all_ok": false,
+              "priority_ok": true,
+              "score": 0.5,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 167,
+              "completion_tokens": 33,
+              "total_tokens": 200,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 167
+            },
+            "error": null,
+            "reused": false
+          }
+        },
+        {
+          "item": "p1",
+          "role": "dependencia_resposta_curta",
+          "expected_change": [
+            "motivo"
+          ],
+          "expected_keep": [
+            "preco"
+          ],
+          "present_in_purpose": true,
+          "same_request": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n\n[evidência 2] id=p2 | autor=user | conversa=c2 | pos=2 | resposta_a=p1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que comprei a bicicleta e quanto custou?"
+            }
+          ],
+          "selected": [
+            "p3",
+            "p2"
+          ],
+          "memory_tokens": 78,
+          "verdict": "falhou",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[evidência 1] id=p3 | autor=user | conversa=c2 | pos=3 | resposta_a=p1\nA bicicleta custou 1200 reais.\n\n[evidência 2] id=p2 | autor=user | conversa=c2 | pos=2 | resposta_a=p1\nPorque a trilha é mais curta.\n=== FIM DA MEMÓRIA ==="
+              },
+              {
+                "role": "user",
+                "content": "Falamos de bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Por que comprei a bicicleta e quanto custou?"
+              }
+            ],
+            "selected": [
+              "p3",
+              "p2"
+            ],
+            "answer": "Você comprou a bicicleta porque a trilha é mais curta (p2) — e ela custou 1200 reais (p3).",
+            "checks": {
+              "purposes": {
+                "m": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                },
+                "p": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                }
+              },
+              "all_ok": true,
+              "priority_ok": true,
+              "score": 1.0,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 170,
+              "completion_tokens": 34,
+              "total_tokens": 204,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 170
+            },
+            "error": null,
+            "reused": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "plan_two_themes",
+      "family": "misto",
+      "conditions": {
+        "reference": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [
+            "m5"
+          ],
+          "answer": "Você escolheu o Piano V para tocar jazz (m5). Já sobre o preço da bicicleta, não tenho essa informação na memória — não há registro de quanto ela custou.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 132,
+            "completion_tokens": 45,
+            "total_tokens": 177,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 132
+          },
+          "error": null,
+          "reused": false
+        },
+        "purpose": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n\n[evidência 2] id=b3 | autor=user | conversa=c1 | pos=40 | resposta_a=-\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [
+            "m5",
+            "m6",
+            "b3"
+          ],
+          "answer": "Você escolheu o Piano V para tocar jazz (m5) porque ele estava em promoção (m6). E a bicicleta custou 1200 reais (b3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 208,
+            "completion_tokens": 42,
+            "total_tokens": 250,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 208
+          },
+          "error": null,
+          "reused": false
+        },
+        "removal_1": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=b3 | autor=user | conversa=c1 | pos=40 | resposta_a=-\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [
+            "m5",
+            "b3"
+          ],
+          "answer": "Você escolheu o Piano V para tocar jazz (mensagem m5). E a bicicleta custou 1200 reais (mensagem b3).",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 172,
+            "completion_tokens": 36,
+            "total_tokens": 208,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 172
+          },
+          "error": null,
+          "reused": false
+        },
+        "removal_2": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "answer": "Você escolheu o **Piano V para tocar jazz** (m5), e a razão foi que **estava em promoção** (m6).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela, então não consigo responder quanto custou.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 168,
+            "completion_tokens": 66,
+            "total_tokens": 234,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 168
+          },
+          "error": null,
+          "reused": false
+        }
+      },
+      "comparisons": [
+        {
+          "item": "m6",
+          "role": "evidencia_necessaria",
+          "expected_change": [
+            "motivo"
+          ],
+          "expected_keep": [
+            "preco"
+          ],
+          "present_in_purpose": true,
+          "same_request": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=b3 | autor=user | conversa=c1 | pos=40 | resposta_a=-\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [
+            "m5",
+            "b3"
+          ],
+          "memory_tokens": 78,
+          "verdict": "confirmada",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=b3 | autor=user | conversa=c1 | pos=40 | resposta_a=-\nA bicicleta custou 1200 reais.\n=== FIM DA MEMÓRIA ==="
+              },
+              {
+                "role": "user",
+                "content": "Falamos do Piano V e da bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+              }
+            ],
+            "selected": [
+              "m5",
+              "b3"
+            ],
+            "answer": "Você escolheu o Piano V para tocar jazz (mensagem m5). E a bicicleta custou 1200 reais (mensagem b3).",
+            "checks": {
+              "purposes": {
+                "m": {
+                  "ok": false,
+                  "unavailable": false,
+                  "term_ok": false,
+                  "item_ok": true
+                },
+                "p": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                }
+              },
+              "all_ok": false,
+              "priority_ok": true,
+              "score": 0.5,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 172,
+              "completion_tokens": 36,
+              "total_tokens": 208,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 172
+            },
+            "error": null,
+            "reused": false
+          }
+        },
+        {
+          "item": "b3",
+          "role": "evidencia_necessaria",
+          "expected_change": [
+            "preco"
+          ],
+          "expected_keep": [
+            "motivo"
+          ],
+          "present_in_purpose": true,
+          "same_request": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "memory_tokens": 77,
+          "verdict": "confirmada",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+              },
+              {
+                "role": "user",
+                "content": "Falamos do Piano V e da bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Por que escolhi o Piano V e quanto custou a bicicleta?"
+              }
+            ],
+            "selected": [
+              "m5",
+              "m6"
+            ],
+            "answer": "Você escolheu o **Piano V para tocar jazz** (m5), e a razão foi que **estava em promoção** (m6).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela, então não consigo responder quanto custou.",
+            "checks": {
+              "purposes": {
+                "m": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                },
+                "p": {
+                  "ok": false,
+                  "unavailable": false,
+                  "term_ok": false,
+                  "item_ok": true
+                }
+              },
+              "all_ok": false,
+              "priority_ok": true,
+              "score": 0.5,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 168,
+              "completion_tokens": 66,
+              "total_tokens": 234,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 168
+            },
+            "error": null,
+            "reused": false
+          }
+        }
+      ]
+    },
+    {
+      "case": "plan_priority",
+      "family": "misto",
+      "conditions": {
+        "reference": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+            }
+          ],
+          "selected": [
+            "m5"
+          ],
+          "answer": "Você escolheu o Piano V **para tocar jazz** (foi o motivo que você registrou na conversa, mensagem `m5`).\n\nSobre o preço da bicicleta: não tenho essa informação na memória — não há registro do valor dela. Se você me disser, posso guardar para consultas futuras.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": false,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 139,
+            "completion_tokens": 76,
+            "total_tokens": 215,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 139
+          },
+          "error": null,
+          "reused": false
+        },
+        "purpose": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+            }
+          ],
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "answer": "Escolheste o Piano V **porque estava em promoção** (m6, resposta à tua escolha em m5).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela — não tenho esse dado registado.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 175,
+            "completion_tokens": 57,
+            "total_tokens": 232,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 175
+          },
+          "error": null,
+          "reused": false
+        },
+        "removal_1": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+            }
+          ],
+          "selected": [
+            "m5"
+          ],
+          "answer": "Você escolheu o Piano V **para tocar jazz** (foi o motivo que você registrou na conversa, mensagem `m5`).\n\nSobre o preço da bicicleta: não tenho essa informação na memória — não há registro do valor dela. Se você me disser, posso guardar para consultas futuras.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": false,
+            "priority_ok": false,
+            "score": 0.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 139,
+            "completion_tokens": 76,
+            "total_tokens": 215,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 139
+          },
+          "error": null,
+          "reused": true
+        },
+        "removal_2": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+            }
+          ],
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "answer": "Escolheste o Piano V **porque estava em promoção** (m6, resposta à tua escolha em m5).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela — não tenho esse dado registado.",
+          "checks": {
+            "purposes": {
+              "m": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              },
+              "p": {
+                "ok": false,
+                "unavailable": false,
+                "term_ok": false,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 0.5,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 175,
+            "completion_tokens": 57,
+            "total_tokens": 232,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 175
+          },
+          "error": null,
+          "reused": true
+        }
+      },
+      "comparisons": [
+        {
+          "item": "m6",
+          "role": "evidencia_prioritaria",
+          "expected_change": [
+            "motivo"
+          ],
+          "expected_keep": [
+            "preco_pendente_reconhecido"
+          ],
+          "present_in_purpose": true,
+          "same_request": false,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+            }
+          ],
+          "selected": [
+            "m5"
+          ],
+          "memory_tokens": 49,
+          "verdict": "confirmada",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n=== FIM DA MEMÓRIA ==="
+              },
+              {
+                "role": "user",
+                "content": "Falamos do Piano V e da bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+              }
+            ],
+            "selected": [
+              "m5"
+            ],
+            "answer": "Você escolheu o Piano V **para tocar jazz** (foi o motivo que você registrou na conversa, mensagem `m5`).\n\nSobre o preço da bicicleta: não tenho essa informação na memória — não há registro do valor dela. Se você me disser, posso guardar para consultas futuras.",
+            "checks": {
+              "purposes": {
+                "m": {
+                  "ok": false,
+                  "unavailable": false,
+                  "term_ok": false,
+                  "item_ok": true
+                },
+                "p": {
+                  "ok": false,
+                  "unavailable": false,
+                  "term_ok": false,
+                  "item_ok": true
+                }
+              },
+              "all_ok": false,
+              "priority_ok": false,
+              "score": 0.0,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 139,
+              "completion_tokens": 76,
+              "total_tokens": 215,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 139
+            },
+            "error": null,
+            "reused": true
+          }
+        },
+        {
+          "item": "m7",
+          "role": "redundante",
+          "expected_change": [],
+          "expected_keep": [
+            "motivo",
+            "preco_pendente_reconhecido"
+          ],
+          "present_in_purpose": false,
+          "same_request": true,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+            },
+            {
+              "role": "user",
+              "content": "Falamos do Piano V e da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+            }
+          ],
+          "selected": [
+            "m5",
+            "m6"
+          ],
+          "memory_tokens": 77,
+          "verdict": "sem_efeito_na_requisicao",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança.\n\n=== MEMÓRIA (Sinapse) ===\n[semente] id=m5 | autor=user | conversa=c1 | pos=5 | resposta_a=-\nEscolhi o Piano V para tocar jazz.\n\n[evidência 1] id=m6 | autor=user | conversa=c1 | pos=6 | resposta_a=m5\nPorque estava em promoção.\n=== FIM DA MEMÓRIA ==="
+              },
+              {
+                "role": "user",
+                "content": "Falamos do Piano V e da bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Por que escolhi o Piano V e quanto custou a bicicleta? Priorize o motivo do Piano."
+              }
+            ],
+            "selected": [
+              "m5",
+              "m6"
+            ],
+            "answer": "Escolheste o Piano V **porque estava em promoção** (m6, resposta à tua escolha em m5).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela — não tenho esse dado registado.",
+            "checks": {
+              "purposes": {
+                "m": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                },
+                "p": {
+                  "ok": false,
+                  "unavailable": false,
+                  "term_ok": false,
+                  "item_ok": true
+                }
+              },
+              "all_ok": true,
+              "priority_ok": true,
+              "score": 0.5,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 175,
+              "completion_tokens": 57,
+              "total_tokens": 232,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 175
+            },
+            "error": null,
+            "reused": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "plan_history",
+      "family": "historico",
+      "conditions": {
+        "reference": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "[p3] A bicicleta custou 1200 reais."
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 81,
+            "completion_tokens": 25,
+            "total_tokens": 106,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 81
+          },
+          "error": null,
+          "reused": false
+        },
+        "purpose": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "[p3] A bicicleta custou 1200 reais."
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 81,
+            "completion_tokens": 25,
+            "total_tokens": 106,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 81
+          },
+          "error": null,
+          "reused": true
+        },
+        "removal_1": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "[p3] A bicicleta custou 1200 reais."
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 81,
+            "completion_tokens": 25,
+            "total_tokens": 106,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 81
+          },
+          "error": null,
+          "reused": true
+        },
+        "removal_2": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "[p3] A bicicleta custou 1200 reais."
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": false,
+                "term_ok": true,
+                "item_ok": true
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 81,
+            "completion_tokens": 25,
+            "total_tokens": 106,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 81
+          },
+          "error": null,
+          "reused": true
+        }
+      },
+      "comparisons": [
+        {
+          "item": "b3",
+          "role": "redundante_fora_do_historico",
+          "expected_change": [],
+          "expected_keep": [
+            "preco"
+          ],
+          "present_in_purpose": false,
+          "same_request": true,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "[p3] A bicicleta custou 1200 reais."
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "memory_tokens": 0,
+          "verdict": "sem_efeito_na_requisicao",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+              },
+              {
+                "role": "user",
+                "content": "[p3] A bicicleta custou 1200 reais."
+              },
+              {
+                "role": "user",
+                "content": "Falamos de bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Quanto custou a bicicleta?"
+              }
+            ],
+            "selected": [],
+            "answer": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+            "checks": {
+              "purposes": {
+                "p": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                }
+              },
+              "all_ok": true,
+              "priority_ok": true,
+              "score": 1.0,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 81,
+              "completion_tokens": 25,
+              "total_tokens": 106,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 81
+            },
+            "error": null,
+            "reused": true
+          }
+        },
+        {
+          "item": "p1",
+          "role": "dependencia_nao_necessaria",
+          "expected_change": [],
+          "expected_keep": [
+            "preco"
+          ],
+          "present_in_purpose": false,
+          "same_request": true,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "[p3] A bicicleta custou 1200 reais."
+            },
+            {
+              "role": "user",
+              "content": "Falamos de bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "memory_tokens": 0,
+          "verdict": "sem_efeito_na_requisicao",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+              },
+              {
+                "role": "user",
+                "content": "[p3] A bicicleta custou 1200 reais."
+              },
+              {
+                "role": "user",
+                "content": "Falamos de bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Quanto custou a bicicleta?"
+              }
+            ],
+            "selected": [],
+            "answer": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+            "checks": {
+              "purposes": {
+                "p": {
+                  "ok": true,
+                  "unavailable": false,
+                  "term_ok": true,
+                  "item_ok": true
+                }
+              },
+              "all_ok": true,
+              "priority_ok": true,
+              "score": 1.0,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 81,
+              "completion_tokens": 25,
+              "total_tokens": 106,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 81
+            },
+            "error": null,
+            "reused": true
+          }
+        }
+      ]
+    },
+    {
+      "case": "plan_restricted",
+      "family": "sensibilidade",
+      "conditions": {
+        "reference": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "Falamos da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 66,
+            "completion_tokens": 62,
+            "total_tokens": 128,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 66
+          },
+          "error": null,
+          "reused": false
+        },
+        "purpose": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "Falamos da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 66,
+            "completion_tokens": 62,
+            "total_tokens": 128,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 66
+          },
+          "error": null,
+          "reused": true
+        },
+        "removal_1": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "Falamos da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 66,
+            "completion_tokens": 62,
+            "total_tokens": 128,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 66
+          },
+          "error": null,
+          "reused": true
+        },
+        "removal_2": {
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "Falamos da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "answer": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+          "checks": {
+            "purposes": {
+              "p": {
+                "ok": true,
+                "unavailable": true,
+                "acknowledged": true,
+                "sensitive": false
+              }
+            },
+            "all_ok": true,
+            "priority_ok": true,
+            "score": 1.0,
+            "unsupported": false
+          },
+          "token_source": "api",
+          "usage": {
+            "prompt_tokens": 66,
+            "completion_tokens": 62,
+            "total_tokens": 128,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 66
+          },
+          "error": null,
+          "reused": true
+        }
+      },
+      "comparisons": [
+        {
+          "item": "b3",
+          "role": "evidencia_restrita",
+          "expected_change": [],
+          "expected_keep": [
+            "restricao_respeitada"
+          ],
+          "present_in_purpose": false,
+          "same_request": true,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "Falamos da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "memory_tokens": 0,
+          "verdict": "sem_efeito_na_requisicao",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+              },
+              {
+                "role": "user",
+                "content": "Falamos da bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Quanto custou a bicicleta?"
+              }
+            ],
+            "selected": [],
+            "answer": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+            "checks": {
+              "purposes": {
+                "p": {
+                  "ok": true,
+                  "unavailable": true,
+                  "acknowledged": true,
+                  "sensitive": false
+                }
+              },
+              "all_ok": true,
+              "priority_ok": true,
+              "score": 1.0,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 62,
+              "total_tokens": 128,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 66
+            },
+            "error": null,
+            "reused": true
+          }
+        },
+        {
+          "item": "m5",
+          "role": "redundante",
+          "expected_change": [],
+          "expected_keep": [
+            "restricao_respeitada"
+          ],
+          "present_in_purpose": false,
+          "same_request": true,
+          "messages": [
+            {
+              "role": "system",
+              "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+            },
+            {
+              "role": "user",
+              "content": "Falamos da bicicleta."
+            },
+            {
+              "role": "user",
+              "content": "Quanto custou a bicicleta?"
+            }
+          ],
+          "selected": [],
+          "memory_tokens": 0,
+          "verdict": "sem_efeito_na_requisicao",
+          "result": {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Você é um assistente com memória. Use o contexto de memória quando ele ajudar a responder ao turno atual e cite o ID da mensagem quando fizer referência a uma lembrança."
+              },
+              {
+                "role": "user",
+                "content": "Falamos da bicicleta."
+              },
+              {
+                "role": "user",
+                "content": "Quanto custou a bicicleta?"
+              }
+            ],
+            "selected": [],
+            "answer": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+            "checks": {
+              "purposes": {
+                "p": {
+                  "ok": true,
+                  "unavailable": true,
+                  "acknowledged": true,
+                  "sensitive": false
+                }
+              },
+              "all_ok": true,
+              "priority_ok": true,
+              "score": 1.0,
+              "unsupported": false
+            },
+            "token_source": "api",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 62,
+              "total_tokens": 128,
+              "prompt_tokens_details": {
+                "cached_tokens": 0
+              },
+              "prompt_cache_hit_tokens": 0,
+              "prompt_cache_miss_tokens": 66
+            },
+            "error": null,
+            "reused": true
+          }
+        }
+      ]
+    }
+  ],
+  "human_review_pending": true,
+  "existing_blind_pairs_preserved": true
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "review_id": "D01",
+    "case": "plan_bike_two",
+    "answers": {
+      "A": "bicicleta: 1200",
+      "B": "bicicleta: trilha; bicicleta: 1200",
+      "C": "bicicleta: 1200",
+      "D": "bicicleta: trilha; bicicleta: 1200"
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D02",
+    "case": "plan_two_themes",
+    "answers": {
+      "A": "Não tenho essa informação.",
+      "B": "piano: promocao; bicicleta: 1200",
+      "C": "bicicleta: 1200",
+      "D": "piano: promocao"
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D03",
+    "case": "plan_priority",
+    "answers": {
+      "A": "Não tenho essa informação.",
+      "B": "piano: promocao",
+      "C": "Não tenho essa informação.",
+      "D": "piano: promocao"
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D04",
+    "case": "plan_history",
+    "answers": {
+      "A": "bicicleta: 1200",
+      "B": "bicicleta: 1200",
+      "C": "bicicleta: 1200",
+      "D": "bicicleta: 1200"
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D05",
+    "case": "plan_restricted",
+    "answers": {
+      "A": "Não tenho essa informação.",
+      "B": "Não tenho essa informação.",
+      "C": "Não tenho essa informação.",
+      "D": "Não tenho essa informação."
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  }
+]

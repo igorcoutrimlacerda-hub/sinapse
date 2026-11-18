@@ -1,0 +1,10 @@
+QUALIDADE DE RESPOSTA POR CONDIÇÃO
+casos=1
+
+history      evid_enviada=0/1 evid_usada=0/1 nota=0.00 tokens=0.0
+distractors  evid_enviada=0/1 evid_usada=0/1 nota=0.00 tokens=77.0
+sinapse      evid_enviada=1/1 evid_usada=1/1 nota=1.00 tokens=81.0
+manual       evid_enviada=1/1 evid_usada=1/1 nota=1.00 tokens=81.0
+
+casos em que trocar a memória mudou a nota: 1
+Sinapse melhor que histórico: 1 | pior: 0 | distratores piores que histórico: 0

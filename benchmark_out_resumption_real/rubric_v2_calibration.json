@@ -1,0 +1,445 @@
+{
+  "rows": 20,
+  "criteria": {
+    "decision": {
+      "tp": 18,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "reason": {
+      "tp": 20,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    "completed": {
+      "tp": 14,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "pending": {
+      "tp": 16,
+      "tn": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    "condition": {
+      "tp": 2,
+      "tn": 0,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "details": [
+    {
+      "review_id": "RP01",
+      "case": "retomada_geral",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 0
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": false
+      }
+    },
+    {
+      "review_id": "RP01",
+      "case": "retomada_geral",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP02",
+      "case": "proximo_teste",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "reason": 1,
+        "pending": 0
+      },
+      "v2": {
+        "reason": true,
+        "pending": false
+      }
+    },
+    {
+      "review_id": "RP02",
+      "case": "proximo_teste",
+      "condition": "sinapse",
+      "human": {
+        "reason": 1,
+        "pending": 1
+      },
+      "v2": {
+        "reason": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP03",
+      "case": "decisao_vigente",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true
+      }
+    },
+    {
+      "review_id": "RP03",
+      "case": "decisao_vigente",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true
+      }
+    },
+    {
+      "review_id": "RP04",
+      "case": "pendencia_concluida",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP04",
+      "case": "pendencia_concluida",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP05",
+      "case": "pendencia_substituida",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP05",
+      "case": "pendencia_substituida",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 0,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": false,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP06",
+      "case": "sem_pendencia",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP06",
+      "case": "sem_pendencia",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP07",
+      "case": "pendencia_substituida_costa",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP07",
+      "case": "pendencia_substituida_costa",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 0,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": false,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP08",
+      "case": "proximo_condicionado",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1,
+        "condition": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "condition": true
+      }
+    },
+    {
+      "review_id": "RP08",
+      "case": "proximo_condicionado",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1,
+        "condition": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true,
+        "condition": true
+      }
+    },
+    {
+      "review_id": "RP09",
+      "case": "intercalado_norte",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP09",
+      "case": "intercalado_norte",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP10",
+      "case": "intercalado_sul",
+      "condition": "sinapse",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    },
+    {
+      "review_id": "RP10",
+      "case": "intercalado_sul",
+      "condition": "sinapse_multipurpose",
+      "human": {
+        "decision": 1,
+        "reason": 1,
+        "completed": 1,
+        "pending": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true,
+        "completed": true,
+        "pending": true
+      }
+    }
+  ],
+  "synthetic": [
+    {
+      "id": "parafrase_correta",
+      "kind": "paráfrase correta da decisão",
+      "gold": {
+        "decision": 1,
+        "reason": 1
+      },
+      "v2": {
+        "decision": true,
+        "reason": true
+      },
+      "answer": "O preset que está valendo para o bass é o Pigments, porque a CPU do Aurora chegava a 40%."
+    },
+    {
+      "id": "antiga_como_atual",
+      "kind": "decisão antiga apresentada como vigente",
+      "gold": {
+        "decision": 0,
+        "old_or_ambiguous": 1
+      },
+      "v2": {
+        "decision": false,
+        "old_or_ambiguous": true
+      },
+      "answer": "Você usa o Aurora no bass; o Pigments ficou de lado."
+    },
+    {
+      "id": "proximo_reformulado",
+      "kind": "próximo passo com sentido alterado",
+      "gold": {
+        "reason": 1,
+        "pending": 0
+      },
+      "v2": {
+        "reason": true,
+        "pending": false
+      },
+      "answer": "Vou introduzir a faixa em 96 kHz para confirmar que a CPU não estoura."
+    },
+    {
+      "id": "proximo_correto",
+      "kind": "próximo passo fiel à fonte",
+      "gold": {
+        "reason": 1,
+        "pending": 1
+      },
+      "v2": {
+        "reason": true,
+        "pending": true
+      },
+      "answer": "O próximo teste é testar a introdução em 96 kHz, para confirmar que a CPU não estoura."
+    },
+    {
+      "id": "condicao_incompleta",
+      "kind": "condição com um caminho omitido",
+      "gold": {
+        "pending": 0,
+        "condition": 0
+      },
+      "v2": {
+        "pending": false,
+        "condition": false
+      },
+      "answer": "Se a CPU ficar abaixo de 30%, o próximo passo é exportar."
+    },
+    {
+      "id": "condicao_dois_caminhos",
+      "kind": "condição com os dois caminhos",
+      "gold": {
+        "pending": 1,
+        "condition": 1
+      },
+      "v2": {
+        "pending": true,
+        "condition": true
+      },
+      "answer": "Ainda falta testar a ponte em 96 kHz; se a CPU ficar abaixo de 30%, exportar; senão, reduzir o oversampling."
+    }
+  ]
+}

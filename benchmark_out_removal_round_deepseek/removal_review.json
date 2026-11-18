@@ -1,0 +1,87 @@
+[
+  {
+    "review_id": "D01",
+    "case": "plan_bike_two",
+    "answers": {
+      "A": "Você comentou que a bicicleta custou **1200 reais** (mensagem p3). Sobre o motivo da compra, não há essa informação registrada na memória — só o valor foi mencionado.",
+      "B": "Você comprou a bicicleta **porque a trilha é mais curta** (evidência p2, referente à compra em p1) e ela **custou 1200 reais** (evidência p3).",
+      "C": "Você comprou a bicicleta para ir ao trabalho (mensagem p1) e ela custou 1200 reais (mensagem p3).",
+      "D": "Você comprou a bicicleta porque a trilha é mais curta (p2) — e ela custou 1200 reais (p3)."
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D02",
+    "case": "plan_two_themes",
+    "answers": {
+      "A": "Você escolheu o Piano V para tocar jazz (m5). Já sobre o preço da bicicleta, não tenho essa informação na memória — não há registro de quanto ela custou.",
+      "B": "Você escolheu o Piano V para tocar jazz (m5) porque ele estava em promoção (m6). E a bicicleta custou 1200 reais (b3).",
+      "C": "Você escolheu o Piano V para tocar jazz (mensagem m5). E a bicicleta custou 1200 reais (mensagem b3).",
+      "D": "Você escolheu o **Piano V para tocar jazz** (m5), e a razão foi que **estava em promoção** (m6).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela, então não consigo responder quanto custou."
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D03",
+    "case": "plan_priority",
+    "answers": {
+      "A": "Você escolheu o Piano V **para tocar jazz** (foi o motivo que você registrou na conversa, mensagem `m5`).\n\nSobre o preço da bicicleta: não tenho essa informação na memória — não há registro do valor dela. Se você me disser, posso guardar para consultas futuras.",
+      "B": "Escolheste o Piano V **porque estava em promoção** (m6, resposta à tua escolha em m5).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela — não tenho esse dado registado.",
+      "C": "Você escolheu o Piano V **para tocar jazz** (foi o motivo que você registrou na conversa, mensagem `m5`).\n\nSobre o preço da bicicleta: não tenho essa informação na memória — não há registro do valor dela. Se você me disser, posso guardar para consultas futuras.",
+      "D": "Escolheste o Piano V **porque estava em promoção** (m6, resposta à tua escolha em m5).\n\nSobre a bicicleta: não há nenhuma informação na memória sobre o preço dela — não tenho esse dado registado."
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D04",
+    "case": "plan_history",
+    "answers": {
+      "A": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+      "B": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+      "C": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3]).",
+      "D": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3])."
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  },
+  {
+    "review_id": "D05",
+    "case": "plan_restricted",
+    "answers": {
+      "A": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+      "B": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+      "C": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor.",
+      "D": "Não tenho nenhuma lembrança registrada sobre uma conversa a respeito de uma bicicleta — não encontro esse contexto na minha memória. Pode me contar de novo ou dar mais detalhes (quando foi, o que foi discutido)? Assim consigo te ajudar melhor."
+    },
+    "rubric": "Fato solicitado, atribuição ao item, parte preservada, suporte, sensibilidade e prioridade.",
+    "human_review": {
+      "reviewed": false,
+      "approved_answers": [],
+      "divergences": [],
+      "notes": ""
+    }
+  }
+]

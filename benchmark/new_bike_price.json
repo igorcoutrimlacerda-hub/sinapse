@@ -1,0 +1,18 @@
+{
+  "messages": [
+    {
+      "id": "b3",
+      "text": "A bicicleta custou 1200 reais.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 40,
+      "sent_at": "2026-11-18T09:00:00-03:00",
+      "reply_to": null,
+      "coordinates": {
+        "o_que": ["bicicleta"],
+        "quem": ["usuário"],
+        "por_que": ["custou 1200 reais"]
+      }
+    }
+  ]
+}

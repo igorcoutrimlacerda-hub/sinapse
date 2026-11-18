@@ -1,0 +1,112 @@
+[
+  {
+    "review_id": "P01",
+    "case": "ev_bike_motive",
+    "answers": {
+      "A": "Você comprou a bicicleta para ir ao trabalho — e mencionou que a trilha é mais curta (mensagens p1 e p2).",
+      "B": "Você comprou a bicicleta para ir ao trabalho — porque a trilha é mais curta. (mensagens p1 e p2)"
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P02",
+    "case": "ev_piano_motive",
+    "answers": {
+      "A": "Você escolheu o Piano V porque ele estava em promoção. (m5, m6)",
+      "B": "Você escolheu o Piano V porque estava em promoção (m6), conforme mencionou logo depois de dizer que o havia escolhido para tocar jazz (m5)."
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P03",
+    "case": "ev_pack_both",
+    "answers": {
+      "A": "Você comentou que divulgou o pack de presets do Serum 2 no fórum (m7) e que ele tem oito presets de bass (m8).",
+      "B": "Você mencionou que preparou o pack do bass para divulgar (mensagem m9), mas essa mensagem não traz a quantidade nem detalhes de como foi a divulgação. Não tenho essa informação na memória — pode me passar os números e o que já foi feito?"
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P04",
+    "case": "ev_two_themes",
+    "answers": {
+      "A": "Você escolheu o Piano V porque estava em promoção (m6).\n\nSobre quantos presets tem o pack, não encontro essa informação na memória — não tenho esse dado registrado. Se você me disser, posso anotar para consultas futuras.",
+      "B": "Você escolheu o Piano V para tocar jazz **porque estava em promoção** (m6, complementando m5). E o pack tem **oito presets de bass** (m8)."
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P05",
+    "case": "ev_serum_contrast",
+    "answers": {
+      "A": "Você escolheu o Serum 2 porque já tinha comprado a licença (m2, respondendo a m1).",
+      "B": "Porque você já tinha comprado a licença (m2)."
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P06",
+    "case": "ev_history_bike",
+    "answers": {
+      "A": "Você comprou a bicicleta porque a trilha é mais curta — foi isso que você mesmo justificou no contexto da conversa sobre bicicleta. (ref. p2)",
+      "B": "Você disse que comprou a bicicleta **porque a trilha é mais curta** — ou seja, de bike o trajeto pela trilha fica mais curto do que o caminho habitual. (referência: mensagem [p2])"
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P07",
+    "case": "ev_restricted",
+    "answers": {
+      "A": "Você escolheu o preset do **Serum 2** (não o \"preset Serum 2\" como um preset específico — foi uma decisão de qual sintetizador usar) porque, na nossa conversa, você estava buscando um sintetizador com **visual moderno e interface mais atual**, e o Serum 2 se destacou por:\n\n- **Interface visualmente mais moderna e polida** comparado ao Serum 1;\n- **Workflow mais fluido** para sound design;\n- **Recursos novos** (como melhorias no motor de áudio e modulação).\n\nSe quiser, posso detalhar os pontos exatos que discutimos sobre a comparação entre Serum 1 e Serum 2 — mas, pelo que registrei, a escolha foi guiada principalmente pela **estética/UX mais moderna** que você valorizava.\n\nQuer que eu recupere os detalhes específicos dessa comparação?",
+      "B": "Você mencionou o Serum 2 no início desta conversa (msg `1`), mas não registrou aqui o motivo pelo qual escolheu esse preset. Não tenho essa informação no contexto disponível — pode me contar qual foi o critério (som, praticidade, timbre específico)?"
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P08",
+    "case": "new_bike_two",
+    "answers": {
+      "A": "Você comprou a bicicleta para ir ao trabalho (p1), e ela custou 1200 reais (p3).",
+      "B": "Você mencionou que a bicicleta custou **1200 reais** (mensagem p3). Sobre **por que** você a comprou, não há essa informação na memória disponível — só o valor foi registrado.",
+      "C": "Você comprou a bicicleta **porque a trilha é mais curta** (mensagem p2) e ela **custou 1200 reais** (mensagem p3)."
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P09",
+    "case": "new_two_themes",
+    "answers": {
+      "A": "Você escolheu o Piano V para tocar jazz (mensagem m5). Já sobre o preço da bicicleta, não tenho essa informação na memória — não há registro de valor da bicicleta nas conversas que guardei. Se você me disser, posso anotar para consultas futuras.",
+      "B": "Você escolheu o Piano V porque estava em promoção (m6). E a bicicleta custou 1200 reais (b3).",
+      "C": "Você escolheu o Piano V para tocar jazz (m5), e a bicicleta custou 1200 reais (b3)."
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P10",
+    "case": "new_priority",
+    "answers": {
+      "A": "Você escolheu o Piano V **para tocar jazz** (é o que está registrado na memória, mensagem `m5`).\n\nSobre o preço da bicicleta: não há nenhuma informação registrada na memória sobre o valor dela, então não consigo responder essa parte.",
+      "B": "Você escolheu o Piano V **porque estava em promoção** (mensagem m6, complementando m5).\n\nSobre o preço da bicicleta: não há nenhuma informação sobre isso na memória disponível — não consigo responder quanto custou."
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P11",
+    "case": "new_history_price",
+    "answers": {
+      "A": "A bicicleta custou **1200 reais** (conforme a mensagem [p3]).",
+      "B": "A bicicleta custou **1200 reais** (conforme você mencionou na mensagem [p3])."
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  },
+  {
+    "review_id": "P12",
+    "case": "new_restricted_price",
+    "answers": {
+      "A": "Não tenho nenhuma lembrança de uma conversa anterior sobre uma bicicleta — não há registro no meu contexto de memória sobre esse assunto, então não sei quanto ela custou.\n\nSe você me contar o valor ou o contexto (por exemplo, se foi numa conversa recente), posso ajudar a partir daí.",
+      "B": "Você mencionou a bicicleta, mas no contexto disponível não há nenhum valor ou preço associado a ela. Não tenho informação sobre quanto custou. Pode me dizer o valor ou o trecho da conversa em que isso apareceu?"
+    },
+    "rubric": "Fatos por propósito, atribuição, suporte, sensibilidade, prioridade e partes indisponíveis."
+  }
+]

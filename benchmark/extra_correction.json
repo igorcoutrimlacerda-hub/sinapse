@@ -1,0 +1,19 @@
+{
+  "messages": [
+    {
+      "id": "m10",
+      "text": "Troquei o Serum 2 pelo Pigments porque o Serum dava estalos.",
+      "author": "user",
+      "conversation_id": "c1",
+      "position": 10,
+      "sent_at": "2026-11-14T11:00:00-03:00",
+      "reply_to": "m1",
+      "coordinates": {
+        "o_que": ["Pigments", "Serum 2"],
+        "quem": ["usuário"],
+        "por_que": ["o Serum 2 dava estalos"],
+        "para_que": ["substituir o Serum 2"]
+      }
+    }
+  ]
+}

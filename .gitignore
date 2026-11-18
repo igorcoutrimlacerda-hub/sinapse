@@ -1,0 +1,8 @@
+data/farol_settings.json
+data/farol_settings.json.tmp
+data/projects/
+data/projects/diagnostics/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp_*.py
